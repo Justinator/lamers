@@ -1,0 +1,176 @@
+/* 6.0 Site Typography -------------------------------------------*/
+body,
+button,
+input,
+select,
+optgroup,
+textarea {
+	color: $bodyCopyBlue;
+	font-family: "Roboto", "Lucida Grande", "Lucida Sans", Geneva, Arial, sans-serif;
+	font-size: 20px;
+	line-height: 1.6em;
+}
+h1,h2,h3,h4,h5,h6{
+	font-family: $prometoBold;
+	line-height: 1.2em;
+	margin-top: 0;
+	margin-bottom: 40px;
+}
+p{
+	margin-top: 0;
+	margin-bottom: 1em !important;
+}
+h1{
+	font-weight: 700;
+	@include breakpoint(tinyScreen){
+		font-size: .9em;
+	}
+	@include breakpoint(smallScreen){
+		font-size: 1.2em;
+	}
+	@include breakpoint(largeMobileScreen){
+		font-size: 2em;
+	}
+	@include breakpoint(laptopScreen){
+		font-size: 2.2em;
+	}
+}
+h2{
+	@include breakpoint(smallScreen){
+		font-size: 1.4em;
+	}
+	@include breakpoint(largeMobileScreen){
+		font-size: 1.4em;
+	}
+	@include breakpoint(tabletScreen){
+		font-size: 2em;
+	}
+}
+h3{
+	@include breakpoint(smallScreen){
+		font-size: 1.3em;
+	}
+	@include breakpoint(largeMobileScreen){
+		font-size: 1.3em;
+	}
+	@include breakpoint(tabletScreen){
+		font-size: 1.8em;
+	}
+}
+h4{
+	@include breakpoint(smallScreen){
+		font-size: 1.2em;
+	}
+	@include breakpoint(largeMobileScreen){
+		font-size: 1.2em;
+	}
+	@include breakpoint(tabletScreen){
+		font-size: 1.6em;
+	}
+}
+h5{
+	font-size: 1.4em;
+}
+h6{
+	font-size: .9em;
+}
+.whiteText{
+	color: $white;
+}
+.headlineText{
+	color: $headlineText;
+}
+.subheadText{
+	color: $subHeadText;
+}
+.redText{
+	color: $brandColor;
+}
+.centerText{
+	text-align: center;
+}
+.primaryHeading{
+	font-weight: 700;
+	margin-bottom: 0;
+	@include breakpoint(smallScreen){
+		font-size: 2.5em;
+	}
+	@include breakpoint(tinyScreen){
+		font-size: 2em;
+	}
+	@include breakpoint(largeMobileScreen){
+		font-size: 2.5em;
+	}
+	@include breakpoint(largeScreen){
+		font-size: 4em;
+	}
+}
+.primaryHeading{
+	font-family: $prometoBold;
+	text-transform: uppercase;
+	font-weight: 700;
+	margin-bottom: 0;
+	@include breakpoint(smallScreen){
+		font-size: 2.5em;
+	}
+	@include breakpoint(tinyScreen){
+		font-size: 2em;
+	}
+	@include breakpoint(largeMobileScreen){
+		font-size: 2.5em;
+	}
+	@include breakpoint(largeScreen){
+		font-size: 4em;
+	}
+}
+.subHeading{
+	font-family: $prometoMedium;
+	text-transform: uppercase;
+	font-weight: 500;
+	margin-bottom: 0;
+	@include breakpoint(smallScreen){
+		font-size: 2.5em;
+	}
+	@include breakpoint(tinyScreen){
+		font-size: 2em;
+	}
+	@include breakpoint(largeMobileScreen){
+		font-size: 2.5em;
+	}
+	@include breakpoint(largeScreen){
+		font-size: 4em;
+	}
+}
+.mediumHeading{
+	font-size: 2em;
+	margin-bottom: 0;
+}
+.smallHeading{
+	font-size: 1.5em;
+	margin-bottom: 0;
+}
+.noMargin{
+	margin: 0 !important;
+}
+.smallMarginHeader{
+	margin-bottom: 10px;
+}
+.underline{
+	content: "";
+	background-color: $primaryYellow;
+	height: 3px;
+	width: 4em;
+	margin-top: 5px;
+  margin-bottom: 20px;
+}
+.centerUnderline{
+	content: "";
+	position: relative;
+	height: 3px;
+	width: 4em;
+	margin: 0 auto;
+	margin-top: 5px;
+  margin-bottom: 20px;
+	border-bottom: 3px solid $primaryYellow;
+	transition: .2s ease all;
+}

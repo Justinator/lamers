@@ -1,0 +1,48 @@
+/* 12.0 Service Page stylings -------------------------------------------*/
+.servicesSidebar{
+	border-right: 1px solid $primaryGrey;
+	margin-top: 45px;
+	@include breakpoint(smallScreen){
+		display: none;
+	}
+	@include breakpoint(largeMobileScreen){
+		display: none;
+	}
+	@include breakpoint(laptopScreen){
+		display: block;
+	}
+}
+.servicesList{
+	list-style-type: none;
+  padding-left: 0;
+	li{
+		margin-bottom: 10px;
+	}
+}
+.commercialHero{
+	background-image: url("/wp-content/uploads/2019/03/waterRightCropped.jpg");
+}
+.weldHero{
+	background-image: url("/wp-content/uploads/2019/03/foxWeldingEmployeeCroppedMedium.jpg");
+}
+.weldHero2{
+	background-image: url("/wp-content/uploads/2019/03/foxStructuresWeldAShop.jpg");
+}
+.agHero{
+	background-image: url("/wp-content/uploads/2019/02/centerFeedAlleyLookingSouthCropped.jpg");
+}
+.serviceHero{
+	background-image: url("/wp-content/uploads/2019/03/virClarFarmsCroppedMedium.jpg");
+}
+.equestrianHero{
+	background-image: url("/wp-content/uploads/2019/03/equestrianHero.jpg");
+}
+.residentialHero{
+	background-image: url("/wp-content/uploads/2019/03/larson-cottage-large.jpg");
+}
+.storageHero{
+	background-image: url("/wp-content/uploads/2019/03/appleStrageCropped2.jpg");
+}
+.blueprintHero{
+	background-image: url("/wp-content/uploads/2019/03/CustomPlans-CroppedMedium.jpg");
+}

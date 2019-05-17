@@ -1,0 +1,382 @@
+/*4.0 Header Styling -------------------------------------------*/
+.screenReaderSkipToContent{
+	position: absolute;
+	top: -100px;
+	&:focus{
+		left: 6px;
+    top: 7px;
+    height: auto;
+    width: auto;
+    display: block;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 15px 23px 14px;
+    background: $primaryGrey;
+    color: $primaryYellow;
+    z-index: 100000;
+    line-height: normal;
+    text-decoration: none;
+    box-shadow: 0 0 2px 2px rgba(0,0,0,.6);
+	}
+}
+.site-header{
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 9999;
+	height: 70px;
+	width: 100vw;
+}
+.main-navigation{
+	height: 100px;
+	width: 100%;
+	margin: 0 auto;
+	background: $primaryGrey;
+	display: flex;
+	align-items: center;
+	box-shadow: 0 0 28px 0 rgba(0,0,0,.25);
+		@include breakpoint(smallScreen){
+			height: 70px;
+		}
+}
+.secondaryNavigation{
+	height: 25px;
+	margin: 0 auto;
+	width: 100%;
+	background: $primaryGrey;
+	display: flex;
+	align-items: center;
+}
+#primary-menu{
+	@include breakpoint(smallScreen){
+		display: none;
+	}
+	@include breakpoint(largeMobileScreen){
+		display: none;
+	}
+	@include breakpoint(laptopScreen){
+		display: flex;
+	}
+	li{
+		padding: 0 15px;
+		list-style-type: none;
+		a{
+			text-decoration: none;
+			color: $white;
+			font-weight: 700;
+    	letter-spacing: 1px;
+			padding: 5px;
+			@include breakpoint(tabletScreen){
+				font-size: 16px;
+			}
+			@include breakpoint(largeScreen){
+				font-size: 20px;
+			}
+		}
+	}
+}
+.menu-item{
+	a{
+		position: relative;
+		&:before{
+			position: absolute;
+			content: "";
+			background: $primaryYellow;
+			top: 0;
+			left: 0;
+			width: 100%;
+  		transform: scaleX(0);
+			height: 2px;
+			transition: transform 0.2s ease-out;
+			transform-origin: top right;
+		}
+		&:after{
+			position: absolute;
+			content: "";
+			background: $primaryYellow;
+			bottom: 0;
+			right: 0;
+			width: 100%;
+  		transform: scaleX(0);
+			height: 2px;
+			transition: transform 0.2s ease-out;
+			transform-origin: bottom left;
+		}
+		&:hover{
+			&:before{
+				transform-origin: top left;
+				transform: scaleX(1);
+			}
+			&:after{
+				transform-origin: bottom right;
+				transform: scaleX(1);
+			}
+		}
+		&:focus{
+			&:before{
+				transform-origin: top left;
+				transform: scaleX(1);
+			}
+			&:after{
+				transform-origin: bottom right;
+				transform: scaleX(1);
+			}
+		}
+	}
+}
+.current-menu-item{
+	a{
+		position: relative;
+		&:before{
+			position: absolute;
+			content: "";
+			background: $primaryYellow;
+			top: 0;
+			left: 0;
+			width: 100%;
+  		transform: scaleX(1);
+			height: 2px;
+			transition: transform 0.2s ease-out;
+			transform-origin: top right;
+		}
+		&:after{
+			position: absolute;
+			content: "";
+			background: $primaryYellow;
+			bottom: 0;
+			right: 0;
+			width: 100%;
+  		transform: scaleX(1);
+			height: 2px;
+			transition: transform 0.2s ease-out;
+			transform-origin: bottom left;
+		}
+	}
+}
+.menuLinkWrap{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.secondaryMenuWrap{
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+}
+.secondaryLinkWrapper{
+	background-color: $secondaryGrey;
+	display: flex;
+  align-items: center;
+  padding: 0 10px;
+  margin: 0 10px;
+}
+.secondaryLink{
+	color: $black;
+	padding: 0 15px;
+	text-decoration: none;
+	transition: .3s ease all;
+	font-size: 14px;
+		&:hover{
+			color: $lightGrey;
+			transition: .3s ease all;
+		}
+			@include breakpoint(smallScreen){
+				font-size: 12px;
+			}
+}
+.entry-header{
+	display:none;
+}
+.siteLogo{
+	margin-top: 8px;
+	height: auto;
+	@include breakpoint(smallScreen){
+		width: 120px;
+	}
+	@include breakpoint(largeMobileScreen){
+		width: 150px;
+	}
+}
+nav{
+	display: flex;
+	align-items:center;
+	width: 100%;
+}
+.menuText{
+	cursor: pointer;
+	font-size: 26px;
+	font-weight: 700;
+	padding-right: 10px;
+	color: $white;
+	text-decoration: none;
+	transition: .3s ease-out all;
+}
+.menuTextWrap{
+	display: flex;
+	align-items: baseline;
+	margin-left: 10px;
+	right: 100px;
+}
+.mobile-menu{
+	@include breakpoint(smallScreen){
+		display: block;
+	}
+	@include breakpoint(largeMobileScreen){
+		display: block;
+	}
+	@include breakpoint(laptopScreen){
+		display: none;
+	}
+}
+.open{
+	position: fixed !important;
+	transform: translate(0) !important;
+	transition: .1s ease-out all !important;
+}
+#mobile-menu{
+	position: fixed;
+  width: 90%;
+  top: 0;
+  padding: 125px 0 20px 0;
+  margin: 0 auto;
+  z-index: 999;
+  height: auto;
+  width: 100%;
+  background-color: $primaryGrey;
+  transition: .2s ease-out all;
+	transform: translateY(-120%);
+	li{
+		list-style-type: none;
+		font-size: 20px;
+		padding: 5px 20px;
+		display: flex;
+		a{
+			color: $white;
+			font-weight: 700;
+			text-decoration: none;
+		}
+	}
+}
+.menu{
+	.active{
+		a{
+				border-bottom: 2px solid $primaryGrey !important;
+				color: $white;
+				width: 100%;
+				text-align: initial;
+			}
+		}
+}
+#emailLink{
+	@include breakpoint(smallScreen){
+		display:none;
+	}
+	@include breakpoint(largeMobileScreen){
+		display:flex;
+	}
+}
+.menuButtonWrap{
+	display:flex;
+	right: 30px;
+		@include breakpoint(smallScreen){
+			padding: 15px 0 15px 15px;
+		}
+		@include breakpoint(largeMobileScreen){
+			padding: 15px 0 15px 15px;
+		}
+		@include breakpoint(laptopScreen){
+			display: none;
+		}
+}
+// Add Animation to our hamburger Menu
+.hamburger {
+  display: inline-block;
+  cursor: pointer;
+  transition-property: opacity, filter;
+  transition-duration: 0.15s;
+  transition-timing-function: linear;
+  font: inherit;
+  color: inherit;
+  text-transform: none;
+  background-color: transparent;
+  border: 0;
+  margin: 0;
+  overflow: visible;
+}
+.hamburger:hover {
+  opacity: 0.7;
+}
+.hamburger.is-active:hover {
+  opacity: 0.7;
+}
+.hamburger.is-active .hamburger-inner,
+.hamburger.is-active .hamburger-inner::before,
+.hamburger.is-active .hamburger-inner::after {
+  background-color: $white;
+}
+
+.hamburger-box {
+  width: 30px;
+  height: 24px;
+  display: inline-block;
+  position: relative;
+}
+
+.hamburger-inner {
+  display: block;
+  top: 50%;
+  margin-top: -2px;
+}
+.hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
+  width: 30px;
+  height: 3px;
+  background-color: $white;
+  border-radius: 4px;
+  position: absolute;
+  transition-property: transform;
+  transition-duration: 0.15s;
+  transition-timing-function: ease;
+}
+.hamburger-inner::before, .hamburger-inner::after {
+  content: "";
+  display: block;
+}
+.hamburger-inner::before {
+  top: -10px;
+}
+.hamburger-inner::after {
+  bottom: -10px;
+}
+/*
+* Collapse
+*/
+.hamburger--collapse .hamburger-inner {
+  top: auto;
+  bottom: -2px;
+  transition-duration: 0.13s;
+  transition-delay: 0.13s;
+  transition-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+}
+.hamburger--collapse .hamburger-inner::after {
+  top: -20px;
+  transition: top 0.2s 0.2s cubic-bezier(0.33333, 0.66667, 0.66667, 1), opacity 0.1s linear;
+}
+.hamburger--collapse .hamburger-inner::before {
+  transition: top 0.12s 0.2s cubic-bezier(0.33333, 0.66667, 0.66667, 1), transform 0.13s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+}
+
+.hamburger--collapse.is-active .hamburger-inner {
+  transform: translate3d(0, -10px, 0) rotate(-45deg);
+  transition-delay: 0.22s;
+  transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+.hamburger--collapse.is-active .hamburger-inner::after {
+  top: 0;
+  opacity: 0;
+  transition: top 0.2s cubic-bezier(0.33333, 0, 0.66667, 0.33333), opacity 0.1s 0.22s linear;
+}
+.hamburger--collapse.is-active .hamburger-inner::before {
+  top: 0;
+  transform: rotate(-90deg);
+  transition: top 0.1s 0.16s cubic-bezier(0.33333, 0, 0.66667, 0.33333), transform 0.13s 0.25s cubic-bezier(0.215, 0.61, 0.355, 1);
+}
