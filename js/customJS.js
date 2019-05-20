@@ -1,7 +1,7 @@
 // open menu
 $(function() {
     $(".menuButtonWrap").click(function(e){
-        $("#mobile-menu").toggleClass("open");
+        $(".mobile-menu").toggleClass("open");
         	e.stopPropagation();
     });
 });

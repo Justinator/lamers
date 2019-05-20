@@ -34,7 +34,11 @@
 
 	<div class = "mobile-menu">
 
-		<?php wp_nav_menu( array( 'theme_location' => 'PrimaryMenu', 'menu_id' => 'PrimaryMenu' ) ); ?>
+		<?php
+		get_search_form();
+		wp_nav_menu( array( 'theme_location' => 'SecondaryMenu', 'menu_id' => 'SecondaryMenu' ) );
+		wp_nav_menu( array( 'theme_location' => 'PrimaryMobile', 'menu_id' => 'PrimaryMobile' ) );
+		?>
 
 	</div>
 
@@ -66,7 +70,7 @@
 
 				<div class="navWidth menuLinkWrap">
 
-						<a href="https://foxstructures.com">
+						<a href="http://wordpress-154794-852975.cloudwaysapps.com/">
 
 							<img src="wp-content/uploads/2019/05/Lamers-Bus-Lines-Logo-RGB.jpg" class="siteLogo" alt="Lamer's Logo"><span class="screen-reader-text">Go back to the homepage</span>
 

@@ -1,8 +1,6 @@
 <?php
 /**
- * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
- *
- * @package foxStructuresResponsive
+ * @package InsightCustom
  */
 get_header();
 
@@ -14,32 +12,27 @@ get_header();
 
 		<section id="homeHero">
 
-			<div class="hero homeHero">
+			<?php $backgroundImg = wp_get_attachment_image_src( get_post_thumbnail_id(10), 'full' );?>
+
+			<div class="mediumHero" style="background: url('<?php echo $backgroundImg[0]; ?>') no-repeat; background-size: cover; background-position:center;">
 
 				<div class="fullWidth heroHeadingContainer">
 
 					<div class="heroHeadingWrapper">
 
-						<div class="heroHeading">
+						<div class="col50"></div>
 
-							<h1 class="noMargin">Fox Structures Offers Premier Design, Welding and Construction Services</h1>
+						<div class="col50">
 
-						</div>
+							<div class="heroHeading">
 
-					</div>
+								<h1 class="noMargin whiteText"><?php the_field('hero_heading'); ?></h1>
 
-					<div id="heroSwooshWrapper" class="fullWidth">
+								<div class="whiteText">
+									<p><?php the_field('hero_buttons'); ?></p>
+								</div>
 
-						<img src="/wp-content/uploads/2019/02/bottomSmallCurve2-1.png" class="image">
-
-					</div>
-
-					<div class="heroCTA fullWidth">
-
-						<div class="heroCTAContent pageWidth">
-
-							<h3 class="noMargin"><a href="/contact/" class="heroCTAButton"><span>Contact Us</span></a>
-								to Discuss Your Project</h3>
+							</div>
 
 						</div>
 
@@ -54,43 +47,11 @@ get_header();
 
 		<section id="pageContent">
 
-			<section id ="foxStructuresIntro" class="paddedSection">
+			<section id ="whyLamers" class="paddedSection">
 
-				<div class="fullWidth flex-container centerAlignedContainerTop">
+				<div class="fullWidth">
 
-					<div id="introCopy" class="col50">
-
-						<div class="blockText">
-
-							<h2 class="noMargin">Our Building Success Starts with You.</h2>
-
-							<div class="underline"></div>
-
-							<p>Fox Structures is known throughout northeast Wisconsin as a premier
-								design/build agricultural and commercial construction company. For over
-								30 years our design savvy, construction expertise and commitment to
-								quality have been matched only by our high level of customer satisfaction.
-								That’s why we are so proud that 80% of our business comes from satisfied
-								repeat clients.
-							</p>
-
-							<p>
-								Browse some of the unique <a href="/services/agricultural/" class="primaryLink">agricultural</a>
-								and <a href="/services/commercial/" class="primaryLink">commercial</a> construction
-								projects we’ve built in the past. Then <a href="/contact/" class="primaryLink">contact us</a>
-								and see how <em><strong>we build with you in mind</strong></em> !
-							</p>
-
-						</div>
-
-					</div>
-
-					<div id="introImage" class="col50">
-
-						<img src="/wp-content/uploads/2019/02/foxStructuresCustomBuild.jpg" class="image"
-						alt="A Custom built garage by Fox Structures">
-
-					</div>
+					<h2 class="noMargin centerText"><?php the_field('why_lamers_heading'); ?></h2>
 
 				</div>
 

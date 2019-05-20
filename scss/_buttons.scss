@@ -1,4 +1,24 @@
 /* 7.0 Button Stylings ---------------------------------------*/
+.whiteButton{
+	position: relative;
+	z-index:1;
+  font-family: $prometoMedium;
+  font-size: 16px;
+  text-transform: uppercase;
+  text-decoration: none;
+	border: 2px solid $white;
+	border-radius: 10px;
+	background: $transparent;
+	padding: 5px 25px 5px 25px;
+	color: $white;
+	transition: .3s ease;
+	cursor: pointer;
+    &:hover{
+      background: $white;
+    	color: $headlineText;
+    	transition: .3s ease;
+    }
+}
 .primaryLink{
   color: $primaryGrey !important;
 	transition: .3s ease all;
@@ -28,56 +48,6 @@
 			}
     }
 }
-.primaryButton{
-	position: relative;
-	z-index:1;
-	text-decoration: none;
-  width: fit-content;
-	width: -moz-max-content;
-  width: -ms-max-content;
-  width: -webkit-max-content;
-  width: -o-max-content;
-	color: $primaryGrey;
-	transition: .2s ease all;
-  padding: 10px 20px 10px 20px;
-	cursor: pointer;
-		&:before{
-			position: absolute;
-			content: "";
-			background: $primaryYellow;
-			top: 0;
-			left: 0;
-			width: 10%;
-			height: 2px;
-			transition: 0.2s ease-out;
-		}
-		&:after{
-			position: absolute;
-			content: "";
-			background: $primaryYellow;
-			bottom: 0;
-			right: 0;
-			width: 10%;
-			height: 2px;
-			transition: 0.2s ease-out;
-		}
-		&:hover{
-			&:before{
-				width: 100%;
-			}
-			&:after{
-				width: 100%;
-			}
-		}
-    &:focus{
-			&:before{
-				width: 100%;
-			}
-			&:after{
-				width: 100%;
-			}
-		}
-}
 .centerButton{
 	margin: 0 auto;
 	text-align: center;
@@ -89,24 +59,4 @@
 button{
 	background-color: $transparent;
 	border: none;
-}
-.filterButton{
-	padding: 10px;
-	cursor: pointer;
-	transition: .2s ease all;
-	margin: 5px 0;
-	background: $primaryGrey;
-	color: $white;
-	&:active{
-		background: $primaryYellow;
-		color: $white;
-	}
-	&:focus{
-		background: $primaryYellow;
-		color: $white;
-	}
-	&:hover{
-		background: $primaryYellow;
-		transition: .2s ease all;
-	}
 }

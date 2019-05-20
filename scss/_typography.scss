@@ -7,11 +7,12 @@ optgroup,
 textarea {
 	color: $bodyCopyBlue;
 	font-family: "Roboto", "Lucida Grande", "Lucida Sans", Geneva, Arial, sans-serif;
-	font-size: 20px;
+	font-size: 25px;
 	line-height: 1.6em;
 }
 h1,h2,h3,h4,h5,h6{
 	font-family: $prometoBold;
+	text-transform: uppercase;
 	line-height: 1.2em;
 	margin-top: 0;
 	margin-bottom: 40px;
@@ -32,7 +33,7 @@ h1{
 		font-size: 2em;
 	}
 	@include breakpoint(laptopScreen){
-		font-size: 2.2em;
+		font-size: 2.5em;
 	}
 }
 h2{
@@ -155,13 +156,17 @@ h6{
 .smallMarginHeader{
 	margin-bottom: 10px;
 }
-.underline{
-	content: "";
-	background-color: $primaryYellow;
-	height: 3px;
-	width: 4em;
-	margin-top: 5px;
-  margin-bottom: 20px;
+.underline {
+	position: relative;
+	&:after {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		content: "";
+		background-color: $primaryYellow;
+		height: 7px;
+		width: 100%;
+	}
 }
 .centerUnderline{
 	content: "";

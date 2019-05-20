@@ -5,13 +5,13 @@ body{
 }
 // Style highlight to match our themes colors
 ::selection{
-		background: rgba(239,174,30, .5);
+		background: rgba(	183, 0, 51, .5);
 }
 ::-moz-selection{
-	background: rgba(239,174,30, .5);
+	background: rgba(	183, 0, 51, .5);
 }
 ::-ms-selection{
-	background: rgba(239,174,30, .5);
+	background: rgba(	183, 0, 51, .5);
 }
 #privacyPolicy{
 	@include breakpoint(smallScreen){
@@ -35,7 +35,7 @@ body{
 }
 
 ::-webkit-scrollbar-thumb{
-    background-color: $primaryGrey;
+    background-color: $brandColorDark;
 }
 .error-404{
 	text-align: center;

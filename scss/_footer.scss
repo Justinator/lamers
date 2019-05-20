@@ -1,193 +1,80 @@
 /* 5.0 Footer Stylings -------------------------------------------*/
-.site-info{
-	display: flex;
-	justify-content: space-between;
-	-moz-justify-content: space-between;
-	-webkit-justify-content: space-between;
-	-ms-justify-content: space-between;
-	-o-justify-content: space-between;
-	flex-direction: column;
-	padding: 20px 0 20px 0;
-	list-style-type: none;
-    @include breakpoint(laptopScreen){
-      flex-direction: row;
-    }
-}
-#footer-menu{
-	@include breakpoint(smallScreen){
-		display: none;
-	}
-	@include breakpoint(largeMobileScreen){
-		display: none;
-	}
-	@include breakpoint(laptopScreen){
-		display: flex;
-	}
-	li{
-		padding: 0 15px;
-		list-style-type: none;
-		a{
-			text-decoration: none;
-			color: $secondaryGrey;
-			font-weight: 700;
-    	letter-spacing: 1px;
-			padding: 5px;
-			@include breakpoint(tabletScreen){
-				font-size: 16px;
-			}
-			@include breakpoint(laptopScreen){
-				font-size: 14px;
-			}
-			@include breakpoint(largeScreen){
-				font-size: 16px;
-			}
-			@include breakpoint(extraLargeScreen){
-				font-size: 20px;
-			}
-		}
-	}
-}
-#contactInfo{
-	@include breakpoint(smallScreen){
-		width: 100%;
-	}
-	@include breakpoint(largeMobileScreen){
-		width: 50%;
-	}
-	@include breakpoint(laptopScreen){
-		width: 40%;
-	}
-}
 .site-footer{
 	position: relative;
 	z-index: 2;
 	width: 100%;
-	padding: 0 0 50px 0;
 	margin: 0 auto;
-	background-color: $black;
-	background-image: url("/wp-content/uploads/2019/02/bottomSmallCurve.png");
-	background-size: cover;
-	background-repeat: no-repeat;
+	background-color: $brandColor;
 }
-.footerLogo{
-	margin-top: 10px;
-	height: auto;
-	width: 180px;
-		@include breakpoint(smallScreen){
-			width: 150px;
-		}
-}
-.footerContact{
-	margin-top: 25px;
-	margin-bottom: 70px;
+.footerContent{
 	display: flex;
-	flex-direction: column;
-  a{
-  	text-decoration: none;
-  	color: $primaryYellow;
-  	transition: .2s ease all;
-		font-weight: 700;
-      &:hover{
-        color: $primaryGrey;
-        transition: .2s ease all;
-      }
-  }
-}
-#copyrightWrap{
-	display: flex;
+	flex-direction: column-reverse;
 	align-items: center;
-	@include breakpoint(smallScreen){
-		flex-direction: column;
-		margin-bottom: 10px;
-	}
-	@include breakpoint(largeMobileScreen){
+	@include breakpoint (laptopScreen) {
 		flex-direction: row;
-		margin-bottom: 10px;
-	}
-	@include breakpoint(laptopScreen){
-		margin-bottom: 0;
+		justify-content: space-between;
 	}
 }
 #copyright{
 	color: $white;
-	margin-bottom: -50px;
 	font-size: 12px;
+	display: flex;
+	align-items: center;
+	margin-top: 2px;
 		p{
-			margin-top: 1em;
-			margin-bottom: 1em;
-		}
-		@include breakpoint(smallScreen){
-			font-size: 14px;
-		}
-		@include breakpoint(largeMobileScreen){
-			font-size: 14px;
+			margin-top: 0;
+			margin-bottom: 0 !important;
 		}
     @include breakpoint(largeScreen){
       flex-direction: row;
-			font-size: 16px;
     }
-      a{
-        text-decoration: none;
-      	color: $white;
-				&:hover{
-					color: $primaryYellow;
-				}
-      }
 }
-.copyrightContentWrap{
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	flex-direction: row;
-    @include breakpoint(smallScreen){
-      justify-content: center;
-      flex-direction: column;
-    }
-		@include breakpoint(largeMobileScreen){
-			justify-content: center;
-      flex-direction: column;
-		}
-		@include breakpoint(laptopScreen){
-			flex-direction: row;
-			justify-content: space-between;
-			-moz-justify-content: space-between;
-			-webkit-justify-content: space-between;
-			-ms-justify-content: space-between;
-			-o-justify-content: space-between;
-		}
-}
-#copyrightContent{
+.footerLinkWrap {
 	display: flex;
 	align-items: center;
-		@include breakpoint(smallScreen){
-			font-size: 14px;
-		}
-}
-#closingLinks{
-	margin: 0;
-	position: relative;
-	a{
-		padding: 10px;
+	flex-direction: column;
+	@include breakpoint (laptopScreen) {
+		flex-direction: row;
 	}
 }
-.borderRight{
-	padding: 0 10px 0 10px;
-}
-.siteAuthor{
-	text-align: center;
-	margin: 0;
-    a{
-      color: $white;
-    	text-decoration: none;
-    }
-      &:hover{
-        color: $lightGrey
-      }
-		@include breakpoint(smallScreen){
-			margin-bottom: 25px;
+#FooterMenu {
+	margin-block-start: 0;
+  padding-inline-start: 0;
+  margin-block-end: 0;
+  display: flex;
+	flex-direction: column-reverse;
+	@include breakpoint (largeMobileScreen) {
+		flex-direction: row;
+	}
+	li{
+		padding: 10px 10px;
+		list-style-type: none;
+		a{
+			text-decoration: none;
+			color: $white;
+			font-family: $prometoMedium;
+			text-transform: uppercase;
+			font-size: 12px;
+			font-weight: 500;
+			transition: .2s ease;
+			&:hover{
+				color: $primaryYellow;
+				transition: .2s ease;
+			}
 		}
+	}
+}
+.menu-item-74{
+	background-color: $brandColor;
+	@include breakpoint (laptopScreen) {
+		background-color: $brandColorDark;
+	}
 }
 .socialWrapper{
+	margin-top: 20px;
+	@include breakpoint (laptopScreen) {
+		margin-top: 0;
+	}
 	a{
 		text-decoration: none;
 	}
