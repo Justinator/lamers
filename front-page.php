@@ -26,7 +26,7 @@ get_header();
 
 							<div class="heroHeading">
 
-								<h1 class="noMargin whiteText"><?php the_field('hero_heading'); ?></h1>
+								<?php the_field('hero_heading'); ?>
 
 								<div class="whiteText">
 									<p><?php the_field('hero_buttons'); ?></p>
@@ -86,7 +86,7 @@ get_header();
 								attention every step of the way.
 							</p>
 
-							<a href="/about-us/" class="primaryButton">About the company</a>
+							<button class="mouse-cursor-gradient-tracking"><span>Hover me</span></button>
 
 						</div>
 

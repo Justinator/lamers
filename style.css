@@ -684,10 +684,11 @@ Font Variables
   left: 0;
   z-index: 9999;
   height: 70px;
-  width: 100vw; }
+  width: 100vw;
+  transition: .3s ease; }
 
 .main-navigation {
-  height: 115px;
+  height: 100px;
   width: 100%;
   margin: 0 auto;
   background: #FFFFFF;
@@ -698,6 +699,10 @@ Font Variables
     .main-navigation {
       height: 70px; } }
 
+.scrollUp {
+  transform: translateY(-150px);
+  transition: .3s ease; }
+
 @media (max-width: 599px) {
   .secondaryNavigation {
     display: none; } }
@@ -706,7 +711,7 @@ Font Variables
     display: none; } }
 @media (min-width: 992px) {
   .secondaryNavigation {
-    height: 60px;
+    height: 50px;
     margin: 0 auto;
     width: 100%;
     background: #b70033;
@@ -746,14 +751,14 @@ Font Variables
     #SecondaryMenu {
       flex-direction: row; } }
   #SecondaryMenu li {
-    padding: 7px 15px;
+    padding: 3px 15px 2px 15px;
     list-style-type: none; }
     #SecondaryMenu li a {
       text-decoration: none;
       color: #FFFFFF;
       font-family: prometo, sans-serif;
       text-transform: uppercase;
-      font-size: 12px;
+      font-size: 11px;
       font-weight: 500;
       transition: .2s ease; }
       #SecondaryMenu li a:hover {
@@ -1379,6 +1384,35 @@ h6 {
 button {
   background-color: rgba(0, 0, 0, 0);
   border: none; }
+
+.mouse-cursor-gradient-tracking {
+  position: relative;
+  background: #7983ff;
+  padding: 0.5rem 1rem;
+  font-size: 1.2rem;
+  border: none;
+  color: white;
+  cursor: pointer;
+  outline: none;
+  overflow: hidden; }
+
+.mouse-cursor-gradient-tracking span {
+  position: relative; }
+
+.mouse-cursor-gradient-tracking::before {
+  --size: 0;
+  content: '';
+  position: absolute;
+  left: var(--x);
+  top: var(--y);
+  width: var(--size);
+  height: var(--size);
+  background: radial-gradient(circle closest-side, pink, transparent);
+  transform: translate(-50%, -50%);
+  transition: width 0.2s ease, height 0.2s ease; }
+
+.mouse-cursor-gradient-tracking:hover::before {
+  --size: 200px; }
 
 /* 8.0 General Body Styles -------------------------------------------*/
 body {
