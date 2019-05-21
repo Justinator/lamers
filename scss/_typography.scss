@@ -11,11 +11,11 @@ textarea {
 	line-height: 1.6em;
 }
 h1,h2,h3,h4,h5,h6{
-	font-family: $prometoBold;
+	font-family: $prometoMedium;
 	text-transform: uppercase;
 	line-height: 1.2em;
 	margin-top: 0;
-	margin-bottom: 40px;
+	margin-bottom: 25px;
 }
 p{
 	margin-top: 0;
@@ -32,48 +32,22 @@ h1{
 	@include breakpoint(largeMobileScreen){
 		font-size: 2em;
 	}
-	@include breakpoint(laptopScreen){
-		font-size: 2.5em;
-	}
 }
 h2{
-	@include breakpoint(smallScreen){
-		font-size: 1.4em;
-	}
-	@include breakpoint(largeMobileScreen){
-		font-size: 1.4em;
-	}
-	@include breakpoint(tabletScreen){
-		font-size: 2em;
-	}
+	font-size: 1.6em;
+	font-weight: 700;
 }
 h3{
-	@include breakpoint(smallScreen){
-		font-size: 1.3em;
-	}
-	@include breakpoint(largeMobileScreen){
-		font-size: 1.3em;
-	}
-	@include breakpoint(tabletScreen){
-		font-size: 1.8em;
-	}
+	font-size: 1.2em;
 }
 h4{
-	@include breakpoint(smallScreen){
-		font-size: 1.2em;
-	}
-	@include breakpoint(largeMobileScreen){
-		font-size: 1.2em;
-	}
-	@include breakpoint(tabletScreen){
-		font-size: 1.6em;
-	}
+	font-size: 1em;
 }
 h5{
-	font-size: 1.4em;
+	font-size: .9em;
 }
 h6{
-	font-size: .9em;
+	font-size: .8em;
 }
 .whiteText{
 	color: $white;
@@ -107,7 +81,7 @@ h6{
 	}
 }
 .primaryHeading{
-	font-family: $prometoBold;
+	font-family: $prometoMedium;
 	text-transform: uppercase;
 	font-weight: 700;
 	margin-bottom: 0;
@@ -142,9 +116,13 @@ h6{
 		font-size: 4em;
 	}
 }
-.mediumHeading{
+.largeHeading{
 	font-size: 2em;
-	margin-bottom: 0;
+	font-weight: 700;
+}
+.subhead{
+	font-size: 1.4em;
+	font-weight: 500;
 }
 .smallHeading{
 	font-size: 1.5em;

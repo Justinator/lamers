@@ -29,7 +29,7 @@ get_header();
 								<?php the_field('hero_heading'); ?>
 
 								<div class="whiteText">
-									<p><?php the_field('hero_buttons'); ?></p>
+									<?php the_field('hero_buttons'); ?>
 								</div>
 
 							</div>
@@ -51,53 +51,118 @@ get_header();
 
 				<div class="fullWidth">
 
-					<h2 class="noMargin centerText"><?php the_field('why_lamers_heading'); ?></h2>
+					<?php the_field('why_lamers_heading'); ?>
 
-				</div>
+					<div class="pageWidth flex-container">
 
-			</section>
+						<div class="col30">
 
-			<?php get_template_part("/inc/services-overview"); ?>
+							<div class="blockText">
 
-			<?php get_template_part("/inc/featuredHomepageProjects"); ?>
+								<h3 class="redText"><?php the_field('reason_1'); ?></h3>
 
-			<section class="navWidth">
+								<p><?php the_field('reason_1_description'); ?></p>
 
-				<?php get_template_part('inc/CTA')?>
+							</div>
 
-			</section>
+						</div>
 
-			<section class="paddedSection">
+						<div class="col30">
 
-				<div class="fullWidth flex-container-reverse centerAlignedContainerTop">
+							<div class="blockText">
 
-					<div class="col50">
+								<h3 class="redText"><?php the_field('reason_2'); ?></h3>
 
-						<div class="blockText">
+								<p><?php the_field('reason_2_description'); ?></p>
 
-							<h2 class="noMargin">Experts at Building Success</h2>
+							</div>
 
-							<div class="underline"></div>
+						</div>
 
-							<p>Since 1982 Fox Structures has focused on two things: listening to customers
-								and delivering what we promise. That’s a pretty simple business plan for a
-								design/build contractor. But it’s one that works. From planning and design,
-								through construction to your final walk-through, you’ll have our dedicated
-								attention every step of the way.
-							</p>
+						<div class="col30">
 
-							<button class="mouse-cursor-gradient-tracking"><span>Hover me</span></button>
+							<div class="blockText">
+
+								<h3 class="redText"><?php the_field('reason_3'); ?></h3>
+
+								<p><?php the_field('reason_3_description'); ?></p>
+
+							</div>
 
 						</div>
 
 					</div>
 
-					<div class="col50">
+					<div class="pageWidth centerButton">
 
-						<img src="/wp-content/uploads/2019/02/CalfSourceBldg11.jpg" class="image"
-						alt="Fox Structures working on a custom railing on a calf source agricultural building">
+						<?php the_field('button'); ?>
 
 					</div>
+
+				</div>
+
+			</section>
+
+			<section id="featuredServices">
+
+				<div class="pageWidth">
+
+					<div class="flexWrap">
+
+						<h4 class="largeHeading"><?php the_field('featured_services_block_title'); ?></h4>
+
+						<a href="/services/" id="arrowWrap" class="plainLink"><h5 id="viewAll">View All</h5>
+							<svg class="smallIcon" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+								<defs>
+									<symbol id="icon-arrow-right2" viewBox="0 0 32 32">
+										<title>arrow-right2</title>
+										<path d="M19.414 27.414l10-10c0.781-0.781 0.781-2.047 0-2.828l-10-10c-0.781-0.781-2.047-0.781-2.828 0s-0.781 2.047 0 2.828l6.586 6.586h-19.172c-1.105 0-2 0.895-2 2s0.895 2 2 2h19.172l-6.586 6.586c-0.39 0.39-0.586 0.902-0.586 1.414s0.195 1.024 0.586 1.414c0.781 0.781 2.047 0.781 2.828 0z"></path>
+									</symbol>
+								</defs>
+							</svg>
+							<svg id="redArrow" class="redIcon icon-arrow-right2"><use xlink:href="#icon-arrow-right2"></use></svg>
+						</a>
+
+					</div>
+
+				</div>
+
+				<div class="pageWidth">
+
+					<section class="regular slider">
+						<div class="centerText">
+							<a href="<?php the_field('slide_1_link'); ?>" class="plainLink centerText">
+								<?php
+								$image = get_field('slide_1_image');
+								?>
+								<img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
+								<h6 class="whiteText sliderTitle centerText"><?php the_field('slide_1_title'); ?></h6>
+							</a>
+						</div>
+						<div>
+							<?php
+							$image = get_field('slide_2_image');
+							?>
+							<img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
+							<h6 class="whiteText sliderTitle centerText"><?php the_field('slide_2_title'); ?></h6>
+						</div>
+						<div>
+							<?php
+							$image = get_field('slide_3_image');
+							?>
+							<img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
+							<h6 class="whiteText sliderTitle centerText"><?php the_field('slide_3_title'); ?></h6>
+						</div>
+						<div>
+							<img src="http://placehold.it/350x300?text=4">
+						</div>
+						<div>
+							<img src="http://placehold.it/350x300?text=5">
+						</div>
+						<div>
+							<img src="http://placehold.it/350x300?text=6">
+						</div>
+					</section>
 
 				</div>
 

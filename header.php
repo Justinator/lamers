@@ -16,6 +16,10 @@
 
 	<link rel="profile" href="http://gmpg.org/xfn/11">
 
+	<!--<link rel="stylesheet" type="text/css" href="/wp-content/themes/insightCustom/css/slick.css">
+
+  <link rel="stylesheet" type="text/css" href="/wp-content/themes/insightCustom/css/slick-theme.css">-->
+
 	<link href="/wp-content/uploads/2019/03/favicon.png" rel="shortcut icon">
 
 	<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="  crossorigin="anonymous"></script>

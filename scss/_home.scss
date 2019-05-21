@@ -31,13 +31,13 @@
 }
 .heroHeadingWrapper{
 	display: flex;
+	width: 100%;
 }
 #pageContent{
 	margin-top: 0;
 }
 .heroHeading{
 	padding: 25px;
-	color: $black;
 	border-radius: 3px;
     @include breakpoint(smallScreen){
       padding: 20px;
@@ -65,79 +65,19 @@
 		margin-left: 50px;
 	}
 }
+#viewAll {
+	margin-left: 25px;
+}
+#arrowWrap {
+	display: flex;
+	flex-direction: row;
+}
 #introImage{
 	@include breakpoint(laptopScreen){
 		margin-top: 25px;
 	}
 	@include breakpoint(largeScreen){
 		margin-top: 0;
-	}
-}
-.projectTitleSpan{
-	position: relative;
-}
-.featuredProjectWrapper{
-	position: relative;
-	@include breakpoint(smallScreen){
-		width: 100%;
-	}
-	@include breakpoint(largeMobileScreen){
-		width: 50%;
-	}
-	@include breakpoint(largeScreen){
-		width: 25%;
-	}
-	span{
-		&:before{
-			position: absolute;
-			content: "";
-			background: $primaryYellow;
-			top: 0;
-			left: 0;
-			width: 10%;
-			height: 2px;
-			transition: 0.2s ease-out;
-		}
-		&:after{
-			position: absolute;
-			content: "";
-			background: $primaryYellow;
-			bottom: 0;
-			right: 0;
-			width: 10%;
-			height: 2px;
-			transition: 0.2s ease-out;
-		}
-	}
-	&:hover{
-		span{
-			&:before{
-				width: 100%;
-			}
-			&:after{
-				width: 100%;
-			}
-		}
-		.featuredProjectOverlay{
-			background-color: rgba(0,0,0,.7);
-			transition: .2s ease all;
-		}
-	}
-	a{
-		&:focus{
-			span{
-				&:before{
-					width: 100%;
-				}
-				&:after{
-					width: 100%;
-				}
-			}
-			.featuredProjectOverlay{
-				background-color: rgba(0,0,0,.7);
-				transition: .2s ease all;
-			}
-		}
 	}
 }
 .featuredProjectOverlay{

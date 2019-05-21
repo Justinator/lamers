@@ -216,6 +216,11 @@
       flex-direction: row;
     }
 }
+.flexWrap {
+	display: flex;
+	flex-direction: row;
+	align-items: baseline;
+}
 .wrappedFlexContainer{
 	display: flex;
 	flex-direction: row;

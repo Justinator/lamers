@@ -47,14 +47,8 @@ $(document).ready(function () {
   });
 
 });
-// Add gradient effect to buttons on hover
-var btn = document.querySelector('.mouse-cursor-gradient-tracking')
-btn.onmousemove = function(e) {
-  var x = e.pageX - btn.offsetLeft - btn.offsetParent.offsetLeft
-  var y = e.pageY - btn.offsetTop - btn.offsetParent.offsetTop
-  btn.style.setProperty('--x', x + 'px')
-  btn.style.setProperty('--y', y + 'px')
-}
+
+
 // detect IE and display an error message prompting users to upgrade to a modern browser
 if (navigator.appName == 'Microsoft Internet Explorer' || !!(navigator.userAgent.match(/Trident/) || navigator.userAgent.match(/rv:11/))) {
   document.write('<p style="text-align: center; position: relative; z-index: 99999; background-color: #f4a81d; color: #000000;">You are using a browser no longer supported by Microsoft. For the best and most secure viewing experience, please use a modern browser like <a href="https://www.google.com/chrome/" target="_blank" rel="noreferrer" style="color: #000000;">Chrome</a> or <a href="https://www.mozilla.org/en-US/firefox/new/" target="_blank" rel="noreferrer" style="color: #000000;">Firefox</a>.</p>');

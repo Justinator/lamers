@@ -29,6 +29,7 @@
 			</div>
 			<?php get_template_part("/inc/socialNav"); ?>
 	 </div>
+	 <script type="text/javascript" src="/wp-content/themes/insightCustom/js/slick-init.js"></script>
 	</footer><!-- #colophon -->
 </div><!-- #page -->
 <?php wp_footer(); ?>

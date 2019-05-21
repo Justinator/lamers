@@ -536,6 +536,11 @@ Font Variables
     .flex-container-reverse {
       flex-direction: row; } }
 
+.flexWrap {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline; }
+
 .wrappedFlexContainer {
   display: flex;
   flex-direction: row;
@@ -1172,7 +1177,7 @@ h1, h2, h3, h4, h5, h6 {
   text-transform: uppercase;
   line-height: 1.2em;
   margin-top: 0;
-  margin-bottom: 40px; }
+  margin-bottom: 25px; }
 
 p {
   margin-top: 0;
@@ -1189,45 +1194,22 @@ h1 {
   @media (min-width: 600px) {
     h1 {
       font-size: 2em; } }
-  @media (min-width: 992px) {
-    h1 {
-      font-size: 2.5em; } }
 
-@media (max-width: 599px) {
-  h2 {
-    font-size: 1.4em; } }
-@media (min-width: 600px) {
-  h2 {
-    font-size: 1.4em; } }
-@media (min-width: 768px) {
-  h2 {
-    font-size: 2em; } }
+h2 {
+  font-size: 1.6em;
+  font-weight: 700; }
 
-@media (max-width: 599px) {
-  h3 {
-    font-size: 1.3em; } }
-@media (min-width: 600px) {
-  h3 {
-    font-size: 1.3em; } }
-@media (min-width: 768px) {
-  h3 {
-    font-size: 1.8em; } }
+h3 {
+  font-size: 1.2em; }
 
-@media (max-width: 599px) {
-  h4 {
-    font-size: 1.2em; } }
-@media (min-width: 600px) {
-  h4 {
-    font-size: 1.2em; } }
-@media (min-width: 768px) {
-  h4 {
-    font-size: 1.6em; } }
+h4 {
+  font-size: 1em; }
 
 h5 {
-  font-size: 1.4em; }
+  font-size: .9em; }
 
 h6 {
-  font-size: .9em; }
+  font-size: .8em; }
 
 .whiteText {
   color: #FFFFFF; }
@@ -1296,9 +1278,13 @@ h6 {
     .subHeading {
       font-size: 4em; } }
 
-.mediumHeading {
+.largeHeading {
   font-size: 2em;
-  margin-bottom: 0; }
+  font-weight: 700; }
+
+.subhead {
+  font-size: 1.4em;
+  font-weight: 500; }
 
 .smallHeading {
   font-size: 1.5em;
@@ -1338,18 +1324,41 @@ h6 {
   z-index: 1;
   font-family: prometo, sans-serif;
   font-size: 16px;
+  font-weight: 700;
   text-transform: uppercase;
   text-decoration: none;
   border: 2px solid #FFFFFF;
   border-radius: 10px;
   background: rgba(0, 0, 0, 0);
   padding: 5px 25px 5px 25px;
+  width: max-content;
   color: #FFFFFF;
   transition: .3s ease;
   cursor: pointer; }
   .whiteButton:hover {
     background: #FFFFFF;
     color: #18435a;
+    transition: .3s ease; }
+
+.redButton {
+  position: relative;
+  z-index: 1;
+  font-family: prometo, sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  text-transform: uppercase;
+  text-decoration: none;
+  border: 2px solid #b70033;
+  border-radius: 10px;
+  background: #b70033;
+  padding: 10px 25px 10px 25px;
+  width: max-content;
+  color: #FFFFFF;
+  transition: .3s ease;
+  cursor: pointer; }
+  .redButton:hover {
+    background: #800023;
+    box-shadow: 0 6px 18px 0 rgba(0, 0, 0, 0.5);
     transition: .3s ease; }
 
 .primaryLink {
@@ -1374,6 +1383,17 @@ h6 {
     height: 100%;
     transition: .3s ease all; }
 
+.plainLink {
+  text-decoration: none;
+  color: #b70033;
+  transition: .2s ease; }
+  .plainLink:hover {
+    color: #800023;
+    transition: .2s ease; }
+    .plainLink:hover #redArrow {
+      margin-left: 10px;
+      transition: .2s ease; }
+
 .centerButton {
   margin: 0 auto;
   text-align: center; }
@@ -1387,7 +1407,7 @@ button {
 
 .mouse-cursor-gradient-tracking {
   position: relative;
-  background: #7983ff;
+  background: #b70033;
   padding: 0.5rem 1rem;
   font-size: 1.2rem;
   border: none;
@@ -1407,7 +1427,7 @@ button {
   top: var(--y);
   width: var(--size);
   height: var(--size);
-  background: radial-gradient(circle closest-side, pink, transparent);
+  background: radial-gradient(circle closest-side, #800023, transparent);
   transform: translate(-50%, -50%);
   transition: width 0.2s ease, height 0.2s ease; }
 
@@ -1464,9 +1484,13 @@ body {
 .greyIcon {
   color: #f6f6f6; }
 
-.primaryIcon {
-  color: #404041;
-  font-size: 16px; }
+#redArrow {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  stroke-width: 0;
+  stroke: #b70033;
+  fill: #b70033; }
 
 .iconBlock {
   display: flex;
@@ -1558,14 +1582,14 @@ body {
       background-image: linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.7) 80%); } }
 
 .heroHeadingWrapper {
-  display: flex; }
+  display: flex;
+  width: 100%; }
 
 #pageContent {
   margin-top: 0; }
 
 .heroHeading {
   padding: 25px;
-  color: #000000;
   border-radius: 3px; }
   @media (max-width: 599px) {
     .heroHeading {
@@ -1592,59 +1616,19 @@ body {
   #btn2 {
     margin-left: 50px; } }
 
+#viewAll {
+  margin-left: 25px; }
+
+#arrowWrap {
+  display: flex;
+  flex-direction: row; }
+
 @media (min-width: 992px) {
   #introImage {
     margin-top: 25px; } }
 @media (min-width: 1250px) {
   #introImage {
     margin-top: 0; } }
-
-.projectTitleSpan {
-  position: relative; }
-
-.featuredProjectWrapper {
-  position: relative; }
-  @media (max-width: 599px) {
-    .featuredProjectWrapper {
-      width: 100%; } }
-  @media (min-width: 600px) {
-    .featuredProjectWrapper {
-      width: 50%; } }
-  @media (min-width: 1250px) {
-    .featuredProjectWrapper {
-      width: 25%; } }
-  .featuredProjectWrapper span:before {
-    position: absolute;
-    content: "";
-    background: #eeb000;
-    top: 0;
-    left: 0;
-    width: 10%;
-    height: 2px;
-    transition: 0.2s ease-out; }
-  .featuredProjectWrapper span:after {
-    position: absolute;
-    content: "";
-    background: #eeb000;
-    bottom: 0;
-    right: 0;
-    width: 10%;
-    height: 2px;
-    transition: 0.2s ease-out; }
-  .featuredProjectWrapper:hover span:before {
-    width: 100%; }
-  .featuredProjectWrapper:hover span:after {
-    width: 100%; }
-  .featuredProjectWrapper:hover .featuredProjectOverlay {
-    background-color: rgba(0, 0, 0, 0.7);
-    transition: .2s ease all; }
-  .featuredProjectWrapper a:focus span:before {
-    width: 100%; }
-  .featuredProjectWrapper a:focus span:after {
-    width: 100%; }
-  .featuredProjectWrapper a:focus .featuredProjectOverlay {
-    background-color: rgba(0, 0, 0, 0.7);
-    transition: .2s ease all; }
 
 .featuredProjectOverlay {
   position: absolute;
@@ -2198,5 +2182,31 @@ body {
   padding-left: 0; }
   .careersList li {
     margin-bottom: 10px; }
+
+/* 19.0 Slider stylings -------------------------------------------*/
+.regular .slick-slide {
+  position: relative;
+  margin: 0 25px; }
+  .regular .slick-slide:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: calc(100% - 11px);
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.7) 100%);
+    opacity: .7;
+    z-index: 100; }
+  .regular .slick-slide img {
+    width: 100%;
+    height: auto;
+    position: relative;
+    z-index: 1; }
+
+.sliderTitle {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 101; }
 
 /*# sourceMappingURL=style.css.map */
