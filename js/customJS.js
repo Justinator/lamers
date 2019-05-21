@@ -24,48 +24,36 @@ $(function() {
         $(".hamburger").toggleClass("is-active");
     });
 });
-// filter for our portfolio categories
-filterSelection("all");
-function filterSelection(c) {
-  var x, i;
-  x = document.getElementsByClassName("column");
-  if (c == "all") c = "";
-  for (i = 0; i < x.length; i++) {
-    w3RemoveClass(x[i], "show");
-    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
-  }
-}
+// Hide main navigation on scroll
+$(document).ready(function () {
 
-function w3AddClass(element, name) {
-  var i, arr1, arr2;
-  arr1 = element.className.split(" ");
-  arr2 = name.split(" ");
-  for (i = 0; i < arr2.length; i++) {
-    if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
-  }
-}
+  'use strict';
 
-function w3RemoveClass(element, name) {
-  var i, arr1, arr2;
-  arr1 = element.className.split(" ");
-  arr2 = name.split(" ");
-  for (i = 0; i < arr2.length; i++) {
-    while (arr1.indexOf(arr2[i]) > -1) {
-      arr1.splice(arr1.indexOf(arr2[i]), 1);
-    }
-  }
-  element.className = arr1.join(" ");
-}
+   var c, currentScrollTop = 0,
+       navbar = $('.site-header');
 
-// Add active class to the current category button (highlight it)
-var btnContainer = document.getElementById("myBtnContainer");
-var btns = btnContainer.getElementsByClassName("filterButton");
-for (var i = 0; i < btns.length; i++) {
-  btns[i].addEventListener("click", function(){
-    var current = document.getElementsByClassName("active");
-    current[0].className = current[0].className.replace(" active", "");
-    this.className += " active";
+   $(window).scroll(function () {
+      var a = $(window).scrollTop();
+      var b = navbar.height();
+
+      currentScrollTop = a;
+
+      if (c < currentScrollTop && a > b + b) {
+        navbar.addClass("scrollUp");
+      } else if (c > currentScrollTop && !(a <= b)) {
+        navbar.removeClass("scrollUp");
+      }
+      c = currentScrollTop;
   });
+
+});
+// Add gradient effect to buttons on hover
+var btn = document.querySelector('.mouse-cursor-gradient-tracking')
+btn.onmousemove = function(e) {
+  var x = e.pageX - btn.offsetLeft - btn.offsetParent.offsetLeft
+  var y = e.pageY - btn.offsetTop - btn.offsetParent.offsetTop
+  btn.style.setProperty('--x', x + 'px')
+  btn.style.setProperty('--y', y + 'px')
 }
 // detect IE and display an error message prompting users to upgrade to a modern browser
 if (navigator.appName == 'Microsoft Internet Explorer' || !!(navigator.userAgent.match(/Trident/) || navigator.userAgent.match(/rv:11/))) {
