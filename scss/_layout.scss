@@ -146,12 +146,7 @@
 	justify-content: center;
 	max-width: 800px;
   margin: 0 auto;
-    @include breakpoint(smallScreen){
-      padding: 20px;
-    }
-    @include breakpoint(largeMobileScreen){
-      padding: 20px;
-    }
+	padding: 0;
     @include breakpoint(laptopScreen){
       padding: 25px;
     }
@@ -186,7 +181,7 @@
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center;
-	height: 60vh;
+	height: 80vh;
 }
 .flex-container{
 	display: flex;

@@ -7,13 +7,16 @@ optgroup,
 textarea {
 	color: $bodyCopyBlue;
 	font-family: "Roboto", "Lucida Grande", "Lucida Sans", Geneva, Arial, sans-serif;
-	font-size: 25px;
+	font-size: 18px;
 	line-height: 1.6em;
+	@include breakpoint (largeMobileScreen) {
+		font-size: 20px;
+	}
 }
 h1,h2,h3,h4,h5,h6{
 	font-family: $prometoMedium;
 	text-transform: uppercase;
-	line-height: 1.2em;
+	line-height: 1.4em;
 	margin-top: 0;
 	margin-bottom: 25px;
 }
@@ -23,15 +26,7 @@ p{
 }
 h1{
 	font-weight: 700;
-	@include breakpoint(tinyScreen){
-		font-size: .9em;
-	}
-	@include breakpoint(smallScreen){
-		font-size: 1.2em;
-	}
-	@include breakpoint(largeMobileScreen){
-		font-size: 2em;
-	}
+	font-size: 2em;
 }
 h2{
 	font-size: 1.6em;
@@ -63,22 +58,6 @@ h6{
 }
 .centerText{
 	text-align: center;
-}
-.primaryHeading{
-	font-weight: 700;
-	margin-bottom: 0;
-	@include breakpoint(smallScreen){
-		font-size: 2.5em;
-	}
-	@include breakpoint(tinyScreen){
-		font-size: 2em;
-	}
-	@include breakpoint(largeMobileScreen){
-		font-size: 2.5em;
-	}
-	@include breakpoint(largeScreen){
-		font-size: 4em;
-	}
 }
 .primaryHeading{
 	font-family: $prometoMedium;
