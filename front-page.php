@@ -18,7 +18,7 @@ get_header();
 
 				<div class="fullWidth heroHeadingContainer">
 
-					<div class="heroHeadingWrapper">
+					<div class="heroHeadingWrapper flex-container">
 
 						<div class="col50"></div>
 
