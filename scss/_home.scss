@@ -15,7 +15,6 @@
 	position: relative;
 	height: 100%;
 	align-items: flex-end;
-	position: relative;
 	background-image: linear-gradient(90deg, rgba(0,0,0,.7) 30%, rgba(0,0,0,0) 100%);
 	@include breakpoint(laptopScreen){
 		align-items: center;
@@ -39,7 +38,7 @@
       padding: 50px;
     }
 }
-.heroBtnContainer{
+.btnContainer{
 	display: flex;
 	flex-direction: row;
 	justify-content: flex-start;
@@ -48,9 +47,9 @@
       flex-direction: row;
     }
 }
-#btn2{
+.btn2{
 	@include breakpoint(largeMobileScreen) {
-		margin-left: 50px;
+		margin-left: 15px;
 	}
 }
 #viewAll {
@@ -60,12 +59,69 @@
 	display: flex;
 	flex-direction: row;
 }
+#connectBack {
+	height: 500px;
+}
+#toursBack {
+	height: 500px;
+}
+.logo {
+	max-width: 450px;
+}
+.rightGradientOverlay{
+	display: flex;
+	height: 100%;
+	background-image: linear-gradient(90deg, rgba(0,0,0,.7) 30%, rgba(0,0,0,0) 100%);
+	@include breakpoint(laptopScreen){
+		align-items: center;
+		background-image: linear-gradient(90deg, rgba(0,0,0,0) 0%, rgba(0,0,0,.7) 70%);
+	}
+}
+.leftGradientOverlay{
+	position: relative;
+	height: 100%;
+	background-image: linear-gradient(90deg, rgba(0,0,0,.7) 30%, rgba(0,0,0,0) 100%);
+	@include breakpoint(laptopScreen){
+		align-items: center;
+		background-image: linear-gradient(90deg, rgba(0,0,0,.7) 30%, rgba(0,0,0,0) 100%);
+	}
+}
 #introImage{
 	@include breakpoint(laptopScreen){
 		margin-top: 25px;
 	}
 	@include breakpoint(largeScreen){
 		margin-top: 0;
+	}
+}
+.affiliateLogo {
+	width: 10%;
+	height: 100%;
+}
+#affiliateTitleWrap {
+	@media (min-width: 1800px) {
+		width: 50%;
+	}
+}
+#affiliationsTitle {
+	position: relative;
+	&:after {
+		position: absolute;
+		top: 40%;
+		right: 0;
+		content: "";
+		width: 7em;
+		height: 7px;
+		background-color: $primaryYellow;
+	}
+	&:before {
+		position: absolute;
+		top: 40%;
+		left: 0;
+		content: "";
+		width: 7em;
+		height: 7px;
+		background-color: $primaryYellow;
 	}
 }
 .featuredProjectOverlay{

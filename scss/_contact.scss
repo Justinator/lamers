@@ -18,7 +18,7 @@
   color: $black !important;
 }
 .field_required{
-  color: $primaryYellow !important;
+  color: $brandColor !important;
 }
 .CF5c3c73e0407dd input[type=text], .CF5c3c73e0407dd input[type=email], #fld_7683514_1{
   margin-top: 10px;
@@ -42,16 +42,22 @@
   position: relative;
 	z-index:1;
 	text-decoration: none;
+  font-family: $prometoMedium;
+	font-weight: 700;
+  font-size: 16px;
+  text-transform: uppercase;
+	border: 2px solid $brandColor;
+	border-radius: 10px;
+	background: $brandColor;
   width: fit-content;
-	color: $primaryGrey;
+	color: $white;
 	transition: .2s ease all;
   padding: 10px 20px 10px 20px;
 	cursor: pointer;
-  border: none;
-  background: $primaryYellow;
 		&:hover{
 			transition: .2s ease all;
-      background: $primaryGrey;
-      color: $white;
+      background: $brandColorDark;
+      border: 2px solid $brandColorDark;
+      transition: .2s ease all;
 		}
 }

@@ -41,8 +41,11 @@
 		}
 }
 .scrollUp {
-		transform: translateY(-150px);
+		transform: translateY(0);
 		transition: .3s ease;
+		@include breakpoint (laptopScreen) {
+			transform: translateY(-150px);
+		}
 }
 .secondaryNavigation{
 	@include breakpoint (smallScreen) {

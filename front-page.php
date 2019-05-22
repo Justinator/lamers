@@ -10,6 +10,8 @@ get_header();
 
 	<main id="main" class="site-main">
 
+		<!-- ********** Homepage Hero Section Start ********** -->
+
 		<section id="homeHero">
 
 			<?php $backgroundImg = wp_get_attachment_image_src( get_post_thumbnail_id(10), 'full' );?>
@@ -29,7 +31,12 @@ get_header();
 								<?php the_field('hero_heading'); ?>
 
 								<div class="whiteText">
-									<?php the_field('hero_buttons'); ?>
+									<?php the_field('hero_description'); ?>
+								</div>
+
+								<div class="btnContainer">
+									<a class="whiteButton" href="<?php the_field('hero_button_1_link'); ?>"><?php the_field('hero_button_1_text'); ?></a>
+									<a id="btn2" class="whiteButton btn2" href="<?php the_field('hero_button_2_link'); ?>"><?php the_field('hero_button_2_text'); ?></a>
 								</div>
 
 							</div>
@@ -45,7 +52,11 @@ get_header();
 
 		</section>
 
+		<!-- ********** Homepage Hero Section End ********** -->
+
 		<section id="pageContent">
+
+			<!-- ********** Why Lamers Section Start ********** -->
 
 			<section id ="whyLamers" class="paddedSection">
 
@@ -95,7 +106,7 @@ get_header();
 
 					<div class="pageWidth centerButton">
 
-						<?php the_field('button'); ?>
+						<a class="redButton" href="/about"><?php the_field('why_lamers_button_text'); ?></a>
 
 					</div>
 
@@ -103,6 +114,9 @@ get_header();
 
 			</section>
 
+			<!-- ********** Why Lamers Section End ********** -->
+
+			<!-- ********** Featured Services Section Start ********** -->
 			<section id="featuredServices">
 
 				<div class="pageWidth">
@@ -127,46 +141,137 @@ get_header();
 
 				</div>
 
-				<div class="pageWidth">
+				<?php get_template_part('/inc/slider'); ?>
 
-					<section class="regular slider">
-						<div class="centerText">
-							<a href="<?php the_field('slide_1_link'); ?>" class="plainLink centerText">
+			</section>
+
+			<!-- ********** Featured Services Section End ********** -->
+
+			<!-- ********** Lamers Connect Section Start ********** -->
+
+			<section id="lamersConnect" class="paddedSection">
+
+				<div id="connectBack" class="fullWidth" style="background: url('<?php $image = get_field('lamers_connect_background'); $size = 'full'; if( $image ) {echo $image['url'];}?>') no-repeat; background-size: cover; background-position:center;">
+
+					<div class="fullWidth leftGradientOverlay">
+
+						<div class="pageWidth flex-container centerAlignedContainer">
+
+							<div class="col50">
+
 								<?php
-								$image = get_field('slide_1_image');
-								?>
-								<img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
-								<h6 class="whiteText sliderTitle centerText"><?php the_field('slide_1_title'); ?></h6>
-							</a>
+					        $image = get_field('lamers_connect_logo');
+					        $imageID = $image['ID'];
+					        echo wp_get_attachment_image( $imageID, 'full', false, array( 'class' => 'image logo', 'data-sizes' => 'auto' ) );
+					      ?>
+
+								<p class="whiteText"><?php the_field('lamers_connect_description'); ?></p>
+
+								<div class="btnContainer">
+									<a class="whiteButton" href="<?php the_field('lamers_connect_button_1_link'); ?>"><?php the_field('lamers_connect_button_1_text'); ?></a>
+									<a class="whiteButton btn2" href="<?php the_field('lamers_connect_button_2_link'); ?>"><?php the_field('lamers_connect_button_2_text'); ?></a>
+								</div>
+
+							</div>
+
+							<div class="col50"></div>
+
 						</div>
-						<div>
-							<?php
-							$image = get_field('slide_2_image');
-							?>
-							<img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
-							<h6 class="whiteText sliderTitle centerText"><?php the_field('slide_2_title'); ?></h6>
-						</div>
-						<div>
-							<?php
-							$image = get_field('slide_3_image');
-							?>
-							<img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
-							<h6 class="whiteText sliderTitle centerText"><?php the_field('slide_3_title'); ?></h6>
-						</div>
-						<div>
-							<img src="http://placehold.it/350x300?text=4">
-						</div>
-						<div>
-							<img src="http://placehold.it/350x300?text=5">
-						</div>
-						<div>
-							<img src="http://placehold.it/350x300?text=6">
-						</div>
-					</section>
+
+					</div>
 
 				</div>
 
 			</section>
+
+			<!-- ********** Lamers Connect Section End ********** -->
+
+			<!-- ********** Lamers Tours Section Start ********** -->
+
+			<section id="lamersTours">
+
+				<div id="toursBack" class="fullWidth" style="background: url('<?php $image = get_field('lamers_tours_background'); $size = 'full'; if( $image ) {echo $image['url'];}?>') no-repeat; background-size: cover; background-position:center;">
+
+					<div class="fullWidth rightGradientOverlay">
+
+						<div class="pageWidth flex-container-reverse centerAlignedContainer">
+
+							<div class="col50"></div>
+
+							<div class="col50">
+
+								<?php
+					        $image = get_field('lamers_tours_logo');
+					        $imageID = $image['ID'];
+					        echo wp_get_attachment_image( $imageID, 'full', false, array( 'class' => 'image logo', 'data-sizes' => 'auto' ) );
+					      ?>
+
+								<p class="whiteText"><?php the_field('lamers_tour_description'); ?></p>
+
+								<div class="btnContainer">
+
+									<a class="whiteButton" href="<?php the_field('lamers_tours_button_link'); ?>"><?php the_field('lamers_tours_button_text'); ?></a>
+
+								</div>
+
+							</div>
+
+						</div>
+
+					</div>
+
+				</div>
+
+			</section>
+
+			<!-- ********** Lamers Tours Section End ********** -->
+
+			<!-- ********** Hiring Section Start ********** -->
+			<section id="careers" class="paddedSection">
+
+				<div class="fullWidth flex-container centerAlignedContainer">
+
+					<div class="col50">
+
+						<div class="blockText">
+
+							<h6 class="largeHeading"><span class="underline"><?php the_field('now_hiring'); ?></span></h6>
+
+							<p><?php the_field('now_hiring_description'); ?></p>
+
+							<a href="<?php the_field('now_hiring_button_link'); ?>" class="redButton"><?php the_field('now_hiring_button'); ?></a>
+
+						</div>
+
+					</div>
+
+					<div class="col50">
+
+						<?php
+							$image = get_field('now_hiring_image');
+							$imageID = $image['ID'];
+							echo wp_get_attachment_image( $imageID, 'full', false, array( 'class' => 'image', 'data-sizes' => 'auto' ) );
+						?>
+
+					</div>
+
+				</div>
+
+			</section>
+
+			<!-- ********** Hiring Section End ********** -->
+
+			<!-- ********** Testimonial Slider Section Start ********** -->
+			<section id="testimonialSlider">
+
+				<?php get_template_part('/inc/testimonial-slider'); ?>
+
+			</section>
+			<!-- ********** Testimonial Slider Section End ********** -->
+
+			<?php get_template_part('/inc/affiliations'); ?>
+
+			<?php get_template_part('/inc/contact'); ?>
 
 		</section>
 
