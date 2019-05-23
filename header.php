@@ -76,7 +76,7 @@
 
 						<a href="http://wordpress-154794-852975.cloudwaysapps.com/">
 
-							<img src="wp-content/uploads/2019/05/Lamers-Bus-Lines-Logo-RGB.jpg" class="siteLogo" alt="Lamer's Logo"><span class="screen-reader-text">Go back to the homepage</span>
+							<img src="/wp-content/uploads/2019/05/Lamers-Bus-Lines-Logo-RGB.jpg" class="siteLogo" alt="Lamer's Logo"><span class="screen-reader-text">Go back to the homepage</span>
 
 						</a>
 

@@ -148,7 +148,7 @@
   margin: 0 auto;
 	padding: 0;
     @include breakpoint(laptopScreen){
-      padding: 25px;
+      padding: 10px;
     }
 }
 .hero{
@@ -213,8 +213,11 @@
 }
 .flexWrap {
 	display: flex;
-	flex-direction: row;
+	flex-direction: column;
 	align-items: baseline;
+	@include breakpoint (tabletScreen) {
+		flex-direction: row;
+	}
 }
 .wrappedFlexContainer{
 	display: flex;
@@ -250,13 +253,7 @@
 	height: auto;
 }
 .textBlock{
-	padding: 0;
-	margin: 50px 0 50px 0;
-	background: $white;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	text-align: center;
+	max-width: 700px;
 }
 .greyBlock{
 	background: $lightGrey;

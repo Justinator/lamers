@@ -20,13 +20,16 @@
 	}
 }
 .site-header{
-	position: fixed;
+	position: absolute;
 	top: 0;
 	left: 0;
 	z-index: 9999;
 	height: 70px;
 	width: 100vw;
 	transition: .3s ease;
+	@include breakpoint (tabletScreen) {
+		position: fixed;
+	}
 }
 .main-navigation{
 	height: 100px;
@@ -195,17 +198,17 @@
 			&:after{
 				position: absolute;
 				content: "";
-				background: $headlineText;
-				bottom: 5px;
+				background: $primaryYellow;
+				bottom: 0;
 				right: 0;
 				width: 100%;
-				height: 3px;
+				height: 4px;
 				transition: 0.2s ease-out;
 				opacity: 0;
 			}
 			&:hover{
 				&:after{
-					bottom: 0;
+					bottom: -5px;
 					opacity: 1;
 					transition: 0.2s ease-out;
 				}
@@ -221,25 +224,17 @@
 	}
 }
 .current-menu-item{
-	a{
+	a {
 		position: relative;
 		&:after{
 			position: absolute;
 			content: "";
-			background: $headlineText;
-			bottom: 5px;
+			background: $primaryYellow;
+			bottom: -5px !important;
 			right: 0;
 			width: 100%;
-			height: 3px;
-			transition: 0.2s ease-out;
-			opacity: 0;
-		}
-		&:hover{
-			&:after{
-				bottom: 0;
-				opacity: 1;
-				transition: 0.2s ease-out;
-			}
+			height: 4px;
+			opacity: 1 !important;
 		}
 	}
 }
@@ -297,9 +292,10 @@ nav{
 }
 .menuText{
 	cursor: pointer;
+	font-family: $prometoMedium;
 	font-size: 26px;
 	font-weight: 700;
-	padding-right: 10px;
+	padding-right: 5px;
 	color: $headlineText;
 	text-decoration: none;
 	transition: .3s ease-out all;
@@ -330,6 +326,9 @@ nav{
 	transform: translateY(-120%);
 	@include breakpoint(largeMobileScreen){
 		padding: 100px 0 20px 0;
+	}
+	@include breakpoint(tabletScreen){
+		position: fixed;
 	}
 	@include breakpoint(laptopScreen){
 		display: none;

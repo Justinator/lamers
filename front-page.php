@@ -30,7 +30,7 @@ get_header();
 
 								<?php the_field('hero_heading'); ?>
 
-								<div class="whiteText">
+								<div class="whiteText textBlock">
 									<?php the_field('hero_description'); ?>
 								</div>
 
@@ -165,7 +165,7 @@ get_header();
 					        echo wp_get_attachment_image( $imageID, 'full', false, array( 'class' => 'image logo', 'data-sizes' => 'auto' ) );
 					      ?>
 
-								<p class="whiteText"><?php the_field('lamers_connect_description'); ?></p>
+								<p class="whiteText textBlock"><?php the_field('lamers_connect_description'); ?></p>
 
 								<div class="btnContainer">
 									<a class="whiteButton" href="<?php the_field('lamers_connect_button_1_link'); ?>"><?php the_field('lamers_connect_button_1_text'); ?></a>
@@ -206,7 +206,7 @@ get_header();
 					        echo wp_get_attachment_image( $imageID, 'full', false, array( 'class' => 'image logo', 'data-sizes' => 'auto' ) );
 					      ?>
 
-								<p class="whiteText"><?php the_field('lamers_tour_description'); ?></p>
+								<p class="whiteText textBlock"><?php the_field('lamers_tour_description'); ?></p>
 
 								<div class="btnContainer">
 
@@ -233,11 +233,11 @@ get_header();
 
 					<div class="col50">
 
-						<div class="blockText">
+						<div class="textWrap">
 
 							<h6 class="largeHeading"><span class="underline"><?php the_field('now_hiring'); ?></span></h6>
 
-							<p><?php the_field('now_hiring_description'); ?></p>
+							<p class="textBlock"><?php the_field('now_hiring_description'); ?></p>
 
 							<a href="<?php the_field('now_hiring_button_link'); ?>" class="redButton"><?php the_field('now_hiring_button'); ?></a>
 

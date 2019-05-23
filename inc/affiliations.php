@@ -8,7 +8,7 @@
 
   <div class="pageWidth">
 
-    <div class="flex-container centerAlignedContainer">
+    <div id="affiliateWrapper">
 
       <img src="<?php $image = get_field('affiliations_logo_1'); $size = 'full'; if( $image ) {echo $image['url'];}?>" class="affiliateLogo">
       <img src="<?php $image = get_field('affiliations_logo_2'); $size = 'full'; if( $image ) {echo $image['url'];}?>" class="affiliateLogo">

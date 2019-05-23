@@ -15,10 +15,10 @@
 	position: relative;
 	height: 100%;
 	align-items: flex-end;
-	background-image: linear-gradient(90deg, rgba(0,0,0,.7) 30%, rgba(0,0,0,0) 100%);
+	background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.7) 20%, rgba(0,0,0,0.5) 50%, rgba(0, 0, 0, 0) 100%);
 	@include breakpoint(laptopScreen){
 		align-items: center;
-		background-image: linear-gradient(90deg, rgba(0,0,0,0) 0%, rgba(0,0,0,.7) 80%);
+		background-image: linear-gradient(90deg, rgba(0,0,0,0) 40%, rgba(0,0,0,0.4) 60%, rgba(0,0,0,.7) 80%);
 	}
 }
 .heroHeadingWrapper{
@@ -37,27 +37,6 @@
     @include breakpoint(largeMobileScreen){
       padding: 50px;
     }
-}
-.btnContainer{
-	display: flex;
-	flex-direction: row;
-	justify-content: flex-start;
-	flex-direction: column;
-    @include breakpoint(largeMobileScreen){
-      flex-direction: row;
-    }
-}
-.btn2{
-	@include breakpoint(largeMobileScreen) {
-		margin-left: 15px;
-	}
-}
-#viewAll {
-	margin-left: 25px;
-}
-#arrowWrap {
-	display: flex;
-	flex-direction: row;
 }
 #connectBack {
 	height: 500px;
@@ -95,8 +74,18 @@
 	}
 }
 .affiliateLogo {
-	width: 10%;
+	width: 30%;
 	height: 100%;
+	padding: 10px;
+	@include breakpoint (largeMobileScreen) {
+		width: 25%;
+	}
+	@include breakpoint (tabletScreen) {
+		width: 12%;
+	}
+	@include breakpoint (extraLargeScreen) {
+		width: 8%;
+	}
 }
 #affiliateTitleWrap {
 	@media (min-width: 1800px) {
@@ -110,19 +99,43 @@
 		top: 40%;
 		right: 0;
 		content: "";
-		width: 7em;
+		width: .5em;
 		height: 7px;
 		background-color: $primaryYellow;
+		@include breakpoint (largeMobileScreen) {
+			width: 1.5em;
+		}
+		@include breakpoint (tabletScreen) {
+			width: 5em;
+		}
+		@include breakpoint (laptopScreen) {
+			width: 7em;
+		}
 	}
 	&:before {
 		position: absolute;
 		top: 40%;
 		left: 0;
 		content: "";
-		width: 7em;
+		width: .5em;
 		height: 7px;
 		background-color: $primaryYellow;
+		@include breakpoint (largeMobileScreen) {
+			width: 1.5em;
+		}
+		@include breakpoint (tabletScreen) {
+			width: 5em;
+		}
+		@include breakpoint (laptopScreen) {
+			width: 7em;
+		}
 	}
+}
+#affiliateWrapper {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
 }
 .featuredProjectOverlay{
 	position: absolute;

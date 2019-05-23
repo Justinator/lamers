@@ -39,6 +39,7 @@
 	cursor: pointer;
     &:hover{
       background: $brandColorDark;
+			border: 2px solid $brandColorDark;
 			box-shadow: 0 6px 18px 0 rgba(0,0,0,.5);
     	transition: .3s ease;
     }
@@ -97,32 +98,52 @@ button{
 	background-color: $transparent;
 	border: none;
 }
-.mouse-cursor-gradient-tracking {
+.btnContainer{
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	flex-direction: column;
+    @include breakpoint(largeMobileScreen){
+      flex-direction: row;
+    }
+}
+.btn2{
+	margin-top: 10px;
+	@include breakpoint(largeMobileScreen) {
+		margin-left: 15px;
+		margin-top: 0;
+	}
+}
+#viewAll {
+	@include breakpoint (tabletScreen) {
+			margin-left: 25px;
+	}
+}
+#arrowWrap {
+	display: flex;
+	flex-direction: row;
+}
+#fld_7908577_1{
   position: relative;
-  background: $brandColor;
-  padding: 0.5rem 1rem;
-  font-size: 1.2rem;
-  border: none;
-  color: white;
-  cursor: pointer;
-  outline: none;
-  overflow: hidden;
-}
-.mouse-cursor-gradient-tracking span {
-  position: relative;
-}
-.mouse-cursor-gradient-tracking::before {
-  --size: 0;
-  content: '';
-  position: absolute;
-  left: var(--x);
-  top: var(--y);
-  width: var(--size);
-  height: var(--size);
-  background: radial-gradient(circle closest-side, $brandColorDark, transparent);
-  transform: translate(-50%, -50%);
-  transition: width 0.2s ease, height 0.2s ease;
-}
-.mouse-cursor-gradient-tracking:hover::before {
-  --size: 200px;
+	z-index:1;
+	text-decoration: none;
+  font-family: $prometoMedium;
+	font-weight: 700;
+  font-size: 16px;
+  text-transform: uppercase;
+	border: 2px solid $brandColor;
+	border-radius: 10px;
+	background: $brandColor;
+  width: fit-content;
+	color: $white;
+	transition: .2s ease all;
+  padding: 10px 20px 10px 20px;
+	cursor: pointer;
+		&:hover{
+			transition: .2s ease all;
+      background: $brandColorDark;
+      border: 2px solid $brandColorDark;
+      transition: .2s ease all;
+			box-shadow: 0 6px 18px 0 rgba(0,0,0,.5);
+		}
 }
