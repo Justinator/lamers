@@ -185,28 +185,15 @@
 }
 .flex-container{
 	display: flex;
-	flex-direction: row;
-	justify-content: space-around;
-    @include breakpoint(smallScreen){
-      flex-direction: column;
-    }
-    @include breakpoint(largeMobileScreen){
-      flex-direction: column;
-    }
+	flex-direction: column;
     @include breakpoint(laptopScreen){
       flex-direction: row;
     }
 }
 .flex-container-reverse{
 	display: flex;
-	flex-direction: row;
+	flex-direction: column-reverse;
 	justify-content: space-around;
-    @include breakpoint(smallScreen){
-      flex-direction: column-reverse;
-    }
-    @include breakpoint(largeMobileScreen){
-      flex-direction: column-reverse;
-    }
     @include breakpoint(laptopScreen){
       flex-direction: row;
     }
@@ -246,7 +233,7 @@
 	flex-direction: column;
 }
 .textWrap{
-	padding: 20px;
+	padding: 0 20px;
 }
 .image{
 	width: 100%;
@@ -254,6 +241,12 @@
 }
 .textBlock{
 	max-width: 700px;
+}
+.centerTextBlock {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
 }
 .greyBlock{
 	background: $lightGrey;
@@ -268,12 +261,7 @@
 	padding: 50px 0;
 }
 .smallPaddedSection{
-	@include breakpoint(smallScreen){
-		padding: 25px 0 25px 0;
-	}
-	@include breakpoint(largeMobileScreen){
-		padding: 25px 0 25px 0;
-	}
+	padding: 25px 0 25px 0;
 	@include breakpoint(laptopScreen){
 		padding: 50px 0 50px 0;
 	}
@@ -287,12 +275,7 @@
 .limitWidth{
   max-width: 1050px;
   margin: 0 auto;
-	@include breakpoint(smallScreen){
-		padding: 0;
-	}
-	@include breakpoint(largeMobileScreen){
-		padding: 0;
-	}
+	padding: 0;
 	@include breakpoint(laptopScreen){
 		padding: 20px;
 	}
@@ -300,23 +283,13 @@
 .limitPortfolioWidth{
 	max-width: 1350px;
   margin: 0 auto;
-	@include breakpoint(smallScreen){
-		padding: 50px 20px 0 20px;
-	}
-	@include breakpoint(largeMobileScreen){
-		padding: 50px 20px 0 20px;
-	}
+	padding: 50px 20px 0 20px;
 	@include breakpoint(laptopScreen){
 		padding: 20px;
 	}
 }
 .defaultPadding{
-	@include breakpoint(smallScreen){
-		padding: 50px 0;
-	}
-	@include breakpoint(largeMobileScreen){
-		padding: 50px 0;
-	}
+	padding: 50px 0;
 	@include breakpoint(laptopScreen){
 		padding: 150px 0;
 	}
@@ -325,14 +298,9 @@
 	padding-bottom: 0;
 }
 .site-content{
-	@include breakpoint(smallScreen){
-		margin-top: 45px;
-	}
-	@include breakpoint(largeMobileScreen){
-		margin-top: 45px;
-	}
+	margin-top: 25px;
 	@include breakpoint(laptopScreen){
-		margin-top: 75px;
+		margin-top: 115px;
 	}
 }
 .marginTop{

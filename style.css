@@ -505,28 +505,15 @@ Font Variables
 
 .flex-container {
   display: flex;
-  flex-direction: row;
-  justify-content: space-around; }
-  @media (max-width: 599px) {
-    .flex-container {
-      flex-direction: column; } }
-  @media (min-width: 600px) {
-    .flex-container {
-      flex-direction: column; } }
+  flex-direction: column; }
   @media (min-width: 992px) {
     .flex-container {
       flex-direction: row; } }
 
 .flex-container-reverse {
   display: flex;
-  flex-direction: row;
+  flex-direction: column-reverse;
   justify-content: space-around; }
-  @media (max-width: 599px) {
-    .flex-container-reverse {
-      flex-direction: column-reverse; } }
-  @media (min-width: 600px) {
-    .flex-container-reverse {
-      flex-direction: column-reverse; } }
   @media (min-width: 992px) {
     .flex-container-reverse {
       flex-direction: row; } }
@@ -566,7 +553,7 @@ Font Variables
   flex-direction: column; }
 
 .textWrap {
-  padding: 20px; }
+  padding: 0 20px; }
 
 .image {
   width: 100%;
@@ -574,6 +561,12 @@ Font Variables
 
 .textBlock {
   max-width: 700px; }
+
+.centerTextBlock {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; }
 
 .greyBlock {
   background: #f6f6f6; }
@@ -587,15 +580,11 @@ Font Variables
 .paddedSection {
   padding: 50px 0; }
 
-@media (max-width: 599px) {
-  .smallPaddedSection {
-    padding: 25px 0 25px 0; } }
-@media (min-width: 600px) {
-  .smallPaddedSection {
-    padding: 25px 0 25px 0; } }
-@media (min-width: 992px) {
-  .smallPaddedSection {
-    padding: 50px 0 50px 0; } }
+.smallPaddedSection {
+  padding: 25px 0 25px 0; }
+  @media (min-width: 992px) {
+    .smallPaddedSection {
+      padding: 50px 0 50px 0; } }
 
 .tinyPaddedSection {
   padding: 5px 0; }
@@ -605,52 +594,34 @@ Font Variables
 
 .limitWidth {
   max-width: 1050px;
-  margin: 0 auto; }
-  @media (max-width: 599px) {
-    .limitWidth {
-      padding: 0; } }
-  @media (min-width: 600px) {
-    .limitWidth {
-      padding: 0; } }
+  margin: 0 auto;
+  padding: 0; }
   @media (min-width: 992px) {
     .limitWidth {
       padding: 20px; } }
 
 .limitPortfolioWidth {
   max-width: 1350px;
-  margin: 0 auto; }
-  @media (max-width: 599px) {
-    .limitPortfolioWidth {
-      padding: 50px 20px 0 20px; } }
-  @media (min-width: 600px) {
-    .limitPortfolioWidth {
-      padding: 50px 20px 0 20px; } }
+  margin: 0 auto;
+  padding: 50px 20px 0 20px; }
   @media (min-width: 992px) {
     .limitPortfolioWidth {
       padding: 20px; } }
 
-@media (max-width: 599px) {
-  .defaultPadding {
-    padding: 50px 0; } }
-@media (min-width: 600px) {
-  .defaultPadding {
-    padding: 50px 0; } }
-@media (min-width: 992px) {
-  .defaultPadding {
-    padding: 150px 0; } }
+.defaultPadding {
+  padding: 50px 0; }
+  @media (min-width: 992px) {
+    .defaultPadding {
+      padding: 150px 0; } }
 
 .removeBottomPadding {
   padding-bottom: 0; }
 
-@media (max-width: 599px) {
-  .site-content {
-    margin-top: 45px; } }
-@media (min-width: 600px) {
-  .site-content {
-    margin-top: 45px; } }
-@media (min-width: 992px) {
-  .site-content {
-    margin-top: 75px; } }
+.site-content {
+  margin-top: 25px; }
+  @media (min-width: 992px) {
+    .site-content {
+      margin-top: 115px; } }
 
 .marginTop {
   margin-top: 10px; }
@@ -714,7 +685,7 @@ Font Variables
     display: none; } }
 @media (min-width: 992px) {
   .secondaryNavigation {
-    height: 40px;
+    height: 42px;
     margin: 0 auto;
     width: 100%;
     background: #b70033;
@@ -1202,10 +1173,10 @@ h2 {
   font-weight: 700; }
 
 h3 {
-  font-size: 1.2em; }
+  font-size: 1.4em; }
 
 h4 {
-  font-size: 1.2em; }
+  font-size: 1.4em; }
 
 h5 {
   font-size: 1.1em; }
@@ -1279,8 +1250,8 @@ h6 {
 .noMargin {
   margin: 0 !important; }
 
-.smallMarginHeader {
-  margin-bottom: 10px; }
+.smallMargin {
+  margin-bottom: 15px; }
 
 .underline {
   position: relative; }
@@ -1323,7 +1294,7 @@ h6 {
   cursor: pointer; }
   .whiteButton:hover {
     background: #FFFFFF;
-    color: #18435a;
+    color: #b70033;
     transition: .3s ease; }
 
 .redButton {
@@ -1481,6 +1452,10 @@ body {
 .fourOhFour {
   font-size: 5em; }
 
+ul {
+  padding: 0;
+  margin: 0; }
+
 /*9.0 Icon Styling -------------------------------------------*/
 .whiteIcon {
   color: #FFFFFF;
@@ -1563,6 +1538,9 @@ body {
   padding: 0 10px;
   margin-bottom: -9px; }
 
+.socialIcon {
+  width: 75%; }
+
 /* 10.0 Homepage stylings -------------------------------------------*/
 .heroHeadingWrap {
   display: flex;
@@ -1629,13 +1607,6 @@ body {
     .leftGradientOverlay {
       align-items: center;
       background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.7) 30%, rgba(0, 0, 0, 0) 100%); } }
-
-@media (min-width: 992px) {
-  #introImage {
-    margin-top: 25px; } }
-@media (min-width: 1250px) {
-  #introImage {
-    margin-top: 0; } }
 
 .affiliateLogo {
   width: 30%;
@@ -1945,75 +1916,21 @@ body {
   background-color: #f6f6f6; }
 
 /* 14.0 About Pages stylings -------------------------------------------*/
-.aboutHero {
-  background-image: url("/wp-content/uploads/2019/03/OaksGolfCourseDroneShot.jpg"); }
-
-#leadershipImage {
-  margin-top: 25px; }
-  @media (min-width: 992px) {
-    #leadershipImage {
-      margin-top: 25px; } }
-  @media (min-width: 1250px) {
-    #leadershipImage {
-      margin-top: 0; } }
-
-.leaderImageOverlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: calc(100% - 10px);
-  width: 100%;
-  content: "";
-  transition: .2s ease all;
-  background-color: rgba(0, 0, 0, 0);
-  opacity: 0; }
-
-.leadershipWrapper {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center; }
-  .leadershipWrapper a {
-    text-decoration: none;
-    color: #404041;
-    transition: .2s ease all; }
-    .leadershipWrapper a:hover .leaderImageOverlay {
-      background-color: rgba(0, 0, 0, 0.5);
-      transition: .2s ease all;
-      opacity: 1; }
-    .leadershipWrapper a:hover .centerUnderline {
-      width: 10em;
-      transition: .2s ease all; }
-    @media (max-width: 599px) {
-      .leadershipWrapper a {
-        width: 80%; } }
-    @media (min-width: 600px) {
-      .leadershipWrapper a {
-        width: 40%; } }
-    @media (min-width: 1250px) {
-      .leadershipWrapper a {
-        width: 20%; } }
-
-.leaderWrap {
-  padding: 20px; }
-
-.imageWrapper {
+#missionWrapper {
+  height: 400px;
   position: relative; }
 
-.employeeName {
-  margin-bottom: 15px; }
+#missionBody {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  z-index: 2; }
 
-@media (max-width: 599px) {
-  .leaderImage {
-    width: 80%; } }
-@media (min-width: 600px) {
-  .leaderImage {
-    width: 60%; } }
-@media (min-width: 992px) {
-  .leaderImage {
-    width: 45%; } }
-@media (min-width: 1600px) {
-  .leaderImage {
-    width: 35%; } }
+#list2 {
+  margin-bottom: 15px; }
 
 /* 15.0 Sitemap stylings -------------------------------------------*/
 @media (max-width: 599px) {
@@ -2195,6 +2112,18 @@ body {
   width: 70%; }
 
 /* 18.0 Careers Page stylings -------------------------------------------*/
+#careersList {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start; }
+  #careersList li {
+    list-style-type: none;
+    font-family: prometo, sans-serif;
+    margin: 0 20px 10px 20px; }
+    #careersList li a {
+      color: #18435a !important;
+      text-decoration: none; }
+
 .subNavLink {
   color: #000000;
   text-decoration: none;
@@ -2203,9 +2132,6 @@ body {
   .subNavLink:hover {
     color: #eeb000;
     transition: .2s ease all; }
-
-.careersHero {
-  background-image: url("/wp-content/uploads/2019/03/foxStructuresCareers.jpg"); }
 
 .careersSidebar {
   border-right: 1px solid #404041;
@@ -2221,31 +2147,19 @@ body {
       display: block;
       padding: 0; } }
 
-.careersList {
-  list-style-type: none;
-  padding-left: 0; }
-  .careersList li {
-    margin-bottom: 10px; }
-
 /* 19.0 Slider stylings -------------------------------------------*/
 .regular .slick-slide {
   position: relative;
   margin: 0 25px; }
-  .regular .slick-slide:after {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: calc(100% - 8px);
-    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.9) 80%);
-    opacity: .7;
-    z-index: 100; }
   .regular .slick-slide img {
     width: 100%;
     height: auto;
     position: relative;
     z-index: 1; }
+  .regular .slick-slide:hover .sliderTitle {
+    color: #b70033; }
+  .regular .slick-slide:hover .sliderOverlay:after {
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.9) 0%); }
 
 .center .slick-slide {
   position: relative;
@@ -2270,6 +2184,19 @@ body {
     z-index: 1;
     border-radius: 30px; }
 
+.sliderOverlay {
+  position: relative; }
+  .sliderOverlay:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.9) 80%);
+    opacity: .7;
+    z-index: 100; }
+
 .sliderTitle {
   position: absolute;
   width: 100%;
@@ -2279,8 +2206,7 @@ body {
   transition: .2s ease;
   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); }
   .sliderTitle:hover {
-    color: #b70033;
-    transition: .2s ease; }
+    color: #b70033; }
 
 .slideWrap {
   display: flex;
@@ -2320,9 +2246,6 @@ body {
     .testimonial {
       font-size: 22px;
       bottom: 2%; } }
-  .testimonial:hover {
-    color: #b70033;
-    transition: .2s ease; }
   .testimonial:before {
     display: none;
     font-family: prometo, sans-serif;

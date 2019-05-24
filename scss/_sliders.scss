@@ -3,22 +3,21 @@
   .slick-slide {
     position: relative;
     margin: 0 25px;
-    &:after {
-      content: ""; // ::before and ::after both require content
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: calc(100% - 8px);
-      background-image: linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,.9) 80%);
-      opacity: .7;
-      z-index: 100;
-    }
     img {
       width: 100%;
       height: auto;
       position: relative;
       z-index: 1;
+      }
+      &:hover {
+        .sliderTitle {
+          color: $brandColor;
+        }
+        .sliderOverlay {
+        	&:after{
+        		background-image: linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,.9) 0%);
+        	}
+        }
       }
   }
 }
@@ -29,7 +28,7 @@
     opacity: .5;
     transition: .2s ease;
     &:after {
-      content: ""; // ::before and ::after both require content
+      content: "";
       position: absolute;
       top: 0;
       left: 0;
@@ -49,6 +48,20 @@
       }
   }
 }
+.sliderOverlay {
+	position: relative;
+	&:after{
+		content: "";
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background-image: linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,.9) 80%);
+		opacity: .7;
+		z-index: 100;
+	}
+}
 .sliderTitle {
   position: absolute;
   width: 100%;
@@ -59,7 +72,6 @@
   text-shadow: 2px 2px 5px rgba(0,0,0,0.5);
   &:hover {
     color: $brandColor;
-    transition: .2s ease;
   }
 }
 .slideWrap {
@@ -100,10 +112,6 @@
   @include breakpoint (tabletScreen) {
     font-size: 22px;
     bottom: 2%;
-  }
-  &:hover {
-    color: $brandColor;
-    transition: .2s ease;
   }
   &:before {
     display: none;

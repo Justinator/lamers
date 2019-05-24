@@ -1,4 +1,18 @@
 /* 18.0 Careers Page stylings -------------------------------------------*/
+#careersList{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  li{
+    list-style-type: none;
+    font-family: $prometoMedium;
+		margin: 0 20px 10px 20px;
+    a {
+      color: $headlineText !important;
+      text-decoration: none;
+    }
+	}
+}
 .subNavLink{
   color: $black;
   text-decoration: none;
@@ -8,10 +22,6 @@
     color: $primaryYellow;
     transition: .2s ease all;
   }
-}
-.careersHero{
-	background-image: url("/wp-content/uploads/2019/03/foxStructuresCareers.jpg");
-  //background-image: url("/wp-content/uploads/2019/03/foxStructuresEmployeeOnJob.jpg");
 }
 .careersSidebar{
 	border-right: 1px solid $primaryGrey;
@@ -25,12 +35,5 @@
 	@include breakpoint(laptopScreen){
 		display: block;
   	padding: 0;
-	}
-}
-.careersList{
-	list-style-type: none;
-  padding-left: 0;
-	li{
-		margin-bottom: 10px;
 	}
 }

@@ -1,77 +1,17 @@
 /* 14.0 About Pages stylings -------------------------------------------*/
-.aboutHero{
-  background-image: url("/wp-content/uploads/2019/03/OaksGolfCourseDroneShot.jpg");
-}
-#leadershipImage{
-  margin-top: 25px;
-  @include breakpoint(laptopScreen){
-		margin-top: 25px;
-	}
-  @include breakpoint(largeScreen){
-		margin-top: 0;
-	}
-}
-.leaderImageOverlay{
-  position: absolute;
-	top: 0;
-	left: 0;
-	height: calc(100% - 10px);
-	width: 100%;
-	content: "";
-	transition: .2s ease all;
-	background-color: rgba(0,0,0,.0);
-  opacity: 0;
-}
-.leadershipWrapper{
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-	a{
-		text-decoration: none;
-		color: $primaryGrey;
-		transition: .2s ease all;
-		&:hover{
-			.leaderImageOverlay{
-				background-color: rgba(0,0,0,.5);
-				transition: .2s ease all;
-				opacity: 1;
-			}
-			.centerUnderline{
-				width: 10em;
-				transition: .2s ease all;
-			}
-		}
-    @include breakpoint(smallScreen){
-      width: 80%;
-    }
-    @include breakpoint(largeMobileScreen){
-      width: 40%;
-    }
-    @include breakpoint(largeScreen){
-      width: 20%;
-    }
-	}
-}
-.leaderWrap{
-  padding: 20px;
-}
-.imageWrapper{
+#missionWrapper {
+  height: 400px;
   position: relative;
 }
-.employeeName{
-  margin-bottom: 15px;
+#missionBody {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  z-index: 2;
 }
-.leaderImage{
-  @include breakpoint(smallScreen){
-    width: 80%;
-  }
-  @include breakpoint(largeMobileScreen){
-    width: 60%;
-  }
-  @include breakpoint(laptopScreen){
-    width: 45%;
-  }
-  @include breakpoint(extraLargeScreen){
-    width: 35%;
-  }
+#list2 {
+  margin-bottom: 15px;
 }
