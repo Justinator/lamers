@@ -241,6 +241,8 @@
 }
 .textBlock{
 	max-width: 700px;
+	display: flex;
+  flex-direction: column;
 }
 .centerTextBlock {
 	display: flex;
@@ -299,8 +301,11 @@
 }
 .site-content{
 	margin-top: 25px;
+	@include breakpoint (largeMobileScreen) {
+		margin-top: 55px;
+	}
 	@include breakpoint(laptopScreen){
-		margin-top: 115px;
+		margin-top: 110px;
 	}
 }
 .marginTop{

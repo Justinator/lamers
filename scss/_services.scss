@@ -1,15 +1,39 @@
 /* 12.0 Service Page stylings -------------------------------------------*/
-.servicesSidebar{
-	border-right: 1px solid $primaryGrey;
-	margin-top: 45px;
-	@include breakpoint(smallScreen){
-		display: none;
-	}
-	@include breakpoint(largeMobileScreen){
-		display: none;
-	}
-	@include breakpoint(laptopScreen){
+.stickyMenuContainer {
+	position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 9998;
+}
+.stickyMenu {
+	display: none;
+	background-color: $brandColor;
+	@include breakpoint (largeScreen) {
 		display: block;
+	}
+	#ServiceMenu, #FleetMenu {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		li {
+			list-style-type: none;
+			padding: 0 5px;
+			a {
+				color: $white;
+				text-decoration: none;
+				font-size: 10px;
+				font-family: $prometoMedium;
+				text-transform: uppercase;
+				transition: .2s ease;
+				@include breakpoint (extraLargeScreen) {
+					font-size: 14px;
+				}
+				&:hover {
+					color: $primaryYellow;
+					transition: .2s ease;
+				}
+			}
+		}
 	}
 }
 .servicesList{
@@ -18,31 +42,4 @@
 	li{
 		margin-bottom: 10px;
 	}
-}
-.commercialHero{
-	background-image: url("/wp-content/uploads/2019/03/waterRightCropped.jpg");
-}
-.weldHero{
-	background-image: url("/wp-content/uploads/2019/03/foxWeldingEmployeeCroppedMedium.jpg");
-}
-.weldHero2{
-	background-image: url("/wp-content/uploads/2019/03/foxStructuresWeldAShop.jpg");
-}
-.agHero{
-	background-image: url("/wp-content/uploads/2019/02/centerFeedAlleyLookingSouthCropped.jpg");
-}
-.serviceHero{
-	background-image: url("/wp-content/uploads/2019/03/virClarFarmsCroppedMedium.jpg");
-}
-.equestrianHero{
-	background-image: url("/wp-content/uploads/2019/03/equestrianHero.jpg");
-}
-.residentialHero{
-	background-image: url("/wp-content/uploads/2019/03/larson-cottage-large.jpg");
-}
-.storageHero{
-	background-image: url("/wp-content/uploads/2019/03/appleStrageCropped2.jpg");
-}
-.blueprintHero{
-	background-image: url("/wp-content/uploads/2019/03/CustomPlans-CroppedMedium.jpg");
 }

@@ -50,6 +50,8 @@ if ( ! function_exists( 'insightcustom_setup' ) ) :
 			'SecondaryMobile' => esc_html__( 'SecondaryMobile', 'insightCustom' ),
 			'FooterMenu' => esc_html__( 'FooterMenu', 'insightCustom' ),
 			'CareersMenu' => esc_html__( 'CareersNavigation', 'insightCustom' ),
+			'ServiceMenu' => esc_html__( 'ServiceMenu', 'insightCustom' ),
+			'FleetMenu' => esc_html__( 'FleetMenu', 'insightCustom' ),
 		) );
 
 		/*
