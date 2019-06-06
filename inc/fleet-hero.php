@@ -9,10 +9,14 @@
     </div>
     <div class="col50 centerTextBlock">
       <div class="textWrap textBlock">
-        <h1><span class="smallHeading">Features of the</span><br><?php the_field('title'); ?></h1>
-        <p><?php the_field('bus_short_description'); ?></p>
-        <div class="btnContainer">
-          <a class="redButton" href="<?php the_field('cta_button_link'); ?>"><?php the_field('cta_button_text'); ?></a>
+        <div class="fleetTitleWrap">
+          <h1><span class="smallHeading">Features of the</span><br><?php the_field('title'); ?></h1>
+        </div>
+        <div class="fleetDescWrap">
+          <p><?php the_field('bus_short_description'); ?></p>
+          <div class="btnContainer">
+            <a class="redButton" href="<?php the_field('cta_button_link'); ?>"><?php the_field('cta_button_text'); ?></a>
+          </div>
         </div>
       </div>
     </div>

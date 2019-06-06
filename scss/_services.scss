@@ -8,6 +8,7 @@
 .stickyMenu {
 	display: none;
 	background-color: $brandColor;
+	height: 50px;
 	@include breakpoint (largeScreen) {
 		display: block;
 	}
@@ -35,6 +36,13 @@
 			}
 		}
 	}
+}
+.stickyMenuWrapper {
+	display: flex;
+	align-items: center;
+}
+.menu-fleet-menu-container, .menu-services-menu-container {
+	width: 100%;
 }
 .servicesList{
 	list-style-type: none;

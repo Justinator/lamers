@@ -12,7 +12,7 @@ get_header();
 		<?php get_template_part('/inc/hero-intro'); ?>
 		<div class="fullWidth stickyMenuContainer">
 		  <div class="stickyMenu">
-		    <div class="navWidth">
+		    <div class="navWidth stickyMenuWrapper">
 		      <?php wp_nav_menu( array( 'theme_location' => 'ServiceMenu', 'menu_id' => 'ServiceMenu' ) ); ?>
 		    </div>
 		  </div>

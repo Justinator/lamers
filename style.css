@@ -896,6 +896,8 @@ nav {
   display: flex;
   align-items: center;
   width: 100%; }
+  nav a:after {
+    width: 0; }
 
 .menuText {
   cursor: pointer;
@@ -1253,7 +1255,7 @@ h6 {
   font-weight: 500; }
 
 .smallHeading {
-  font-size: 1.5em;
+  font-size: .8em;
   margin-bottom: 0; }
 
 .noMargin {
@@ -1301,6 +1303,8 @@ h6 {
   color: #FFFFFF;
   transition: .3s ease;
   cursor: pointer; }
+  .whiteButton:after {
+    width: 0; }
   .whiteButton:hover {
     background: #FFFFFF;
     color: #b70033;
@@ -1322,11 +1326,14 @@ h6 {
   color: #FFFFFF;
   transition: .3s ease;
   cursor: pointer; }
+  .redButton:after {
+    width: 0; }
   .redButton:hover {
     background: #800023;
     border: 2px solid #800023;
     box-shadow: 0 6px 18px 0 rgba(0, 0, 0, 0.5);
-    transition: .3s ease; }
+    transition: .3s ease;
+    color: #FFFFFF; }
 
 .primaryLink {
   color: #404041 !important;
@@ -1360,6 +1367,8 @@ h6 {
     .plainLink:hover #redArrow {
       margin-left: 10px;
       transition: .2s ease; }
+  .plainLink:after {
+    width: 0; }
 
 .centerButton {
   margin: 0 auto;
@@ -1419,10 +1428,34 @@ button {
     transition: .2s ease all;
     box-shadow: 0 6px 18px 0 rgba(0, 0, 0, 0.5); }
 
+.noDecoration:after {
+  width: 0; }
+
 /* 8.0 General Body Styles -------------------------------------------*/
 body {
   background: #FFFFFF;
   margin: 0; }
+
+a {
+  position: relative;
+  text-decoration: none;
+  color: #b70033;
+  transition: .2s ease; }
+  a:after {
+    position: absolute;
+    content: '';
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #b70033;
+    transition: .2s ease; }
+  a:hover {
+    color: #800023;
+    transition: .2s ease; }
+    a:hover:after {
+      width: 0%;
+      transition: .2s ease; }
 
 ::selection {
   background: rgba(183, 0, 51, 0.5); }
@@ -1865,7 +1898,8 @@ ul {
 
 .stickyMenu {
   display: none;
-  background-color: #b70033; }
+  background-color: #b70033;
+  height: 50px; }
   @media (min-width: 1250px) {
     .stickyMenu {
       display: block; } }
@@ -1889,6 +1923,13 @@ ul {
         .stickyMenu #ServiceMenu li a:hover, .stickyMenu #FleetMenu li a:hover {
           color: #eeb000;
           transition: .2s ease; }
+
+.stickyMenuWrapper {
+  display: flex;
+  align-items: center; }
+
+.menu-fleet-menu-container, .menu-services-menu-container {
+  width: 100%; }
 
 .servicesList {
   list-style-type: none;
@@ -2293,5 +2334,59 @@ ul {
 .nameWrapper {
   display: flex;
   justify-content: flex-end; }
+
+.fleetTitleWrap {
+  background-color: #b70033;
+  padding: 20px;
+  margin-top: 10px;
+  color: #FFFFFF; }
+
+.fleetDescWrap {
+  background-color: #f6f6f6;
+  padding: 0 20px 20px 20px; }
+
+.busSmallGallery {
+  display: flex;
+  flex-wrap: wrap; }
+  .busSmallGallery img {
+    width: 55%;
+    height: 100%;
+    margin: 10px; }
+    @media (min-width: 1250px) {
+      .busSmallGallery img {
+        width: 45%; } }
+
+.ctaWrapper {
+  height: 400px;
+  position: relative; }
+
+.ctaBody {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  z-index: 2; }
+
+.imageWrapper {
+  margin: 20px 20px 0 20px;
+  position: relative; }
+  .imageWrapper:after {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    height: calc(100% - 10px);
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0);
+    transition: .3s ease; }
+
+.linkWrapper:hover .imageWrapper:after {
+  background-color: rgba(0, 0, 0, 0.6);
+  transition: .3s ease; }
+.linkWrapper:focus .imageWrapper:after {
+  background-color: rgba(0, 0, 0, 0.6);
+  transition: .3s ease; }
 
 /*# sourceMappingURL=style.css.map */

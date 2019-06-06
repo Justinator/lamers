@@ -1,0 +1,67 @@
+.fleetTitleWrap {
+  background-color: $brandColor;
+  padding: 20px;
+  margin-top: 10px;
+  color: $white;
+}
+.fleetDescWrap {
+  background-color: $lightGrey;
+  padding: 0 20px 20px 20px;
+}
+.busSmallGallery {
+  display: flex;
+  flex-wrap: wrap;
+  img {
+    width: 55%;
+    height: 100%;
+    margin: 10px;
+    @include breakpoint (largeScreen) {
+      width: 45%;
+    }
+  }
+}
+.ctaWrapper {
+  height: 400px;
+  position: relative;
+}
+.ctaBody {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  z-index: 2;
+}
+.imageWrapper {
+  margin: 20px 20px 0 20px;
+  position: relative;
+  &:after {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    height: calc(100% - 10px);
+    width: 100%;
+    background-color: rgba(0,0,0,0);
+    transition: .3s ease;
+  }
+}
+.linkWrapper {
+  &:hover {
+    .imageWrapper {
+      &:after {
+        background-color: rgba(0,0,0,0.6);
+        transition: .3s ease;
+      }
+    }
+  }
+  &:focus {
+    .imageWrapper {
+      &:after {
+        background-color: rgba(0,0,0,0.6);
+        transition: .3s ease;
+      }
+    }
+  }
+}

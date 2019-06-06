@@ -15,6 +15,9 @@
 	color: $white;
 	transition: .3s ease;
 	cursor: pointer;
+	&:after {
+		width: 0;
+	}
     &:hover{
       background: $white;
     	color: $brandColor;
@@ -37,11 +40,15 @@
 	color: $white;
 	transition: .3s ease;
 	cursor: pointer;
+	&:after {
+		width: 0;
+	}
     &:hover{
       background: $brandColorDark;
 			border: 2px solid $brandColorDark;
 			box-shadow: 0 6px 18px 0 rgba(0,0,0,.5);
     	transition: .3s ease;
+			color: $white;
     }
 }
 .primaryLink{
@@ -84,6 +91,9 @@
 				margin-left: 10px;
 				transition: .2s ease;
 			}
+		}
+		&:after {
+			width: 0;
 		}
 }
 .centerButton{
@@ -146,4 +156,9 @@ button{
       transition: .2s ease all;
 			box-shadow: 0 6px 18px 0 rgba(0,0,0,.5);
 		}
+}
+.noDecoration {
+	&:after {
+		width: 0;
+	}
 }

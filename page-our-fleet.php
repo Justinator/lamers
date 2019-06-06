@@ -12,7 +12,7 @@ get_header();
 		<?php get_template_part('/inc/hero-intro'); ?>
 		<div class="fullWidth stickyMenuContainer">
 		  <div class="stickyMenu">
-		    <div class="navWidth">
+		    <div class="navWidth stickyMenuWrapper">
 		      <?php wp_nav_menu( array( 'theme_location' => 'FleetMenu', 'menu_id' => 'FleetMenu' ) ); ?>
 		    </div>
 		  </div>
@@ -130,6 +130,22 @@ get_header();
 		      ?>
 		    </div>
 		  </div>
+			<div class="pageWidth flex-container centerAlignedContainer paddedSection">
+				<div class="col50 centerTextBlock">
+					<?php
+						$image = get_field('fleet_8_image');
+						$imageID = $image['ID'];
+						echo wp_get_attachment_image( $imageID, 'full', false, array( 'class' => 'image', 'data-sizes' => 'auto' ) );
+					?>
+				</div>
+				<div class="col50">
+					<div class="textWrap textBlock">
+						<h6 class="mediumHeading"><span class="underline"><?php the_field('fleet_8_headline'); ?></span></h6>
+						<p><?php the_field('fleet_8_description'); ?></p>
+						<a href="<?php the_field('fleet_8_button_link'); ?>" class="redButton"><?php the_field('fleet_8_button_text'); ?></a>
+					</div>
+				</div>
+			</div>
 		</section>
 	</main>
 </div>

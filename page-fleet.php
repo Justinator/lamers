@@ -13,15 +13,15 @@ get_header();
 		<?php get_template_part('/inc/fleet-hero'); ?>
 		<div class="fullWidth stickyMenuContainer">
 		  <div class="stickyMenu">
-		    <div class="navWidth">
+		    <div class="navWidth stickyMenuWrapper">
 		      <?php wp_nav_menu( array( 'theme_location' => 'FleetMenu', 'menu_id' => 'FleetMenu' ) ); ?>
 		    </div>
 		  </div>
 		</div>
-		<section id="pageContent" class="paddedSection">
-			<section class="busIntro">
+		<section id="pageContent">
+			<section class="busIntro paddedSection">
 				<div class="fullWidth flex-container">
-					<div class="col50">
+					<div class="col50 centerTextBlock">
 						<div class="textWrap textBlock">
 							<?php the_field('bus_intro_copy'); ?>
 						</div>
@@ -52,11 +52,13 @@ get_header();
 					</div>
 				</div>
 			</section>
-			<section class="busDetails greyBack paddedSection">
+			<section class="busDetails greyBlock paddedSection">
 				<div class="pageWidth limitWidth">
 					<?php the_field('main_body_copy'); ?>
 				</div>
 			</section>
+			<?php get_template_part('/inc/fleet-cta'); ?>
+			<?php get_template_part('/inc/need-more-fleet'); ?>
 		</section>
 	</main>
 </div>

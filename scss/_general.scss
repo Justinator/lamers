@@ -3,6 +3,30 @@ body{
 	background: $white;
 	margin: 0;
 }
+a {
+	position: relative;
+	text-decoration: none;
+	color: $brandColor;
+	transition: .2s ease;
+		&:after {
+			position: absolute;
+			content: '';
+			bottom: 0;
+			left: 0;
+			width: 100%;
+			height: 2px;
+			background-color: $brandColor;
+			transition: .2s ease;
+		}
+		&:hover{
+			color: $brandColorDark;
+			transition: .2s ease;
+			&:after {
+				width: 0%;
+				transition: .2s ease;
+			}
+		}
+}
 // Style highlight to match our themes colors
 ::selection{
 		background: rgba(	183, 0, 51, .5);
