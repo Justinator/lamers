@@ -1,7 +1,7 @@
 <?php
 /**
  * @package InsightCustom
- *	Template Name: Fleet
+ *	Template Name: Service Pages
  */
 get_header();
 
@@ -10,7 +10,7 @@ get_header();
 <div id="primary" class="content-area">
 	<main id="main" class="site-main">
 		<?php get_template_part('/inc/breadcrumbs'); ?>
-		<?php get_template_part('/inc/fleet-hero'); ?>
+		<?php get_template_part('/inc/hero-intro'); ?>
 		<section id="pageContent">
 			<section class="busIntro paddedSection">
 				<div class="fullWidth flex-container">

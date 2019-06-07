@@ -5,6 +5,11 @@
 	width: 100%;
 	margin: 0 auto;
 	background-color: $brandColor;
+	a {
+		&:after {
+			width: 0;
+		}
+	}
 }
 .footerContent{
 	display: flex;

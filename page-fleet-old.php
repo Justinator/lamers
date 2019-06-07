@@ -11,6 +11,13 @@ get_header();
 	<main id="main" class="site-main">
 		<?php get_template_part('/inc/breadcrumbs'); ?>
 		<?php get_template_part('/inc/fleet-hero'); ?>
+		<div class="fullWidth stickyMenuContainer">
+		  <div class="stickyMenu">
+		    <div class="navWidth stickyMenuWrapper">
+		      <?php wp_nav_menu( array( 'theme_location' => 'FleetMenu', 'menu_id' => 'FleetMenu' ) ); ?>
+		    </div>
+		  </div>
+		</div>
 		<section id="pageContent">
 			<section class="busIntro paddedSection">
 				<div class="fullWidth flex-container">

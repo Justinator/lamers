@@ -1,45 +1,24 @@
 /* 3.0 Our page layouts -------------------------------------------*/
 .col20{
-	width: 20%;
-    @include breakpoint(smallScreen){
-      width: 100%;
-    }
-    @include breakpoint(largeMobileScreen){
-      width: 100%;
-    }
+	width: 100%;
     @include breakpoint(laptopScreen){
       width: 20%;
     }
 }
 .col25{
-	width: 25%;
-    @include breakpoint(smallScreen){
-      width: 100%;
-    }
-    @include breakpoint(largeMobileScreen){
-      width: 100%;
-    }
+	width: 100%;
     @include breakpoint(laptopScreen){
       width: 25%;
     }
 }
 .col30{
-	width: 33.3333%;
-    @include breakpoint(smallScreen){
-      width: 100%;
-    }
-    @include breakpoint(largeMobileScreen){
-      width: 100%;
-    }
+	width: 100%;
     @include breakpoint(laptopScreen){
       width: 33.3333%;
     }
 }
 .col30SplitTablet{
-	width: 33.3333%;
-    @include breakpoint(smallScreen){
-      width: 100%;
-    }
+	width: 100%;
     @include breakpoint(largeMobileScreen){
       width: 50%;
     }
@@ -48,75 +27,39 @@
     }
 }
 .col40{
-	width: 40%;
-    @include breakpoint(smallScreen){
-      width: 100%;
-    }
-    @include breakpoint(largeMobileScreen){
-      width: 100%;
-    }
+	width: 100%;
     @include breakpoint(laptopScreen){
       width: 40%;
     }
 }
 .col50{
-	width: 50%;
-    @include breakpoint(smallScreen){
-      width: 100%;
-    }
-    @include breakpoint(largeMobileScreen){
-      width: 100%;
-    }
+	width: 100%;
     @include breakpoint(laptopScreen){
       width: 50%;
     }
 }
 .col60{
-	width: 60%;
-    @include breakpoint(smallScreen){
-      width: 100%;
-    }
-    @include breakpoint(largeMobileScreen){
-      width: 100%;
-    }
+	width: 100%;
     @include breakpoint(laptopScreen){
       width: 60%;
     }
 }
 .col70{
-	width: 70%;
-    @include breakpoint(smallScreen){
-      width: 100%;
-    }
-    @include breakpoint(largeMobileScreen){
-      width: 100%;
-    }
+	width: 100%;
     @include breakpoint(laptopScreen){
       width: 70%;
     }
 }
 .col80{
-  width: 80%;
-    @include breakpoint(smallScreen){
-      width: 100%;
-    }
-    @include breakpoint(largeMobileScreen){
-      width: 100%;
-    }
+  width: 100%;
     @include breakpoint(laptopScreen){
       width: 80%;
     }
 }
 .pageWidth{
-		width: 70%;
+		width: 95%;
 		height: 100%;
 		margin: 0 auto;
-      @include breakpoint(smallScreen){
-        width: 90%;
-      }
-      @include breakpoint(largeMobileScreen){
-        width: 90%;
-      }
       @include breakpoint(laptopScreen){
         width: 90%;
       }
@@ -130,12 +73,7 @@
 .navWidth{
 	height: 100%;
 	margin: 0 auto;
-	@include breakpoint(smallScreen){
-		width: 95%;
-	}
-	@include breakpoint(largeMobileScreen){
-		width: 95%;
-	}
+	width: 95%;
 	@include breakpoint(largeScreen){
 		width: 90%;
 	}
@@ -157,14 +95,8 @@
 	width: 100%;
 	background-size: cover;
 	background-repeat: no-repeat;
-    @include breakpoint(smallScreen){
-      height: 60vh;
-			background-position: center;
-    }
-    @include breakpoint(largeMobileScreen){
-      height: 60vh;
-			background-position: center;
-    }
+	height: 60vh;
+	background-position: center;
 		@include breakpoint(tabletScreen){
       height: 90vh;
 			background-position: left;
@@ -205,6 +137,9 @@
 	@include breakpoint (tabletScreen) {
 		flex-direction: row;
 	}
+}
+.flex-center {
+	justify-content: center;
 }
 .wrappedFlexContainer{
 	display: flex;
@@ -302,12 +237,15 @@
 .site-content{
 	margin-top: 25px;
 	@include breakpoint (largeMobileScreen) {
-		margin-top: 55px;
+		margin-top: 100px;
 	}
 	@include breakpoint(laptopScreen){
-		margin-top: 110px;
+		margin-top: 140px;
 	}
 }
 .marginTop{
 	margin-top: 10px;
+}
+.removeBottomMargin {
+	margin-bottom: -10px;
 }

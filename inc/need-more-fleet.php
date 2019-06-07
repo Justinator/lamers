@@ -3,7 +3,7 @@
     <div class="centerText">
       <h6 class="largeHeading">View Our Other Vehicle Types</h6>
     </div>
-    <div class="flex-container">
+    <div class="flex-container flex-center">
       <div class="col30 textBlock centerText linkWrapper">
         <a href="<?php the_field( 'fleet_link_1' ); ?>" class="noDecoration">
           <div class="imageWrapper">

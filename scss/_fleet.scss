@@ -11,10 +11,17 @@
 .busSmallGallery {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   img {
-    width: 55%;
+    width: 95%;
     height: 100%;
     margin: 10px;
+    @include breakpoint (tabletScreen) {
+      width: 45%;
+    }
+    @include breakpoint (laptopScreen) {
+      width: 55%;
+    }
     @include breakpoint (largeScreen) {
       width: 45%;
     }
@@ -62,6 +69,17 @@
         background-color: rgba(0,0,0,0.6);
         transition: .3s ease;
       }
+    }
+  }
+}
+.greyBorder {
+  border-bottom: 2px solid $lightGrey;
+}
+.fleetWrapper {
+  img {
+    margin-top: 25px;
+    @include breakpoint (laptopScreen) {
+      margin-top: 0;
     }
   }
 }

@@ -9,20 +9,13 @@ get_header();
 <div id="primary" class="content-area">
 	<main id="main" class="site-main">
 		<?php get_template_part('/inc/breadcrumbs'); ?>
-		<?php get_template_part('/inc/about-intro'); ?>
+		<?php get_template_part('/inc/history-hero'); ?>
 		<section id="pageContent">
-			<?php get_template_part('/inc/mission'); ?>
-			<?php get_template_part('/inc/customer-satisfaction'); ?>
-			<section id="testimonialSlider" class="paddedSection">
-				<?php get_template_part('/inc/testimonial-slider'); ?>
+			<section class="busDetails greyBlock paddedSection">
+				<div class="pageWidth limitWidth">
+					<?php the_field('history_page_content'); ?>
+				</div>
 			</section>
-			<?php get_template_part('/inc/safety'); ?>
-			<!-- ********** Featured Services Section Start ********** -->
-			<div class="paddedSection">
-				<?php get_template_part('/inc/featured-services'); ?>
-			</div>
-			<!-- ********** Featured Services Section End ********** -->
-			<?php get_template_part('/inc/contact'); ?>
 		</section>
 	</main>
 </div>
