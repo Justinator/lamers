@@ -13,7 +13,7 @@ get_header();
 		<section id="pageContent">
 			<section class="busDetails greyBlock paddedSection">
 				<div class="pageWidth limitWidth">
-					<?php the_field('history_page_content'); ?>
+					<?php the_field('travel_policy_body'); ?>
 				</div>
 			</section>
 		</section>

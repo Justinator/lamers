@@ -151,25 +151,8 @@ get_header();
 							?>
 						</div>
 					</div>
-					<div class="flex-container centerAlignedContainer paddedSection">
-				    <div class="col50 centerTextBlock">
-				      <div class="textWrap textBlock">
-				        <h6 class="mediumHeading"><span class="underline"><?php the_field('service_9_headline'); ?></span></h6>
-				        <p><?php the_field('service_9_description'); ?></p>
-								<a href="<?php the_field('service_9_button_link'); ?>" class="redButton"><?php the_field('service_1_button_text'); ?></a>
-				      </div>
-				    </div>
-				    <div class="col50">
-				      <?php
-				        $image = get_field('service_9_image');
-				        $imageID = $image['ID'];
-				        echo wp_get_attachment_image( $imageID, 'full', false, array( 'class' => 'image', 'data-sizes' => 'auto' ) );
-				      ?>
-				    </div>
-				  </div>
 				</div>
 			</div>
-
 		</section>
 	</main>
 </div>
