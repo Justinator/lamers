@@ -51,7 +51,12 @@ get_header();
 				</div>
 			</section>
 			<?php get_template_part('/inc/fleet-cta'); ?>
-			<?php get_template_part('/inc/need-more-fleet'); ?>
+			<section class="paddedSection">
+				<div class="centerText">
+		      <h6 class="largeHeading">View Our Other Vehicle Types</h6>
+		    </div>
+				<?php get_template_part('/inc/recommended-vehicles'); ?>
+			</section>
 		</section>
 	</main>
 </div>
