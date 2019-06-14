@@ -2324,6 +2324,94 @@ ul {
   display: flex;
   justify-content: flex-end; }
 
+/* 12.0 Lamers Connect Tab stylings -------------------------------------------*/
+.grid {
+  list-style: none;
+  margin-left: -40px; }
+
+.destinationTab {
+  position: relative;
+  max-width: 900px; }
+
+.destinationTab .menu {
+  display: flex;
+  justify-content: center; }
+
+.destinationTab .menu div {
+  width: 50%;
+  padding: 15px 20px 15px 40px;
+  margin-bottom: 10px;
+  color: #b70033;
+  background: #f6f6f6;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  position: relative;
+  vertical-align: middle;
+  font-weight: 700;
+  transition: 1s all cubic-bezier(0.075, 0.82, 0.165, 1); }
+
+.destinationTab .menu div:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); }
+
+.destinationTab .menu div span.light {
+  height: 10px;
+  width: 10px;
+  position: absolute;
+  top: 24px;
+  left: 15px;
+  background-color: #b70033;
+  border-radius: 100%;
+  transition: 1s all cubic-bezier(0.075, 0.82, 0.165, 1); }
+
+.destinationTab .menu div.active span.light {
+  background-color: #FFFFFF;
+  left: 0;
+  height: 100%;
+  width: 3px;
+  top: 0;
+  border-radius: 0; }
+
+.destinationTab .menu div.active {
+  color: #FFFFFF;
+  background-color: #b70033;
+  padding: 15px 20px 15px 20px; }
+
+ul.nacc {
+  border-left: 2px solid #18435a;
+  position: relative;
+  height: 0px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  transition: 0.5s all cubic-bezier(0.075, 0.82, 0.165, 1); }
+
+ul.nacc li {
+  opacity: 0;
+  position: absolute;
+  list-style: none;
+  transition: 1s all cubic-bezier(0.075, 0.82, 0.165, 1);
+  margin-left: 20px; }
+
+ul.nacc li p:before {
+  position: absolute;
+  left: -30px;
+  background: #18435a;
+  border-radius: 50%;
+  height: 18px;
+  width: 18px;
+  content: "";
+  margin-top: 7px; }
+
+ul.nacc li.active {
+  z-index: 2;
+  opacity: 1; }
+
+ul.nacc li p {
+  margin: 0; }
+
+.routeWrapper {
+  height: 575px; }
+
 .fleetTitleWrap {
   background-color: #b70033;
   padding: 20px;
