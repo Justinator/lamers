@@ -1,0 +1,66 @@
+.faresTable {
+  overflow: auto;
+  tr:nth-child(even) {
+    background-color: $lightGrey;
+  }
+  th {
+    background: $brandColor;
+    padding: 10px 100px;
+    color: $white;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
+    position: relative;
+    z-index: 2;
+    @include breakpoint (largeMobileScreen) {
+      padding: 10px 50px;
+    }
+    @include breakpoint (laptopScreen) {
+      padding: 10px 0;
+    }
+    &:nth-child(1) {
+      width: 150px;
+    }
+  }
+  td {
+    padding: 10px;
+    color: $bodyCopyBlue;
+    text-align: center;
+    &:nth-child(1) {
+      background: $brandColorDark;
+      color: $white;
+      text-align : left;
+    }
+  }
+}
+table {
+  position: relative;
+  width: 100%;
+  border-collapse: collapse;
+  p {
+    margin-bottom: 0 !important;
+    padding: 10px 0;
+  }
+}
+.redRow {
+  background-color: $brandColor;
+  color: $white;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
+}
+.darkRedCol {
+  background-color: $brandColorDark;
+  color: $white;
+}
+.tableTitle {
+  background-color: $brandColor;
+  color: $white;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
+}
+.tableSubTitle {
+  position: absolute;
+  top: 85px;
+  left: -80px;
+  width: 30%;
+  background-color: $brandColorDark;
+  color: $white;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
+  transform: rotate(270deg);
+}

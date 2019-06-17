@@ -1992,7 +1992,7 @@ ul {
   text-decoration: none;
   transition: .2s ease all;
   position: relative;
-  color: #404041; }
+  color: #13293d; }
   .page_item a:hover {
     color: #eeb000;
     transition: .2s ease all; }
@@ -2011,6 +2011,11 @@ ul {
 
 .pagenav {
   list-style-type: none; }
+  .pagenav ul {
+    padding-left: 40px; }
+
+.newsPosts {
+  padding-left: 40px; }
 
 /* 16.0 Archive/News Page stylings -------------------------------------------*/
 @media (max-width: 599px) {
@@ -2481,5 +2486,65 @@ ul.nacc li p {
   @media (min-width: 992px) {
     .fleetWrapper img {
       margin-top: 0; } }
+
+.faresTable {
+  overflow: auto; }
+  .faresTable tr:nth-child(even) {
+    background-color: #f6f6f6; }
+  .faresTable th {
+    background: #b70033;
+    padding: 10px 100px;
+    color: #FFFFFF;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
+    position: relative;
+    z-index: 2; }
+    @media (min-width: 600px) {
+      .faresTable th {
+        padding: 10px 50px; } }
+    @media (min-width: 992px) {
+      .faresTable th {
+        padding: 10px 0; } }
+    .faresTable th:nth-child(1) {
+      width: 150px; }
+  .faresTable td {
+    padding: 10px;
+    color: #13293d;
+    text-align: center; }
+    .faresTable td:nth-child(1) {
+      background: #800023;
+      color: #FFFFFF;
+      text-align: left; }
+
+table {
+  position: relative;
+  width: 100%;
+  border-collapse: collapse; }
+  table p {
+    margin-bottom: 0 !important;
+    padding: 10px 0; }
+
+.redRow {
+  background-color: #b70033;
+  color: #FFFFFF;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3); }
+
+.darkRedCol {
+  background-color: #800023;
+  color: #FFFFFF; }
+
+.tableTitle {
+  background-color: #b70033;
+  color: #FFFFFF;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3); }
+
+.tableSubTitle {
+  position: absolute;
+  top: 85px;
+  left: -80px;
+  width: 30%;
+  background-color: #800023;
+  color: #FFFFFF;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
+  transform: rotate(270deg); }
 
 /*# sourceMappingURL=style.css.map */
