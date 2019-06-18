@@ -173,7 +173,12 @@ function insightcustom_resource_hints( $urls, $relation_type ) {
 }
 add_filter( 'wp_resource_hints', 'insightcustom_resource_hints', 10, 2 );
 
+// Add ACF options page for global settings
+if( function_exists('acf_add_options_page') ) {
 
+	acf_add_options_page();
+
+}
 /**
  * Enqueue scripts and styles.
  */

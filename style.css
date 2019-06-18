@@ -572,6 +572,9 @@ Font Variables
 .removeBottomMargin {
   margin-bottom: -10px; }
 
+.heroIntro {
+  margin-bottom: -10px; }
+
 /*4.0 Header Styling -------------------------------------------*/
 .screenReaderSkipToContent {
   position: absolute;
@@ -2347,7 +2350,7 @@ ul {
   padding: 15px 20px 15px 40px;
   margin-bottom: 10px;
   color: #b70033;
-  background: #f6f6f6;
+  background: #FFFFFF;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
   cursor: pointer;
   position: relative;
@@ -2382,7 +2385,6 @@ ul {
   padding: 15px 20px 15px 20px; }
 
 ul.nacc {
-  border-left: 2px solid #18435a;
   position: relative;
   height: 0px;
   list-style: none;
@@ -2409,13 +2411,64 @@ ul.nacc li p:before {
 
 ul.nacc li.active {
   z-index: 2;
-  opacity: 1; }
+  opacity: 1;
+  position: relative; }
+  ul.nacc li.active:after {
+    position: absolute;
+    top: 10px;
+    left: -22px;
+    content: "";
+    height: 95%;
+    width: 2px;
+    background-color: #18435a; }
 
 ul.nacc li p {
   margin: 0; }
 
 .routeWrapper {
   height: 575px; }
+  .routeWrapper ul {
+    margin-bottom: 25px; }
+
+.accordion {
+  background-color: #f6f6f6;
+  max-width: 1050px;
+  margin: 50px auto;
+  border-top: 6px solid #b70033;
+  line-height: 1.6;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3); }
+  .accordion__item {
+    border-bottom: 1px solid #b70033; }
+  .accordion__title {
+    padding: 15px 15px 15px 40px;
+    display: block;
+    position: relative;
+    font-weight: 400; }
+    .accordion__title:before {
+      font-family: FontAwesome;
+      content: "\f055";
+      font-size: 20px;
+      position: absolute;
+      left: 15px;
+      top: 12px;
+      color: #b70033; }
+    .accordion__title h5 {
+      border-bottom: 1px solid #f6f6f6;
+      display: inline-block; }
+    .accordion__title:hover, .accordion__title:focus {
+      cursor: pointer;
+      outline: none; }
+      .accordion__title:hover h5, .accordion__title:focus h5 {
+        border-bottom-color: #b70033;
+        display: inline-block; }
+    .is-expanded .accordion__title:before {
+      content: "\f056"; }
+  .accordion__content-inner {
+    padding: 0 40px 10px 40px; }
+  .accordion__content {
+    transition: height 0.3s ease-out;
+    height: 0;
+    overflow: hidden; }
 
 .fleetTitleWrap {
   background-color: #b70033;
@@ -2487,6 +2540,12 @@ ul.nacc li p {
     .fleetWrapper img {
       margin-top: 0; } }
 
+.assistanceCTA {
+  background: #FFFFFF;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
+  padding: 20px;
+  border-radius: 10px; }
+
 .faresTable {
   overflow: auto; }
   .faresTable tr:nth-child(even) {
@@ -2549,11 +2608,19 @@ table {
   box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
   transform: rotate(270deg); }
 
-.stopDetailsWrap p {
-  margin-bottom: 0 !important; }
-  .stopDetailsWrap p:nth-child(1) {
-    font-weight: 700; }
-  .stopDetailsWrap p:nth-child(2) {
-    margin-bottom: 25px; }
+.detailsWrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between; }
+  .detailsWrapper a {
+    height: 100%; }
+  .detailsWrapper p {
+    width: 60%; }
+
+.discountTable tr:last-child td {
+  background-color: #FFFFFF;
+  color: #13293d;
+  font-family: "Roboto", "Lucida Grande", "Lucida Sans", Geneva, Arial, sans-serif;
+  font-weight: 700; }
 
 /*# sourceMappingURL=style.css.map */

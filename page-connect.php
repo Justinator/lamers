@@ -1,6 +1,7 @@
 <?php
 /**
  * @package InsightCustom
+ * Template Name: Lamers Connect
  */
 get_header();
 
@@ -17,8 +18,14 @@ get_header();
 						<div class="textWrap textBlock">
 							<?php the_field('intro_description_body'); ?>
 						</div>
+						<div class="textWrap textBlock">
+							<div class="assistanceCTA">
+								<?php the_field('assistance_cta', 'option'); ?>
+							</div>
+						</div>
 					</div>
 					<div class="col50">
+						<h3 class="largeHeading"><span class="underline">Schedule</span></h3>
 						<div class="destinationTab">
 							<div>
 								<div class="gc">
@@ -69,13 +76,14 @@ get_header();
 						</div>
 						<div>
 							<p>Approximate total time: <strong>5 hours 15 minutes</strong></p>
+							<a href="<?php the_field('connect_brochure_link'); ?>" target="_blank"><?php the_field('connect_brochure_text'); ?></a>
 						</div>
 					</div>
 				</div>
 			</section>
 			<section class="routeRates paddedSection">
 				<div class="pageWidth centerText">
-					<h2><span class="underline"><?php the_field('fares_title'); ?></span></h2>
+					<h4 class="largeHeading"><span class="underline"><?php the_field('fares_title'); ?></span></h4>
 				</div>
 				<div class="navWidth faresTable">
 					<?php $table = get_field( 'fares_table' );
@@ -108,6 +116,9 @@ get_header();
 						        echo '</tbody>';
 						    echo '</table>';
 						} ?>
+						<div class="centerText">
+							<a href="<?php the_field('connect_fares_price_sheet_link'); ?>" target="_blank"><?php the_field('connect_fares_price_sheet_text'); ?></a>
+						</div>
 				</div>
 			</section>
 			<section class="stopDetails">
@@ -150,6 +161,7 @@ get_header();
 								    echo '</table>';
 								} ?>
 						</div>
+						<a href="/#/">View Lamers Connect Travel Policies</a>
 					</div>
 					<div class="col50 textBlock">
 						<div class="textWrap">
@@ -161,9 +173,11 @@ get_header();
 					</div>
 				</div>
 			</section>
+			<?php get_template_part('/inc/travel-policy-accordion'); ?>
 			<?php get_template_part('/inc/connect-cta'); ?>
 		</section>
 	</main>
 </div>
+<script src="/wp-content/themes/insightCustom/js/accordion.js"></script>
 <?php
 get_footer();
