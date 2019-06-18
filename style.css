@@ -2494,6 +2494,8 @@ ul.nacc li p {
   .faresTable th {
     background: #b70033;
     padding: 10px 100px;
+    text-transform: uppercase;
+    font-family: prometo, sans-serif;
     color: #FFFFFF;
     box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
     position: relative;
@@ -2503,9 +2505,7 @@ ul.nacc li p {
         padding: 10px 50px; } }
     @media (min-width: 992px) {
       .faresTable th {
-        padding: 10px 0; } }
-    .faresTable th:nth-child(1) {
-      width: 150px; }
+        padding: 10px 5px; } }
   .faresTable td {
     padding: 10px;
     color: #13293d;
@@ -2513,6 +2513,8 @@ ul.nacc li p {
     .faresTable td:nth-child(1) {
       background: #800023;
       color: #FFFFFF;
+      text-transform: uppercase;
+      font-family: prometo, sans-serif;
       text-align: left; }
 
 table {
@@ -2546,5 +2548,12 @@ table {
   color: #FFFFFF;
   box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
   transform: rotate(270deg); }
+
+.stopDetailsWrap p {
+  margin-bottom: 0 !important; }
+  .stopDetailsWrap p:nth-child(1) {
+    font-weight: 700; }
+  .stopDetailsWrap p:nth-child(2) {
+    margin-bottom: 25px; }
 
 /*# sourceMappingURL=style.css.map */
