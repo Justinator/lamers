@@ -26,7 +26,10 @@
 	width: 100%;
 }
 #pageContent{
-	margin-top: 0;
+	margin-top: 25px;
+	@include breakpoint (laptopScreen) {
+		margin-top: 0;
+	}
 }
 .heroHeading{
 	padding: 25px;
