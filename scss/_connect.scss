@@ -3,6 +3,14 @@
   box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
   padding: 20px;
   border-radius: 10px;
+  margin-bottom: 25px;
+  @include breakpoint (laptopScreen) {
+    margin-bottom: 0;
+  }
+  a {
+    font-size: 1.5em;
+    font-weight: 700;
+  }
 }
 .faresTable {
   overflow: auto;
@@ -36,6 +44,11 @@
       font-family: $prometoMedium;
       text-align : left;
     }
+  }
+}
+.discountTable {
+  th {
+    padding: 10px 50px;
   }
 }
 table {

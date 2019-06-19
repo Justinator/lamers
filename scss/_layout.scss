@@ -168,7 +168,10 @@
 	flex-direction: column;
 }
 .textWrap{
-	padding: 0 20px;
+	padding: 0 10px;
+	@include breakpoint(tabletScreen) {
+		padding: 0 20px;
+	}
 }
 .image{
 	width: 100%;
@@ -238,7 +241,7 @@
 	padding-bottom: 0;
 }
 .site-content{
-	margin-top: 25px;
+	margin-top: 70px;
 	@include breakpoint (largeMobileScreen) {
 		margin-top: 100px;
 	}
