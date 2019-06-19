@@ -2432,9 +2432,9 @@ ul.nacc li p {
   margin: 0; }
 
 .routeWrapper {
-  height: 575px; }
+  height: 656px; }
   .routeWrapper ul {
-    margin-bottom: 25px; }
+    margin: 0 0 25px 25px; }
 
 .accordion {
   background-color: #f6f6f6;
@@ -2638,5 +2638,8 @@ table {
   color: #13293d;
   font-family: "Roboto", "Lucida Grande", "Lucida Sans", Geneva, Arial, sans-serif;
   font-weight: 700; }
+
+.privacy ul {
+  margin: 0 0 25px 25px; }
 
 /*# sourceMappingURL=style.css.map */

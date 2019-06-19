@@ -75,7 +75,7 @@ get_header();
 							</div>
 						</div>
 						<div>
-							<p>Approximate total time: <strong>5 hours 15 minutes</strong></p>
+							<p>Approximate total time: <strong><?php the_field('total_trip_time'); ?></strong></p>
 							<a href="<?php the_field('connect_brochure_link'); ?>" target="_blank"><?php the_field('connect_brochure_text'); ?></a>
 						</div>
 					</div>
