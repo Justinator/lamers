@@ -4,7 +4,7 @@
       <div class="centerText">
         <h6 class="largeHeading whiteText"><?php the_field('cta_headline', 'option'); ?></h6>
         <p class="whiteText"><?php the_field('cta_body', 'option'); ?></p>
-        <a href="<?php the_field('cta_link', 'option'); ?>" class="redButton"><?php the_field('cta_button', 'option'); ?></a>
+        <a href="<?php the_field('cta_link', 'option'); ?>" class="redButton" target="_blank"><?php the_field('cta_button', 'option'); ?></a>
       </div>
     </div>
   </div>

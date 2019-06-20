@@ -3,7 +3,8 @@
     <div class="col50">
       <h6 class="largeHeading"><span class="underline">Contact</span> Us</h6>
       <p>
-        Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat.
+        We welcome your feedback or questions. If you are looking for a price on a bus, please
+        fill out our online <a href="#">quote request form</a>.
       </p>
       <h6 class="noMargin">Corporate Office</h6>
       <p>

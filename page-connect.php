@@ -10,7 +10,7 @@ get_header();
 <div id="primary" class="content-area">
 	<main id="main" class="site-main">
 		<?php get_template_part('/inc/breadcrumbs'); ?>
-		<?php get_template_part('/inc/hero-intro'); ?>
+		<?php get_template_part('/inc/connect-hero'); ?>
 		<section id="pageContent" class="serviceWrapper">
 			<section class="routeSchedule greyBlock">
 				<div class="pageWidth paddedSection flex-container">
@@ -161,7 +161,6 @@ get_header();
 								    echo '</table>';
 								} ?>
 						</div>
-						<a href="/#/">View Lamers Connect Travel Policies</a>
 					</div>
 					<div class="col50 textBlock">
 						<div class="textWrap">

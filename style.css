@@ -1874,26 +1874,26 @@ ul {
     @media (min-width: 992px) {
       .stickyMenu .serviceWrapper img {
         margin-top: 0; } }
-  .stickyMenu #ServiceMenu, .stickyMenu #FleetMenu {
+  .stickyMenu #ServiceMenu, .stickyMenu #FleetMenu, .stickyMenu #ConnectMenu {
     display: flex;
     flex-direction: column; }
-    .stickyMenu #ServiceMenu li, .stickyMenu #FleetMenu li {
+    .stickyMenu #ServiceMenu li, .stickyMenu #FleetMenu li, .stickyMenu #ConnectMenu li {
       list-style-type: none;
       padding: 0 5px;
       border-bottom: 1px solid #800023; }
-      .stickyMenu #ServiceMenu li a, .stickyMenu #FleetMenu li a {
+      .stickyMenu #ServiceMenu li a, .stickyMenu #FleetMenu li a, .stickyMenu #ConnectMenu li a {
         color: #FFFFFF;
         text-decoration: none;
         font-size: 16px;
         font-family: prometo, sans-serif;
         text-transform: uppercase;
         transition: .2s ease; }
-        .stickyMenu #ServiceMenu li a:after, .stickyMenu #FleetMenu li a:after {
+        .stickyMenu #ServiceMenu li a:after, .stickyMenu #FleetMenu li a:after, .stickyMenu #ConnectMenu li a:after {
           width: 0; }
         @media (min-width: 1600px) {
-          .stickyMenu #ServiceMenu li a, .stickyMenu #FleetMenu li a {
+          .stickyMenu #ServiceMenu li a, .stickyMenu #FleetMenu li a, .stickyMenu #ConnectMenu li a {
             font-size: 14px; } }
-        .stickyMenu #ServiceMenu li a:hover, .stickyMenu #FleetMenu li a:hover {
+        .stickyMenu #ServiceMenu li a:hover, .stickyMenu #FleetMenu li a:hover, .stickyMenu #ConnectMenu li a:hover {
           color: #eeb000;
           transition: .2s ease; }
 
