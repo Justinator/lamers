@@ -12,6 +12,12 @@ get_header();
 					<h1><span class="underline"><?php the_field('careers_headline'); ?></span></h1>
 					<p><?php the_field('careers_copy'); ?></p>
 					<?php wp_list_pages(array('sort_column' => 'post_title', 'child_of' => '19', 'title_li' => ' ', 'depth' => 0)); ?>
+					<ul>
+					    <?php wp_list_categories( array(
+					        'orderby' => 'name',
+					        'include' => array( 10, 18, 19 )
+					    ) ); ?>
+					</ul>
 				</div>
 			</section>
 			<?php get_template_part('/inc/about-intro'); ?>
