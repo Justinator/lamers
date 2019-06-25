@@ -8,16 +8,14 @@ get_header();
 	<main id="main" class="site-main">
 		<section id="pageContent">
 			<section id="careersList" class="paddedSection">
-				<div class="pageWidth limitWidth">
-					<h1><span class="underline"><?php the_field('careers_headline'); ?></span></h1>
-					<p><?php the_field('careers_copy'); ?></p>
-					<?php wp_list_pages(array('sort_column' => 'post_title', 'child_of' => '19', 'title_li' => ' ', 'depth' => 0)); ?>
-					<ul>
-					    <?php wp_list_categories( array(
-					        'orderby' => 'name',
-					        'include' => array( 10, 18, 19 )
-					    ) ); ?>
-					</ul>
+				<div class="pageWidth">
+					<div class="limitWidth">
+						<h1><span class="underline"><?php the_field('careers_headline'); ?></span></h1>
+						<p><?php the_field('careers_copy'); ?></p>
+					</div>
+					<div class="jobWrapper">
+						<?php echo do_shortcode('[awsmjobs listings="9" filters="yes" loadmore="yes"]'); ?>
+					</div>
 				</div>
 			</section>
 			<?php get_template_part('/inc/about-intro'); ?>

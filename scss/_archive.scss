@@ -82,30 +82,63 @@
   justify-content: space-between;
 }
 .nav-previous{
-  background: $primaryGrey;
-  padding: 10px;
-  transition: .3s ease all;
-  a{
+  position: relative;
+	z-index:1;
+  font-family: $prometoMedium;
+	font-weight: 700;
+  font-size: 16px;
+  text-transform: uppercase;
+  text-decoration: none;
+	border: 2px solid $brandColor;
+	border-radius: 10px;
+	background: $brandColor;
+	padding: 10px 25px 10px 25px;
+	width: max-content;
+	color: $white;
+	transition: .3s ease;
+	cursor: pointer;
+  a {
     color: $white;
-    text-decoration: none;
   }
-  &:hover{
-    background: $primaryGrey;
-    transition: .3s ease all;
-  }
+	&:after {
+		width: 0;
+	}
+    &:hover{
+      background: $brandColorDark;
+			border: 2px solid $brandColorDark;
+			box-shadow: 0 6px 18px 0 rgba(0,0,0,.5);
+    	transition: .3s ease;
+			color: $white;
+    }
 }
 .nav-next{
-  background: $primaryGrey;
-  padding: 10px;
-  transition: .3s ease all;
-  a{
+  position: relative;
+	z-index:1;
+  font-family: $prometoMedium;
+	font-weight: 700;
+  font-size: 16px;
+  text-transform: uppercase;
+  text-decoration: none;
+	border: 2px solid $brandColor;
+	border-radius: 10px;
+	background: $brandColor;
+	padding: 10px 25px 10px 25px;
+	width: max-content;
+	color: $white;
+	transition: .3s ease;
+	cursor: pointer;
+  a {
     color: $white;
-    text-decoration: none;
   }
-  &:hover{
-    background: $primaryGrey;
-    transition: .3s ease all;
-  }
+	&:after {
+		width: 0;
+	}
+    &:hover{
+      background: $brandColorDark;
+			border: 2px solid $brandColorDark;
+			box-shadow: 0 6px 18px 0 rgba(0,0,0,.5);
+    	transition: .3s ease;
+    }
 }
 .post-thumbnail{
   text-align:center;
@@ -161,6 +194,29 @@
   .post-thumbnail{
     .attachment-post-thumbnail{
       width: 70%;
+    }
+  }
+}
+.searchWrapper, .categoryWrapper{
+  background-color: $lightGrey;
+  .searchForm {
+    padding: 10px;
+  }
+}
+.categoryWrapper {
+  margin-top: 25px;
+}
+.innerWrap {
+  padding: 10px;
+}
+.socialOutterWrapper {
+  background-color: $brandColor;
+  margin-top: 25px;
+}
+.blogSideBar {
+  .socialWrapper {
+    img {
+      width: 35%;
     }
   }
 }

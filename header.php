@@ -12,6 +12,7 @@
 	<link rel="profile" href="http://gmpg.org/xfn/11">
 	<link href="/wp-content/uploads/2019/03/favicon.png" rel="shortcut icon">
 	<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="  crossorigin="anonymous"></script>
+	<script src="/wp-content/themes/insightCustom/js/slick.js">
 	<link rel="stylesheet" href="https://use.typekit.net/mkv6ofm.css">
 	<?php wp_head(); ?>
 </head>

@@ -14,7 +14,7 @@
 .smallMapWrapper{
   padding: 40px 20px 20px 20px;
 }
-.caldera-grid label{
+.caldera-grid label, .awsm-job-form-inner label{
   color: $headlineText !important;
   font-family: $prometoMedium;
   font-weight: 700;
@@ -23,7 +23,8 @@
 .field_required{
   color: $brandColor !important;
 }
-.CF5ce5ba5c3f551 input[type=text], .CF5ce5ba5c3f551 input[type=email], #fld_8239328_1, #fld_7683514_1{
+.CF5ce5ba5c3f551 input[type=text], .CF5ce5ba5c3f551 input[type=email],
+#fld_8239328_1, #fld_7683514_1{
   box-shadow: 2px 2px 5px rgba(42, 42, 42, 0.3);
 }
 .formWrapper{
