@@ -9,26 +9,33 @@
 
 get_header();
 ?>
-
-	<div id="primary" class="content-area">
-		<main id="main" class="site-main">
-			<?php get_template_part('/inc/breadcrumbs'); ?>
-	 		<section id="pageContent">
-	 			<div class="limitWidth paddedSection postWrapper">
-					<?php
-					while ( have_posts() ) :
-						the_post();
-						get_template_part( 'template-parts/content', 'single' );
-						// If comments are open or we have at least one comment, load up the comment template.
-						if ( comments_open() || get_comments_number() ) :
-							comments_template();
-						endif;
-					endwhile; // End of the loop.
-					?>
+<?php get_template_part('/inc/breadcrumbs'); ?>
+	<div class="pageWidth paddedSection">
+		<div id="primary" class="content-area">
+			<main id="main" class="site-main">
+				<div class="flex-container">
+					<div class="col70 postWrapper">
+						<?php
+						while ( have_posts() ) :
+							the_post();
+							get_template_part( 'template-parts/content', 'single' );
+							// If comments are open or we have at least one comment, load up the comment template.
+							if ( comments_open() || get_comments_number() ) :
+								comments_template();
+							endif;
+						endwhile; // End of the loop.
+						?>
+					</div>
+					<div class="col30">
+						<?php get_template_part('/inc/blog-sidebar'); ?>
+					</div>
 				</div>
-			</section>
-		</main><!-- #main -->
-	</div><!-- #primary -->
+			</main><!-- #main -->
+		</div><!-- #primary -->
+		<div class="paddedSection greyBorderTop">
+			<a href="/news/">Back to all news posts</a>
+		</div>
+	</div>
 
 <?php
 get_sidebar();

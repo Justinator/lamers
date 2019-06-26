@@ -10,8 +10,8 @@
 ?>
 <div class="articleWrapper">
 	<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-		<div class="flex-container-reverse centerAlignedContainer paddedSection greyBorder">
-			<div class="col50">
+		<div class="flex-container-reverse paddedSection greyBorder">
+			<div class="col60">
 				<div class="textBlock textWrap">
 					<header class="entry-header">
 						<?php
@@ -49,7 +49,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="col50 thumbnailWrapper">
+			<div class="col40 thumbnailWrapper">
 				<?php insightCustom_post_thumbnail(); ?>
 			</div>
 		</div>

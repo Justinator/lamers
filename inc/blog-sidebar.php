@@ -1,7 +1,7 @@
 <div class="blogSideBar paddedSection">
   <div class="searchWrapper">
     <div class="innerWrap">
-      <h3 class="centerText">Search the blog</h3>
+      <h3 class="centerText whiteText">Search the blog</h3>
       <?php get_search_form(); ?>
     </div>
   </div>

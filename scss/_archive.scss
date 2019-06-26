@@ -154,7 +154,6 @@
 .attachment-post-thumbnail{
   width: 100%;
   height: auto;
-  margin-top: 30px;
   margin-bottom: 40px;
 }
 .search-form{
@@ -190,13 +189,14 @@
       padding: 25px;
     }
 }
-.searchWrapper, .categoryWrapper{
-  background-color: $lightGrey;
+.searchWrapper {
+  background-color: $brandColor;
   .searchForm {
     padding: 10px;
   }
 }
 .categoryWrapper {
+  background-color: $lightGrey;
   margin-top: 25px;
 }
 .innerWrap {
@@ -206,10 +206,22 @@
   background-color: $brandColor;
   margin-top: 25px;
 }
+.searchWrapper, .categoryWrapper, .socialOutterWrapper {
+  border-radius: 10px;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
+}
 .blogSideBar {
+  nav {
+    width: 50%;
+    justify-content: center;
+    margin: 0 auto;
+    a {
+      width: 50px;
+    }
+  }
   .socialWrapper {
     img {
-      width: 35%;
+      width: 25px;
     }
   }
 }
@@ -230,5 +242,14 @@
         width: 0;
       }
     }
+  }
+}
+.postWrapper {
+  .entry-header {
+    display: block;
+  }
+  .attachment-post-thumbnail {
+    margin-top: 25px;
+    margin-bottom: 25px;
   }
 }

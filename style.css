@@ -2100,7 +2100,6 @@ ul {
 .attachment-post-thumbnail {
   width: 100%;
   height: auto;
-  margin-top: 30px;
   margin-bottom: 40px; }
 
 .search-form .search-submit {
@@ -2133,12 +2132,13 @@ ul {
     .blogText {
       padding: 25px; } }
 
-.searchWrapper, .categoryWrapper {
-  background-color: #f6f6f6; }
-  .searchWrapper .searchForm, .categoryWrapper .searchForm {
+.searchWrapper {
+  background-color: #b70033; }
+  .searchWrapper .searchForm {
     padding: 10px; }
 
 .categoryWrapper {
+  background-color: #f6f6f6;
   margin-top: 25px; }
 
 .innerWrap {
@@ -2148,8 +2148,18 @@ ul {
   background-color: #b70033;
   margin-top: 25px; }
 
+.searchWrapper, .categoryWrapper, .socialOutterWrapper {
+  border-radius: 10px;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3); }
+
+.blogSideBar nav {
+  width: 50%;
+  justify-content: center;
+  margin: 0 auto; }
+  .blogSideBar nav a {
+    width: 50px; }
 .blogSideBar .socialWrapper img {
-  width: 35%; }
+  width: 25px; }
 
 .articleWrapper .entry-header {
   display: block; }
@@ -2158,12 +2168,18 @@ ul {
 .articleWrapper .thumbnailWrapper a:after {
   width: 0; }
 
+.postWrapper .entry-header {
+  display: block; }
+.postWrapper .attachment-post-thumbnail {
+  margin-top: 25px;
+  margin-bottom: 25px; }
+
 /* 18.0 Careers Page stylings -------------------------------------------*/
 .jobWrapper a:after {
   width: 0; }
 
-.postWrapper .entry-header {
-  display: block; }
+.awsm_job_openings .byline {
+  display: none; }
 
 .awsm-job-specification-term::after {
   content: " "; }
@@ -2564,6 +2580,9 @@ ul.nacc li p {
 
 .greyBorder {
   border-bottom: 2px solid #f6f6f6; }
+
+.greyBorderTop {
+  border-top: 2px solid #f6f6f6; }
 
 .fleetWrapper img {
   margin-top: 25px; }
