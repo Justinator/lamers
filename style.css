@@ -2133,9 +2133,6 @@ ul {
     .blogText {
       padding: 25px; } }
 
-.thumbnailWrapper .post-thumbnail .attachment-post-thumbnail {
-  width: 70%; }
-
 .searchWrapper, .categoryWrapper {
   background-color: #f6f6f6; }
   .searchWrapper .searchForm, .categoryWrapper .searchForm {
@@ -2153,6 +2150,13 @@ ul {
 
 .blogSideBar .socialWrapper img {
   width: 35%; }
+
+.articleWrapper .entry-header {
+  display: block; }
+.articleWrapper .entry-title a:after {
+  width: 0; }
+.articleWrapper .thumbnailWrapper a:after {
+  width: 0; }
 
 /* 18.0 Careers Page stylings -------------------------------------------*/
 .jobWrapper a:after {

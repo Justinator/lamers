@@ -15,7 +15,7 @@
 get_header();
 ?>
 <?php get_template_part('/inc/breadcrumbs'); ?>
-<div class="pageWidth limitWidth">
+<div class="navWidth paddedSection">
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main">
 			<div class="flex-container">

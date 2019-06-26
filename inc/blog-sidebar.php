@@ -1,13 +1,13 @@
-<div class="blogSideBar">
+<div class="blogSideBar paddedSection">
   <div class="searchWrapper">
     <div class="innerWrap">
-      <h3 class="centerText"><span class="underline">Search</span> the blog</h3>
+      <h3 class="centerText">Search the blog</h3>
       <?php get_search_form(); ?>
     </div>
   </div>
   <div class="categoryWrapper">
     <div class="innerWrap">
-      <h4 class="centerText"><span class="underline">Categories</span></h4>
+      <h4 class="centerText">Categories</h4>
         <div class="innerWrap">
         <?php
           $categories = get_categories( array(
@@ -29,7 +29,7 @@
   </div>
   <div class="socialOutterWrapper">
     <div class="innerWrap">
-      <h5 class="whiteText centerText"><span class="underline">Follow Us</span></h5>
+      <h5 class="whiteText centerText">Follow Us</h5>
       <?php get_template_part("/inc/socialNav"); ?>
     </div>
   </div>

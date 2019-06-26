@@ -190,13 +190,6 @@
       padding: 25px;
     }
 }
-.thumbnailWrapper{
-  .post-thumbnail{
-    .attachment-post-thumbnail{
-      width: 70%;
-    }
-  }
-}
 .searchWrapper, .categoryWrapper{
   background-color: $lightGrey;
   .searchForm {
@@ -217,6 +210,25 @@
   .socialWrapper {
     img {
       width: 35%;
+    }
+  }
+}
+.articleWrapper {
+  .entry-header {
+    display: block;
+  }
+  .entry-title {
+    a {
+      &:after {
+        width: 0;
+      }
+    }
+  }
+  .thumbnailWrapper {
+    a {
+      &:after {
+        width: 0;
+      }
     }
   }
 }
