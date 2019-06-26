@@ -124,6 +124,14 @@ function insightcustom_widgets_init() {
 }
 add_action( 'widgets_init', 'insightcustom_widgets_init' );
 
+/*
+* Add a custom excerpt length
+*/
+function custom_excerpt_length( $length ) {
+	return 20;
+}
+add_filter( 'excerpt_length', 'custom_excerpt_length', 999 );
+
 function insightcustom_fonts_url() {
  $fonts_url = '';
 
