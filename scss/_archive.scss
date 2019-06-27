@@ -7,7 +7,7 @@
     padding: 20px 0;
   }
   @include breakpoint(laptopScreen){
-    padding: 20px;
+    padding: 0 25px 20px 25px;
   }
     h2{
       margin-bottom: 15px;
@@ -90,10 +90,10 @@
   text-transform: uppercase;
   text-decoration: none;
 	border: 2px solid $brandColor;
-	border-radius: 10px;
+	border-radius: 10px 0 0 10px;
 	background: $brandColor;
 	padding: 10px 25px 10px 25px;
-	width: max-content;
+	width: 50%;
 	color: $white;
 	transition: .3s ease;
 	cursor: pointer;
@@ -119,11 +119,12 @@
   font-size: 16px;
   text-transform: uppercase;
   text-decoration: none;
+  text-align: right;
 	border: 2px solid $brandColor;
-	border-radius: 10px;
+	border-radius: 0 10px 10px 0;
 	background: $brandColor;
 	padding: 10px 25px 10px 25px;
-	width: max-content;
+	width: 50%;
 	color: $white;
 	transition: .3s ease;
 	cursor: pointer;
@@ -251,5 +252,10 @@
   .attachment-post-thumbnail {
     margin-top: 25px;
     margin-bottom: 25px;
+  }
+}
+.pagination {
+  .nav-links {
+    justify-content: space-around;
   }
 }

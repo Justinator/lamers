@@ -7,8 +7,10 @@
   }
 }
 .awsm_job_openings {
-  .byline {
-    display: none;
+  .entry-header {
+    p {
+      display: none;
+    }
   }
 }
 .awsm-job-specification-term::after {

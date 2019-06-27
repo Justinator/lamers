@@ -33,7 +33,7 @@ get_header();
 			</main><!-- #main -->
 		</div><!-- #primary -->
 		<div class="paddedSection greyBorderTop">
-			<a href="/news/">Back to all news posts</a>
+			<?php the_post_navigation(); ?>
 		</div>
 	</div>
 

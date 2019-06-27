@@ -1235,6 +1235,9 @@ h6 {
   border-bottom: 3px solid #eeb000;
   transition: .2s ease all; }
 
+.fontLight {
+  font-weight: 400; }
+
 /* 7.0 Button Stylings ---------------------------------------*/
 .whiteButton {
   position: relative;
@@ -1973,7 +1976,7 @@ ul {
     padding: 20px 0; } }
 @media (min-width: 992px) {
   .post {
-    padding: 20px; } }
+    padding: 0 25px 20px 25px; } }
 .post h2 {
   margin-bottom: 15px; }
 .post p {
@@ -2043,10 +2046,10 @@ ul {
   text-transform: uppercase;
   text-decoration: none;
   border: 2px solid #b70033;
-  border-radius: 10px;
+  border-radius: 10px 0 0 10px;
   background: #b70033;
   padding: 10px 25px 10px 25px;
-  width: max-content;
+  width: 50%;
   color: #FFFFFF;
   transition: .3s ease;
   cursor: pointer; }
@@ -2069,11 +2072,12 @@ ul {
   font-size: 16px;
   text-transform: uppercase;
   text-decoration: none;
+  text-align: right;
   border: 2px solid #b70033;
-  border-radius: 10px;
+  border-radius: 0 10px 10px 0;
   background: #b70033;
   padding: 10px 25px 10px 25px;
-  width: max-content;
+  width: 50%;
   color: #FFFFFF;
   transition: .3s ease;
   cursor: pointer; }
@@ -2174,11 +2178,14 @@ ul {
   margin-top: 25px;
   margin-bottom: 25px; }
 
+.pagination .nav-links {
+  justify-content: space-around; }
+
 /* 18.0 Careers Page stylings -------------------------------------------*/
 .jobWrapper a:after {
   width: 0; }
 
-.awsm_job_openings .byline {
+.awsm_job_openings .entry-header p {
   display: none; }
 
 .awsm-job-specification-term::after {

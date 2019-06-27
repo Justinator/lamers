@@ -55,7 +55,7 @@ get_header();
 							 */
 							get_template_part( 'template-parts/content', get_post_type() );
 						endwhile;
-						the_posts_navigation();
+						the_posts_pagination();
 					else :
 						get_template_part( 'template-parts/content', 'none' );
 					endif;

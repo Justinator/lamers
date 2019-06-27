@@ -11,8 +11,11 @@
 <div class="articleWrapper">
 	<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 		<div class="flex-container-reverse paddedSection greyBorder">
-			<div class="col60">
-				<div class="textBlock textWrap">
+			<div>
+				<div class="textWrap">
+					<div class="thumbnailWrapper">
+						<?php insightCustom_post_thumbnail(); ?>
+					</div>
 					<header class="entry-header">
 						<?php
 						if ( is_singular() ) :
@@ -48,9 +51,6 @@
 						<a href="<?php echo esc_url( get_permalink() ) ?>" rel="bookmark" class="redButton"><?php echo $read_more_link; ?></a>
 					</div>
 				</div>
-			</div>
-			<div class="col40 thumbnailWrapper">
-				<?php insightCustom_post_thumbnail(); ?>
 			</div>
 		</div>
 	</article><!-- #post-<?php the_ID(); ?> -->
