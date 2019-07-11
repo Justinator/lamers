@@ -1,8 +1,8 @@
 <section>
-  <div class="fullWidth flex-container centerAlignedContainer">
+  <div class="fullWidth flex-container centerAlignedContainer removeBottomMargin">
     <div class="col50">
       <?php
-        $image = get_field('interior_fleet_page_hero_section_image');
+        $image = get_field('intro_image');
         $imageID = $image['ID'];
         echo wp_get_attachment_image( $imageID, 'full', false, array( 'class' => 'image', 'data-sizes' => 'auto' ) );
       ?>
@@ -10,12 +10,12 @@
     <div class="col50 centerTextBlock">
       <div class="textWrap textBlock">
         <div class="fleetTitleWrap">
-          <h1 class="noMargin"><span class="smallHeading">Features of the</span><br><?php the_field('title'); ?></h1>
+          <h1 class="noMargin"><?php the_field('intro_headline'); ?></h1>
         </div>
         <div class="fleetDescWrap">
-          <p><?php the_field('bus_short_description'); ?></p>
+          <p><?php the_field('intro_copy'); ?></p>
           <div class="btnContainer">
-            <a class="redButton" href="<?php the_field('cta_button_link'); ?>"><?php the_field('cta_button_text'); ?></a>
+            <a class="redButton" href="/contact/">Contact Location</a>
           </div>
         </div>
       </div>

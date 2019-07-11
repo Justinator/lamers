@@ -17,12 +17,12 @@
         <?php endif; ?>
         <div class="btnContainer">
           <?php if( get_field('intro_button_1_link') ): ?>
-          	<a class="redButton" href="<?php the_field('intro_button_1_link'); ?>" target="_blank"><?php if( get_field('intro_button_1') ): ?>
+          	<a class="redButton" href="<?php the_field('intro_button_1_link'); ?>"><?php if( get_field('intro_button_1') ): ?>
             	<?php the_field('intro_button_1'); ?></a>
             <?php endif; ?></a>
           <?php endif; ?>
           <?php if( get_field('intro_button_2_link') ): ?>
-          	<a class="redButton btn2" href="<?php the_field('intro_button_2_link'); ?>" target="_blank"><?php if( get_field('intro_button_2') ): ?>
+          	<a class="redButton btn2" href="<?php the_field('intro_button_2_link'); ?>"><?php if( get_field('intro_button_2') ): ?>
             	<?php the_field('intro_button_2'); ?></a>
             <?php endif; ?></a>
           <?php endif; ?>
