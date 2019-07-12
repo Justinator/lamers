@@ -13,20 +13,26 @@ get_header();
 		<?php get_template_part('/inc/location-hero'); ?>
 		<section id="pageContent">
 			<section class="fullWidth paddedSection">
-				<div class="limitWidth">
-					<h2 class="largeHeading">FIND OUT HOW WE CAN HELP WITH GROUP TRAVEL IN AND AROUND GREEN BAY</h2>
-					<div>
-						<a href="">Corporate Travel</a>
-						<a href="">Sports Events</a>
-						<a href="">Weddings</a>
-						<a href="">Charter Buses</a>
-					</div>
-				</div>
+				<?php get_template_part('/inc/featured-services'); ?>
 			</section>
 			<section class="paddedSection greyBlock">
-				<div class="pageWidth limitWidth">
-					<?php the_field('location_desc'); ?>
-					<a href="tel:<?php the_field('location_local_phone'); ?>" class="redButton">Call <?php the_field('location_local_phone'); ?> for transportation services in <?php the_field('location_city'); ?></a>
+				<div class="pageWidth flex-container">
+					<div class="col60">
+						<div class="locationContent">
+							<?php the_field('location_desc'); ?>
+							<a href="tel:<?php the_field('location_local_phone'); ?>" class="redButton callButton">Call <?php the_field('location_local_phone'); ?> for transportation services in <?php the_field('location_city'); ?></a>
+						</div>
+					</div>
+					<div class="col40">
+						<h2 class="largeHeading noMargin">School Districts Served</h2>
+						<?php if( get_field('school_districts_served') ): ?>
+		        	<?php the_field('school_districts_served'); ?>
+		        <?php endif; ?>
+						<h3 class="largeHeading noMargin">Local Links</h3>
+							<?php if( get_field('local_links') ): ?>
+			        	<?php the_field('local_links'); ?>
+			        <?php endif; ?>
+					</div>
 				</div>
 			</section>
 			<section class="paddedSection">

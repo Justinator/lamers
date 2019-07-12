@@ -1515,13 +1515,13 @@ ul {
   stroke: #FFFFFF;
   fill: #FFFFFF; }
 
-.blackIcon {
+.redIcon {
   display: inline-block;
-  width: 14px;
-  height: 14px;
+  width: 30px;
+  height: 30px;
   stroke-width: 0;
-  stroke: #000000;
-  fill: #000000; }
+  stroke: #b70033;
+  fill: #b70033; }
 
 .blueIcon {
   display: inline-block;
@@ -2740,5 +2740,21 @@ table {
   border: 1px solid #f6f6f6;
   font-size: .8em;
   margin: 0 20px 20px 0; }
+
+.backToWrap {
+  display: flex;
+  align-items: center; }
+
+.callButton {
+  display: none; }
+  @media (min-width: 600px) {
+    .callButton {
+      display: block; } }
+
+.locationContent {
+  padding: 0; }
+  @media (min-width: 992px) {
+    .locationContent {
+      padding-right: 20px; } }
 
 /*# sourceMappingURL=style.css.map */

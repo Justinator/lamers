@@ -53,13 +53,13 @@
   stroke: $white;
   fill: $white;
 }
-.blackIcon{
+.redIcon{
   display: inline-block;
-  width: 14px;
-  height: 14px;
+  width: 30px;
+  height: 30px;
   stroke-width: 0;
-  stroke: $black;
-  fill: $black;
+  stroke: $brandColor;
+  fill: $brandColor;
 }
 .blueIcon{
   display: inline-block;
