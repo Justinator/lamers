@@ -12,9 +12,7 @@ get_header();
 		<?php get_template_part('/inc/breadcrumbs'); ?>
 		<?php get_template_part('/inc/location-hero'); ?>
 		<section id="pageContent">
-			<section class="fullWidth paddedSection">
-				<?php get_template_part('/inc/featured-services'); ?>
-			</section>
+			<?php get_template_part('/inc/why-choose-lamers'); ?>
 			<section class="paddedSection greyBlock">
 				<div class="pageWidth flex-container">
 					<div class="col60">
@@ -35,9 +33,12 @@ get_header();
 					</div>
 				</div>
 			</section>
+			<section class="fullWidth paddedSection">
+				<?php get_template_part('/inc/featured-services'); ?>
+			</section>
 			<section class="paddedSection">
 				<div class="centerText">
-		      <h6 class="largeHeading">VEHICLE TYPES AVAILABLE AT THIS LOCATION</h6>
+		      <h6 class="largeHeading">VEHICLE TYPES AVAILABLE IN <?php the_field('location_city'); ?></h6>
 		    </div>
 				<?php get_template_part('/inc/vehicle-types'); ?>
 			</section>

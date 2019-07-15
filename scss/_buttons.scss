@@ -27,18 +27,18 @@
 .redButton{
 	position: relative;
 	z-index:1;
-  font-family: $prometoMedium;
-	font-weight: 700;
-  font-size: 16px;
+  font-family: $prometoMedium !important;
+	font-weight: 700 !important;
+  font-size: 16px !important;
   text-transform: uppercase;
   text-decoration: none;
-	border: 2px solid $brandColor;
+	border: 2px solid $brandColor !important;
 	border-radius: 10px;
-	background: $brandColor;
+	background: $brandColor !important;
 	padding: 10px 25px 10px 25px;
 	width: max-content;
-	color: $white;
-	transition: .3s ease;
+	color: $white !important;
+	transition: .3s ease !important;
 	cursor: pointer;
 	&:after {
 		width: 0;

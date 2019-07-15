@@ -27,6 +27,23 @@
 #fld_8239328_1, #fld_7683514_1{
   box-shadow: 2px 2px 5px rgba(42, 42, 42, 0.3);
 }
+#CF5d2cc0bea8332_1-row-1 {
+  input {
+    box-shadow: 2px 2px 5px rgba(42, 42, 42, 0.3);
+  }
+}
+.caldera-grid a {
+  text-decoration: none !important;
+}
+.caldera-grid .breadcrumb>.active, .caldera-grid .breadcrumb>.active>a {
+  color: $primaryYellow !important;
+}
+.caldera-grid a:focus, .caldera-grid a:hover {
+  color: $brandColorDark !important;
+}
+.cf-page-btn-next {
+  float: right;
+}
 .formWrapper{
   padding: 20px;
   background-color: $lightGrey;

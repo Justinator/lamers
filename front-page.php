@@ -34,34 +34,7 @@ get_header();
 		<!-- ********** Homepage Hero Section End ********** -->
 		<section id="pageContent">
 			<!-- ********** Why Lamers Section Start ********** -->
-			<section id ="whyLamers" class="paddedSection">
-				<div class="fullWidth">
-					<?php the_field('why_lamers_heading'); ?>
-					<div class="pageWidth flex-container">
-						<div class="col30">
-							<div class="blockText">
-								<h3 class="redText smallMargin"><?php the_field('reason_1'); ?></h3>
-								<p><?php the_field('reason_1_description'); ?></p>
-							</div>
-						</div>
-						<div class="col30">
-							<div class="blockText">
-								<h3 class="redText smallMargin"><?php the_field('reason_2'); ?></h3>
-								<p><?php the_field('reason_2_description'); ?></p>
-							</div>
-						</div>
-						<div class="col30">
-							<div class="blockText">
-								<h3 class="redText smallMargin"><?php the_field('reason_3'); ?></h3>
-								<p><?php the_field('reason_3_description'); ?></p>
-							</div>
-						</div>
-					</div>
-					<div class="pageWidth centerButton">
-						<a class="redButton" href="/about"><?php the_field('why_lamers_button_text'); ?></a>
-					</div>
-				</div>
-			</section>
+			<?php get_template_part('/inc/why-choose-lamers'); ?>
 			<!-- ********** Why Lamers Section End ********** -->
 			<!-- ********** Featured Services Section Start ********** -->
 			<?php get_template_part('/inc/featured-services'); ?>
@@ -80,7 +53,7 @@ get_header();
 								<p class="whiteText textBlock"><?php the_field('lamers_connect_description'); ?></p>
 								<div class="btnContainer">
 									<a class="whiteButton" href="<?php the_field('lamers_connect_button_1_link'); ?>"><?php the_field('lamers_connect_button_1_text'); ?></a>
-									<a class="whiteButton btn2" href="<?php the_field('lamers_connect_button_2_link'); ?>"><?php the_field('lamers_connect_button_2_text'); ?></a>
+									<a class="whiteButton btn2" href="<?php the_field('lamers_connect_button_2_link'); ?>" target="_blank"><?php the_field('lamers_connect_button_2_text'); ?></a>
 								</div>
 							</div>
 							<div class="col50"></div>
