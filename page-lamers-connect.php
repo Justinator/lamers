@@ -34,9 +34,9 @@ get_header();
 
 					  		?>
 					  		<div class="flex-container centerAlignedContainer paddedSection greyBorder">
-									<div class="col50">
+									<div class="col50 centerTextBlock">
 										<div class="textWrap textBlock">
-							        <h1><?php echo $headline; ?></h1>
+							        <h3 class="largeHeading"><?php echo $headline; ?></h1>
 											<p><?php echo $desc; ?></p>
 							  			<?php if( $btnLink ): ?>
 							  				<a href="<?php echo $btnLink; ?>" class="redButton"><?php echo $btnCopy; ?></a>

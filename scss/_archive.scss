@@ -57,10 +57,10 @@
 .posted-on{
   a{
   	text-decoration: none;
-  	color: $primaryYellow !important;
+  	color: $brandColor !important;
   	transition: .3s ease all;
       &:hover{
-      color: $primaryGrey !important;
+      color: $brandColorDark !important;
       transition: .3s ease all;
       }
   }
@@ -68,10 +68,10 @@
 .vcard{
   a{
     text-decoration: none;
-  	color: $primaryYellow !important;
+  	color: $brandColor !important;
   	transition: .3s ease all;
       &:hover{
-      color: $primaryGrey !important;
+      color: $brandColorDark !important;
       transition: .3s ease all;
       }
   }
@@ -257,5 +257,32 @@
 .pagination {
   .nav-links {
     justify-content: space-around;
+  }
+}
+#sidebarAffiliations {
+  #affiliations {
+    padding: 0;
+  }
+  #affiliateTitleWrap {
+    width: 100%;
+  }
+  #affiliationsTitle {
+    &:before {
+      width: 0;
+    }
+    &:after {
+      width: 0;
+    }
+  }
+  #affiliateWrapper {
+    img {
+      width: 15%;
+      @include breakpoint (laptopScreen) {
+        width: 40%;
+      }
+      @include breakpoint (extraLargeScreen) {
+        width: 30%;
+      }
+    }
   }
 }

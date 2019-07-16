@@ -26,7 +26,7 @@ get_header();
 					<div class="flex-container centerAlignedContainer paddedSection greyBorder">
 				    <div class="col50 centerTextBlock">
 				      <div class="textWrap textBlock">
-				        <h2><span class="underline"><?php the_field('service_1_headline'); ?></span></h2>
+				        <h2 class="largeHeading"><?php the_field('service_1_headline'); ?></h2>
 				        <p><?php the_field('service_1_description'); ?></p>
 								<a href="<?php the_field('service_1_button_link'); ?>" class="redButton"><?php the_field('service_1_button_text'); ?></a>
 				      </div>
@@ -42,7 +42,7 @@ get_header();
 					<div class="flex-container centerAlignedContainer paddedSection greyBorder">
 						<div class="col50 centerTextBlock">
 							<div class="textWrap textBlock">
-								<h3 class="mediumHeading"><span class="underline"><?php the_field('service_2_headline'); ?></span></h3>
+								<h3 class="largeHeading"><?php the_field('service_2_headline'); ?></h3>
 								<p><?php the_field('service_2_description'); ?></p>
 								<a href="<?php the_field('service_2_button_link'); ?>" class="redButton"><?php the_field('service_1_button_text'); ?></a>
 							</div>
@@ -58,7 +58,7 @@ get_header();
 					<div class="flex-container centerAlignedContainer paddedSection greyBorder">
 				    <div class="col50 centerTextBlock">
 				      <div class="textWrap textBlock">
-				        <h4 class="mediumHeading"><span class="underline"><?php the_field('service_3_headline'); ?></span></h4>
+				        <h4 class="largeHeading"><?php the_field('service_3_headline'); ?></h4>
 				        <p><?php the_field('service_3_description'); ?></p>
 								<a href="<?php the_field('service_3_button_link'); ?>" class="redButton"><?php the_field('service_1_button_text'); ?></a>
 				      </div>
@@ -74,7 +74,7 @@ get_header();
 					<div class="flex-container centerAlignedContainer paddedSection greyBorder">
 						<div class="col50 centerTextBlock">
 							<div class="textWrap textBlock">
-								<h5 class="mediumHeading"><span class="underline"><?php the_field('service_4_headline'); ?></span></h5>
+								<h5 class="largeHeading"><?php the_field('service_4_headline'); ?></h5>
 								<p><?php the_field('service_4_description'); ?></p>
 								<a href="<?php the_field('service_4_button_link'); ?>" class="redButton"><?php the_field('service_1_button_text'); ?></a>
 							</div>
@@ -90,7 +90,7 @@ get_header();
 					<div class="flex-container centerAlignedContainer paddedSection greyBorder">
 				    <div class="col50 centerTextBlock">
 				      <div class="textWrap textBlock">
-				        <h6 class="mediumHeading"><span class="underline"><?php the_field('service_5_headline'); ?></span></h6>
+				        <h6 class="largeHeading"><?php the_field('service_5_headline'); ?></h6>
 				        <p><?php the_field('service_5_description'); ?></p>
 								<a href="<?php the_field('service_5_button_link'); ?>" class="redButton"><?php the_field('service_1_button_text'); ?></a>
 				      </div>
@@ -106,7 +106,7 @@ get_header();
 					<div class="flex-container centerAlignedContainer paddedSection greyBorder">
 						<div class="col50 centerTextBlock">
 							<div class="textWrap textBlock">
-								<h6 class="mediumHeading"><span class="underline"><?php the_field('service_6_headline'); ?></span></h6>
+								<h6 class="largeHeading"><?php the_field('service_6_headline'); ?></h6>
 								<p><?php the_field('service_6_description'); ?></p>
 								<a href="<?php the_field('service_6_button_link'); ?>" class="redButton"><?php the_field('service_1_button_text'); ?></a>
 							</div>
@@ -122,7 +122,7 @@ get_header();
 					<div class="flex-container centerAlignedContainer paddedSection greyBorder">
 				    <div class="col50 centerTextBlock">
 				      <div class="textWrap textBlock">
-				        <h6 class="mediumHeading"><span class="underline"><?php the_field('service_7_headline'); ?></span></h6>
+				        <h6 class="largeHeading"><?php the_field('service_7_headline'); ?></h6>
 				        <p><?php the_field('service_7_description'); ?></p>
 								<a href="<?php the_field('service_7_button_link'); ?>" class="redButton"><?php the_field('service_1_button_text'); ?></a>
 				      </div>
@@ -138,7 +138,7 @@ get_header();
 					<div class="flex-container centerAlignedContainer paddedSection greyBorder">
 						<div class="col50 centerTextBlock">
 							<div class="textWrap textBlock">
-								<h6 class="mediumHeading"><span class="underline"><?php the_field('service_8_headline'); ?></span></h6>
+								<h6 class="largeHeading"><?php the_field('service_8_headline'); ?></h6>
 								<p><?php the_field('service_8_description'); ?></p>
 								<a href="<?php the_field('service_8_button_link'); ?>" class="redButton"><?php the_field('service_1_button_text'); ?></a>
 							</div>

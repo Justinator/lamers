@@ -34,7 +34,7 @@ get_header();
 <div class="pageWidth paddedSection">
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main">
-			<div class="flex-container">
+			<div class="flex-container-reverse">
 				<div class="col70">
 					<?php
 					if ( have_posts() ) :

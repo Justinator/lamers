@@ -1314,14 +1314,14 @@ h6 {
   text-decoration: none;
   color: #b70033;
   transition: .2s ease; }
+  .plainLink:after {
+    width: 0; }
   .plainLink:hover {
     color: #800023;
     transition: .2s ease; }
     .plainLink:hover #redArrow {
       margin-left: 10px;
       transition: .2s ease; }
-  .plainLink:after {
-    width: 0; }
 
 .centerButton {
   margin: 0 auto;
@@ -2034,18 +2034,18 @@ ul {
 
 .posted-on a {
   text-decoration: none;
-  color: #eeb000 !important;
+  color: #b70033 !important;
   transition: .3s ease all; }
   .posted-on a:hover {
-    color: #404041 !important;
+    color: #800023 !important;
     transition: .3s ease all; }
 
 .vcard a {
   text-decoration: none;
-  color: #eeb000 !important;
+  color: #b70033 !important;
   transition: .3s ease all; }
   .vcard a:hover {
-    color: #404041 !important;
+    color: #800023 !important;
     transition: .3s ease all; }
 
 .nav-links {
@@ -2196,6 +2196,23 @@ ul {
 
 .pagination .nav-links {
   justify-content: space-around; }
+
+#sidebarAffiliations #affiliations {
+  padding: 0; }
+#sidebarAffiliations #affiliateTitleWrap {
+  width: 100%; }
+#sidebarAffiliations #affiliationsTitle:before {
+  width: 0; }
+#sidebarAffiliations #affiliationsTitle:after {
+  width: 0; }
+#sidebarAffiliations #affiliateWrapper img {
+  width: 15%; }
+  @media (min-width: 992px) {
+    #sidebarAffiliations #affiliateWrapper img {
+      width: 40%; } }
+  @media (min-width: 1600px) {
+    #sidebarAffiliations #affiliateWrapper img {
+      width: 30%; } }
 
 /* 18.0 Careers Page stylings -------------------------------------------*/
 .jobWrapper a:after {
@@ -2786,5 +2803,28 @@ table {
   font-weight: 700 !important;
   font-size: 16px !important;
   text-transform: uppercase; }
+
+.wpfront-message {
+  padding: 0 10px; }
+
+#wpfront-notification-bar div.wpfront-message {
+  font-size: 18px;
+  font-family: "Roboto", "Lucida Grande", "Lucida Sans", Geneva, Arial, sans-serif; }
+
+.wpfront-button {
+  font-family: prometo, sans-serif !important;
+  font-weight: 700 !important;
+  font-size: 18px !important;
+  text-transform: uppercase;
+  text-decoration: none; }
+  .wpfront-button:after {
+    width: 0; }
+
+#wpfront-notification-bar div.wpfront-close {
+  z-index: 1; }
+
+#wpfront-notification-bar div.wpfront-close {
+  top: 14px;
+  font-size: 20px; }
 
 /*# sourceMappingURL=style.css.map */

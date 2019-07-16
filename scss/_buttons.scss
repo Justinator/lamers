@@ -84,17 +84,17 @@
 	text-decoration: none;
 	color: $brandColor;
 	transition: .2s ease;
-		&:hover{
-			color: $brandColorDark;
+	&:after {
+		width: 0;
+	}
+	&:hover{
+		color: $brandColorDark;
+		transition: .2s ease;
+		#redArrow{
+			margin-left: 10px;
 			transition: .2s ease;
-			#redArrow{
-				margin-left: 10px;
-				transition: .2s ease;
-			}
 		}
-		&:after {
-			width: 0;
-		}
+	}
 }
 .centerButton{
 	margin: 0 auto;

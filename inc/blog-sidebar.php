@@ -34,3 +34,6 @@
     </div>
   </div>
 </div>
+<div id="sidebarAffiliations">
+  <?php get_template_part('/inc/affiliations'); ?>
+</div>

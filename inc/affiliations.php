@@ -4,12 +4,12 @@
   </div>
   <div class="pageWidth">
     <div id="affiliateWrapper">
-      <img src="<?php $image = get_field('affiliations_logo_1'); $size = 'full'; if( $image ) {echo $image['url'];}?>" class="affiliateLogo">
-      <img src="<?php $image = get_field('affiliations_logo_2'); $size = 'full'; if( $image ) {echo $image['url'];}?>" class="affiliateLogo">
-      <img src="<?php $image = get_field('affiliations_logo_3'); $size = 'full'; if( $image ) {echo $image['url'];}?>" class="affiliateLogo">
-      <img src="<?php $image = get_field('affiliations_logo_4'); $size = 'full'; if( $image ) {echo $image['url'];}?>" class="affiliateLogo">
-      <img src="<?php $image = get_field('affiliations_logo_5'); $size = 'full'; if( $image ) {echo $image['url'];}?>" class="affiliateLogo">
-      <img src="<?php $image = get_field('affiliations_logo_6'); $size = 'full'; if( $image ) {echo $image['url'];}?>" class="affiliateLogo">
+      <img src="<?php $image = get_field('affiliations_logo_1', 'options'); $size = 'full'; if( $image ) {echo $image['url'];}?>" class="affiliateLogo">
+      <img src="<?php $image = get_field('affiliations_logo_2', 'options'); $size = 'full'; if( $image ) {echo $image['url'];}?>" class="affiliateLogo">
+      <img src="<?php $image = get_field('affiliations_logo_3', 'options'); $size = 'full'; if( $image ) {echo $image['url'];}?>" class="affiliateLogo">
+      <img src="<?php $image = get_field('affiliations_logo_4', 'options'); $size = 'full'; if( $image ) {echo $image['url'];}?>" class="affiliateLogo">
+      <img src="<?php $image = get_field('affiliations_logo_5', 'options'); $size = 'full'; if( $image ) {echo $image['url'];}?>" class="affiliateLogo">
+      <img src="<?php $image = get_field('affiliations_logo_6', 'options'); $size = 'full'; if( $image ) {echo $image['url'];}?>" class="affiliateLogo">
     </div>
   </div>
 </section>

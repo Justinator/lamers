@@ -4,7 +4,7 @@
       <h6 class="largeHeading"><span class="underline">Contact</span> Us</h6>
       <p>
         We welcome your feedback or questions. If you are looking for a price on a bus, please
-        fill out our online <a href="#">quote request form</a>.
+        fill out our online <a href="/request-a-quote/">quote request form</a>.
       </p>
       <h6 class="noMargin">Corporate Office</h6>
       <p>
