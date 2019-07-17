@@ -83,7 +83,7 @@ get_header();
 			</section>
 			<section class="routeRates paddedSection">
 				<div class="pageWidth centerText">
-					<h4 class="largeHeading"><span class="underline"><?php the_field('fares_title'); ?></span></h4>
+					<h4 class="largeHeading"><?php the_field('fares_title'); ?></h4>
 				</div>
 				<div class="navWidth faresTable">
 					<?php $table = get_field( 'fares_table' );
