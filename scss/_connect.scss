@@ -19,7 +19,7 @@
   }
   th {
     background: $brandColor;
-    padding: 10px 100px;
+    padding: 10px 20px;
     text-transform: uppercase;
     font-family: $prometoMedium;
     color: $white;
@@ -103,5 +103,10 @@ table {
       font-family: $roboto;
       font-weight: 700;
     }
+  }
+}
+#scrollWrap {
+  @include breakpoint (laptopScreen) {
+    display: none;
   }
 }
