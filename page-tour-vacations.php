@@ -12,11 +12,11 @@ get_header();
 		<?php get_template_part('/inc/hero-intro'); ?>
 		<section id="pageContent" class="serviceWrapper">
 			<div class="pageWidth flex-container">
-				<div class="col80">
-					<?php echo do_shortcode('[WP_TRAVEL_ITINERARIES]'); ?>
-				</div>
 				<div class="col20">
-					<?php echo do_shortcode('[wp_travel_trip_filters]'); ?>
+					<?php echo do_shortcode('[tourmaster_tour_search fields="keywords, tour_category, departure-location, min-price, max-price" style="column" with-frame="disable" ]'); ?>
+				</div>
+				<div class="col80">
+					<?php echo do_shortcode('[tourmaster_tour category="" num-fetch="6" pagination="page" tour-style="grid" column-size="3" thumbnail-size="full" tour-info="duration-text, availability" excerpt-number="20" tour-rating="enable" ]'); ?>
 				</div>
 			</div>
 		</section>

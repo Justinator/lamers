@@ -1384,6 +1384,9 @@ button {
 .noDecoration:after {
   width: 0; }
 
+#wpadminbar a:after {
+  width: 0; }
+
 /* 8.0 General Body Styles -------------------------------------------*/
 body {
   background: #FFFFFF;
@@ -2830,5 +2833,74 @@ table {
 #wpfront-notification-bar div.wpfront-close {
   top: 14px;
   font-size: 20px; }
+
+.tourmaster-tour-thumbnail img {
+  height: auto;
+  width: 100%; }
+.tourmaster-tour-thumbnail a:after {
+  width: 0; }
+
+.tourmaster-tour-content-wrap a:after {
+  width: 0; }
+
+.tourmaster-tour-item .tourmaster-tour-grid .tourmaster-tour-discount-price,
+.tourmaster-tour-item .tourmaster-tour-grid .tourmaster-tour-price .tourmaster-tail {
+  color: #b70033; }
+
+.tourmaster-tour-info-wrap i {
+  color: #b70033; }
+
+.tourmaster-header-price .tourmaster-tour-price-wrap.tourmaster-discount .tourmaster-tour-price, .tourmaster-header-price .tourmaster-tour-price-info {
+  color: #800023 !important; }
+
+.tourmaster-tour-search-wrap form {
+  display: flex;
+  flex-direction: column; }
+  .tourmaster-tour-search-wrap form .tourmaster-tour-search-field {
+    width: 90% !important; }
+  .tourmaster-tour-search-wrap form .tourmaster-tour-search-submit {
+    width: 90% !important;
+    cursor: pointer; }
+
+.tourmaster-tour-grid .tourmaster-tour-content {
+  font-weight: 400; }
+
+.tourmaster-column-20 {
+  width: 25%; }
+
+@media (min-width: 768px) {
+  .tourmaster-column-30 {
+    padding: 10px;
+    width: 45% !important; } }
+@media (min-width: 1250px) {
+  .tourmaster-column-30 {
+    width: 40% !important; } }
+
+.tourmaster-body .tourmaster-container, .single-tour.tourmaster-body {
+  padding-left: 0;
+  padding-right: 0; }
+
+.tourmaster-container {
+  padding-left: 0;
+  padding-right: 0; }
+
+body.single-tour.tourmaster-bottom-booking-bar .tourmaster-template-wrapper {
+  display: flex !important;
+  flex-direction: column;
+  width: 100%; }
+  @media (min-width: 992px) {
+    body.single-tour.tourmaster-bottom-booking-bar .tourmaster-template-wrapper {
+      display: block !important; } }
+
+body.single-tour.tourmaster-bottom-booking-bar .tourmaster-tour-booking-bar-container.tourmaster-container {
+  order: 2 !important; }
+
+.tourmaster-head {
+  font-family: prometo, sans-serif;
+  text-transform: uppercase;
+  font-weight: 700; }
+
+.tourmaster-enquiry-term {
+  font-size: 14px; }
 
 /*# sourceMappingURL=style.css.map */

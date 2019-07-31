@@ -162,3 +162,10 @@ button{
 		width: 0;
 	}
 }
+#wpadminbar {
+	a {
+		&:after {
+			width: 0;
+		}
+	}
+}

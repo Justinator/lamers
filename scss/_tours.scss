@@ -1,0 +1,81 @@
+.tourmaster-tour-thumbnail {
+  img {
+    height: auto;
+    width: 100%;
+  }
+  a{
+    &:after {
+      width: 0;
+    }
+  }
+}
+.tourmaster-tour-content-wrap {
+  a {
+    &:after {
+      width: 0;
+    }
+  }
+}
+.tourmaster-tour-item .tourmaster-tour-grid .tourmaster-tour-discount-price,
+.tourmaster-tour-item .tourmaster-tour-grid .tourmaster-tour-price .tourmaster-tail {
+  color: $brandColor;
+}
+.tourmaster-tour-info-wrap i {
+  color: $brandColor;
+}
+.tourmaster-header-price .tourmaster-tour-price-wrap.tourmaster-discount .tourmaster-tour-price, .tourmaster-header-price .tourmaster-tour-price-info {
+  color: $brandColorDark !important;
+}
+.tourmaster-tour-search-wrap form {
+  display: flex;
+  flex-direction: column;
+  .tourmaster-tour-search-field {
+    width: 90% !important;
+  }
+  .tourmaster-tour-search-submit {
+    width: 90% !important;
+    cursor: pointer;
+  }
+}
+.tourmaster-tour-grid .tourmaster-tour-content {
+  font-weight: 400;
+}
+.tourmaster-column-20 {
+  width: 25%;
+}
+.tourmaster-column-30 {
+  @include breakpoint (tabletScreen) {
+    padding: 10px;
+    width: 45% !important;
+  }
+  @include breakpoint (largeScreen) {
+    width: 40% !important;
+  }
+}
+.tourmaster-body .tourmaster-container, .single-tour.tourmaster-body {
+  padding-left: 0;
+  padding-right: 0;
+}
+.tourmaster-container {
+  padding-left: 0;
+  padding-right: 0;
+}
+body.single-tour.tourmaster-bottom-booking-bar .tourmaster-template-wrapper {
+  display: flex !important;
+  flex-direction: column;
+  width: 100%;
+  @include breakpoint (laptopScreen) {
+    display: block !important;
+  }
+}
+body.single-tour.tourmaster-bottom-booking-bar .tourmaster-tour-booking-bar-container.tourmaster-container {
+  order: 2 !important;
+}
+.tourmaster-head {
+  font-family: $prometoMedium;
+	text-transform: uppercase;
+  font-weight: 700;
+}
+.tourmaster-enquiry-term {
+  font-size: 14px;
+}
