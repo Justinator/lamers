@@ -1,6 +1,11 @@
 <?php
 get_header();
-
+get_template_part('/inc/breadcrumbs');
+echo '<div class="pageWidth flex-container">';
+echo '<div class="col20">';
+echo do_shortcode('[tourmaster_tour_search fields="keywords, tour_category, departure-location, min-price, max-price" style="column" with-frame="disable"]');
+echo '</div>';
+echo '<div class="col80">';
 	$shadow_size = tourmaster_get_option('general', 'tour-search-item-frame-shadow-size', '');
 	$settings = array(
 		'pagination' => 'page',
@@ -21,7 +26,7 @@ get_header();
 
 	if( $settings['grid-style'] == 'style-2' ){
 		$settings['tour-border-radius'] = '3px';
-	} 
+	}
 
 	// search query
 	$args = array(
@@ -101,7 +106,7 @@ get_header();
 			'value'   => $_GET['date'],
 			'compare' => 'LIKE',
 		);
-	}	
+	}
 
 	// date
 	if( !empty($_GET['month']) ){
@@ -110,9 +115,9 @@ get_header();
 			'value'   => $_GET['month'],
 			'compare' => 'LIKE',
 		);
-	}	
+	}
 
-	// min price 
+	// min price
 	if( !empty($_GET['min-price']) ){
 		$meta_query[] = array(
 			'key'     => 'tourmaster-tour-price',
@@ -122,7 +127,7 @@ get_header();
 		);
 	}
 
-	// max price 
+	// max price
 	if( !empty($_GET['max-price']) ){
 		$meta_query[] = array(
 			'key'     => 'tourmaster-tour-price',
@@ -132,7 +137,7 @@ get_header();
 		);
 	}
 
-	// max price 
+	// max price
 	if( !empty($_GET['rating']) ){
 		$meta_query[] = array(
 			'key'     => 'tourmaster-tour-rating-score',
@@ -147,7 +152,7 @@ get_header();
 	}
 
 	$settings['query'] = new WP_Query($args);
-	
+
 	global $tourmaster_found_posts;
 	$tourmaster_found_posts = $settings['query']->found_posts;
 
@@ -165,10 +170,10 @@ get_header();
 	$sidebar_type = 'none';
 	echo '<div class="' . tourmaster_get_sidebar_wrap_class($sidebar_type) . '" >';
 	echo '<div class="' . tourmaster_get_sidebar_class(array('sidebar-type'=>$sidebar_type, 'section'=>'center')) . '" >';
-	
-	
+
+
 	echo '<div class="tourmaster-page-content" >';
-	
+
 	// search filter
 	$enable_search_filter = tourmaster_get_option('general', 'enable-tour-search-filter', 'disable');
 	if( $enable_search_filter == 'enable' ){
@@ -187,13 +192,13 @@ get_header();
 	}
 
 	// content
-	if( $settings['query']->have_posts() ){	
+	if( $settings['query']->have_posts() ){
 
-		$settings['enable-order-filterer'] = 'enable'; 
-		$settings['order-filterer-grid-style'] = tourmaster_get_option('general', 'tour-search-order-filterer-grid-style', ''); 
-		$settings['order-filterer-grid-style-thumbnail'] = tourmaster_get_option('general', 'tour-search-order-filterer-grid-style-thumbnail', ''); 
-		$settings['order-filterer-grid-style-column'] = $settings['column-size']; 
-		
+		$settings['enable-order-filterer'] = 'enable';
+		$settings['order-filterer-grid-style'] = tourmaster_get_option('general', 'tour-search-order-filterer-grid-style', '');
+		$settings['order-filterer-grid-style-thumbnail'] = tourmaster_get_option('general', 'tour-search-order-filterer-grid-style-thumbnail', '');
+		$settings['order-filterer-grid-style-column'] = $settings['column-size'];
+
 		$settings['order-filterer-list-style'] = tourmaster_get_option('general', 'tour-search-item-style', '');
 		$settings['order-filterer-list-style-thumbnail'] = tourmaster_get_option('general', 'tour-search-item-thumbnail', '');
 
@@ -216,7 +221,7 @@ get_header();
 			echo '<h3 class="tourmaster-tour-search-content-head tourmaster-item-mglr" >';
 			echo sprintf(esc_html__('%d Results Found', 'tourmaster'), $tourmaster_found_posts);
 			echo '</h3>';
-		} 
+		}
 		echo tourmaster_pb_element_tour::get_content($settings);
 		echo '</div>';
 	}else{
@@ -234,21 +239,21 @@ get_header();
 				'with-frame' => 'disable',
 				'padding-bottom' => '0px',
 				'no-pdlr' => true
-			));		
+			));
 		}
 
 		echo '</div>'; // tourmaster-single-search-not-found-inner
 		echo '</div>'; // tourmaster-single-search-not-found-wrap
 	}
-
+	echo '</div>';
 	echo '</div>'; // tourmaster-page-content
-	
+
 	echo '</div>'; // tourmaster-get-sidebar-class
-	echo '</div>'; // tourmaster-get-sidebar-wrap-class	
-	
+	echo '</div>'; // tourmaster-get-sidebar-wrap-class
+
 	echo '</div>'; // tourmaster-container
 	echo '</div>'; // tourmaster-template-wrapper
-
-get_footer(); 
+	echo '</div>';
+get_footer();
 
 ?>

@@ -1914,7 +1914,7 @@
 
 					$ret = array(
 						'status' => 'success',
-						'message' => esc_html__('Your enquiry has been sent. Thank you!', 'tourmaster')
+						'message' => esc_html__('Thank you, your inquiry has been sent. A respresentative will be in touch with you as soon as possible to finish setting up your reservation!', 'tourmaster')
 					);
 				}else{
 					$ret = array(

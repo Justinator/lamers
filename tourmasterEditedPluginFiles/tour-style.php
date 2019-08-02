@@ -223,7 +223,7 @@
 
 					if( !empty($settings['with-info']) ){
 						$ret .= '<span class="fa fa-info-circle tourmaster-tour-price-info" data-rel="tipsy" title="';
-						$ret .= esc_html__('The initial price based on applied group discounts', 'tourmaster');
+						$ret .= esc_html__('The initial price based on one single ticket without any discounts', 'tourmaster');
 						$ret .= '" >';
 						$ret .= '</span>';
 					}

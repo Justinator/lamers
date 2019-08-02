@@ -15,22 +15,7 @@
 get_header();
 ?>
 <?php get_template_part('/inc/breadcrumbs'); ?>
-<section class="removeBottomMargin">
-  <div class="fullWidth flex-container centerAlignedContainer">
-    <div class="col50">
-      <img src="https://wordpress-154794-852975.cloudwaysapps.com/wp-content/uploads/2019/06/lamers-standard-trolley-bus.jpg" class="image">
-    </div>
-    <div class="col50 centerTextBlock">
-      <div class="textWrap textBlock">
-        <h1><span class="underline">News</span></h1>
-				<p>
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Viverra ipsum nunc aliquet bibendum enim facilisis gravida neque. Amet est placerat in egestas erat imperdiet.
-				</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
+<?php get_template_part('/inc/hero'); ?>
 <div class="pageWidth paddedSection">
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main">
