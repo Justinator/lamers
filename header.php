@@ -18,45 +18,32 @@
 </head>
 <body <?php body_class(); ?>>
 <a class="screenReaderSkipToContent" href="#primary" tabindex="0">Skip to main content</a>
-<nav role="navigation" aria-label="mobile navigation">
-	<div class = "mobile-menu">
-		<?php
-		get_search_form();
-		wp_nav_menu( array( 'theme_location' => 'SecondaryMenu', 'menu_id' => 'SecondaryMenu' ) );
-		wp_nav_menu( array( 'theme_location' => 'PrimaryMobile', 'menu_id' => 'PrimaryMobile' ) );
-		?>
-	</div>
-</nav>
 <div id="page" class="site">
 	<header id="masthead" class="site-header" role="banner">
-		<nav role="navigation" aria-label="desktop sub navigation">
-			<div class="secondaryNavigation">
-				<div class="fullWidth secondaryMenuWrap">
-					<?php wp_nav_menu( array( 'theme_location' => 'SecondaryMenu', 'menu_id' => 'SecondaryMenu' ) );
-					get_search_form();
-					?>
-				</div>
+		<nav role="navigation" aria-label="desktop sub navigation" class="secondaryNavigation">
+			<div class="fullWidth secondaryMenuWrap">
+				<?php wp_nav_menu( array( 'theme_location' => 'SecondaryMenu', 'menu_id' => 'SecondaryMenu' ) );
+				get_search_form();
+				?>
 			</div>
 		</nav>
-		<div id="site-navigation" class="main-navigation">
-			<nav role="navigation" aria-label="primary navigation">
-				<div class="navWidth menuLinkWrap">
-						<a href="http://wordpress-154794-852975.cloudwaysapps.com/">
-							<img src="/wp-content/uploads/2019/05/Lamers-Bus-Lines-Logo-RGB.jpg" class="siteLogo" alt="Lamer's Logo"><span class="screen-reader-text">Go back to the homepage</span>
-						</a>
-						<?php wp_nav_menu( array( 'theme_location' => 'PrimaryMenu', 'menu_id' => 'PrimaryMenu' ) ); ?>
-						<div class = "menuButtonWrap" aria-label="mobile menu toggle button" tabindex="0">
-							<div class = "menuTextWrap">
-								<span class = "menuText">MENU</span>
-								<button class="hamburger hamburger--collapse" type="button" aria-label="Mobile menu button" aria-expanded="false">
-								  <span class="hamburger-box">
-								    <span class="hamburger-inner"></span>
-								  </span>
-								</button>
-							</div>
+		<nav id="site-navigation" class="main-navigation" role="navigation" aria-label="primary navigation">
+			<div class="navWidth menuLinkWrap">
+					<a href="http://wordpress-154794-852975.cloudwaysapps.com/">
+						<img src="/wp-content/uploads/2019/05/Lamers-Bus-Lines-Logo-RGB.jpg" class="siteLogo" alt="Lamer's Logo"><span class="screen-reader-text">Go back to the homepage</span>
+					</a>
+					<?php wp_nav_menu( array( 'theme_location' => 'PrimaryMenu', 'menu_id' => 'PrimaryMenu' ) ); ?>
+					<div class = "menuButtonWrap" aria-label="mobile menu toggle button" tabindex="0">
+						<div class = "menuTextWrap">
+							<span class = "menuText">MENU</span>
+							<button class="hamburger hamburger--collapse" type="button" aria-label="Mobile menu button" aria-expanded="false">
+							  <span class="hamburger-box">
+							    <span class="hamburger-inner"></span>
+							  </span>
+							</button>
 						</div>
-				</div>
-			</nav>
-		</div><!-- #site-navigation -->
+					</div>
+			</div>
+		</nav>
 	</header><!-- #masthead -->
 	<div id="content" class="site-content">

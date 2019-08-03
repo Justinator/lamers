@@ -45,9 +45,7 @@ if ( ! function_exists( 'insightcustom_setup' ) ) :
 		// This theme uses wp_nav_menu() in one location.
 		register_nav_menus( array(
 			'PrimaryMenu' => esc_html__( 'PrimaryMenu', 'insightCustom' ),
-			'PrimaryMobile' => esc_html__( 'PrimaryMobile', 'insightCustom' ),
 			'SecondaryMenu' => esc_html__( 'SecondaryMenu', 'insightCustom' ),
-			'SecondaryMobile' => esc_html__( 'SecondaryMobile', 'insightCustom' ),
 			'FooterMenu' => esc_html__( 'FooterMenu', 'insightCustom' ),
 			'CareersMenu' => esc_html__( 'CareersNavigation', 'insightCustom' ),
 			'ServiceMenu' => esc_html__( 'ServiceMenu', 'insightCustom' ),

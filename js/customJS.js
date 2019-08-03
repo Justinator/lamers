@@ -1,7 +1,13 @@
 // open menu
 $(function() {
     $(".menuButtonWrap").click(function(e){
-        $(".mobile-menu").toggleClass("open");
+        $("#PrimaryMenu").toggleClass("open");
+        	e.stopPropagation();
+    });
+});
+$(function() {
+    $(".menuButtonWrap").click(function(e){
+        $(".secondaryMenuWrap").toggleClass("open");
         	e.stopPropagation();
     });
 });
