@@ -15,7 +15,20 @@
 get_header();
 ?>
 <?php get_template_part('/inc/breadcrumbs'); ?>
-<?php get_template_part('/inc/hero'); ?>
+<section class="removeBottomMargin">
+  <div class="fullWidth flex-container centerAlignedContainer">
+    <div class="col50">
+      <img src="/wp-content/uploads/2019/08/blog.jpg" class="image">
+    </div>
+    <div class="col50 centerTextBlock">
+      <div class="textWrap textBlock">
+        <h1><span class="underline">News</span></h1>
+		    <p>Lamers Bus Lines’ blog shares company news, bus travel information, and motor coach trip descriptions. Read more to learn about bus safety and tips for booking your trips and buses.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 <div class="pageWidth paddedSection">
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main">
@@ -47,7 +60,10 @@ get_header();
 					?>
 				</div>
 				<div class="col30">
-					<?php get_template_part('/inc/blog-sidebar'); ?>
+					<div class="paddedSection">
+						<?php get_sidebar(); ?>
+						<?php get_template_part('/inc/blog-sidebar'); ?>
+					</div>	
 				</div>
 			</div>
 		</main><!-- #main -->
@@ -55,5 +71,4 @@ get_header();
 </div>
 
 <?php
-get_sidebar();
 get_footer();

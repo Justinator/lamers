@@ -1141,6 +1141,8 @@ textarea {
 h1, h2, h3, h4, h5, h6 {
   font-family: prometo, sans-serif;
   text-transform: uppercase;
+  font-size: 2em;
+  font-weight: 700;
   line-height: 1.4em;
   margin-top: 0;
   margin-bottom: 25px; }
@@ -1148,26 +1150,6 @@ h1, h2, h3, h4, h5, h6 {
 p {
   margin-top: 0;
   margin-bottom: 1em !important; }
-
-h1 {
-  font-weight: 700;
-  font-size: 2em; }
-
-h2 {
-  font-size: 1.6em;
-  font-weight: 700; }
-
-h3 {
-  font-size: 1.4em; }
-
-h4 {
-  font-size: 1.4em; }
-
-h5 {
-  font-size: 1.1em; }
-
-h6 {
-  font-size: .9em; }
 
 .whiteText {
   color: #FFFFFF; }
@@ -1378,9 +1360,11 @@ button {
       margin-left: 15px;
       margin-top: 0; } }
 
-@media (min-width: 768px) {
-  #viewAll {
-    margin-left: 25px; } }
+#viewAll {
+  font-size: 1.2em; }
+  @media (min-width: 768px) {
+    #viewAll {
+      margin-left: 25px; } }
 
 #arrowWrap {
   display: flex;
@@ -2183,17 +2167,43 @@ ul {
     .blogText {
       padding: 25px; } }
 
-.searchWrapper {
-  background-color: #b70033; }
-  .searchWrapper .searchForm {
-    padding: 10px; }
+#search-2 {
+  background-color: #b70033;
+  text-align: center;
+  border-radius: 10px; }
+  #search-2 h2 {
+    font-size: 1.6em;
+    font-weight: 700;
+    color: #FFFFFF; }
+  #search-2 .searchForm {
+    padding: 0 0 20px 0;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px; }
 
-.categoryWrapper {
+#categories-2 {
   background-color: #f6f6f6;
   margin-top: 25px; }
+  #categories-2 .widget-title {
+    text-align: center;
+    font-size: 1.6em; }
+  #categories-2 ul {
+    list-style-type: none;
+    padding: 0 0 20px 20px; }
 
-.innerWrap {
-  padding: 10px; }
+#media_gallery-2 .widget-title {
+  text-align: center;
+  font-size: 1.6em; }
+#media_gallery-2 a:after {
+  width: 0%; }
+#media_gallery-2 img {
+  width: 15%;
+  height: auto; }
+  @media (min-width: 992px) {
+    #media_gallery-2 img {
+      width: 40%; } }
+  @media (min-width: 1600px) {
+    #media_gallery-2 img {
+      width: 30%; } }
 
 .socialOutterWrapper {
   background-color: #b70033;
@@ -2231,7 +2241,8 @@ ul {
 #sidebarAffiliations #affiliations {
   padding: 0; }
 #sidebarAffiliations #affiliateTitleWrap {
-  width: 100%; }
+  width: 100%;
+  margin-top: 25px; }
 #sidebarAffiliations #affiliationsTitle:before {
   width: 0; }
 #sidebarAffiliations #affiliationsTitle:after {
@@ -2244,6 +2255,9 @@ ul {
   @media (min-width: 1600px) {
     #sidebarAffiliations #affiliateWrapper img {
       width: 30%; } }
+
+.innerWrap {
+  padding: 0 0 20px 0; }
 
 /* 18.0 Careers Page stylings -------------------------------------------*/
 .jobWrapper a:after {
@@ -2757,6 +2771,9 @@ table {
 @media (min-width: 992px) {
   #scrollWrap {
     display: none; } }
+
+.accordion__title:before {
+  top: 22px; }
 
 .privacy ul {
   margin: 0 0 25px 25px; }

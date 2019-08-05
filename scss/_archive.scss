@@ -190,18 +190,53 @@
       padding: 25px;
     }
 }
-.searchWrapper {
+#search-2 {
   background-color: $brandColor;
+  text-align: center;
+  border-radius: 10px;
+  h2 {
+    font-size: 1.6em;
+    font-weight: 700;
+    color: $white;
+  }
   .searchForm {
-    padding: 10px;
+    padding: 0 0 20px 0;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
   }
 }
-.categoryWrapper {
+#categories-2 {
   background-color: $lightGrey;
   margin-top: 25px;
+  .widget-title {
+    text-align: center;
+    font-size: 1.6em;
+  }
+  ul {
+    list-style-type: none;
+    padding: 0 0 20px 20px;
+  }
 }
-.innerWrap {
-  padding: 10px;
+#media_gallery-2 {
+  .widget-title {
+    text-align: center;
+    font-size: 1.6em;
+  }
+  a {
+    &:after {
+      width: 0%;
+    }
+  }
+  img {
+    width: 15%;
+    height: auto;
+    @include breakpoint (laptopScreen) {
+      width: 40%;
+    }
+    @include breakpoint (extraLargeScreen) {
+      width: 30%;
+    }
+  }
 }
 .socialOutterWrapper {
   background-color: $brandColor;
@@ -265,6 +300,7 @@
   }
   #affiliateTitleWrap {
     width: 100%;
+    margin-top: 25px;
   }
   #affiliationsTitle {
     &:before {
@@ -285,4 +321,7 @@
       }
     }
   }
+}
+.innerWrap {
+  padding: 0 0 20px 0;
 }

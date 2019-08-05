@@ -125,6 +125,7 @@ button{
 	}
 }
 #viewAll {
+	font-size: 1.2em;
 	@include breakpoint (tabletScreen) {
 			margin-left: 25px;
 	}

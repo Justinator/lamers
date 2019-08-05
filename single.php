@@ -27,7 +27,10 @@ get_header();
 						?>
 					</div>
 					<div class="col30">
-						<?php get_template_part('/inc/blog-sidebar'); ?>
+						<div class="paddedSection">
+							<?php get_sidebar(); ?>
+							<?php get_template_part('/inc/blog-sidebar'); ?>
+						</div>
 					</div>
 				</div>
 			</main><!-- #main -->

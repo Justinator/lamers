@@ -16,6 +16,8 @@ textarea {
 h1,h2,h3,h4,h5,h6{
 	font-family: $prometoMedium;
 	text-transform: uppercase;
+	font-size: 2em;
+	font-weight: 700;
 	line-height: 1.4em;
 	margin-top: 0;
 	margin-bottom: 25px;
@@ -23,26 +25,6 @@ h1,h2,h3,h4,h5,h6{
 p{
 	margin-top: 0;
 	margin-bottom: 1em !important;
-}
-h1{
-	font-weight: 700;
-	font-size: 2em;
-}
-h2{
-	font-size: 1.6em;
-	font-weight: 700;
-}
-h3{
-	font-size: 1.4em;
-}
-h4{
-	font-size: 1.4em;
-}
-h5{
-	font-size: 1.1em;
-}
-h6{
-	font-size: .9em;
 }
 .whiteText{
 	color: $white;

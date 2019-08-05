@@ -23,134 +23,32 @@ get_header();
 					</div>
 				</div>
 				<div class="contentWrapper">
-					<div class="flex-container centerAlignedContainer paddedSection greyBorder">
-				    <div class="col50 centerTextBlock">
-				      <div class="textWrap textBlock">
-				        <h2 class="largeHeading"><?php the_field('service_1_headline'); ?></h2>
-				        <p><?php the_field('service_1_description'); ?></p>
-								<a href="<?php the_field('service_1_button_link'); ?>" class="redButton"><?php the_field('service_1_button_text'); ?></a>
-				      </div>
-				    </div>
-				    <div class="col50">
-				      <?php
-				        $image = get_field('service_1_image');
-				        $imageID = $image['ID'];
-				        echo wp_get_attachment_image( $imageID, 'full', false, array( 'class' => 'image', 'data-sizes' => 'auto' ) );
-				      ?>
-				    </div>
-				  </div>
-					<div class="flex-container centerAlignedContainer paddedSection greyBorder">
-						<div class="col50 centerTextBlock">
-							<div class="textWrap textBlock">
-								<h3 class="largeHeading"><?php the_field('service_2_headline'); ?></h3>
-								<p><?php the_field('service_2_description'); ?></p>
-								<a href="<?php the_field('service_2_button_link'); ?>" class="redButton"><?php the_field('service_1_button_text'); ?></a>
-							</div>
-						</div>
-						<div class="col50">
-							<?php
-								$image = get_field('service_2_image');
-								$imageID = $image['ID'];
-								echo wp_get_attachment_image( $imageID, 'full', false, array( 'class' => 'image', 'data-sizes' => 'auto' ) );
-							?>
-						</div>
-					</div>
-					<div class="flex-container centerAlignedContainer paddedSection greyBorder">
-				    <div class="col50 centerTextBlock">
-				      <div class="textWrap textBlock">
-				        <h4 class="largeHeading"><?php the_field('service_3_headline'); ?></h4>
-				        <p><?php the_field('service_3_description'); ?></p>
-								<a href="<?php the_field('service_3_button_link'); ?>" class="redButton"><?php the_field('service_1_button_text'); ?></a>
-				      </div>
-				    </div>
-				    <div class="col50">
-				      <?php
-				        $image = get_field('service_3_image');
-				        $imageID = $image['ID'];
-				        echo wp_get_attachment_image( $imageID, 'full', false, array( 'class' => 'image', 'data-sizes' => 'auto' ) );
-				      ?>
-				    </div>
-				  </div>
-					<div class="flex-container centerAlignedContainer paddedSection greyBorder">
-						<div class="col50 centerTextBlock">
-							<div class="textWrap textBlock">
-								<h5 class="largeHeading"><?php the_field('service_4_headline'); ?></h5>
-								<p><?php the_field('service_4_description'); ?></p>
-								<a href="<?php the_field('service_4_button_link'); ?>" class="redButton"><?php the_field('service_1_button_text'); ?></a>
-							</div>
-						</div>
-						<div class="col50">
-							<?php
-								$image = get_field('service_4_image');
-								$imageID = $image['ID'];
-								echo wp_get_attachment_image( $imageID, 'full', false, array( 'class' => 'image', 'data-sizes' => 'auto' ) );
-							?>
-						</div>
-					</div>
-					<div class="flex-container centerAlignedContainer paddedSection greyBorder">
-				    <div class="col50 centerTextBlock">
-				      <div class="textWrap textBlock">
-				        <h6 class="largeHeading"><?php the_field('service_5_headline'); ?></h6>
-				        <p><?php the_field('service_5_description'); ?></p>
-								<a href="<?php the_field('service_5_button_link'); ?>" class="redButton"><?php the_field('service_1_button_text'); ?></a>
-				      </div>
-				    </div>
-				    <div class="col50">
-				      <?php
-				        $image = get_field('service_5_image');
-				        $imageID = $image['ID'];
-				        echo wp_get_attachment_image( $imageID, 'full', false, array( 'class' => 'image', 'data-sizes' => 'auto' ) );
-				      ?>
-				    </div>
-				  </div>
-					<div class="flex-container centerAlignedContainer paddedSection greyBorder">
-						<div class="col50 centerTextBlock">
-							<div class="textWrap textBlock">
-								<h6 class="largeHeading"><?php the_field('service_6_headline'); ?></h6>
-								<p><?php the_field('service_6_description'); ?></p>
-								<a href="<?php the_field('service_6_button_link'); ?>" class="redButton"><?php the_field('service_1_button_text'); ?></a>
-							</div>
-						</div>
-						<div class="col50">
-							<?php
-								$image = get_field('service_6_image');
-								$imageID = $image['ID'];
-								echo wp_get_attachment_image( $imageID, 'full', false, array( 'class' => 'image', 'data-sizes' => 'auto' ) );
-							?>
-						</div>
-					</div>
-					<div class="flex-container centerAlignedContainer paddedSection greyBorder">
-				    <div class="col50 centerTextBlock">
-				      <div class="textWrap textBlock">
-				        <h6 class="largeHeading"><?php the_field('service_7_headline'); ?></h6>
-				        <p><?php the_field('service_7_description'); ?></p>
-								<a href="<?php the_field('service_7_button_link'); ?>" class="redButton"><?php the_field('service_1_button_text'); ?></a>
-				      </div>
-				    </div>
-				    <div class="col50">
-				      <?php
-				        $image = get_field('service_7_image');
-				        $imageID = $image['ID'];
-				        echo wp_get_attachment_image( $imageID, 'full', false, array( 'class' => 'image', 'data-sizes' => 'auto' ) );
-				      ?>
-				    </div>
-				  </div>
-					<div class="flex-container centerAlignedContainer paddedSection greyBorder">
-						<div class="col50 centerTextBlock">
-							<div class="textWrap textBlock">
-								<h6 class="largeHeading"><?php the_field('service_8_headline'); ?></h6>
-								<p><?php the_field('service_8_description'); ?></p>
-								<a href="<?php the_field('service_8_button_link'); ?>" class="redButton"><?php the_field('service_1_button_text'); ?></a>
-							</div>
-						</div>
-						<div class="col50">
-							<?php
-								$image = get_field('service_8_image');
-								$imageID = $image['ID'];
-								echo wp_get_attachment_image( $imageID, 'full', false, array( 'class' => 'image', 'data-sizes' => 'auto' ) );
-							?>
-						</div>
-					</div>
+					<?php if( have_rows('services_list') ): ?>
+					  	<?php while( have_rows('services_list') ): the_row();
+					  		// vars
+					  		$serviceImage = get_sub_field('service_image');
+					  		$serviceHeadline = get_sub_field('service_headline');
+					  		$serviceDesc = get_sub_field('service_description');
+								$serviceLink = get_sub_field('service_button_link');
+
+					  		?>
+								<div class="flex-container centerAlignedContainer paddedSection greyBorder">
+							    <div class="col50 centerTextBlock">
+							      <div class="textWrap textBlock">
+							        <h2 class="largeHeading"><?php echo $serviceHeadline; ?></h2>
+							        <p><?php echo $serviceDesc; ?></p>
+											<a href="<?php echo $serviceLink; ?>" class="redButton"><?php the_field('service_1_button_text'); ?></a>
+							      </div>
+							    </div>
+							    <div class="col50">
+							      <?php
+							        $imageID = $serviceImage['ID'];
+							        echo wp_get_attachment_image( $imageID, 'full', false, array( 'class' => 'image', 'data-sizes' => 'auto' ) );
+							      ?>
+							    </div>
+							  </div>
+					  	<?php endwhile; ?>
+					  <?php endif; ?>
 				</div>
 			</div>
 		</section>

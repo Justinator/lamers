@@ -1,4 +1,4 @@
-<section class="test removeBottomMargin">
+<section class="removeBottomMargin">
   <div class="fullWidth flex-container centerAlignedContainer">
     <div class="col50">
       <?php
