@@ -3,7 +3,7 @@
     <div id="missionBody" class="pageWidth limitWidth">
       <div class="centerText">
         <?php the_field('our_mission_headline'); ?>
-        <h3 class="whiteText"><?php the_field('our_mission_body'); ?></h3>
+        <p class="whiteText mediumHeading"><?php the_field('our_mission_body'); ?></p>
       </div>
     </div>
   </div>

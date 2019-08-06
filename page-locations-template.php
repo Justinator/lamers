@@ -18,6 +18,7 @@ get_header();
 					<div class="col60">
 						<div class="locationContent">
 							<?php the_field('location_desc'); ?>
+							<?php the_field('about_lamers', 'option'); ?>
 							<a href="tel:<?php the_field('location_local_phone'); ?>" class="redButton callButton">Call <?php the_field('location_local_phone'); ?> for transportation services in <?php the_field('location_city'); ?></a>
 						</div>
 					</div>

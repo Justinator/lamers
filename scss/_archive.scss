@@ -156,6 +156,7 @@
   width: 100%;
   height: auto;
   margin-bottom: 40px;
+  border-bottom: 5px solid $brandColor;
 }
 .search-form{
   .search-submit{
@@ -324,4 +325,32 @@
 }
 .innerWrap {
   padding: 0 0 20px 0;
+}
+.post-thumbnail {
+  &:after {
+    width: 0%;
+  }
+}
+#search {
+  .entry-header {
+      display: block !important;
+      .entry-title {
+        a {
+          &:after {
+            width: 0%;
+          }
+        }
+      }
+  }
+  .awsm_job_openings, .type-tour, .type-page {
+      padding: 0 25px 20px 25px;
+  }
+  #post-1358 {
+    display: none;
+  }
+}
+.page-header {
+  @include breakpoint (laptopScreen) {
+    margin-right: 25px;
+  }
 }

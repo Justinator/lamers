@@ -180,6 +180,7 @@ get_header();
 							<div class="fullWidth stopDetailsWrap">
 								<?php get_template_part('/inc/bus-stops'); ?>
 							</div>
+							<a href="/bus-stop-list/">View full bus stop list</a>
 						</div>
 					</div>
 				</div>

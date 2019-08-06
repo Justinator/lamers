@@ -25,8 +25,16 @@ get_header();
 				</ul>
 				<h3>Alerts</h3>
 				<ul class="newsPosts">
-					<?php wp_get_archives('type=alpha'); ?>
-				</ul>
+				  <?php
+				  query_posts( array ( 'category_name' => 'Travel Alerts', 'posts_per_page' => -1 ) );
+				  while ( have_posts() ) : the_post(); ?>
+			    <li>
+			  		<a href="<?php the_permalink() ?>" title="<?php the_title(); ?>"><?php the_title(); ?></a>
+			  	</li>
+				  <?php endwhile;
+				  wp_reset_query();
+				  ?>
+			</ul>
 			</div>
 		</div>
 	</main>

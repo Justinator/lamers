@@ -1145,7 +1145,7 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 700;
   line-height: 1.4em;
   margin-top: 0;
-  margin-bottom: 25px; }
+  margin-bottom: 0; }
 
 p {
   margin-top: 0;
@@ -2135,7 +2135,8 @@ ul {
 .attachment-post-thumbnail {
   width: 100%;
   height: auto;
-  margin-bottom: 40px; }
+  margin-bottom: 40px;
+  border-bottom: 5px solid #b70033; }
 
 .search-form .search-submit {
   background-color: #404041;
@@ -2258,6 +2259,22 @@ ul {
 
 .innerWrap {
   padding: 0 0 20px 0; }
+
+.post-thumbnail:after {
+  width: 0%; }
+
+#search .entry-header {
+  display: block !important; }
+  #search .entry-header .entry-title a:after {
+    width: 0%; }
+#search .awsm_job_openings, #search .type-tour, #search .type-page {
+  padding: 0 25px 20px 25px; }
+#search #post-1358 {
+  display: none; }
+
+@media (min-width: 992px) {
+  .page-header {
+    margin-right: 25px; } }
 
 /* 18.0 Careers Page stylings -------------------------------------------*/
 .jobWrapper a:after {
@@ -2881,7 +2898,8 @@ table {
 
 .tourmaster-tour-thumbnail img {
   height: auto;
-  width: 100%; }
+  width: 100%;
+  border-bottom: 5px solid #b70033; }
 .tourmaster-tour-thumbnail a:after {
   width: 0; }
 
@@ -2993,5 +3011,42 @@ body.single-tour.tourmaster-bottom-booking-bar .tourmaster-tour-booking-bar-cont
 
 .ui-datepicker-calendar a:after {
   width: 0%; }
+
+.tourmaster-tour-category-item-wrap {
+  height: 350px; }
+
+.tourmaster-tour-category {
+  display: flex;
+  justify-content: center; }
+
+.tourmaster-sidebar-right {
+  display: none; }
+
+.tourmaster-pagination a:after {
+  width: 0%; }
+
+.tourmaster-item-mgb {
+  margin-bottom: 0; }
+
+.tourmaster-tour-category-overlay-front {
+  border-bottom: 5px solid #b70033; }
+
+.tourmaster-tour-category-count {
+  color: #FFFFFF !important; }
+
+.tourmaster-tour-category-head-link {
+  color: #FFFFFF !important;
+  font-size: 16px !important; }
+
+.tourmaster-column-45 {
+  width: 100%; }
+
+.tourmaster-media-image img {
+  width: 100%;
+  height: auto; }
+
+#officeList {
+  display: flex;
+  flex-wrap: wrap; }
 
 /*# sourceMappingURL=style.css.map */

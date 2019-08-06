@@ -2,6 +2,7 @@
   img {
     height: auto;
     width: 100%;
+    border-bottom: 5px solid $brandColor;
   }
   a{
     &:after {
@@ -133,4 +134,47 @@ body.single-tour.tourmaster-bottom-booking-bar .tourmaster-tour-booking-bar-cont
       width: 0%;
     }
   }
+}
+.tourmaster-tour-category-item-wrap {
+  height: 350px;
+}
+.tourmaster-tour-category {
+  display: flex;
+  justify-content: center;
+}
+ .tourmaster-sidebar-right {
+   display: none;
+ }
+.tourmaster-pagination {
+  a {
+    &:after {
+      width: 0%;
+    }
+  }
+}
+.tourmaster-item-mgb {
+  margin-bottom: 0;
+}
+.tourmaster-tour-category-overlay-front {
+  border-bottom: 5px solid $brandColor;
+}
+.tourmaster-tour-category-count {
+  color: $white !important;
+}
+.tourmaster-tour-category-head-link {
+  color: $white !important;
+  font-size: 16px !important;
+}
+.tourmaster-column-45 {
+  width: 100%;
+}
+.tourmaster-media-image{
+  img {
+    width: 100%;
+    height: auto;
+  }
+}
+#officeList {
+  display: flex;
+  flex-wrap: wrap;
 }

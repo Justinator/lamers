@@ -17,7 +17,7 @@ get_header();
 				<div class="flex-container">
 					<div class="col70 postWrapper">
 						<?php if ( have_posts() ) : ?>
-							<header class="page-header">
+							<header class="page-header greyBorder">
 								<?php
 								the_archive_title( '<h1 class="page-title">', '</h1>' );
 								the_archive_description( '<div class="archive-description">', '</div>' );
@@ -41,7 +41,10 @@ get_header();
 						?>
 					</div>
 					<div class="col30">
-						<?php get_template_part('/inc/blog-sidebar'); ?>
+						<div class="paddedSection">
+							<?php get_sidebar(); ?>
+							<?php get_template_part('/inc/blog-sidebar'); ?>
+						</div>
 					</div>
 				</div>
 			</main><!-- #main -->
