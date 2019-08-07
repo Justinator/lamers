@@ -89,6 +89,7 @@ body.single-tour.tourmaster-bottom-booking-bar .tourmaster-tour-booking-bar-cont
   order: 2 !important;
 }
 .tourmaster-head {
+  margin-bottom: 0 !important;
   font-family: $prometoMedium;
 	text-transform: uppercase;
   font-weight: 700;
@@ -177,4 +178,10 @@ body.single-tour.tourmaster-bottom-booking-bar .tourmaster-tour-booking-bar-cont
 #officeList {
   display: flex;
   flex-wrap: wrap;
+}
+.tourmaster-tour-booking-bar-wrap .tourmaster-enquiry-field {
+  margin-bottom: 5px;
+}
+.tourmaster-tour-booking-enquiry-wrap {
+  padding: 20px !important;
 }

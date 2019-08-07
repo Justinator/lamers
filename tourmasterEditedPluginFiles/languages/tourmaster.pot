@@ -5620,7 +5620,7 @@ msgstr ""
 #: include/tour-util.php:1837 include/user-util.php:869
 #, php-format
 msgid ""
-"* Creating an account means you're okay with our <a href=\"%s\" target="
+"* Creating an account means you're okay with our test test<a href=\"%s\" target="
 "\"_blank\">Terms of Service</a> and <a href=\"%s\" target=\"_blank\">Privacy "
 "Statement</a>."
 msgstr ""
