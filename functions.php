@@ -51,6 +51,7 @@ if ( ! function_exists( 'insightcustom_setup' ) ) :
 			'ServiceMenu' => esc_html__( 'ServiceMenu', 'insightCustom' ),
 			'FleetMenu' => esc_html__( 'FleetMenu', 'insightCustom' ),
 			'ConnectMenu' => esc_html__( 'ConnectMenu', 'insightCustom' ),
+			'ExpressMenu' => esc_html__( 'ExpressMenu', 'insightCustom' ),
 		) );
 
 		/*

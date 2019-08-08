@@ -1394,9 +1394,6 @@ button {
 #wpadminbar a:after {
   width: 0; }
 
-#travelAlerts {
-  width: max-content; }
-
 /* 8.0 General Body Styles -------------------------------------------*/
 body {
   background: #FFFFFF;
@@ -1462,17 +1459,6 @@ a {
 ul {
   padding: 0;
   margin: 0; }
-
-.breadcrumbs {
-  background-color: #b70033;
-  color: #FFFFFF;
-  font-size: 14px;
-  text-transform: uppercase;
-  font-family: prometo, sans-serif; }
-  .breadcrumbs a {
-    color: #FFFFFF;
-    font-family: prometo, sans-serif;
-    text-transform: uppercase; }
 
 /*9.0 Icon Styling -------------------------------------------*/
 .whiteIcon {
@@ -1831,26 +1817,26 @@ ul {
     @media (min-width: 992px) {
       .stickyMenu .serviceWrapper img {
         margin-top: 0; } }
-  .stickyMenu #ServiceMenu, .stickyMenu #FleetMenu, .stickyMenu #ConnectMenu {
+  .stickyMenu #ServiceMenu, .stickyMenu #FleetMenu, .stickyMenu #ConnectMenu, .stickyMenu #ExpressMenu {
     display: flex;
     flex-direction: column; }
-    .stickyMenu #ServiceMenu li, .stickyMenu #FleetMenu li, .stickyMenu #ConnectMenu li {
+    .stickyMenu #ServiceMenu li, .stickyMenu #FleetMenu li, .stickyMenu #ConnectMenu li, .stickyMenu #ExpressMenu li {
       list-style-type: none;
       padding: 0 5px;
       border-bottom: 1px solid #800023; }
-      .stickyMenu #ServiceMenu li a, .stickyMenu #FleetMenu li a, .stickyMenu #ConnectMenu li a {
+      .stickyMenu #ServiceMenu li a, .stickyMenu #FleetMenu li a, .stickyMenu #ConnectMenu li a, .stickyMenu #ExpressMenu li a {
         color: #FFFFFF;
         text-decoration: none;
         font-size: 16px;
         font-family: prometo, sans-serif;
         text-transform: uppercase;
         transition: .2s ease; }
-        .stickyMenu #ServiceMenu li a:after, .stickyMenu #FleetMenu li a:after, .stickyMenu #ConnectMenu li a:after {
+        .stickyMenu #ServiceMenu li a:after, .stickyMenu #FleetMenu li a:after, .stickyMenu #ConnectMenu li a:after, .stickyMenu #ExpressMenu li a:after {
           width: 0; }
         @media (min-width: 1600px) {
-          .stickyMenu #ServiceMenu li a, .stickyMenu #FleetMenu li a, .stickyMenu #ConnectMenu li a {
+          .stickyMenu #ServiceMenu li a, .stickyMenu #FleetMenu li a, .stickyMenu #ConnectMenu li a, .stickyMenu #ExpressMenu li a {
             font-size: 14px; } }
-        .stickyMenu #ServiceMenu li a:hover, .stickyMenu #FleetMenu li a:hover, .stickyMenu #ConnectMenu li a:hover {
+        .stickyMenu #ServiceMenu li a:hover, .stickyMenu #FleetMenu li a:hover, .stickyMenu #ConnectMenu li a:hover, .stickyMenu #ExpressMenu li a:hover {
           color: #eeb000;
           transition: .2s ease; }
 
@@ -2874,6 +2860,9 @@ table {
   font-size: 16px !important;
   text-transform: uppercase; }
 
+.passster-form input[type=password] {
+  padding: 0; }
+
 .wpfront-message {
   padding: 0 10px; }
 
@@ -2896,6 +2885,26 @@ table {
 #wpfront-notification-bar div.wpfront-close {
   top: 14px;
   font-size: 20px; }
+
+#travelAlerts {
+  width: max-content;
+  cursor: pointer;
+  background-color: #13293d;
+  color: #FFFFFF;
+  padding: 10px; }
+
+#activeAlerts {
+  display: none;
+  transition: .3s ease-out all !important; }
+  #activeAlerts li {
+    list-style-type: none; }
+  #activeAlerts a:hover {
+    color: #eeb000;
+    transition: .3s ease-out all !important; }
+
+.alertsOpen {
+  display: block !important;
+  transition: .3s ease-out all !important; }
 
 .tourmaster-tour-thumbnail img {
   height: auto;
@@ -3056,5 +3065,23 @@ body.single-tour.tourmaster-bottom-booking-bar .tourmaster-tour-booking-bar-cont
 
 .tourmaster-tour-booking-enquiry-wrap {
   padding: 20px !important; }
+
+.breadcrumbs {
+  background-color: #b70033;
+  color: #FFFFFF;
+  font-size: 14px;
+  text-transform: uppercase;
+  font-family: prometo, sans-serif; }
+  .breadcrumbs a {
+    color: #FFFFFF;
+    font-family: prometo, sans-serif;
+    text-transform: uppercase;
+    transition: .3s ease-out all; }
+    .breadcrumbs a:hover {
+      color: #eeb000;
+      transition: .3s ease-out all; }
+
+#breadcrumbs {
+  margin-left: 20px !important; }
 
 /*# sourceMappingURL=style.css.map */

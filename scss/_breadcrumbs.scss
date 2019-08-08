@@ -1,0 +1,20 @@
+.breadcrumbs {
+	background-color: $brandColor;
+  color: $white;
+  font-size: 14px;
+	text-transform: uppercase;
+	font-family: $prometoMedium;
+	a {
+		color: $white;
+		font-family: $prometoMedium;
+		text-transform: uppercase;
+    transition: .3s ease-out all;
+    &:hover {
+      color: $primaryYellow;
+      transition: .3s ease-out all;
+    }
+	}
+}
+#breadcrumbs {
+	margin-left: 20px !important;
+}

@@ -22,3 +22,27 @@
   top: 14px;
   font-size: 20px;
 }
+#travelAlerts {
+	width: max-content;
+  cursor: pointer;
+  background-color: $bodyCopyBlue;
+  color: $white;
+  padding: 10px;
+}
+#activeAlerts {
+  display: none;
+  transition: .3s ease-out all !important;
+  li {
+    list-style-type: none;
+  }
+  a {
+    &:hover {
+      color: $primaryYellow;
+      transition: .3s ease-out all !important;
+    }
+  }
+}
+.alertsOpen{
+	display: block !important;
+	transition: .3s ease-out all !important;
+}

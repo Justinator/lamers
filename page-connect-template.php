@@ -190,6 +190,6 @@ get_header();
 		</section>
 	</main>
 </div>
-<script src="/wp-content/themes/insightCustom/js/customJS.js"></script>
+<script src="/wp-content/themes/insightCustom/js/accordion.js"></script>
 <?php
 get_footer();
