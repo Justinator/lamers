@@ -1,4 +1,9 @@
 /* 10.0 Homepage stylings -------------------------------------------*/
+#home {
+	#breadcrumbs {
+		display: none;
+	}
+}
 .heroHeadingWrap{
 	display: flex;
 	flex-direction: row;

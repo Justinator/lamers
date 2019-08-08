@@ -100,16 +100,10 @@ p{
 	margin-bottom: 15px;
 }
 .underline {
-	position: relative;
-	&:after {
-		position: absolute;
-		bottom: 0;
-		left: 0;
-		content: "";
-		background-color: $primaryYellow;
-		height: 7px;
-		width: 100%;
-	}
+  background-image: linear-gradient(to right, $primaryYellow 100%, transparent 0);
+  background-position: 0 1.06em;
+  background-repeat: repeat-x;
+  background-size: 8px 5px;
 }
 .centerUnderline{
 	content: "";

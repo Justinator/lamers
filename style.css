@@ -1225,15 +1225,10 @@ p {
   margin-bottom: 15px; }
 
 .underline {
-  position: relative; }
-  .underline:after {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    content: "";
-    background-color: #eeb000;
-    height: 7px;
-    width: 100%; }
+  background-image: linear-gradient(to right, #eeb000 100%, transparent 0);
+  background-position: 0 1.06em;
+  background-repeat: repeat-x;
+  background-size: 8px 5px; }
 
 .centerUnderline {
   content: "";
@@ -1399,6 +1394,9 @@ button {
 #wpadminbar a:after {
   width: 0; }
 
+#travelAlerts {
+  width: max-content; }
+
 /* 8.0 General Body Styles -------------------------------------------*/
 body {
   background: #FFFFFF;
@@ -1562,6 +1560,9 @@ ul {
   width: 75%; }
 
 /* 10.0 Homepage stylings -------------------------------------------*/
+#home #breadcrumbs {
+  display: none; }
+
 .heroHeadingWrap {
   display: flex;
   flex-direction: row;
