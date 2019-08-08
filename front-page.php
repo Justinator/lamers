@@ -7,7 +7,8 @@ get_header();
 ?>
 
 <div id="primary" class="content-area">
-	<main id="main" class="site-main">
+	<main id="home" class="site-main">
+		<?php get_template_part('/inc/breadcrumbs'); ?>
 		<!-- ********** Homepage Hero Section Start ********** -->
 		<section id="homeHero">
 			<?php $backgroundImg = wp_get_attachment_image_src( get_post_thumbnail_id(10), 'full' );?>
