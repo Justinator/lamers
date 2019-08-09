@@ -515,6 +515,9 @@ Font Variables
 .greyBlock {
   background: #f6f6f6; }
 
+.darkRedBlock {
+  background: #800023; }
+
 .page-content {
   position: relative;
   z-index: 2;
@@ -578,6 +581,9 @@ Font Variables
 
 .heroIntro {
   margin-bottom: -10px; }
+
+.fullHeight {
+  height: 100%; }
 
 /*4.0 Header Styling -------------------------------------------*/
 .screenReaderSkipToContent {
@@ -1393,6 +1399,27 @@ button {
 
 #wpadminbar a:after {
   width: 0; }
+
+.whiteLink {
+  position: relative;
+  text-decoration: none;
+  color: #FFFFFF;
+  transition: .2s ease; }
+  .whiteLink:after {
+    position: absolute;
+    content: '';
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #FFFFFF;
+    transition: .2s ease; }
+  .whiteLink:hover {
+    color: #FFFFFF;
+    transition: .2s ease; }
+    .whiteLink:hover:after {
+      width: 0%;
+      transition: .2s ease; }
 
 /* 8.0 General Body Styles -------------------------------------------*/
 body {
@@ -2773,7 +2800,7 @@ table {
   font-weight: 700; }
 
 @media (min-width: 992px) {
-  #scrollWrap {
+  .scrollWrap {
     display: none; } }
 
 .accordion__title:before {
@@ -3083,5 +3110,42 @@ body.single-tour.tourmaster-bottom-booking-bar .tourmaster-tour-booking-bar-cont
 
 #breadcrumbs {
   margin-left: 20px !important; }
+
+.ctaInnerWrap {
+  max-width: 400px; }
+
+.scheduleTable {
+  overflow: auto; }
+  .scheduleTable tr:nth-child(even) {
+    background-color: #f6f6f6; }
+  .scheduleTable th {
+    background: #b70033;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    font-family: prometo, sans-serif;
+    color: #FFFFFF;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
+    position: relative;
+    z-index: 2; }
+    @media (min-width: 600px) {
+      .scheduleTable th {
+        padding: 10px 50px; } }
+    @media (min-width: 992px) {
+      .scheduleTable th {
+        padding: 10px 5px; } }
+  .scheduleTable td {
+    padding: 10px;
+    font-size: 14px;
+    color: #13293d; }
+    .scheduleTable td:nth-child(1) {
+      background: #800023;
+      color: #FFFFFF;
+      font-family: prometo, sans-serif;
+      text-align: left; }
+  .scheduleTable table {
+    width: 1500px; }
+    @media (min-width: 992px) {
+      .scheduleTable table {
+        width: 100%; } }
 
 /*# sourceMappingURL=style.css.map */

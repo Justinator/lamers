@@ -195,6 +195,9 @@
 .greyBlock{
 	background: $lightGrey;
 }
+.darkRedBlock {
+	background: $brandColorDark;
+}
 .page-content{
 	position: relative;
 	z-index: 2;
@@ -258,4 +261,7 @@
 }
 .heroIntro {
 	margin-bottom: -10px;
+}
+.fullHeight {
+	height: 100%;
 }

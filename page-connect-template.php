@@ -84,7 +84,7 @@ get_header();
 			<section class="routeRates paddedSection">
 				<div class="pageWidth centerText">
 					<h4 class="largeHeading"><?php the_field('fares_title'); ?></h4>
-					<div id="scrollWrap">
+					<div class="scrollWrap">
 						<p class="noMargin">Scroll to view full table of rates</p>
 						<svg class="smallIcon" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 							<defs>
