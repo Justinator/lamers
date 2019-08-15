@@ -1,11 +1,6 @@
 /* 16.0 Archive/News Page stylings -------------------------------------------*/
 .post{
-  @include breakpoint(smallScreen){
-    padding: 0 0 20px 0;
-  }
-  @include breakpoint(largeMobileScreen){
-    padding: 20px 0;
-  }
+  padding: 0 0 20px 0;
   @include breakpoint(laptopScreen){
     padding: 0 25px 20px 25px;
   }
@@ -18,9 +13,7 @@
 }
 .singlePost{
   .entry-title{
-    @include breakpoint(smallScreen){
-      margin-top: 125px;
-    }
+    margin-top: 125px;
     @include breakpoint(largeMobileScreen){
       margin-top: 75px;
     }
@@ -31,23 +24,26 @@
 }
 .screen-reader-text{
   border: 0;
-   clip: rect(1px, 1px, 1px, 1px);
-   clip-path: inset(50%);
-   height: 1px;
-   margin: -1px;
-   overflow: hidden;
-   padding: 0;
-   position: absolute !important;
-   width: 1px;
-   word-wrap: normal !important;
+  clip: rect(1px, 1px, 1px, 1px);
+  -webkit-clip-path: inset(50%);
+          clip-path: inset(50%);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute !important;
+  width: 1px;
+  word-wrap: normal !important;
 }
 .blogTitleLink{
 	text-decoration: none;
 	color: $primaryGrey;
+	-webkit-transition: .3s ease all;
 	transition: .3s ease all;
 	position: relative;
     &:hover{
     color: $primaryGrey;
+    -webkit-transition: .3s ease all;
     transition: .3s ease all;
   }
 }
@@ -58,9 +54,11 @@
   a{
   	text-decoration: none;
   	color: $brandColor !important;
+  	-webkit-transition: .3s ease all;
   	transition: .3s ease all;
       &:hover{
       color: $brandColorDark !important;
+      -webkit-transition: .3s ease all;
       transition: .3s ease all;
       }
   }
@@ -69,17 +67,23 @@
   a{
     text-decoration: none;
   	color: $brandColor !important;
+  	-webkit-transition: .3s ease all;
   	transition: .3s ease all;
       &:hover{
       color: $brandColorDark !important;
+      -webkit-transition: .3s ease all;
       transition: .3s ease all;
       }
   }
 }
 .nav-links{
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   width: 100%;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 .nav-previous{
   position: relative;
@@ -95,6 +99,7 @@
 	padding: 10px 25px 10px 25px;
 	width: 50%;
 	color: $white;
+	-webkit-transition: .3s ease;
 	transition: .3s ease;
 	cursor: pointer;
   a {
@@ -107,6 +112,7 @@
       background: $brandColorDark;
 			border: 2px solid $brandColorDark;
 			box-shadow: 0 6px 18px 0 rgba(0,0,0,.5);
+    	-webkit-transition: .3s ease;
     	transition: .3s ease;
 			color: $white;
     }
@@ -126,6 +132,7 @@
 	padding: 10px 25px 10px 25px;
 	width: 50%;
 	color: $white;
+	-webkit-transition: .3s ease;
 	transition: .3s ease;
 	cursor: pointer;
   a {
@@ -138,6 +145,7 @@
       background: $brandColorDark;
 			border: 2px solid $brandColorDark;
 			box-shadow: 0 6px 18px 0 rgba(0,0,0,.5);
+    	-webkit-transition: .3s ease;
     	transition: .3s ease;
     }
 }
@@ -163,11 +171,13 @@
     background-color: $primaryGrey;
     border: 2px solid $primaryGrey;
     color: $black;
+    -webkit-transition: .3s ease all;
     transition: .3s ease all;
     &:hover{
       background-color: $transparent;
       border: 2px solid $primaryGrey;
       color: $primaryGrey;
+      -webkit-transition: .3s ease all;
       transition: .3s ease all;
     }
   }
@@ -176,17 +186,19 @@
   margin-bottom: 15px;
 }
 .blogText{
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	flex-direction: column;
-	justify-content: center;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
 	max-width: 800px;
   margin: 0 auto;
-    @include breakpoint(smallScreen){
-      padding: 0;
-    }
-    @include breakpoint(largeMobileScreen){
-      padding: 0;
-    }
+  padding: 0;
     @include breakpoint(laptopScreen){
       padding: 25px;
     }
@@ -250,7 +262,9 @@
 .blogSideBar {
   nav {
     width: 50%;
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     margin: 0 auto;
     a {
       width: 50px;
@@ -292,7 +306,8 @@
 }
 .pagination {
   .nav-links {
-    justify-content: space-around;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
   }
 }
 #sidebarAffiliations {

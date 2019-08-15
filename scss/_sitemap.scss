@@ -16,15 +16,18 @@
 .page_item{
   a{
     text-decoration: none;
+  	-webkit-transition: .2s ease all;
   	transition: .2s ease all;
   	position: relative;
     color: $bodyCopyBlue;
     &:hover{
       color: $primaryYellow;
+      -webkit-transition: .2s ease all;
       transition: .2s ease all;
     }
     &:focus{
       color: $primaryYellow;
+      -webkit-transition: .2s ease all;
       transition: .2s ease all;
     }
   }
@@ -32,11 +35,13 @@
 .newsPosts{
   a{
     text-decoration: none;
+  	-webkit-transition: .2s ease all;
   	transition: .2s ease all;
   	position: relative;
     color: $primaryGrey;
     &:hover{
       color: $primaryYellow;
+      -webkit-transition: .2s ease all;
       transition: .2s ease all;
     }
   }

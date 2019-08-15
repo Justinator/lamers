@@ -1,32 +1,49 @@
 /* 10.0 Homepage stylings -------------------------------------------*/
-#home {
-	#breadcrumbs {
-		display: none;
-	}
-}
 .heroHeadingWrap{
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	flex-direction: row;
-	align-items: flex-end;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: row;
+	        flex-direction: row;
+	-webkit-box-align: end;
+	    -ms-flex-align: end;
+	        align-items: flex-end;
 	height: 100%;
-	align-items: center;
-	justify-content: center;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
 }
 .homeHero{
 	background-image: url("/wp-content/uploads/2019/02/centerFeedAlleyLookingSouth2NoCrop.jpg");
 }
 .heroHeadingContainer{
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
 	position: relative;
 	height: 100%;
-	align-items: flex-end;
+	-webkit-box-align: end;
+	    -ms-flex-align: end;
+	        align-items: flex-end;
+	background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.7) 20%, rgba(0,0,0,0.5) 50%, rgba(0, 0, 0, 0) 100%);
 	background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.7) 20%, rgba(0,0,0,0.5) 50%, rgba(0, 0, 0, 0) 100%);
 	@include breakpoint(laptopScreen){
-		align-items: center;
+		-webkit-box-align: center;
+		    -ms-flex-align: center;
+		            -ms-grid-row-align: center;
+		        align-items: center;
+		background-image: -webkit-linear-gradient(left, rgba(0,0,0,0) 40%, rgba(0,0,0,0.4) 60%, rgba(0,0,0,.7) 80%);
 		background-image: linear-gradient(90deg, rgba(0,0,0,0) 40%, rgba(0,0,0,0.4) 60%, rgba(0,0,0,.7) 80%);
 	}
 }
 .heroHeadingWrapper{
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
 	width: 100%;
 }
@@ -56,20 +73,32 @@
 	max-width: 450px;
 }
 .rightGradientOverlay{
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
 	height: 100%;
+	background-image: -webkit-linear-gradient(left, rgba(0,0,0,.7) 30%, rgba(0,0,0,0) 100%);
 	background-image: linear-gradient(90deg, rgba(0,0,0,.7) 30%, rgba(0,0,0,0) 100%);
 	@include breakpoint(laptopScreen){
-		align-items: center;
+		-webkit-box-align: center;
+		    -ms-flex-align: center;
+		            -ms-grid-row-align: center;
+		        align-items: center;
+		background-image: -webkit-linear-gradient(left, rgba(0,0,0,0) 0%, rgba(0,0,0,.7) 70%);
 		background-image: linear-gradient(90deg, rgba(0,0,0,0) 0%, rgba(0,0,0,.7) 70%);
 	}
 }
 .leftGradientOverlay{
 	position: relative;
 	height: 100%;
+	background-image: -webkit-linear-gradient(left, rgba(0,0,0,.7) 30%, rgba(0,0,0,0) 100%);
 	background-image: linear-gradient(90deg, rgba(0,0,0,.7) 30%, rgba(0,0,0,0) 100%);
 	@include breakpoint(laptopScreen){
-		align-items: center;
+		-webkit-box-align: center;
+		    -ms-flex-align: center;
+		            -ms-grid-row-align: center;
+		        align-items: center;
+		background-image: -webkit-linear-gradient(left, rgba(0,0,0,.7) 30%, rgba(0,0,0,0) 100%);
 		background-image: linear-gradient(90deg, rgba(0,0,0,.7) 30%, rgba(0,0,0,0) 100%);
 	}
 }
@@ -132,10 +161,17 @@
 	}
 }
 #affiliateWrapper {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	flex-wrap: wrap;
-	align-items: center;
-	justify-content: center;
+	-ms-flex-wrap: wrap;
+	    flex-wrap: wrap;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
 }
 .featuredProjectOverlay{
 	position: absolute;
@@ -144,6 +180,7 @@
 	height: 100%;
 	width: 100%;
 	content: "";
+	-webkit-transition: .2s ease all;
 	transition: .2s ease all;
 	background-color: rgba(0,0,0,.4);
 }
@@ -196,8 +233,13 @@
 	padding: 20px;
 }
 .industryWrapper{
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	flex-direction: row;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: row;
+	        flex-direction: row;
 }
 .CTAcontent{
     @include breakpoint(smallScreen){
@@ -245,6 +287,10 @@
 	content: "";
 	width: 100%;
 	height: 100%;
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	align-items: center;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
 }

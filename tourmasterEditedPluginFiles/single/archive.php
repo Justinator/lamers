@@ -1,7 +1,7 @@
 <?php
 get_header();
-
-	echo '<div class="pageWidth flex-container">';
+	get_template_part('/inc/breadcrumbs');
+	echo '<div class="pageWidth flex-container paddedSection">';
 
 	echo '<div class="col20">';
 	echo do_shortcode('[tourmaster_tour_search fields="keywords, tour_category, departure-location, min-price, max-price" style="column" with-frame="disable"]');

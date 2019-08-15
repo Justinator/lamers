@@ -15,6 +15,7 @@
         }
         .sliderOverlay {
         	&:after{
+        		background-image: -webkit-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,.9) 0%);
         		background-image: linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,.9) 0%);
         	}
         }
@@ -22,10 +23,13 @@
   }
 }
 .center {
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
   .slick-slide {
     position: relative;
     margin: 0 25px;
     opacity: .5;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+    -webkit-transition: .2s ease;
     transition: .2s ease;
     &:after {
       content: "";
@@ -49,6 +53,7 @@
   }
 }
 .sliderOverlay {
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=70)";
 	position: relative;
 	&:after{
 		content: "";
@@ -57,8 +62,10 @@
 		left: 0;
 		width: 100%;
 		height: 100%;
+		background-image: -webkit-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,.9) 80%);
 		background-image: linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,.9) 80%);
 		opacity: .7;
+		-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=70)";
 		z-index: 100;
 	}
 }
@@ -68,6 +75,7 @@
   bottom: 0;
   left: 0;
   z-index: 101;
+  -webkit-transition: .2s ease;
   transition: .2s ease;
   text-shadow: 2px 2px 5px rgba(0,0,0,0.5);
   &:hover {
@@ -75,8 +83,12 @@
   }
 }
 .slideWrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 #testimonialSlider {
   display: none;
@@ -103,6 +115,7 @@
   bottom: 0;
   left: 10%;
   z-index: 101;
+  -webkit-transition: .2s ease;
   transition: .2s ease;
   text-shadow: 2px 2px 5px rgba(0,0,0,0.5);
   @include breakpoint (largeMobileScreen) {
@@ -144,9 +157,15 @@
 }
 .slick-current {
   opacity: 1 !important;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+  -webkit-transition: .2s ease;
   transition: .2s ease;
 }
 .nameWrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: flex-end;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }

@@ -14,7 +14,7 @@ get_header();
 				<?php the_content(); ?>
 			</div>
 			<div class="paddedSection fullWidth greyBlock">
-				<div class="pageWidth">
+				<div class="navWidth">
 					<h2 class="largeHeading centerText"><?php the_field('location_list_header'); ?></h2>
 					<div class="wrappedFlexContainer">
 					<?php if( have_rows('locations__by_list') ): ?>
@@ -40,7 +40,7 @@ get_header();
 											<a href="<?php echo $map; ?>" target="_blank">View on map</a><br><br>
 										<?php endif; ?>
 										<?php if( $pageLink ): ?>
-											<a href="<?php echo $pageLink; ?>" class="redButton">View location</a><br></p>
+											<a href="<?php echo $pageLink; ?>" class="redButton">View more</a><br></p>
 										<?php endif; ?>
 									</div>
 								</div>

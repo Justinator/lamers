@@ -8,9 +8,11 @@
 		color: $white;
 		font-family: $prometoMedium;
 		text-transform: uppercase;
+    -webkit-transition: .3s ease-out all;
     transition: .3s ease-out all;
     &:hover {
       color: $primaryYellow;
+      -webkit-transition: .3s ease-out all;
       transition: .3s ease-out all;
     }
 	}

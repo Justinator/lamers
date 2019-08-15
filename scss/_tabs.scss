@@ -9,8 +9,12 @@
 	 max-width: 900px;
 }
 .destinationTab .menu {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	justify-content: center;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
 }
 .destinationTab .menu div {
 	 width: 50%;
@@ -23,6 +27,7 @@
 	 position: relative;
 	 vertical-align: middle;
 	 font-weight: 700;
+	 -webkit-transition: 1s all cubic-bezier(0.075, 0.82, 0.165, 1);
 	 transition: 1s all cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
@@ -38,6 +43,7 @@
 	 left: 15px;
 	 background-color: $brandColor;
 	 border-radius: 100%;
+	 -webkit-transition: 1s all cubic-bezier(0.075, 0.82, 0.165, 1);
 	 transition: 1s all cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
@@ -62,13 +68,16 @@ ul.nacc {
 	 list-style: none;
 	 margin: 0;
 	 padding: 0;
+	 -webkit-transition: .5s all cubic-bezier(0.075, 0.82, 0.165, 1);
 	 transition: .5s all cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
 ul.nacc li {
 	 opacity: 0;
+	 -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
 	 position: absolute;
 	 list-style: none;
+	 -webkit-transition: 1s all cubic-bezier(0.075, 0.82, 0.165, 1);
 	 transition: 1s all cubic-bezier(0.075, 0.82, 0.165, 1);
 	 margin-left: 20px;
 }
@@ -88,7 +97,7 @@ ul.nacc li p {
 ul.nacc li.active {
 	z-index: 2;
 	opacity: 1;
-	position: relative;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
 	&:after {
 		position: absolute;
 		top: 10px;
@@ -104,7 +113,6 @@ ul.nacc li p {
  	margin: 0;
 }
 .routeWrapper {
-	height: 656px;
 	ul {
 		margin: 0 0 25px 25px;
 	}

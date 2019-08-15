@@ -16,7 +16,7 @@ get_header();
 					<div class="stickyMenuContainer">
 					  <div class="stickyMenu">
 					    <div class="navWidth stickyMenuWrapper">
-								<h2 class="smallHeading whiteText stickyTitle">Lamers Express</h2>
+								<h2 class="smallHeading whiteText stickyTitle">Lamers Express Game Day</h2>
 					      <?php wp_nav_menu( array( 'theme_location' => 'ExpressMenu', 'menu_id' => 'ExpressMenu' ) ); ?>
 					    </div>
 					  </div>

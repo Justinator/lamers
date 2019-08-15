@@ -1,5 +1,5 @@
-<section class="mainCTA">
-  <div class="ctaWrapper fullWidth fullOverlay" style="background: url('<?php $image = get_field('cta_background_image', 'option'); $size = 'full'; if( $image ) {echo $image['url'];}?>') no-repeat; background-size: cover; background-position:center;">
+<section>
+  <div class="ctaWrapper fullWidth" style="background: url('<?php $image = get_field('cta_background_image', 'option'); $size = 'full'; if( $image ) {echo $image['url'];}?>') no-repeat; background-size: cover; background-position:center;">
     <div class="ctaBody pageWidth limitWidth">
       <div class="centerText">
         <h6 class="largeHeading whiteText"><?php the_field('cta_headline', 'option'); ?></h6>

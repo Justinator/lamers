@@ -28,8 +28,13 @@
   color: $brandColorDark !important;
 }
 .tourmaster-tour-search-wrap form {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   .tourmaster-tour-search-field {
     width: 100% !important;
     @include breakpoint (laptopScreen) {
@@ -39,6 +44,9 @@
   .tourmaster-tour-search-submit {
     width: 100% !important;
     cursor: pointer;
+    font-family: $prometoMedium !important;
+  	font-weight: 700 !important;
+    text-transform: uppercase !important;
     @include breakpoint (laptopScreen) {
       width: 90% !important;
     }
@@ -78,15 +86,25 @@
   padding-right: 0;
 }
 body.single-tour.tourmaster-bottom-booking-bar .tourmaster-template-wrapper {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
   display: flex !important;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   width: 100%;
   @include breakpoint (laptopScreen) {
     display: block !important;
   }
 }
+.tourmaster-save-wish-list {
+  display: none;
+}
 body.single-tour.tourmaster-bottom-booking-bar .tourmaster-tour-booking-bar-container.tourmaster-container {
-  order: 2 !important;
+  -webkit-box-ordinal-group: 3 !important;
+      -ms-flex-order: 2 !important;
+          order: 2 !important;
 }
 .tourmaster-head {
   margin-bottom: 0 !important;
@@ -140,8 +158,12 @@ body.single-tour.tourmaster-bottom-booking-bar .tourmaster-tour-booking-bar-cont
   height: 350px;
 }
 .tourmaster-tour-category {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
  .tourmaster-sidebar-right {
    display: none;
@@ -176,12 +198,56 @@ body.single-tour.tourmaster-bottom-booking-bar .tourmaster-tour-booking-bar-cont
   }
 }
 #officeList {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 .tourmaster-tour-booking-bar-wrap .tourmaster-enquiry-field {
   margin-bottom: 5px;
 }
 .tourmaster-tour-booking-enquiry-wrap {
   padding: 20px !important;
+}
+.tourmaster-single-header-background-overlay {
+  opacity: 1;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+}
+.tourmaster-single-header-background-overlay {
+  background: $brandColor;
+}
+.tourmaster-single-header-overlay, .tourmaster-payment-head .tourmaster-payment-head-overlay {
+  background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0));
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0));
+}
+.tourmaster-single-main-content {
+  p {
+    &:nth-child(1) {
+      margin-top: 1em !important;
+    }
+  }
+}
+.tourmaster-single-header-title {
+  font-size: 2em !important;
+}
+// Customization of the login and dashboard pages
+.tourmaster-user-navigation-item, .tourmaster-wish-list-item-content {
+  a {
+    color: $brandColor !important;
+    &:after {
+      width: 0%;
+    }
+  }
+}
+.tourmaster-user-navigation-bottom-text {
+  display: none;
+}
+.tourmaster-form-field input[type="text"],.tourmaster-form-field input[type="email"],
+.tourmaster-form-field input[type="password"], .tourmaster-form-field select,
+.tourmaster-form-field textarea{
+  background-color: $lightGrey !important;
+}
+.tourmaster-login-form-fields p{
+  width: 97% !important;
 }

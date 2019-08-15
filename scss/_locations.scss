@@ -50,12 +50,16 @@
   margin: 0 20px 20px 0;
 }
 .backToWrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .callButton {
   display:none;
-  @include breakpoint (largeMobileScreen) {
+  @include breakpoint (laptopScreen) {
     display: block;
   }
 }
@@ -63,5 +67,14 @@
   padding: 0;
   @include breakpoint (laptopScreen) {
     padding-right: 20px;
+  }
+}
+.vehicleCol {
+  width: 100%;
+  @include breakpoint (tabletScreen) {
+    width: 45%;
+  }
+  @include breakpoint (largeScreen) {
+    width: 25%;
   }
 }

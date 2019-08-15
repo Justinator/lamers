@@ -1,4 +1,4 @@
-<section class="mainCTA">
+<section>
   <div class="ctaWrapper fullWidth flex-container">
     <div class="col50 ctaBody darkRedBlock fullHeight">
       <div class="ctaInnerWrap">

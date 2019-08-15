@@ -47,7 +47,6 @@ if ( ! function_exists( 'insightcustom_setup' ) ) :
 			'PrimaryMenu' => esc_html__( 'PrimaryMenu', 'insightCustom' ),
 			'SecondaryMenu' => esc_html__( 'SecondaryMenu', 'insightCustom' ),
 			'FooterMenu' => esc_html__( 'FooterMenu', 'insightCustom' ),
-			'CareersMenu' => esc_html__( 'CareersNavigation', 'insightCustom' ),
 			'ServiceMenu' => esc_html__( 'ServiceMenu', 'insightCustom' ),
 			'FleetMenu' => esc_html__( 'FleetMenu', 'insightCustom' ),
 			'ConnectMenu' => esc_html__( 'ConnectMenu', 'insightCustom' ),

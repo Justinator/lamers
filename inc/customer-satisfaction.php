@@ -1,4 +1,4 @@
-<section id="satisfaction" class="paddedSection">
+<section class="paddedSection">
   <div class="fullWidth flex-container centerAlignedContainer">
     <div class="col50 centerTextBlock">
       <div class="textWrap textBlock">

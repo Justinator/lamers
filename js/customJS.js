@@ -11,26 +11,6 @@ $(function() {
         	e.stopPropagation();
     });
 });
-// open alerts
-$(function() {
-    $("#travelAlerts").click(function(e){
-        $("#activeAlerts").toggleClass("alertsOpen");
-        	e.stopPropagation();
-    });
-});
-//close menu
-$(function() {
-    $(".closeMenuButton").click(function(e){
-        	$(".mobile-menu").removeClass("open");
-    });
-});
-$(function() {
-    $(".site").click(function(e){
-    	if(!$(e.target).hasClass("menu")){
-        	$(".mobile-menu").removeClass("open");
-    	}
-    });
-});
 // Hamburger menu animation
 $(function() {
     $(".menuButtonWrap").click(function(e){
@@ -60,7 +40,14 @@ $(document).ready(function () {
   });
 
 });
+
+
 // Lamers connect destination tabs
+
+function getListItemHeight(idx) {
+	return $(".destinationTab ul").find("li:eq(" + idx + ")").innerHeight() + "px";
+}
+
 $(document).on("click", ".destinationTab .menu div", function() {
 	var numberIndex = $(this).index();
 
@@ -71,12 +58,15 @@ $(document).on("click", ".destinationTab .menu div", function() {
 		$(this).addClass("active");
 		$(".destinationTab ul").find("li:eq(" + numberIndex + ")").addClass("active");
 
-		var listItemHeight = $(".destinationTab ul")
-			.find("li:eq(" + numberIndex + ")")
-			.innerHeight();
-		$(".destinationTab ul").height(listItemHeight + "px");
+		$(".destinationTab ul").height(getListItemHeight(numberIndex));
 	}
 });
+
+// get and set the height after waiting for the destinationTabs to be created.
+setTimeout(function(){
+	$(".destinationTab ul").height(getListItemHeight(0));
+},200);
+
 // detect IE and display an error message prompting users to upgrade to a modern browser
 if (navigator.appName == 'Microsoft Internet Explorer' || !!(navigator.userAgent.match(/Trident/) || navigator.userAgent.match(/rv:11/))) {
   document.write('<p style="text-align: center; position: relative; z-index: 99999; background-color: #f4a81d; color: #000000;">You are using a browser no longer supported by Microsoft. For the best and most secure viewing experience, please use a modern browser like <a href="https://www.google.com/chrome/" target="_blank" rel="noreferrer" style="color: #000000;">Chrome</a> or <a href="https://www.mozilla.org/en-US/firefox/new/" target="_blank" rel="noreferrer" style="color: #000000;">Firefox</a>.</p>');

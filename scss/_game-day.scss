@@ -40,3 +40,10 @@
     }
   }
 }
+.gamedayWrapper {
+  .ctaBody {
+    @include breakpoint (laptopScreen) {
+      border-top: 5px solid $white;
+    }
+  }
+}

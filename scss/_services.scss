@@ -35,8 +35,13 @@
 	  }
 	}
 	#ServiceMenu, #FleetMenu, #ConnectMenu, #ExpressMenu {
+		display: -webkit-box;
+		display: -ms-flexbox;
 		display: flex;
-		flex-direction: column;
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		    -ms-flex-direction: column;
+		        flex-direction: column;
 		li {
 			list-style-type: none;
 			padding: 0 5px;
@@ -47,6 +52,7 @@
 				font-size: 16px;
 				font-family: $prometoMedium;
 				text-transform: uppercase;
+				-webkit-transition: .2s ease;
 				transition: .2s ease;
 				&:after {
 					width: 0;
@@ -56,6 +62,7 @@
 				}
 				&:hover {
 					color: $primaryYellow;
+					-webkit-transition: .2s ease;
 					transition: .2s ease;
 				}
 			}
@@ -63,8 +70,13 @@
 	}
 }
 .stickyMenuWrapper {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	flex-direction: column;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
 }
 .menu-fleet-menu-container, .menu-services-menu-container {
 	width: 100%;

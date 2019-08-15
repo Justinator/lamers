@@ -39,7 +39,7 @@ get_header();
 			</section>
 			<section class="paddedSection">
 				<div class="centerText">
-		      <h6 class="largeHeading">VEHICLE TYPES AVAILABLE IN <?php the_field('location_city'); ?></h6>
+		      <h6 class="largeHeading">View Our Fleet</h6>
 		    </div>
 				<?php get_template_part('/inc/vehicle-types'); ?>
 			</section>

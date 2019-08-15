@@ -22,7 +22,7 @@ get_header();
     </div>
     <div class="col50 centerTextBlock">
       <div class="textWrap textBlock">
-        <h1><span class="underline">News</span></h1>
+        <h1>News</h1>
 		    <p>Lamers Bus Lines’ blog shares company news, bus travel information, and motor coach trip descriptions. Read more to learn about bus safety and tips for booking your trips and buses.</p>
         </div>
       </div>
@@ -63,7 +63,7 @@ get_header();
 					<div class="paddedSection">
 						<?php get_sidebar(); ?>
 						<?php get_template_part('/inc/blog-sidebar'); ?>
-					</div>	
+					</div>
 				</div>
 			</div>
 		</main><!-- #main -->

@@ -100,6 +100,7 @@ p{
 	margin-bottom: 15px;
 }
 .underline {
+  background-image: -webkit-linear-gradient(left, $primaryYellow 100%, transparent 0);
   background-image: linear-gradient(to right, $primaryYellow 100%, transparent 0);
   background-position: 0 1.06em;
   background-repeat: repeat-x;
@@ -114,6 +115,7 @@ p{
 	margin-top: 5px;
   margin-bottom: 20px;
 	border-bottom: 3px solid $primaryYellow;
+	-webkit-transition: .2s ease all;
 	transition: .2s ease all;
 }
 .fontLight {

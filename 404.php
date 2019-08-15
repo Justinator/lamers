@@ -9,52 +9,35 @@
 
 get_header();
 ?>
-
-	<div id="primary" class="content-area">
-		<main id="main" class="site-main">
-
-			<section class="error-404 not-found">
+<div id="primary" class="content-area">
+	<main id="main" class="site-main">
+		<section class="error-404 not-found pageWidth flex-container">
+			<div class="col70">
 				<header class="page-header">
 					<h1 class="page-title"><?php esc_html_e( 'Oops! That page can&rsquo;t be found.', 'insightcustom' ); ?></h1>
 				</header><!-- .page-header -->
-
 				<div class="page-content">
-					<p><?php esc_html_e( 'It looks like nothing was found at this location. Maybe try one of the links below or a search?', 'insightcustom' ); ?></p>
-
+					<p><?php esc_html_e( 'It looks like nothing was found at this location. Take a look at some of the links below or try a search to find what you are looking for? Contact us if the issue persists and you cannot find what you\'re looking for.', 'insightcustom' ); ?></p>
+					<ul>
+						<li><a href="/tour-vacations/">Tour Vacations</li>
+						<li><a href="/lamers-connect/">Lamers Connect</li>
+						<li><a href="/services/">Services</li>
+						<li><a href="/about-us/">About Us</li>
+						<li><a href="/locations/">Locations</li>
+						<li><a href="/sitemap/">Sitemap</li>
+						<li><a href="/contact-us/">Contact Us</li>
+					</ul>
 					<?php
-					get_search_form();
-
 					the_widget( 'WP_Widget_Recent_Posts' );
 					?>
-
-					<div class="widget widget_categories">
-						<h2 class="widget-title"><?php esc_html_e( 'Most Used Categories', 'insightcustom' ); ?></h2>
-						<ul>
-							<?php
-							wp_list_categories( array(
-								'orderby'    => 'count',
-								'order'      => 'DESC',
-								'show_count' => 1,
-								'title_li'   => '',
-								'number'     => 10,
-							) );
-							?>
-						</ul>
-					</div><!-- .widget -->
-
-					<?php
-					/* translators: %1$s: smiley */
-					$insightcustom_archive_content = '<p>' . sprintf( esc_html__( 'Try looking in the monthly archives. %1$s', 'insightcustom' ), convert_smilies( ':)' ) ) . '</p>';
-					the_widget( 'WP_Widget_Archives', 'dropdown=1', "after_title=</h2>$insightcustom_archive_content" );
-
-					the_widget( 'WP_Widget_Tag_Cloud' );
-					?>
-
 				</div><!-- .page-content -->
-			</section><!-- .error-404 -->
-
-		</main><!-- #main -->
-	</div><!-- #primary -->
-
+			</div>
+			<div class="col30">
+					<?php get_sidebar(); ?>
+					<?php get_template_part('/inc/blog-sidebar'); ?>
+			</div>
+		</section><!-- .error-404 -->
+	</main><!-- #main -->
+</div><!-- #primary -->
 <?php
 get_footer();
