@@ -158,6 +158,11 @@
 				transition: .2s ease;
 				color: $primaryYellow;
 			}
+			&:focus {
+				-webkit-transition: .2s ease;
+				transition: .2s ease;
+				color: $primaryYellow;
+			}
 		}
 	}
 }
@@ -290,7 +295,7 @@
 			&:focus{
 				-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
 				&:after{
-					bottom: 0;
+					bottom: -5px;
 					opacity: 1;
 					-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
 					-webkit-transition: 0.2s ease-out;

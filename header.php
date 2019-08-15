@@ -30,7 +30,7 @@
 		<nav id="site-navigation" class="main-navigation" role="navigation" aria-label="primary navigation">
 			<div class="navWidth menuLinkWrap">
 					<a href="http://wordpress-154794-852975.cloudwaysapps.com/">
-						<img src="/wp-content/uploads/2019/05/Lamers-Bus-Lines-Logo-RGB.jpg" class="siteLogo" alt="Lamer's Logo"><span class="screen-reader-text">Go back to the homepage</span>
+						<img src="/wp-content/uploads/2019/05/Lamers-Bus-Lines-Logo-RGB.jpg" class="siteLogo" alt="Lamer's Bus Lines Logo">
 					</a>
 					<?php wp_nav_menu( array( 'theme_location' => 'PrimaryMenu', 'menu_id' => 'PrimaryMenu' ) ); ?>
 					<div class = "menuButtonWrap" aria-label="mobile menu toggle button" tabindex="0">
