@@ -33,14 +33,16 @@ get_header();
 					  		$img = get_sub_field('route_supporting_image');
 
 					  		?>
-					  		<div class="flex-container centerAlignedContainer paddedSection greyBorder">
+					  		<div class="flex-container-reverse centerAlignedContainer paddedSection greyBorder">
 									<div class="col50 centerTextBlock">
 										<div class="textWrap textBlock">
 							        <h3 class="largeHeading"><?php echo $headline; ?></h1>
 											<p><?php echo $desc; ?></p>
-							  			<?php if( $btnLink ): ?>
-							  				<a href="<?php echo $btnLink; ?>" class="redButton"><?php echo $btnCopy; ?></a>
-							  			<?php endif; ?>
+											<div class="buttonWrap">
+								  			<?php if( $btnLink ): ?>
+								  				<a href="<?php echo $btnLink; ?>" class="redButton"><?php echo $btnCopy; ?></a>
+								  			<?php endif; ?>
+											</div>
 										</div>
 									</div>
 									<div class="col50">

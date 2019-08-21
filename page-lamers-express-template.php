@@ -34,7 +34,7 @@ get_header();
 							$scheduleHeader = get_sub_field( 'schedule_heading' );
 							$info = get_sub_field('additional_schedule_info');
 				  		?>
-							<div class="pageWidth centerText paddedSection">
+							<div class="pageWidth centerText paddingTop">
 								<h3><?php echo $scheduleHeader ?></h3>
 								<div class="scrollWrap">
 									<p class="noMargin">Scroll to view full schedule</p>

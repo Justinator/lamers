@@ -16,7 +16,7 @@ get_header();
 					<div class="stickyMenuContainer">
 					  <div class="stickyMenu">
 					    <div class="navWidth stickyMenuWrapper">
-								<h2 class="smallHeading whiteText stickyTitle">Transportation Services</h2>
+								<h2 class="smallHeading whiteText stickyTitle">Our Fleet</h2>
 					      <?php wp_nav_menu( array( 'theme_location' => 'FleetMenu', 'menu_id' => 'FleetMenu' ) ); ?>
 					    </div>
 					  </div>
@@ -33,13 +33,15 @@ get_header();
 								$fleetLink = get_sub_field('fleet_button_link');
 
 								?>
-								<div class="flex-container centerAlignedContainer paddedSection greyBorder">
+								<div class="flex-container-reverse centerAlignedContainer paddedSection greyBorder">
 							    <div class="col50 centerTextBlock">
 							      <div class="textWrap textBlock">
 							        <h2><?php echo $fleetHeadline; ?></h2>
 							        <p><?php echo $fleetDesc; ?></p>
-											<a href="<?php echo $fleetLink; ?>" class="redButton"><?php echo $fleetButtonText; ?></a>
-							      </div>
+											<div class="buttonWrap">
+												<a href="<?php echo $fleetLink; ?>" class="redButton"><?php echo $fleetButtonText; ?></a>
+											</div>
+										</div>
 							    </div>
 							    <div class="col50">
 							      <?php

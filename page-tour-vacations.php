@@ -36,7 +36,7 @@ get_header();
 		<section class="paddedSection">
 			<div class="pageWidth flex-container">
 				<div class="col50">
-					<div class="textWrap">
+					<div>
 						<?php the_field('mail_a_month'); ?>
 					</div>
 				</div>

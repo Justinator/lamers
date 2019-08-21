@@ -12,7 +12,7 @@ get_header();
 		<?php get_template_part('/inc/breadcrumbs'); ?>
 		<?php get_template_part('/inc/hero'); ?>
 		<section id="pageContent" class="serviceWrapper serviceBody greyBlock paddedSection">
-			<div class="pageWidth flex-container">
+			<div class="navWidth flex-container">
 				<div class="stickyOuterWrapper">
 					<div class="stickyMenuContainer">
 					  <div class="stickyMenu">

@@ -35,6 +35,7 @@
   }
   table {
     width: 1500px;
+    margin-bottom: 25px;
     @include breakpoint (laptopScreen) {
       width: 100%;
     }

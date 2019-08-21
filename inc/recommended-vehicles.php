@@ -37,7 +37,7 @@
       </a>
     </div>
   </div>
-  <div class="centerText">
+  <div id="fleetButton" class="centerText">
     <a href="/our-fleet/" class="redButton">View Our Fleet</a>
   </div>
 </div>

@@ -344,3 +344,12 @@
 .fullHeight {
 	height: 100%;
 }
+.paddingBottom {
+	padding-bottom: 50px;
+	@include breakpoint (laptopScreen) {
+		padding-bottom: 0;
+	}
+}
+.paddingTop {
+	padding-top: 50px;
+}

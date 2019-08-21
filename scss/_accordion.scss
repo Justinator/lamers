@@ -5,7 +5,6 @@
   border-top: 6px solid $brandColor;
   line-height: 1.6;
   box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
-
   &__item {
     border-bottom: 1px solid $brandColor;
   }
@@ -59,4 +58,7 @@
     height: 0;
     overflow: hidden;
   }
+}
+.accordion__title:before {
+  top: 16px;
 }

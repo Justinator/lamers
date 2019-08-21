@@ -582,7 +582,21 @@
 			if( !empty($content) ){
 				echo '<div class="tourmaster-container" >';
 				echo '<div class="tourmaster-page-content tourmaster-item-pdlr" >';
-				echo '<div class="tourmaster-single-main-content" >' . $content . '</div>'; // tourmaster-single-main-content
+				echo '<div class="tourmaster-single-main-content" >' . $content; // tourmaster-single-main-content
+				//////////////////////////////////////////////////////////////
+				// Addition of the assistance CTA to all single tour pages
+				/////////////////////////////////////////////////////////////
+				echo '<div>';
+				echo '<div class="assistanceCTA">';
+				echo '<h3><span class="underline">Need Assistance?</span></h3>';
+				echo '<p>Don’t hesitate to contact us with any questions and concerns.</p>';
+				echo '<a href="tel:1-800-236-8687">1-800-236-8687</a>';
+				echo '</div>';
+				echo '</div>';
+				//////////////////////////////////////////////////////////////
+				// End of the Assistance CTA addition
+				//////////////////////////////////////////////////////////////
+				echo '</div>';
 				echo '</div>'; // tourmaster-page-content
 				echo '</div>'; // tourmaster-container
 			}
@@ -645,7 +659,10 @@
 
 			echo '<div class="tourmaster-single-related-tour tourmaster-tour-item tourmaster-style-' . esc_attr($related_tour_args['tour-style']) . '">';
 			echo '<div class="tourmaster-single-related-tour-container tourmaster-container">';
-			echo '<h3 class="tourmaster-single-related-tour-title tourmaster-item-pdlr">' . esc_html__('Related Tours', 'tourmaster') . '</h3>';
+			////////////////////////////////////////////////////////////////////
+			// Edit here for changing Related Tours to Recently Added Tours ///
+			///////////////////////////////////////////////////////////////////
+			echo '<h3 class="tourmaster-single-related-tour-title tourmaster-item-pdlr">' . esc_html__('Recently Added Tours', 'tourmaster') . '</h3>';
 
 			$column_sum = 0;
 			$no_space = in_array($related_tour_args['tour-style'], array('grid-no-space', 'modern-no-space'))? 'yes': 'no';
@@ -747,7 +764,6 @@
 			echo '</div>'; // tourmaster-single-review-container
 		}
 	}
-
 
 	echo '</div>'; // tourmaster-template-wrapper
 

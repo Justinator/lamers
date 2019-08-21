@@ -176,7 +176,7 @@ get_header();
 					</div>
 					<div class="col50 textBlock">
 						<div class="textWrap">
-							<h3 class="largeHeading"><span class="underline"><?php the_field('section_header'); ?></span></h3>
+							<h5 class="largeHeading"><span class="underline"><?php the_field('section_header'); ?></span></h5>
 							<div class="fullWidth stopDetailsWrap">
 								<?php get_template_part('/inc/bus-stops'); ?>
 							</div>

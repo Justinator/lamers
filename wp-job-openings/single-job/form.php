@@ -42,7 +42,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 				formId: '92314410382145',
 				base: 'https://form.jotform.com/',
 				windowTitle: 'Application of Employment',
-				background: '#FFA500',
+				background: '#b70033',
 				fontColor: '#FFFFFF',
 				type: 'false',
 				height: 500,
@@ -50,7 +50,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 				openOnLoad: false
 			});
 	</script>
-		<a class="btn lightbox-92314410382145" style="margin-top: 16px">
+		<a class="redButton btn lightbox-92314410382145" style="margin-top: 16px">
 			Apply Now
 		</a>
 

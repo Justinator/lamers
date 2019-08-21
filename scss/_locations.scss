@@ -11,11 +11,16 @@
 #asl-storelocator.asl-p-cont.asl-bg-0 .Num_of_store {
   background: $brandColor;
 }
+#asl-storelocator.asl-p-cont.asl-bg-0 #panel {
+  height: 50vh;
+  max-height: 435px;
+}
 .p-title {
   font-family: $prometoMedium;
 	text-transform: uppercase;
   font-weight: 700 !important;
   font-size: .8em !important;
+  cursor: pointer;
 }
 #asl-storelocator.asl-p-cont .item .glyphicon {
   margin-left: -25px !important;
@@ -47,20 +52,24 @@
   box-shadow: 0 5px 15px 0 rgba(0,0,0,.13);
   border: 1px solid $lightGrey;
   font-size: .8em;
-  margin: 0 20px 20px 0;
+  margin: 0 0 20px 0;
+  @include breakpoint (laptopScreen) {
+    margin: 0 20px 20px 0;
+  }
 }
 .backToWrap {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-top: 10px;
 }
 .callButton {
   display:none;
   @include breakpoint (laptopScreen) {
-    display: block;
+    display: initial;
   }
 }
 .locationContent {

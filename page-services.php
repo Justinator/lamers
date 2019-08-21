@@ -32,13 +32,15 @@ get_header();
 								$serviceLink = get_sub_field('service_button_link');
 
 					  		?>
-								<div class="flex-container centerAlignedContainer paddedSection greyBorder">
+								<div class="flex-container-reverse centerAlignedContainer paddedSection greyBorder">
 							    <div class="col50 centerTextBlock">
 							      <div class="textWrap textBlock">
-							        <h2 class="largeHeading"><?php echo $serviceHeadline; ?></h2>
+							        <h3 class="largeHeading"><?php echo $serviceHeadline; ?></h3>
 							        <p><?php echo $serviceDesc; ?></p>
-											<a href="<?php echo $serviceLink; ?>" class="redButton"><?php the_field('service_1_button_text'); ?></a>
-							      </div>
+											<div class="buttonWrap">
+												<a href="<?php echo $serviceLink; ?>" class="redButton"><?php the_field('service_1_button_text'); ?></a>
+											</div>
+										</div>
 							    </div>
 							    <div class="col50">
 							      <?php

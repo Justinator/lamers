@@ -24,7 +24,7 @@ get_header();
 								<p><span class="mediumHeading"><?php echo $stopTitle; ?></span><br>
 									<?php echo $stopAddress; ?><br>
 									<?php echo $stopPhone; ?><br>
-									<a href="<?php echo $stopPhone; ?>" target="_blank">View on Map</a>
+									<a href="<?php echo $stopMapURL; ?>" target="_blank">View on Map</a>
 								</p>
 						<?php endwhile; ?>
 					<?php endif; ?>

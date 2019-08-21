@@ -11,9 +11,6 @@
 	border-radius: 10px;
 	background: $transparent;
 	padding: 5px 25px 5px 25px;
-	width: -webkit-max-content;
-	width: -moz-max-content;
-	width: max-content;
 	color: $white;
 	-webkit-transition: .3s ease;
 	transition: .3s ease;
@@ -41,9 +38,6 @@
 	border-radius: 10px;
 	background: $brandColor !important;
 	padding: 10px 25px 10px 25px;
-	width: -webkit-max-content;
-	width: -moz-max-content;
-	width: max-content;
 	color: $white !important;
 	-webkit-transition: .3s ease !important;
 	transition: .3s ease !important;
@@ -138,6 +132,7 @@ button{
 	        justify-content: flex-start;
 	-ms-flex-direction: column;
 	    flex-direction: column;
+			margin-bottom: 25px;
     @include breakpoint(largeMobileScreen){
       -webkit-box-orient: horizontal;
       -webkit-box-direction: normal;
@@ -234,4 +229,7 @@ button{
 				transition: .2s ease;
 			}
 		}
+}
+#fleetButton {
+	margin-top: 25px;
 }

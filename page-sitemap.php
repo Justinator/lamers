@@ -16,7 +16,7 @@ get_header();
 		<div class="pageWidth flex-container">
 			<div class="col50">
 				<h3>Pages</h3>
-					<?php wp_list_pages(array('sort_column' => 'post_title', 'exclude' => '70, 1358', 'title_li' => ' ', 'depth' => 0)); ?>
+					<?php wp_list_pages(array('sort_column' => 'post_title', 'exclude' => '70, 1358, 19', 'title_li' => ' ', 'depth' => 0)); ?>
 			</div>
 			<div class="col50">
 				<h3>News</h3>
@@ -34,7 +34,7 @@ get_header();
 				  <?php endwhile;
 				  wp_reset_query();
 				  ?>
-			</ul>
+				</ul>
 			</div>
 		</div>
 	</main>

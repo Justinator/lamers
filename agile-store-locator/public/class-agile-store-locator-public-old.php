@@ -84,7 +84,7 @@ class AgileStoreLocator_Public {
 	{
 
 		//[myshortcode foo="bar" bar="bing"]
-	  //AGILESTORELOCATOR_PLUGIN_PATH.
+	    //AGILESTORELOCATOR_PLUGIN_PATH.
 
 		wp_enqueue_script( $this->AgileStoreLocator.'-script', AGILESTORELOCATOR_URL_PATH . 'public/js/site_script.js', array('jquery'), $this->version, true );
 
@@ -135,10 +135,11 @@ class AgileStoreLocator_Public {
 
 
 		//For Translation
+		//Edits here for the tooltip popup 
 		$words = array(
 			'direction' => __('Directions','asl_locator'),
 			'zoom' => __('Zoom Here','asl_locator'),
-			'detail' => __('View More','asl_locator'),
+			'detail' => __('More Info','asl_locator'),
 			'select_option' => __('Select Option','asl_locator'),
 			'none' => __('None','asl_locator')
 		);

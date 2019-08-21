@@ -65,8 +65,8 @@
   }
 }
 .tourmaster-item-pdlr {
-  padding-left: 15px;
-  padding-right: 15px;
+  padding-left: 0;
+  padding-right: 0;
 }
 .tourmaster-column-30 {
   @include breakpoint (tabletScreen) {
@@ -155,7 +155,16 @@ body.single-tour.tourmaster-bottom-booking-bar .tourmaster-tour-booking-bar-cont
   }
 }
 .tourmaster-tour-category-item-wrap {
-  height: 350px;
+  height: 250px;
+  @include breakpoint (largeMobileScreen) {
+    height: 450px;
+  }
+  @include breakpoint (tabletScreen) {
+    height: 250px;
+  }
+  @include breakpoint (extraLargeScreen) {
+    height: 350px;
+  }
 }
 .tourmaster-tour-category {
   display: -webkit-box;
@@ -164,11 +173,63 @@ body.single-tour.tourmaster-bottom-booking-bar .tourmaster-tour-booking-bar-cont
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  @include breakpoint (tabletScreen) {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+.tourmaster-item-rvpdlr {
+  margin-left: 0;
+  margin-right: 0;
+}
+.tourmaster-tour-item-holder {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  @include breakpoint (largeMobileScreen) {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+.tourmaster-tour-category .tourmaster-item-pdlr{
+  padding-left: 0;
+  padding-right: 0;
+  @include breakpoint (laptopScreen) {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+.tourmaster-tour-item-holder .tourmaster-item-pdlr {
+  padding-left: 10px;
+  padding-right: 0;
+  @include breakpoint (largeMobileScreen) {
+    padding-left: 20px;
+    padding-right: 10px;
+  }
+  @include breakpoint (laptopScreen) {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
 }
  .tourmaster-sidebar-right {
    display: none;
  }
 .tourmaster-pagination {
+  margin-bottom: 25px;
   a {
     &:after {
       width: 0%;
@@ -203,6 +264,25 @@ body.single-tour.tourmaster-bottom-booking-bar .tourmaster-tour-booking-bar-cont
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  @include breakpoint(largeMobileScreen) {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  p {
+    font-size: 18px;
+  }
+  .textBlock {
+    width: 215px;
+    @include breakpoint (laptopScreen) {
+      width: 190px;
+    }
+  }
 }
 .tourmaster-tour-booking-bar-wrap .tourmaster-enquiry-field {
   margin-bottom: 5px;
@@ -231,6 +311,26 @@ body.single-tour.tourmaster-bottom-booking-bar .tourmaster-tour-booking-bar-cont
 .tourmaster-single-header-title {
   font-size: 2em !important;
 }
+.tourmaster-tour-medium .tourmaster-content-right {
+  padding: 5px 0 5px 5px;
+}
+.tourmaster-tour-item {
+  padding-bottom: 0;
+}
+.tourmaster-single-related-tour {
+  margin-bottom: 0;
+}
+.tourmaster-tour-booking-bar-widget {
+  padding-top: 25px !important;
+}
+.tourmaster-single-header-container-inner .tourmaster-item-pdlr,
+.tourmaster-tour-info-wrap .tourmaster-item-pdlr,
+.tourmaster-container .tourmaster-item-pdlr{
+  padding-left: 0;
+  @include breakpoint (laptopScreen) {
+    padding-left: 20px;
+  }
+}
 // Customization of the login and dashboard pages
 .tourmaster-user-navigation-item, .tourmaster-wish-list-item-content {
   a {
@@ -250,4 +350,7 @@ body.single-tour.tourmaster-bottom-booking-bar .tourmaster-tour-booking-bar-cont
 }
 .tourmaster-login-form-fields p{
   width: 97% !important;
+}
+.single-tour .tourmaster-tour-info-outer .tourmaster-tour-info {
+  width: 100%;
 }

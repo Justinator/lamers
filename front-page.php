@@ -43,7 +43,7 @@ get_header();
 			<section id="lamersConnect" class="paddedSection">
 				<div id="connectBack" class="fullWidth" style="background: url('<?php $image = get_field('lamers_connect_background'); $size = 'full'; if( $image ) {echo $image['url'];}?>') no-repeat; background-size: cover; background-position:center;">
 					<div class="fullWidth leftGradientOverlay">
-						<div class="pageWidth flex-container centerAlignedContainer">
+						<div class="pageWidth innerFlexWrap">
 							<div class="col50">
 								<?php
 					        $image = get_field('lamers_connect_logo');
@@ -66,7 +66,7 @@ get_header();
 			<section id="lamersTours">
 				<div id="toursBack" class="fullWidth" style="background: url('<?php $image = get_field('lamers_tours_background'); $size = 'full'; if( $image ) {echo $image['url'];}?>') no-repeat; background-size: cover; background-position:center;">
 					<div class="fullWidth rightGradientOverlay">
-						<div class="pageWidth flex-container-reverse centerAlignedContainer">
+						<div class="pageWidth innerFlexWrap">
 							<div class="col50"></div>
 							<div class="col50">
 								<?php
@@ -87,7 +87,7 @@ get_header();
 			<!-- ********** Hiring Section Start ********** -->
 			<section id="careers" class="paddedSection">
 				<div class="fullWidth flex-container centerAlignedContainer">
-					<div class="col50 centerTextBlock">
+					<div class="col50 centerTextBlock paddingBottom">
 						<div class="textWrap">
 							<h6 class="largeHeading"><span class="underline"><?php the_field('now_hiring'); ?></span></h6>
 							<p class="textBlock"><?php the_field('now_hiring_description'); ?></p>
