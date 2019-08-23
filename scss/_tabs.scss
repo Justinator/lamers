@@ -103,7 +103,7 @@ ul.nacc li.active {
 		top: 10px;
 		left: -22px;
 		content: "";
-		height: 92%;
+		height: calc(100% - 45px);
 		width: 2px;
 		background-color: $headlineText;
 	}

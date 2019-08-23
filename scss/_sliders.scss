@@ -144,7 +144,7 @@
     @include breakpoint (laptopScreen) {
       display: none;
     }
-    @include breakpoint (largeScreen) {
+    @include breakpoint (extraLargeScreen) {
       display: block;
     }
   }

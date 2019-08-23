@@ -58,7 +58,7 @@
 .tourmaster-column-20 {
   width: 95%;
   @include breakpoint (largeMobileScreen) {
-    width: 45%;
+    width: 44%;
   }
   @include breakpoint (laptopScreen) {
     width: 29%;
@@ -280,7 +280,7 @@ body.single-tour.tourmaster-bottom-booking-bar .tourmaster-tour-booking-bar-cont
   .textBlock {
     width: 215px;
     @include breakpoint (laptopScreen) {
-      width: 190px;
+      width: 180px;
     }
   }
 }
@@ -331,7 +331,28 @@ body.single-tour.tourmaster-bottom-booking-bar .tourmaster-tour-booking-bar-cont
     padding-left: 20px;
   }
 }
+.tourmaster-item-mglr {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.tourmaster-tour-medium .tourmaster-content-right {
+  padding: 5px 0 5px 5px !important;
+}
+.tourmaster-tour-medium.tourmaster-tour-frame .tourmaster-tour-content-wrap {
+  padding: 10px;
+  @include breakpoint (tabletScreen) {
+    padding: 20px;
+  }
+}
+.tourmaster-tour-category-shortcode {
+  display: none;
+  @include breakpoint (laptopScreen) {
+    display: block;
+  }
+}
+////////////////////////////////////////////////////
 // Customization of the login and dashboard pages
+///////////////////////////////////////////////////
 .tourmaster-user-navigation-item, .tourmaster-wish-list-item-content {
   a {
     color: $brandColor !important;

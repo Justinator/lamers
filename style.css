@@ -673,6 +673,9 @@ Font Variables
 .paddingTop {
   padding-top: 50px; }
 
+#simplePageContent {
+  margin-top: -25px; }
+
 /*4.0 Header Styling -------------------------------------------*/
 .screenReaderSkipToContent {
   position: absolute;
@@ -2339,6 +2342,10 @@ ul {
   #formWrapInner {
     padding: 25px; } }
 
+@media (min-width: 992px) {
+  #contact .col50 {
+    padding-right: 20px; } }
+
 .smallMapWrapper {
   padding: 40px 20px 20px 20px; }
 
@@ -2399,6 +2406,9 @@ ul {
 
 #list2 {
   margin-bottom: 15px; }
+  @media (min-width: 992px) {
+    #list2 {
+      padding-left: 20px; } }
 
 #safety ul {
   margin-left: 15px; }
@@ -2750,6 +2760,12 @@ ul {
 .jobWrapper a:after {
   width: 0; }
 
+.awsm-filter-wrap .awsm-filter-item {
+  width: 98%; }
+  @media (min-width: 768px) {
+    .awsm-filter-wrap .awsm-filter-item {
+      width: 30%; } }
+
 .awsm_job_openings .entry-header p {
   display: none; }
 
@@ -2963,7 +2979,7 @@ ul {
     @media (min-width: 992px) {
       .testimonial:before {
         display: none; } }
-    @media (min-width: 1250px) {
+    @media (min-width: 1600px) {
       .testimonial:before {
         display: block; } }
 
@@ -3082,7 +3098,7 @@ ul.nacc li.active {
     top: 10px;
     left: -22px;
     content: "";
-    height: 92%;
+    height: calc(100% - 45px);
     width: 2px;
     background-color: #18435a; }
 
@@ -3419,6 +3435,9 @@ table {
     .vehicleCol {
       width: 25%; } }
 
+#transportBtn .redButton {
+  font-size: 14px !important; }
+
 .passster-form {
   height: 85vh;
   display: -webkit-box;
@@ -3541,7 +3560,7 @@ table {
   width: 95%; }
   @media (min-width: 600px) {
     .tourmaster-column-20 {
-      width: 45%; } }
+      width: 44%; } }
   @media (min-width: 992px) {
     .tourmaster-column-20 {
       width: 29%; } }
@@ -3747,7 +3766,7 @@ body.single-tour.tourmaster-bottom-booking-bar .tourmaster-tour-booking-bar-cont
     width: 215px; }
     @media (min-width: 992px) {
       #officeList .textBlock {
-        width: 190px; } }
+        width: 180px; } }
 
 .tourmaster-tour-booking-bar-wrap .tourmaster-enquiry-field {
   margin-bottom: 5px; }
@@ -3794,6 +3813,25 @@ body.single-tour.tourmaster-bottom-booking-bar .tourmaster-tour-booking-bar-cont
     .tourmaster-container .tourmaster-item-pdlr {
       padding-left: 20px; } }
 
+.tourmaster-item-mglr {
+  margin-left: 10px;
+  margin-right: 10px; }
+
+.tourmaster-tour-medium .tourmaster-content-right {
+  padding: 5px 0 5px 5px !important; }
+
+.tourmaster-tour-medium.tourmaster-tour-frame .tourmaster-tour-content-wrap {
+  padding: 10px; }
+  @media (min-width: 768px) {
+    .tourmaster-tour-medium.tourmaster-tour-frame .tourmaster-tour-content-wrap {
+      padding: 20px; } }
+
+.tourmaster-tour-category-shortcode {
+  display: none; }
+  @media (min-width: 992px) {
+    .tourmaster-tour-category-shortcode {
+      display: block; } }
+
 .tourmaster-user-navigation-item a, .tourmaster-wish-list-item-content a {
   color: #b70033 !important; }
   .tourmaster-user-navigation-item a:after, .tourmaster-wish-list-item-content a:after {
@@ -3835,6 +3873,8 @@ body.single-tour.tourmaster-bottom-booking-bar .tourmaster-tour-booking-bar-cont
 
 .ctaInnerWrap {
   max-width: 400px; }
+  .ctaInnerWrap p {
+    padding: 0 10px; }
 
 .scheduleTable {
   overflow: auto; }

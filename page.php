@@ -19,7 +19,7 @@ get_header();
 		<main id="main" class="site-main">
 			<?php get_template_part('/inc/breadcrumbs'); ?>
 			<?php get_template_part('/inc/simple-hero'); ?>
-			<section id="pageContent"class="greyBlock paddedSection">
+			<section id="simplePageContent" class="greyBlock paddedSection">
 				<div class="limitWidth">
 					<div class="textWrap">
 						<?php

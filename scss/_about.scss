@@ -23,6 +23,9 @@
 }
 #list2 {
   margin-bottom: 15px;
+  @include breakpoint (laptopScreen) {
+    padding-left: 20px;
+  }
 }
 #safety {
   ul {

@@ -1,4 +1,4 @@
-<section class="contact">
+<section id="contact">
   <div class="pageWidth flex-container">
     <div class="col50">
       <div>

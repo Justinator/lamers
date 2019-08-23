@@ -6,6 +6,12 @@
     }
   }
 }
+.awsm-filter-wrap .awsm-filter-item {
+  width: 98%;
+  @include breakpoint (tabletScreen) {
+    width: 30%;
+  }
+}
 .awsm_job_openings {
   .entry-header {
     p {
