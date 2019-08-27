@@ -1,4 +1,6 @@
-/* 8.0 General Body Styles -------------------------------------------*/
+/*--------------------------------------------------------------
+9.0 General/Global Styles
+--------------------------------------------------------------*/
 body{
 	background: $white;
 	margin: 0;
@@ -71,12 +73,6 @@ a {
 
 ::-webkit-scrollbar-thumb{
     background-color: $brandColorDark;
-}
-.error-404{
-	text-align: center;
-}
-.fourOhFour{
-	font-size: 5em;
 }
 ul {
 	padding: 0;

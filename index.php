@@ -18,7 +18,7 @@ get_header();
 <section class="removeBottomMargin">
   <div class="fullWidth flex-container centerAlignedContainer">
     <div class="col50">
-      <img src="/wp-content/uploads/2019/08/blog.jpg" class="image">
+      <img src="/wp-content/uploads/2019/08/blog-low-1.jpg" class="image">
     </div>
     <div class="col50 centerTextBlock">
       <div class="textWrap textBlock">

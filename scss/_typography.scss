@@ -1,4 +1,6 @@
-/* 6.0 Site Typography -------------------------------------------*/
+/*--------------------------------------------------------------
+7.0 Typography
+--------------------------------------------------------------*/
 body,
 button,
 input,
@@ -13,7 +15,7 @@ textarea {
 		font-size: 20px;
 	}
 }
-h1,h2,h3,h4,h5,h6{
+h1,h2,h3,h4,h5,h6 {
 	font-family: $prometoMedium;
 	text-transform: uppercase;
 	font-size: 1.5em;
@@ -25,62 +27,26 @@ h1,h2,h3,h4,h5,h6{
 		font-size: 1.7em;
 	}
 }
-p{
+p {
 	margin-top: 0;
 	margin-bottom: 1em !important;
 }
-.whiteText{
+.whiteText {
 	color: $white;
 }
-.headlineText{
+.headlineText {
 	color: $headlineText;
 }
-.subheadText{
+.subheadText {
 	color: $subHeadText;
 }
-.redText{
+.redText {
 	color: $brandColor;
 }
 .centerText{
 	text-align: center;
 }
-.primaryHeading{
-	font-family: $prometoMedium;
-	text-transform: uppercase;
-	font-weight: 700;
-	margin-bottom: 0;
-	@include breakpoint(smallScreen){
-		font-size: 2.5em;
-	}
-	@include breakpoint(tinyScreen){
-		font-size: 2em;
-	}
-	@include breakpoint(largeMobileScreen){
-		font-size: 2.5em;
-	}
-	@include breakpoint(largeScreen){
-		font-size: 4em;
-	}
-}
-.subHeading{
-	font-family: $prometoMedium;
-	text-transform: uppercase;
-	font-weight: 500;
-	margin-bottom: 0;
-	@include breakpoint(smallScreen){
-		font-size: 2.5em;
-	}
-	@include breakpoint(tinyScreen){
-		font-size: 2em;
-	}
-	@include breakpoint(largeMobileScreen){
-		font-size: 2.5em;
-	}
-	@include breakpoint(largeScreen){
-		font-size: 4em;
-	}
-}
-.largeHeading{
+.largeHeading {
 	font-size: 1.7em;
 	font-weight: 700;
 }
@@ -88,19 +54,9 @@ p{
 	font-size: 1.2em;
 	font-weight: 700;
 }
-.subhead{
-	font-size: 1.4em;
-	font-weight: 500;
-}
-.smallHeading{
+.smallHeading {
 	font-size: .8em;
 	margin-bottom: 0;
-}
-.noMargin{
-	margin: 0 !important;
-}
-.smallMargin{
-	margin-bottom: 15px;
 }
 .underline {
   background-image: -webkit-linear-gradient(left, $primaryYellow 100%, transparent 0);
@@ -108,18 +64,6 @@ p{
   background-position: 0 1.06em;
   background-repeat: repeat-x;
   background-size: 8px 5px;
-}
-.centerUnderline{
-	content: "";
-	position: relative;
-	height: 3px;
-	width: 4em;
-	margin: 0 auto;
-	margin-top: 5px;
-  margin-bottom: 20px;
-	border-bottom: 3px solid $primaryYellow;
-	-webkit-transition: .2s ease all;
-	transition: .2s ease all;
 }
 .fontLight {
 	font-weight: 400;

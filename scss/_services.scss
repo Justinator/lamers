@@ -1,4 +1,6 @@
-/* 12.0 Service Page stylings -------------------------------------------*/
+/*--------------------------------------------------------------
+12.0 Services
+--------------------------------------------------------------*/
 .stickyOuterWrapper {
 	width: 30%;
 	margin-right: 20px;
@@ -80,18 +82,8 @@
 	    -ms-flex-direction: column;
 	        flex-direction: column;
 }
-.menu-fleet-menu-container, .menu-services-menu-container {
-	width: 100%;
-}
 .stickyTitle {
 	margin-bottom: 15px;
-}
-.servicesList{
-	list-style-type: none;
-  padding-left: 0;
-	li{
-		margin-bottom: 10px;
-	}
 }
 .contentWrapper {
 	width: 100%;

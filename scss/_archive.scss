@@ -1,4 +1,6 @@
-/* 16.0 Archive/News Page stylings -------------------------------------------*/
+/*--------------------------------------------------------------
+16.0 Blog/News Page 
+--------------------------------------------------------------*/
 .post{
   padding: 0 0 20px 0;
   @include breakpoint(laptopScreen){
@@ -35,33 +37,8 @@
   width: 1px;
   word-wrap: normal !important;
 }
-.blogTitleLink{
-	text-decoration: none;
-	color: $primaryGrey;
-	-webkit-transition: .3s ease all;
-	transition: .3s ease all;
-	position: relative;
-    &:hover{
-    color: $primaryGrey;
-    -webkit-transition: .3s ease all;
-    transition: .3s ease all;
-  }
-}
 .updated{
   display: none;
-}
-.posted-on{
-  a{
-  	text-decoration: none;
-  	color: $brandColor !important;
-  	-webkit-transition: .3s ease all;
-  	transition: .3s ease all;
-      &:hover{
-      color: $brandColorDark !important;
-      -webkit-transition: .3s ease all;
-      transition: .3s ease all;
-      }
-  }
 }
 .vcard{
   a{
@@ -166,42 +143,8 @@
   margin-bottom: 40px;
   border-bottom: 5px solid $brandColor;
 }
-.search-form{
-  .search-submit{
-    background-color: $primaryGrey;
-    border: 2px solid $primaryGrey;
-    color: $black;
-    -webkit-transition: .3s ease all;
-    transition: .3s ease all;
-    &:hover{
-      background-color: $transparent;
-      border: 2px solid $primaryGrey;
-      color: $primaryGrey;
-      -webkit-transition: .3s ease all;
-      transition: .3s ease all;
-    }
-  }
-}
 .postHeader{
   margin-bottom: 15px;
-}
-.blogText{
-	display: -webkit-box;
-	display: -ms-flexbox;
-	display: flex;
-	-webkit-box-orient: vertical;
-	-webkit-box-direction: normal;
-	    -ms-flex-direction: column;
-	        flex-direction: column;
-	-webkit-box-pack: center;
-	    -ms-flex-pack: center;
-	        justify-content: center;
-	max-width: 800px;
-  margin: 0 auto;
-  padding: 0;
-    @include breakpoint(laptopScreen){
-      padding: 25px;
-    }
 }
 #search-2 {
   background-color: $brandColor;
@@ -228,27 +171,6 @@
   ul {
     list-style-type: none;
     padding: 0 0 20px 20px;
-  }
-}
-#media_gallery-2 {
-  .widget-title {
-    text-align: center;
-    font-size: 1.6em;
-  }
-  a {
-    &:after {
-      width: 0%;
-    }
-  }
-  img {
-    width: 15%;
-    height: auto;
-    @include breakpoint (laptopScreen) {
-      width: 40%;
-    }
-    @include breakpoint (extraLargeScreen) {
-      width: 30%;
-    }
   }
 }
 .socialOutterWrapper {

@@ -1,4 +1,6 @@
-/* 2.0 Define mobile breakpoints for our site ----------------------*/
+/*--------------------------------------------------------------
+2.0 Define mobile breakpoints for our site
+--------------------------------------------------------------*/
 @mixin breakpoint($point) {
   @if $point == extraLargeScreen {
     @media (min-width: 1600px) { @content; }

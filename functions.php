@@ -42,7 +42,7 @@ if ( ! function_exists( 'insightcustom_setup' ) ) :
 		 */
 		add_theme_support( 'post-thumbnails' );
 
-		// This theme uses wp_nav_menu() in one location.
+		// This theme uses wp_nav_menu() in multiple locations.
 		register_nav_menus( array(
 			'PrimaryMenu' => esc_html__( 'PrimaryMenu', 'insightCustom' ),
 			'SecondaryMenu' => esc_html__( 'SecondaryMenu', 'insightCustom' ),
@@ -229,11 +229,6 @@ function insightcustom_scripts() {
 add_action( 'wp_enqueue_scripts', 'insightcustom_scripts' );
 
 /**
- * Implement the Custom Header feature.
- */
-require get_template_directory() . '/inc/custom-header.php';
-
-/**
  * Custom template tags for this theme.
  */
 require get_template_directory() . '/inc/template-tags.php';
@@ -242,15 +237,3 @@ require get_template_directory() . '/inc/template-tags.php';
  * Functions which enhance the theme by hooking into WordPress.
  */
 require get_template_directory() . '/inc/template-functions.php';
-
-/**
- * Customizer additions.
- */
-require get_template_directory() . '/inc/customizer.php';
-
-/**
- * Load Jetpack compatibility file.
- */
-if ( defined( 'JETPACK__VERSION' ) ) {
-	require get_template_directory() . '/inc/jetpack.php';
-}

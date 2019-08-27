@@ -1,13 +1,6 @@
-/*9.0 Icon Styling -------------------------------------------*/
-.whiteIcon{
-	color: $white;
-	-webkit-transition: .3s ease all;
-	transition: .3s ease all;
-	font-size: 16px;
-}
-.greyIcon{
-	color: $lightGrey;
-}
+/*--------------------------------------------------------------
+10.0 Icons
+--------------------------------------------------------------*/
 #redArrow{
 	margin-top: 4px;
 	display: inline-block;
@@ -16,15 +9,6 @@
   stroke-width: 0;
   stroke: $brandColor;
   fill: $brandColor;
-}
-.iconBlock{
-	display: -webkit-box;
-	display: -ms-flexbox;
-	display: flex;
-	-webkit-box-orient: vertical;
-	-webkit-box-direction: normal;
-	    -ms-flex-direction: column;
-	        flex-direction: column;
 }
 .footerSocialIcon{
 	stroke: $white;
@@ -39,20 +23,11 @@
 			transition: .3s ease all;
 		}
 }
-.arrowIcon{
-	margin-left: 20px;
-	-webkit-transition: .2s ease all;
-	transition: .2s ease all;
-}
 .smallIcon{
 	position: absolute;
 	width: 0;
 	height: 0;
 	overflow: hidden;
-}
-.svgIcon {
-	height: 0;
-	width: 0;
 }
 .icon{
   display: inline-block;
@@ -69,22 +44,6 @@
   stroke-width: 0;
   stroke: $brandColor;
   fill: $brandColor;
-}
-.blueIcon{
-  display: inline-block;
-  width: 14px;
-  height: 14px;
-  stroke-width: 0;
-  stroke: $primaryGrey;
-  fill: $primaryGrey;
-}
-.mediumIcon{
-	display: inline-block;
-  width: 16px;
-  height: 16px;
-  stroke-width: 0;
-  stroke: $white;
-  fill: $white;
 }
 .socialPadding {
 	padding: 0 10px;

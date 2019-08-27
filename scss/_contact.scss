@@ -1,25 +1,12 @@
-/* 13.0 Contact Page stylings -------------------------------------------*/
-#contactContent{
-  margin-top: 125px;
-  margin-bottom: 25px;
-}
-#formWrapInner{
-  @include breakpoint(smallScreen){
-    padding: 0;
-  }
-  @include breakpoint(largeMobileScreen){
-    padding: 25px;
-  }
-}
+/*--------------------------------------------------------------
+13.0 Contact Page
+--------------------------------------------------------------*/
 #contact {
   .col50 {
     @include breakpoint (laptopScreen) {
       padding-right: 20px;
     }
   }
-}
-.smallMapWrapper{
-  padding: 40px 20px 20px 20px;
 }
 .caldera-grid label, .awsm-job-form-inner label{
   color: $headlineText !important;

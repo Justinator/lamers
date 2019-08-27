@@ -1,4 +1,6 @@
-/* 18.0 Careers Page stylings -------------------------------------------*/
+/*--------------------------------------------------------------
+17.0 Careers Page
+--------------------------------------------------------------*/
 .jobWrapper{
   a {
     &:after{
@@ -73,32 +75,6 @@
 }
 .awsm-job-form-error {
   color: $brandColor;
-}
-.subNavLink{
-  color: $black;
-  text-decoration: none;
-  -webkit-transition: .2s ease all;
-  transition: .2s ease all;
-  font-size: 16px;
-  &:hover{
-    color: $primaryYellow;
-    -webkit-transition: .2s ease all;
-    transition: .2s ease all;
-  }
-}
-.careersSidebar{
-	border-right: 1px solid $primaryGrey;
-	margin-top: 45px;
-	@include breakpoint(smallScreen){
-		padding: 0 20px;
-	}
-	@include breakpoint(largeMobileScreen){
-		padding: 0 20px;
-	}
-	@include breakpoint(laptopScreen){
-		display: block;
-  	padding: 0;
-	}
 }
 .jobWrapper {
   .page-title {

@@ -1,4 +1,6 @@
-/* 3.0 Our page layouts -------------------------------------------*/
+/*--------------------------------------------------------------
+3.0 Our page layouts
+--------------------------------------------------------------*/
 .col20{
 	width: 100%;
     @include breakpoint(laptopScreen){
@@ -57,15 +59,15 @@
     }
 }
 .pageWidth{
-		width: 95%;
-		height: 100%;
-		margin: 0 auto;
-      @include breakpoint(laptopScreen){
-        width: 90%;
-      }
-			@include breakpoint(largeScreen){
-        width: 70%;
-      }
+	width: 95%;
+	height: 100%;
+	margin: 0 auto;
+	  @include breakpoint(laptopScreen){
+	    width: 90%;
+	  }
+		@include breakpoint(largeScreen){
+	    width: 70%;
+	  }
 	}
 .fullWidth{
   width: 100%;
@@ -199,40 +201,6 @@
 	    -ms-flex-align: center;
 	        align-items: center;
 }
-.centerAlignedContainerTop{
-	display: -webkit-box;
-	display: -ms-flexbox;
-	display: flex;
-	-webkit-box-align: center;
-	    -ms-flex-align: center;
-	        align-items: center;
-	@include breakpoint(laptopScreen){
-		-webkit-box-align: start;
-		    -ms-flex-align: start;
-		            -ms-grid-row-align: flex-start;
-		        align-items: flex-start;
-	}
-	@include breakpoint(largeScreen){
-		-webkit-box-align: center;
-		    -ms-flex-align: center;
-		            -ms-grid-row-align: center;
-		        align-items: center;
-	}
-}
-.centeredContainer{
-	display: -webkit-box;
-	display: -ms-flexbox;
-	display: flex;
-	-webkit-box-pack: center;
-	    -ms-flex-pack: center;
-	        justify-content: center;
-	margin: 0 auto;
-	text-align: center;
-	-webkit-box-orient: vertical;
-	-webkit-box-direction: normal;
-	    -ms-flex-direction: column;
-	        flex-direction: column;
-}
 .textWrap{
 	padding: 0 10px;
 	@include breakpoint(tabletScreen) {
@@ -338,6 +306,9 @@
 .removeBottomMargin {
 	margin-bottom: -10px;
 }
+.marginRight{
+	margin-right: 30px;
+}
 .heroIntro {
 	margin-bottom: -10px;
 }
@@ -354,5 +325,11 @@
 	padding-top: 50px;
 }
 #simplePageContent {
-	margin-top: -25px;
+	margin-top: -10px;
+}
+.noMargin{
+	margin: 0 !important;
+}
+.smallMargin{
+	margin-bottom: 15px;
 }
