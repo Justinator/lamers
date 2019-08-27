@@ -9,11 +9,11 @@ A custom WordPress website theme for Lamers Bus Lines, Inc.
 2. [Styles](#dancer-styles)
 3. [Navigation](#rocket-navigation)
 4. [Footer](#shoe-footer)
-5. [Advanced Custom Fields](#speech-balloon-advanced-custom-fields)
+5. [Advanced Custom Fields](#speech_balloon-advanced-custom-fields)
 6. [Homepage](#house-homepage)
 7. [Careers](#construction-adding-a-new-job-posting-to-the-careers-page)
 8. [News](#newspaper-news-posts)
-9. [Tour Vacations](#sunrise-over-mountains-tour-vacations)
+9. [Tour Vacations](#sunrise_over_mountains-tour-vacations)
 10. [Locations](#newspaper-news-posts)
 
 # :open_file_folder: Basic File Structure
@@ -73,7 +73,7 @@ Find this file in the inc folder > contact.php
 
 ## :construction: Adding a new job posting to the careers page
 
-To display their careers I chose to use <a href="https://wordpress.org/plugins/wp-job-openings/">WP Job Openings plugin</a> to try to save some time. Didn't end up working out. They did have a nice layout that fit our site without needing to customize the look. Also liked their filter options for user searches
+To display their careers I chose to use <a href="https://wordpress.org/plugins/wp-job-openings/">WP Job Openings plugin</a> to try to save some time. They did have a nice layout that fit our site without needing to customize the look. Also liked their filter options for user searches
 
 To post a new job
 
@@ -85,7 +85,33 @@ To post a new job
 6. Open up the Job Location Structured Data (WP Jobs) field. Here we created some custom fields to gather more location data for our schema markup that gets output for each job post. By default the plugin output some location data but was receiving errors for not outputting data in the expected format.
 7. Here enter in the location, city, state, and zip for the job that you are posting. This will output this location data in the schema markup in greater detail than what the plugin output by default  
 
-To find these plugin edits navigate to the wp-job-openings folder in this repo. wp-job-openings.php. Below is the code that we added to grab the data from the custom fields
+To find these plugin edits navigate to the wp-job-openings-edited-files folder in this repo. wp-job-openings.php. Below is the code that we added to grab the data from the custom fields roughly line 1045
+
+### Default
+
+```
+///////////////////////////////////////////////
+// original jobLocation structured data code //
+///////////////////////////////////////////////
+// if ( taxonomy_exists( 'job-location' ) ) {
+// 	$locations = get_the_terms( $post->ID, 'job-location' );
+
+// 	if ( ! empty( $locations ) ) {
+// 		$data['jobLocation'] = array();
+// 		foreach ( $locations as $location ) {
+// 			$data['jobLocation'][] = array(
+// 				'@type'   => 'Place',
+// 				'address' => $location->name,
+// 			);
+// 		}
+// 		if ( count( $data['jobLocation'] ) === 1 ) {
+// 			$data['jobLocation'] = $data['jobLocation'][0];
+// 		}
+// 	}
+// }
+```
+
+### Updated Schema Data Output
 
 ```
 /////////////////////////////////////
@@ -114,7 +140,7 @@ $data['jobLocation'] = array(
 );
 ```
 
-We also decided to use the job application form that Lamers Bus Lines had already been using through JotForm instead of the default application form that this plugin output. To overwrite this edits were made to wp-job-openings > single-job > form.php. The below embed script was added from JotForm to open their application in a popup window, instead of taking users to the JotForm website
+We also decided to use the job application form that Lamers Bus Lines had already been using through JotForm instead of the default application form that this plugin output. To overwrite this edits were made to wp-job-openings-edited-files > single-job > form.php. The below embed script was added from JotForm to open their application in a popup window, instead of taking users to the JotForm website
 
 ```
 <script src ="https://form.jotform.com/static/feedback2.js" type="text/javascript"></script><script type="text/javascript">
@@ -137,15 +163,11 @@ We also decided to use the job application form that Lamers Bus Lines had alread
 
 ### Edit the admin menu name
 
-In wp-job-openings > inc > templates > archive-job.php I edited the output of the page to match page styles of all our other pages on site
+In wp-job-openings-edited-files > inc > templates > archive-job.php I edited the output of the page to match page styles of all our other pages on site
 
 ### Edit the admin menu name
 
-One little change I made when I stumbled upon it, In wp-job-openings > inc > class-awsm-job-openings-core.php I edited the menu name to overwrite the default menu name with Lamers Job Openings
-
-## Services Pages
-
-Each services page has it’s own single page file. To edit the services sub-nav/sidebar navigate to the inc folder and find services-sidebar.php.
+One little change I made when I stumbled upon it, In wp-job-openings-edited-files > inc > class-awsm-job-openings-core.php I edited the menu name to overwrite the default menu name with Lamers Job Openings
 
 ## :newspaper: News Posts  
 
@@ -203,7 +225,7 @@ Also edited the output what they call related tours. They only show the latest a
 If there were any edits that I missed all the files can be found in the tourmasterEditedPluginFiles folder. Nothing else was edited directly in the plugin
 
 Edits to the Agile Store Locator plugin
-agile-store-locator > public > class-agile-store-locator-public.php
+agile-store-locator-edited-files > public > class-agile-store-locator-public.php
 
 ```
 $words = array(
@@ -217,8 +239,8 @@ $words = array(
 
 Edit this file to change "Website" to "More Info" in the tooltip to make more sense to a user
 
-In agile-store-locator > includes > class-agile-store-locator I also edited the plugin name here to be Lamers Locations rather than AS Locator.
+In agile-store-locator-edited-files > includes > class-agile-store-locator I also edited the plugin name here to be Lamers Locations rather than AS Locator.
 
-Edit the agile-store-locator > public > js > site-script.js file to update the More Info link in tooltip to target = \_self vs. target= \_blank. Links opened up in another window by default creating a bit of a disconnect. Wasn't a good user experience for what we needed on this site
+Edit the agile-store-locator-edited-files > public > js > site-script.js file to update the More Info link in tooltip to target = \_self vs. target= \_blank. Links opened up in another window by default creating a bit of a disconnect. Wasn't a good user experience for what we needed on this site
 
 Hopefully that covers anything that you will need to update with this site.
