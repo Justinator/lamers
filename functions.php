@@ -206,6 +206,8 @@ function my_acf_admin_head() {
 }
 add_action('acf/input/admin_head', 'my_acf_admin_head');
 
+remove_action('template_redirect','redirect_canonical');
+
 /**
  * Enqueue scripts and styles.
  */

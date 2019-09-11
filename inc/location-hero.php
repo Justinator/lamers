@@ -15,7 +15,7 @@
         <div class="fleetDescWrap">
           <p><?php the_field('intro_copy'); ?></p>
           <div class="btnContainer">
-            <a class="redButton" href="/contact/">Contact Location</a>
+            <a class="redButton" href="/contact-us/">Contact Location</a>
           </div>
         </div>
       </div>

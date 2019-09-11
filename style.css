@@ -650,6 +650,9 @@ Font Variables
   padding-top: 50px; }
 
 #simplePageContent {
+  margin-top: -25px; }
+
+.page-id-546 #simplePageContent, .page-id-2565 #simplePageContent, .page-id-2531 #simplePageContent, .page-id-2882 #simplePageContent {
   margin-top: -10px; }
 
 .noMargin {
@@ -2632,6 +2635,9 @@ ul.nacc li p {
 /*--------------------------------------------------------------
 20.0 Accordion
 --------------------------------------------------------------*/
+#accordion {
+  padding-bottom: 1px; }
+
 .accordion {
   background-color: #f6f6f6;
   max-width: 1050px;

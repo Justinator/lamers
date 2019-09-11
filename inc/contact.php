@@ -3,28 +3,27 @@
     <div class="col50">
       <div>
         <h6><span class="underline">Contact</span> Us</h6>
-        <p>
-          We welcome your feedback or questions. If you are looking for a price on a bus, please
-          fill out our online <a href="/request-a-quote/">quote request form</a>.
-        </p>
-        <h6 class="noMargin smallHeading">Corporate Office</h6>
-        <p>
-          2407 South Point Road<br>
-          Green Bay, WI 54313
-        </p>
+        <?php the_field('contact_intro', 'option'); ?>
+        <h6 class="noMargin smallHeading"><?php the_field('corporate_office_title', 'option'); ?></h6>
+        <?php the_field('corporate_address', 'option'); ?>
         <h6 class="noMargin smallHeading">Location Hours</h6>
         <p>
-          8 a.m. - 5 p.m.
+          <?php the_field('corporate_hours', 'option'); ?>
         </p>
         <h6 class="noMargin smallHeading">Phone</h6>
-        <p>Lamers Bus Lines<br>
-          <a class="plainLink" href="tel:1-800-236-2340"><strong>1-800-236-2340</strong></a><br>
-          Lamers Tour and Travel Motor Coach Vacations<br>
-          <a class="plainLink" href="tel:1-800-236-8687"><strong>1-800-236-8687</strong></a><br>
-          Lamers Connect Intercity Bus Routes<br>
-          <strong><a class="plainLink" href="tel:1-866-552-6377">1-866-552-6377</a></strong><br>
+        <p>
+          <?php if( have_rows('lamers_phone_numbers', 'option') ): ?>
+    		  	<?php while( have_rows('lamers_phone_numbers', 'option') ): the_row();
+    		  		// vars
+    		  		$locationTitle = get_sub_field('location_title', 'option');
+    		  		$locationPhone = get_sub_field('location_phone_number', 'option');
+    		  		?>
+                <?php echo $locationTitle; ?><br>
+                <a class="plainLink" href="tel:<?php echo $locationPhone; ?>"><strong><?php echo $locationPhone; ?></strong></a><br>
+    		  	<?php endwhile; ?>
+    		  <?php endif; ?>
           TVI Bus Sales<br>
-          <a class="plainLink" href="tel:1-800-236-1240"><strong>1-800-236-1240</strong></a> EXT. 10190<br>
+          <strong>1-800-236-1240 Ext. 10190</strong><br>
         </p>
       </div>
     </div>

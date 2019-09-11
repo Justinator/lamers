@@ -25,6 +25,14 @@
 	        a.appendChild(r);
 	    })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
 	</script>
+	<!-- Google Analytics -->
+	<script>
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-46036619-1', 'auto');
+	ga('send', 'pageview');
+	</script>
+	<script async src='https://www.google-analytics.com/analytics.js'></script>
+	<!-- End Google Analytics -->
 	<?php wp_head(); ?>
 </head>
 <body <?php body_class(); ?>>
@@ -40,7 +48,7 @@
 		</nav>
 		<nav id="site-navigation" class="main-navigation" role="navigation" aria-label="primary navigation">
 			<div class="navWidth menuLinkWrap">
-					<a href="http://wordpress-154794-852975.cloudwaysapps.com/">
+					<a href="https://golamers.com/">
 						<img src="/wp-content/uploads/2019/05/Lamers-Bus-Lines-Logo-RGB.jpg" class="siteLogo" alt="Lamer's Bus Lines Logo">
 					</a>
 					<?php wp_nav_menu( array( 'theme_location' => 'PrimaryMenu', 'menu_id' => 'PrimaryMenu' ) ); ?>
