@@ -70,6 +70,7 @@ Find this file in the inc folder > affiliations.php. To edit the contents login 
 ### Editing the Contact Us section
 
 Find this file in the inc folder > contact.php
+This is used across the homepage, about page, and the contact page
 
 ## :construction: Adding a new job posting to the careers page
 
@@ -161,7 +162,7 @@ We also decided to use the job application form that Lamers Bus Lines had alread
   </a>
 ```
 
-### Edit the admin menu name
+### Edit the careers archive page display
 
 In wp-job-openings-edited-files > inc > templates > archive-job.php I edited the output of the page to match page styles of all our other pages on site
 
@@ -247,7 +248,7 @@ In agile-store-locator-edited-files > includes > class-agile-store-locator I als
 
 Edit the agile-store-locator-edited-files > public > js > site-script.js file to update the More Info link in tooltip to target = \_self vs. target= \_blank. Links opened up in another window by default creating a bit of a disconnect. Wasn't a good user experience for what we needed on this site
 
-## Functions
+## :nut_and_bolt: Functions
 
 Due to some internal IT configuration error, I had to turn off WordPress' default smart redirect helpers. Find that in the functions.php file to remove if Lamers fixes their IT configuration
 
