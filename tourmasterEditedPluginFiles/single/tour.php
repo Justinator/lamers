@@ -596,6 +596,43 @@
 				//////////////////////////////////////////////////////////////
 				// End of the Assistance CTA addition
 				//////////////////////////////////////////////////////////////
+				//////////////////////////////////////////////////////////////
+				// Addition of our custom related tours
+				/////////////////////////////////////////////////////////////
+				if(get_field('tour_1_title')):
+					echo '<div class="paddedSection">';
+					echo '<h4>Related Tours</h4>';
+					echo '<div class="flex-container">';
+					echo '<div id="related1" class="col50 related tourmaster-tour-thumbnail gdlr-core-item-list">';
+					echo '<a href="' . get_field('tour_1_url') . '">';
+					$image = get_field('tour_1_cover_image');
+					$imageID = $image['ID'];
+					echo wp_get_attachment_image( $imageID, 'full', false, array( 'class' => 'image', 'data-sizes' => 'auto' ) );
+					echo '<h4>' . get_field('tour_1_title') . '</h4>';
+					echo '</a>';
+					if (get_field('tour_1_price')):
+						echo 'Starting At <strong><span class="redText">$' . get_field('tour_1_price') . '</span></strong>';
+					endif;
+					echo '</div>';
+					if(get_field('tour_2_title')):
+						echo '<div id="related2" class="col50 related tourmaster-tour-thumbnail gdlr-core-item-list">';
+						echo '<a href="' . get_field('tour_2_url') . '">';
+						$image = get_field('tour_2_cover_image');
+						$imageID = $image['ID'];
+						echo wp_get_attachment_image( $imageID, 'full', false, array( 'class' => 'image', 'data-sizes' => 'auto' ) );
+						echo '<h4>' . get_field('tour_2_title') . '</h4>';
+						echo '</a>';
+						if (get_field('tour_2_price')):
+							echo 'Starting At <strong><span class="redText">$' . get_field('tour_2_price') . '</span></strong>';
+						endif;
+						echo '</div>';
+						echo '</div>';
+					endif;
+					echo '</div>';
+				endif;
+				//////////////////////////////////////////////////////////////
+				// End of our custom related tours
+				/////////////////////////////////////////////////////////////
 				echo '</div>';
 				echo '</div>'; // tourmaster-page-content
 				echo '</div>'; // tourmaster-container

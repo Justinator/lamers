@@ -19,13 +19,13 @@ get_header();
 				<div class="page-content">
 					<p><?php esc_html_e( 'It looks like nothing was found at this location. Take a look at some of the links below or try a search to find what you are looking for? Contact us if the issue persists and you cannot find what you\'re looking for.', 'insightcustom' ); ?></p>
 					<ul>
-						<li><a href="/tour-vacations/">Tour Vacations</li>
-						<li><a href="/lamers-connect/">Lamers Connect</li>
-						<li><a href="/services/">Services</li>
-						<li><a href="/about-us/">About Us</li>
-						<li><a href="/locations/">Locations</li>
-						<li><a href="/sitemap/">Sitemap</li>
-						<li><a href="/contact-us/">Contact Us</li>
+						<li><a href="/tour-vacations/">Tour Vacations</a></li>
+						<li><a href="/lamers-connect/">Lamers Connect</a></li>
+						<li><a href="/services/">Services</a></li>
+						<li><a href="/about-us/">About Us</a></li>
+						<li><a href="/locations/">Locations</a></li>
+						<li><a href="/sitemap/">Sitemap</a></li>
+						<li><a href="/contact-us/">Contact Us</a></li>
 					</ul>
 					<?php
 					the_widget( 'WP_Widget_Recent_Posts' );

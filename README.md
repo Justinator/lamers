@@ -14,7 +14,7 @@ A custom WordPress website theme for Lamers Bus Lines, Inc.
 7. [Careers](#construction-adding-a-new-job-posting-to-the-careers-page)
 8. [News](#newspaper-news-posts)
 9. [Tour Vacations](#sunrise_over_mountains-tour-vacations)
-10. [Locations](#newspaper-news-posts)
+10. [Locations](#office-store-locator)
 
 # :open_file_folder: Basic File Structure
 
@@ -183,7 +183,7 @@ To display the tours and inquiry options I used the plugin <a href="http://demo.
 
 To accomplish output that we were looking for I had to edit some of the plugin files
 
-Tourmaster plugin edits
+### Tourmaster plugin edits
 
 tourmasterEditedPluginFiles > single > tour.php is the primary file for outputting single tours. This file was edited to add in the assistance CTA block at the end of each single tour content post.
 
@@ -220,9 +220,13 @@ $ret .= sprintf(wp_kses(
 
 tourmasterEditedPluginFiles > include > tour-option.php I changed the menu name from Tourmaster to Lamers Tour & Travel
 
-Also edited the output what they call related tours. They only show the latest added tours, not related tours using any kind of logic, so I changed the heading output to "Recently Added Tours" instead.
+Also edited the output what they call related tours. They only show the latest added tours, not related tours using any kind of logic, so I changed the heading output to "Recently Added Tours" instead. edit: This has now been turned off and replaced with fields that Lamers can edit so they can choose any tour they want to display as related.
+
+Edits were needed to two files in tourmasterEditedPluginFiles > include >pb folder. Upload pb-element-tour.php and tour-item.php after a plugin update to disable in active tours.
 
 If there were any edits that I missed all the files can be found in the tourmasterEditedPluginFiles folder. Nothing else was edited directly in the plugin
+
+## :office: Store Locator
 
 Edits to the Agile Store Locator plugin
 agile-store-locator-edited-files > public > class-agile-store-locator-public.php
@@ -242,5 +246,13 @@ Edit this file to change "Website" to "More Info" in the tooltip to make more se
 In agile-store-locator-edited-files > includes > class-agile-store-locator I also edited the plugin name here to be Lamers Locations rather than AS Locator.
 
 Edit the agile-store-locator-edited-files > public > js > site-script.js file to update the More Info link in tooltip to target = \_self vs. target= \_blank. Links opened up in another window by default creating a bit of a disconnect. Wasn't a good user experience for what we needed on this site
+
+## Functions
+
+Due to some internal IT configuration error, I had to turn off WordPress' default smart redirect helpers. Find that in the functions.php file to remove if Lamers fixes their IT configuration
+
+```
+remove_action('template_redirect','redirect_canonical');
+```
 
 Hopefully that covers anything that you will need to update with this site.

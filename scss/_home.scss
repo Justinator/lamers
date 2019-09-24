@@ -98,6 +98,28 @@
 		background-image: linear-gradient(90deg, rgba(0,0,0,.7) 30%, rgba(0,0,0,0) 100%);
 	}
 }
+#affiliateWrapper {
+	a {
+		width: 30%;
+		height: 100%;
+		padding: 10px;
+		@include breakpoint (largeMobileScreen) {
+			width: 25%;
+		}
+		@include breakpoint (tabletScreen) {
+			width: 12%;
+		}
+		@include breakpoint (extraLargeScreen) {
+			width: 8%;
+		}
+		img {
+			width: 80%;
+		}
+		&:after {
+			width: 0;
+		}
+	}
+}
 .affiliateLogo {
 	width: 30%;
 	height: 100%;
