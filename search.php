@@ -18,12 +18,14 @@ get_header();
 						<header class="page-header greyBorder">
 							<h1 class="page-title">
 								<?php
+								$allsearch = new WP_Query("s=$s&showposts=0");
+								echo $allsearch ->found_posts.' results found';
 								/* translators: %s: search query. */
-								printf( esc_html__( 'Search Results for: %s', 'insightcustom' ), '<span>' . get_search_query() . '</span>' );
+								printf( esc_html__( ' for: %s', 'insightcustom' ), '<span>' . get_search_query() . '</span>' );
 								?>
 							</h1>
 						</header><!-- .page-header -->
-						<div class="paddedSection">
+						<div class="paddedSection wrappedFlexContainer">
 							<?php
 							/* Start the Loop */
 							while ( have_posts() ) :

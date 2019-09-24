@@ -180,7 +180,7 @@ Nothing fancy here. Simply add a blog post just like you would any standard Word
 
 ## :sunrise_over_mountains: Tour Vacations  
 
-To display the tours and inquiry options I used the plugin <a href="http://demo.goodlayers.com/document/tourmaster/">Tourmaster</a>. Read the documentation, to learn how the plugin works. For the most part we used only the most basic features
+To display the tours and inquiry options I used the plugin <a href="http://demo.goodlayers.com/document/tourmaster/">Tourmaster</a>. Read the documentation, to learn how the plugin works. Overall the plugin works just okay, but required a bit of customization to get to work right for our needs. We used only the most basic features so setup was fairly easy.
 
 To accomplish output that we were looking for I had to edit some of the plugin files
 

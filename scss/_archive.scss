@@ -297,6 +297,15 @@
   #post-1358 {
     display: none;
   }
+  article {
+    width: 90%;
+    @include breakpoint (largeMobileScreen) {
+      width: 40%;
+    }
+    h2 {
+      font-size: 1.2em;
+    }
+  }
 }
 .page-header {
   @include breakpoint (laptopScreen) {
