@@ -48,7 +48,7 @@
 		</nav>
 		<nav id="site-navigation" class="main-navigation" role="navigation" aria-label="primary navigation">
 			<div class="navWidth menuLinkWrap">
-					<a href="https://golamers.com/">
+					<a href="<?=site_url()?>">
 						<img src="/wp-content/uploads/2019/05/Lamers-Bus-Lines-Logo-RGB.jpg" class="siteLogo" alt="Lamer's Bus Lines Logo">
 					</a>
 					<?php wp_nav_menu( array( 'theme_location' => 'PrimaryMenu', 'menu_id' => 'PrimaryMenu' ) ); ?>
