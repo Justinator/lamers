@@ -22,11 +22,12 @@
 			<?php endif; ?>
 			<div class="centerText">
 				<p>
-					<?php insightCustom_posted_by(); ?><br>
-					in
+					Written
+					<?php insightCustom_posted_by(); ?>
+					|
 						<?php
 						$categories = get_the_category();
-						$separator = ', ';
+						$separator = ' & ';
 						$output = '';
 						if ( ! empty( $categories ) ) {
 						    foreach( $categories as $category ) {
