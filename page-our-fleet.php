@@ -25,33 +25,25 @@ get_header();
 				<div class="contentWrapper">
 					<?php if( have_rows('fleet_list') ): ?>
 							<?php while( have_rows('fleet_list') ): the_row();
-								// vars
-								$fleetImage = get_sub_field('fleet_image');
-								$fleetHeadline = get_sub_field('fleet_headline');
-								$fleetDesc = get_sub_field('fleet_description');
-								$fleetButtonText = get_sub_field('fleet_button_text');
-								$fleetLink = get_sub_field('fleet_button_link');
-
-								?>
-								<div class="flex-container-reverse centerAlignedContainer paddedSection greyBorder">
-							    <div class="col50 centerTextBlock">
-							      <div class="textWrap textBlock">
-							        <h2><?php echo $fleetHeadline; ?></h2>
-							        <p><?php echo $fleetDesc; ?></p>
-											<div class="buttonWrap">
-												<a href="<?php echo $fleetLink; ?>" class="redButton"><?php echo $fleetButtonText; ?></a>
-											</div>
-										</div>
-							    </div>
-							    <div class="col50">
-							      <?php
-							        $imageID = $fleetImage['ID'];
-							        echo wp_get_attachment_image( $imageID, 'full', false, array( 'class' => 'image', 'data-sizes' => 'auto' ) );
-							      ?>
-							    </div>
-							  </div>
-							<?php endwhile; ?>
-						<?php endif; ?>
+							// vars
+							$fleetImage = get_sub_field('fleet_image');
+							$fleetDesc = get_sub_field('fleet_description');
+							?>
+							<div class="flex-container-reverse centerAlignedContainer paddedSection greyBorder">
+						    <div class="col50 centerTextBlock">
+						      <div class="textWrap textBlock">
+						        <?php echo $fleetDesc; ?>
+									</div>
+						    </div>
+						    <div class="col50">
+						      <?php
+						        $imageID = $fleetImage['ID'];
+						        echo wp_get_attachment_image( $imageID, 'full', false, array( 'class' => 'image', 'data-sizes' => 'auto' ) );
+						      ?>
+						    </div>
+						  </div>
+						<?php endwhile; ?>
+					<?php endif; ?>
 				</div>
 			</div>
 		</section>

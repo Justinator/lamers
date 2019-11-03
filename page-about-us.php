@@ -9,7 +9,7 @@ get_header();
 <div id="primary" class="content-area">
 	<main id="main" class="site-main">
 		<?php get_template_part('/inc/breadcrumbs'); ?>
-		<?php get_template_part('/inc/hero'); ?>
+		<?php get_template_part('/inc/about-hero'); ?>
 		<section id="pageContent">
 			<?php get_template_part('/inc/mission'); ?>
 			<?php get_template_part('/inc/customer-satisfaction'); ?>

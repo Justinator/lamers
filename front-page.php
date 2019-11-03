@@ -16,11 +16,8 @@ get_header();
 					<div class="heroHeadingWrapper flex-container">
 						<div class="col50"></div>
 						<div class="col50">
-							<div class="heroHeading">
+							<div class="heroHeading whiteText">
 								<?php the_field('hero_heading'); ?>
-								<div class="whiteText textBlock">
-									<?php the_field('hero_description'); ?>
-								</div>
 								<div class="btnContainer">
 									<a class="whiteButton" href="<?php the_field('hero_button_1_link'); ?>"><?php the_field('hero_button_1_text'); ?></a>
 									<a id="btn2" class="whiteButton btn2" href="<?php the_field('hero_button_2_link'); ?>"><?php the_field('hero_button_2_text'); ?></a>

@@ -19,7 +19,7 @@ get_header();
 					</div>
 				</div>
 			</section>
-			<?php get_template_part('/inc/about-intro'); ?>
+			<?php get_template_part('/inc/about-hero'); ?>
 			<?php get_template_part('/inc/mission'); ?>
 			<?php get_template_part('/inc/customer-satisfaction'); ?>
 			<?php get_template_part('/inc/safety'); ?>

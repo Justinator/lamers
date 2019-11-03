@@ -1,4 +1,4 @@
-<section>
+<section class="fleetHero">
   <div class="fullWidth flex-container centerAlignedContainer">
     <div class="col50">
       <?php
@@ -10,13 +10,10 @@
     <div class="col50 centerTextBlock">
       <div class="textWrap textBlock">
         <div class="fleetTitleWrap">
-          <h1 class="noMargin"><span class="smallHeading">Features of the</span><br><?php the_field('title'); ?></h1>
+          <h1 class="noMargin"><span class="smallHeading">Features of the</span><br><?php echo get_the_title(); ?></h1>
         </div>
         <div class="fleetDescWrap">
-          <p><?php the_field('bus_short_description'); ?></p>
-          <div class="btnContainer">
-            <a class="redButton" href="<?php the_field('cta_button_link'); ?>"><?php the_field('cta_button_text'); ?></a>
-          </div>
+          <?php the_field('bus_short_description'); ?>
         </div>
       </div>
     </div>

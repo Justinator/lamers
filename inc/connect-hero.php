@@ -9,11 +9,7 @@
     </div>
     <div class="col50 centerTextBlock">
       <div class="textWrap textBlock">
-        <h1><?php the_field('intro_headline'); ?></h1>
-        <p><?php the_field('intro_copy'); ?></p>
-        <div class="btnContainer">
-          <a class="redButton" href="<?php the_field('intro_button_1_link'); ?>" target="_blank"><?php the_field('intro_button_1'); ?></a>
-        </div>
+        <?php the_field('intro_headline'); ?>
       </div>
     </div>
   </div>
