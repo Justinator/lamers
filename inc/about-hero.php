@@ -10,7 +10,6 @@
     <div class="col50 centerTextBlock">
       <div class="textWrap textBlock">
         <?php the_field('intro_headline', 'option'); ?>
-        <p><?php the_field('intro_copy', 'option'); ?></p>
         <div class="btnContainer">
           <a class="redButton" href="<?php the_field('intro_button_1_link', 'option'); ?>"><?php the_field('intro_button_1', 'option'); ?></a>
           <a class="redButton btn2" href="<?php the_field('intro_button_2_link', 'option'); ?>"><?php the_field('intro_button_2', 'option'); ?></a>

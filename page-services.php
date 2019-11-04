@@ -3,9 +3,7 @@
  * @package InsightCustom
  */
 get_header();
-
 ?>
-
 <div id="primary" class="content-area">
 	<main id="main" class="site-main">
 		<?php get_template_part('/inc/breadcrumbs'); ?>
@@ -27,19 +25,12 @@ get_header();
 					  	<?php while( have_rows('services_list') ): the_row();
 					  		// vars
 					  		$serviceImage = get_sub_field('service_image');
-					  		$serviceHeadline = get_sub_field('service_headline');
 					  		$serviceDesc = get_sub_field('service_description');
-								$serviceLink = get_sub_field('service_button_link');
-
 					  		?>
 								<div class="flex-container-reverse centerAlignedContainer paddedSection greyBorder">
 							    <div class="col50 centerTextBlock">
 							      <div class="textWrap textBlock">
-							        <h3 class="largeHeading"><?php echo $serviceHeadline; ?></h3>
-							        <p><?php echo $serviceDesc; ?></p>
-											<div class="buttonWrap">
-												<a href="<?php echo $serviceLink; ?>" class="redButton"><?php the_field('service_1_button_text'); ?></a>
-											</div>
+							        <?php echo $serviceDesc; ?>
 										</div>
 							    </div>
 							    <div class="col50">

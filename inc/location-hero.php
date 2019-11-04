@@ -10,10 +10,10 @@
     <div class="col50 centerTextBlock">
       <div class="textWrap textBlock">
         <div class="fleetTitleWrap">
-          <h1 class="noMargin"><?php the_field('intro_headline'); ?></h1>
+          <h1 class="noMargin"><?php echo get_the_title(); ?></h1>
         </div>
         <div class="fleetDescWrap">
-          <p><?php the_field('intro_copy'); ?></p>
+          <?php the_field('intro_copy'); ?>
           <div class="btnContainer">
             <a class="redButton" href="/contact-us/">Contact Location</a>
           </div>

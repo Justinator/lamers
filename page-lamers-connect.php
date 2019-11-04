@@ -5,11 +5,10 @@
 get_header();
 
 ?>
-
 <div id="primary" class="content-area">
 	<main id="main" class="site-main">
 		<?php get_template_part('/inc/breadcrumbs'); ?>
-		<?php get_template_part('/inc/connect-hero'); ?>
+		<?php get_template_part('/inc/hero'); ?>
 		<section id="pageContent" class="serviceWrapper">
 			<div class="navWidth flex-container">
 				<div class="stickyOuterWrapper paddedSection">
@@ -26,23 +25,13 @@ get_header();
 					<?php if( have_rows('connect_route') ): ?>
 					  	<?php while( have_rows('connect_route') ): the_row();
 					  		// vars
-					  		$headline = get_sub_field('route_headline');
 					  		$desc = get_sub_field('route_description');
-								$btnCopy = get_sub_field('route_button_copy');
-								$btnLink = get_sub_field('route_button_link');
 					  		$img = get_sub_field('route_supporting_image');
-
 					  		?>
 					  		<div class="flex-container-reverse centerAlignedContainer paddedSection greyBorder">
 									<div class="col50 centerTextBlock">
 										<div class="textWrap textBlock">
-							        <h3 class="largeHeading"><?php echo $headline; ?></h1>
-											<p><?php echo $desc; ?></p>
-											<div class="buttonWrap">
-								  			<?php if( $btnLink ): ?>
-								  				<a href="<?php echo $btnLink; ?>" class="redButton"><?php echo $btnCopy; ?></a>
-								  			<?php endif; ?>
-											</div>
+											<?php echo $desc; ?>
 										</div>
 									</div>
 									<div class="col50">
