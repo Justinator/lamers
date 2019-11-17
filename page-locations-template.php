@@ -9,10 +9,10 @@ get_header();
 
 <div id="primary" class="content-area">
 	<main id="main" class="site-main">
-		<?php get_template_part('/inc/breadcrumbs'); ?>
-		<?php get_template_part('/inc/location-hero'); ?>
+		<?php get_template_part('/inc/components/breadcrumbs'); ?>
+		<?php get_template_part('/inc/hero/location-hero'); ?>
 		<section id="pageContent">
-			<?php get_template_part('/inc/why-choose-lamers'); ?>
+			<?php get_template_part('/inc/components/why-choose-lamers'); ?>
 			<section class="paddedSection greyBlock">
 				<div class="pageWidth flex-container">
 					<div class="col60">
@@ -37,13 +37,13 @@ get_header();
 				</div>
 			</section>
 			<section class="fullWidth paddedSection">
-				<?php get_template_part('/inc/featured-services'); ?>
+				<?php get_template_part('/inc/components/featured-services'); ?>
 			</section>
 			<section class="paddedSection">
 				<div class="centerText">
 		      <h6 class="largeHeading">View Our Fleet</h6>
 		    </div>
-				<?php get_template_part('/inc/vehicle-types'); ?>
+				<?php get_template_part('/inc/components/vehicle-types'); ?>
 			</section>
 		</section>
 	</main>

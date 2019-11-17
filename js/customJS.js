@@ -17,6 +17,13 @@ $(function() {
         $(".hamburger").toggleClass("is-active");
     });
 });
+// Toggle search icon
+$(function() {
+    $(".accordion").click(function(e){
+        $(".iconToggle").toggleClass("iconOpacity");
+        	e.stopPropagation();
+    });
+});
 // Hide main navigation on scroll
 $(document).ready(function () {
 

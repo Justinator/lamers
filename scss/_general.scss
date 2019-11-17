@@ -35,20 +35,25 @@ a {
 }
 // Style highlight to match our themes colors
 ::-moz-selection{
-		background: rgba(	183, 0, 51, .5);
+		background: rgba(	183, 0, 51, .8);
+		color: $white;
 }
 // Style highlight to match our themes colors
 ::-moz-selection{
-		background: rgba(	183, 0, 51, .5);
+		background: rgba(	183, 0, 51, .8);
+		color: $white;
 }
 ::selection{
-		background: rgba(	183, 0, 51, .5);
+		background: rgba(	183, 0, 51, .8);
+		color: $white;
 }
 ::-moz-selection{
-	background: rgba(	183, 0, 51, .5);
+	background: rgba(	183, 0, 51, .8);
+	color: $white;
 }
 ::-ms-selection{
-	background: rgba(	183, 0, 51, .5);
+	background: rgba(	183, 0, 51, .8);
+	color: $white;
 }
 #privacyPolicy{
 	@include breakpoint(smallScreen){

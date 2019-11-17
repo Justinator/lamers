@@ -31,10 +31,10 @@ get_header();
 		<!-- ********** Homepage Hero Section End ********** -->
 		<section id="pageContent">
 			<!-- ********** Why Lamers Section Start ********** -->
-			<?php get_template_part('/inc/why-choose-lamers'); ?>
+			<?php get_template_part('/inc/components/why-choose-lamers'); ?>
 			<!-- ********** Why Lamers Section End ********** -->
 			<!-- ********** Featured Services Section Start ********** -->
-			<?php get_template_part('/inc/featured-services'); ?>
+			<?php get_template_part('/inc/components/featured-services'); ?>
 			<!-- ********** Featured Services Section End ********** -->
 			<!-- ********** Lamers Connect Section Start ********** -->
 			<section id="lamersConnect" class="paddedSection">
@@ -103,11 +103,11 @@ get_header();
 			<!-- ********** Hiring Section End ********** -->
 			<!-- ********** Testimonial Slider Section Start ********** -->
 			<section id="testimonialSlider">
-				<?php get_template_part('/inc/testimonial-slider'); ?>
+				<?php get_template_part('/inc/components/testimonial-slider'); ?>
 			</section>
 			<!-- ********** Testimonial Slider Section End ********** -->
-			<?php get_template_part('/inc/affiliations'); ?>
-			<?php get_template_part('/inc/contact'); ?>
+			<?php get_template_part('/inc/components/affiliations'); ?>
+			<?php get_template_part('/inc/components/contact'); ?>
 		</section>
 	</main>
 </div>

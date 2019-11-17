@@ -24,7 +24,7 @@ do_action( 'before_awsm_jobs_main_content' );
 ?>
 <div id="primary" class="content-area">
 	<main id="main" class="site-main">
-		<?php get_template_part('/inc/breadcrumbs'); ?>
+		<?php get_template_part('/inc/components/breadcrumbs'); ?>
 		<section id="pageContent">
 			<section id="careersList" class="paddedSection">
 				<div class="pageWidth">
@@ -38,10 +38,10 @@ do_action( 'before_awsm_jobs_main_content' );
 					</div>
 				</div>
 			</section>
-			<?php get_template_part('/inc/about-intro'); ?>
-			<?php get_template_part('/inc/mission'); ?>
-			<?php get_template_part('/inc/customer-satisfaction'); ?>
-			<?php get_template_part('/inc/safety'); ?>
+			<?php get_template_part('/inc/hero/about-hero'); ?>
+			<?php get_template_part('/inc/components/mission'); ?>
+			<?php get_template_part('/inc/components/customer-satisfaction'); ?>
+			<?php get_template_part('/inc/components/safety'); ?>
 		</section>
 	</main>
 </div>

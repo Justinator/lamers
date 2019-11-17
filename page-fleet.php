@@ -9,8 +9,8 @@ get_header();
 
 <div id="primary" class="content-area">
 	<main id="main" class="site-main">
-		<?php get_template_part('/inc/breadcrumbs'); ?>
-		<?php get_template_part('/inc/fleet-hero'); ?>
+		<?php get_template_part('/inc/components/breadcrumbs'); ?>
+		<?php get_template_part('/inc/hero/fleet-hero'); ?>
 		<section id="pageContent">
 			<section class="busIntro paddedSection">
 				<div class="fullWidth flex-container">
@@ -50,12 +50,12 @@ get_header();
 					<?php the_field('main_body_copy'); ?>
 				</div>
 			</section>
-			<?php get_template_part('/inc/fleet-cta'); ?>
+			<?php get_template_part('/inc/components/fleet-cta'); ?>
 			<section class="paddedSection">
 				<div class="centerText">
 		      <h6 class="largeHeading">View Our Other Vehicle Types</h6>
 		    </div>
-				<?php get_template_part('/inc/recommended-vehicles'); ?>
+				<?php get_template_part('/inc/components/recommended-vehicles'); ?>
 			</section>
 		</section>
 	</main>

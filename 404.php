@@ -34,7 +34,7 @@ get_header();
 			</div>
 			<div class="col30">
 					<?php get_sidebar(); ?>
-					<?php get_template_part('/inc/blog-sidebar'); ?>
+					<?php get_template_part('/inc/components/blog-sidebar'); ?>
 			</div>
 		</section><!-- .error-404 -->
 	</main><!-- #main -->

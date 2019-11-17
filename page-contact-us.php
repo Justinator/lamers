@@ -8,10 +8,8 @@ get_header();
 
 <div id="primary" class="content-area">
 	<main id="main" class="site-main">
-		<?php get_template_part('/inc/breadcrumbs'); ?>
-		<section id="contact">
-			<?php get_template_part('/inc/contact'); ?>
-		</section>
+		<?php get_template_part('/inc/components/breadcrumbs'); ?>
+		<?php get_template_part('/inc/components/contact'); ?>
 		<div class="fullWidth paddedSection greyBlock">
 			<div class="pageWidth centerText">
 				<h2 class="largeHeading">Looking for a lamers location?</h2>

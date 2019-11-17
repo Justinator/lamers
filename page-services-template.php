@@ -9,8 +9,8 @@ get_header();
 
 <div id="primary" class="content-area">
 	<main id="main" class="site-main">
-		<?php get_template_part('/inc/breadcrumbs'); ?>
-		<?php get_template_part('/inc/hero'); ?>
+		<?php get_template_part('/inc/components/breadcrumbs'); ?>
+		<?php get_template_part('/inc/hero/hero'); ?>
 		<section id="pageContent" class="serviceWrapper serviceBody greyBlock paddedSection">
 			<div class="navWidth flex-container">
 				<div class="stickyOuterWrapper">
@@ -28,12 +28,12 @@ get_header();
 				</div>
 			</div>
 		</section>
-		<?php get_template_part('/inc/fleet-cta'); ?>
+		<?php get_template_part('/inc/components/fleet-cta'); ?>
 		<section class="paddedSection">
 			<div class="centerText">
 				<h6 class="largeHeading">Recommended Vehicle Types</h6>
 			</div>
-			<?php get_template_part('/inc/recommended-vehicles'); ?>
+			<?php get_template_part('/inc/components/recommended-vehicles'); ?>
 		</section>
 	</main>
 </div>

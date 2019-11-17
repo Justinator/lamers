@@ -32,6 +32,12 @@
     margin-left: 5px;
   }
 }
+.tourmaster-tour-grid {
+  margin-bottom: 0 !important;
+}
+.tourmaster-tour-rating {
+    display: none;
+}
 .tourmaster-tour-content-wrap {
   a {
     &:after {
