@@ -9,8 +9,8 @@ get_header();
 
 <div id="primary" class="content-area">
 	<main id="main" class="site-main">
-		<?php get_template_part('/inc/breadcrumbs'); ?>
-		<?php get_template_part('/inc/connect-hero'); ?>
+		<?php get_template_part('/inc/components/breadcrumbs'); ?>
+		<?php get_template_part('/inc/hero/hero'); ?>
 		<section id="pageContent" class="serviceWrapper">
 			<section class="routeSchedule greyBlock">
 				<div class="pageWidth paddedSection flex-container">
@@ -86,15 +86,7 @@ get_header();
 					<h4 class="largeHeading"><?php the_field('fares_title'); ?></h4>
 					<div class="scrollWrap">
 						<p class="noMargin">Scroll to view full table of rates</p>
-						<svg class="smallIcon" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-							<defs>
-								<symbol id="icon-arrows-h" viewBox="0 0 28 28">
-									<title>arrows-h</title>
-									<path d="M28 14c0 0.266-0.109 0.516-0.297 0.703l-4 4c-0.187 0.187-0.438 0.297-0.703 0.297-0.547 0-1-0.453-1-1v-2h-16v2c0 0.547-0.453 1-1 1-0.266 0-0.516-0.109-0.703-0.297l-4-4c-0.187-0.187-0.297-0.438-0.297-0.703s0.109-0.516 0.297-0.703l4-4c0.187-0.187 0.438-0.297 0.703-0.297 0.547 0 1 0.453 1 1v2h16v-2c0-0.547 0.453-1 1-1 0.266 0 0.516 0.109 0.703 0.297l4 4c0.187 0.187 0.297 0.438 0.297 0.703z"></path>
-								</symbol>
-							</defs>
-						</svg>
-						<svg id="redArrow" class="redIcon icon-arrows-h"><use xlink:href="#icon-arrows-h"></use></svg>
+						<?php get_template_part("/inc/svg-icons/scroll-arrow"); ?>
 					</div>
 				</div>
 				<div class="navWidth faresTable">
@@ -178,18 +170,17 @@ get_header();
 						<div class="textWrap">
 							<h5 class="largeHeading"><span class="underline"><?php the_field('section_header'); ?></span></h5>
 							<div class="fullWidth stopDetailsWrap">
-								<?php get_template_part('/inc/bus-stops'); ?>
+								<?php get_template_part('/inc/components/bus-stops'); ?>
 							</div>
 							<a href="/bus-stop-list/">View full bus stop list</a>
 						</div>
 					</div>
 				</div>
 			</section>
-			<?php get_template_part('/inc/travel-policy-accordion'); ?>
-			<?php get_template_part('/inc/connect-cta'); ?>
+			<?php get_template_part('/inc/components/travel-policy-accordion'); ?>
+			<?php get_template_part('/inc/components/connect-cta'); ?>
 		</section>
 	</main>
 </div>
-<script src="/wp-content/themes/insightCustom/js/accordion.js"></script>
 <?php
 get_footer();

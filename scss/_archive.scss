@@ -4,7 +4,7 @@
 .post{
   padding: 0 0 20px 0;
   @include breakpoint(laptopScreen){
-    padding: 0 25px 20px 25px;
+    padding: 0 10px 20px 10px;
   }
     h2{
       margin-bottom: 15px;
@@ -177,7 +177,6 @@
 .attachment-post-thumbnail{
   width: 100%;
   height: auto;
-  margin-bottom: 40px;
   border-bottom: 5px solid $brandColor;
 }
 .postHeader{
@@ -259,8 +258,8 @@
     display: block;
   }
   .attachment-post-thumbnail {
-    margin-top: 25px;
-    margin-bottom: 25px;
+    margin-top: 0;
+    margin-bottom: 0;
   }
 }
 .pagination {
@@ -329,7 +328,7 @@
       }
   }
   .awsm_job_openings, .type-tour, .type-page {
-      padding: 0 25px 20px 25px;
+      padding: 0 10px 20px 10px;
   }
   #post-1358 {
     display: none;
@@ -337,7 +336,7 @@
   article {
     width: 90%;
     @include breakpoint (largeMobileScreen) {
-      width: 40%;
+      width: 45%;
     }
     h2 {
       font-size: 1.2em;

@@ -2,6 +2,10 @@
 <section id="accordion" class="pageWidth">
   <div class="accordion" role="tablist" aria-live="polite" data-behavior="accordion">
     <article class="accordion__item js-show-item-default" data-binding="expand-accordion-item">
+      <div class="iconToggle">
+        <?php get_template_part("/inc/svg-icons/plus"); ?>
+        <?php get_template_part("/inc/svg-icons/minus"); ?>
+      </div>
       <span id="tab1" tabindex="0" class="accordion__title" aria-controls="panel1" role="tab" aria-selected="false" aria-expanded="false" data-binding="expand-accordion-trigger">
         <h6 class="noMargin mediumHeading">Lamers Connect Policies</h6>
       </span>

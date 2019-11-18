@@ -8,8 +8,8 @@ get_header();
 
 <div id="primary" class="content-area">
 	<main id="main" class="site-main">
-		<?php get_template_part('/inc/breadcrumbs'); ?>
-		<?php get_template_part('/inc/hero'); ?>
+		<?php get_template_part('/inc/components/breadcrumbs'); ?>
+		<?php get_template_part('/inc/hero/hero'); ?>
 		<section id="pageContent" class="fleetWrapper">
 			<div class="navWidth flex-container">
 				<div class="stickyOuterWrapper paddedSection">

@@ -9,8 +9,8 @@ get_header();
 
 <div id="primary" class="content-area">
 	<main id="main" class="site-main">
-		<?php get_template_part('/inc/breadcrumbs'); ?>
-		<?php get_template_part('/inc/hero-intro'); ?>
+		<?php get_template_part('/inc/components/breadcrumbs'); ?>
+		<?php get_template_part('/inc/hero/fleet-hero'); ?>
 		<div class="fullWidth stickyMenuContainer">
 		  <div class="stickyMenu">
 		    <div class="navWidth stickyMenuWrapper">

@@ -17,8 +17,8 @@ get_header();
 
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main">
-			<?php get_template_part('/inc/breadcrumbs'); ?>
-			<?php get_template_part('/inc/simple-hero'); ?>
+			<?php get_template_part('/inc/components/breadcrumbs'); ?>
+			<?php get_template_part('/inc/hero/hero'); ?>
 			<section id="simplePageContent" class="greyBlock paddedSection">
 				<div class="limitWidth">
 					<div class="textWrap">

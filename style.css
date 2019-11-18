@@ -1588,19 +1588,24 @@ a {
       transition: .2s ease; }
 
 ::-moz-selection {
-  background: rgba(183, 0, 51, 0.5); }
+  background: rgba(183, 0, 51, 0.8);
+  color: #FFFFFF; }
 
 ::-moz-selection {
-  background: rgba(183, 0, 51, 0.5); }
+  background: rgba(183, 0, 51, 0.8);
+  color: #FFFFFF; }
 
 ::selection {
-  background: rgba(183, 0, 51, 0.5); }
+  background: rgba(183, 0, 51, 0.8);
+  color: #FFFFFF; }
 
 ::-moz-selection {
-  background: rgba(183, 0, 51, 0.5); }
+  background: rgba(183, 0, 51, 0.8);
+  color: #FFFFFF; }
 
 ::-ms-selection {
-  background: rgba(183, 0, 51, 0.5); }
+  background: rgba(183, 0, 51, 0.8);
+  color: #FFFFFF; }
 
 @media (max-width: 599px) {
   #privacyPolicy {
@@ -1672,6 +1677,17 @@ ul {
   stroke-width: 0;
   stroke: #b70033;
   fill: #b70033; }
+
+.accordionIcon {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  stroke-width: 0;
+  stroke: #FFFFFF;
+  fill: #FFFFFF;
+  background-color: #b70033;
+  border-radius: 50%;
+  padding: 3px; }
 
 .socialPadding {
   padding: 0 10px;
@@ -2005,6 +2021,9 @@ ul {
   padding: 20px;
   background-color: #f6f6f6; }
 
+.page-id-21 #contact {
+  padding: 50px 0; }
+
 /*--------------------------------------------------------------
 14.0 About Page
 --------------------------------------------------------------*/
@@ -2094,7 +2113,7 @@ ul {
   padding: 0 0 20px 0; }
   @media (min-width: 992px) {
     .post {
-      padding: 0 25px 20px 25px; } }
+      padding: 0 10px 20px 10px; } }
   .post h2 {
     margin-bottom: 15px; }
   .post p {
@@ -2244,7 +2263,6 @@ ul {
 .attachment-post-thumbnail {
   width: 100%;
   height: auto;
-  margin-bottom: 40px;
   border-bottom: 5px solid #b70033; }
 
 .postHeader {
@@ -2302,8 +2320,8 @@ ul {
 .postWrapper .entry-header {
   display: block; }
 .postWrapper .attachment-post-thumbnail {
-  margin-top: 25px;
-  margin-bottom: 25px; }
+  margin-top: 0;
+  margin-bottom: 0; }
 
 .pagination .nav-links {
   -ms-flex-pack: distribute;
@@ -2348,14 +2366,14 @@ ul {
   #search .entry-header .entry-title a:after {
     width: 0%; }
 #search .awsm_job_openings, #search .type-tour, #search .type-page {
-  padding: 0 25px 20px 25px; }
+  padding: 0 10px 20px 10px; }
 #search #post-1358 {
   display: none; }
 #search article {
   width: 90%; }
   @media (min-width: 600px) {
     #search article {
-      width: 40%; } }
+      width: 45%; } }
   #search article h2 {
     font-size: 1.2em; }
 
@@ -2711,19 +2729,25 @@ ul.nacc li p {
   box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3); }
   .accordion__item {
     border-bottom: 1px solid #b70033; }
+  .accordion .iconToggle {
+    position: relative; }
+  .accordion .plus {
+    opacity: 1;
+    transition: .3s ease;
+    position: absolute;
+    top: 20px;
+    left: 8px; }
+  .accordion .minus {
+    opacity: 0;
+    transition: .3s ease;
+    position: absolute;
+    top: 20px;
+    left: 8px; }
   .accordion__title {
     padding: 15px 15px 15px 40px;
     display: block;
     position: relative;
     font-weight: 400; }
-    .accordion__title:before {
-      font-family: FontAwesome;
-      content: "\f055";
-      font-size: 20px;
-      position: absolute;
-      left: 15px;
-      top: 12px;
-      color: #b70033; }
     .accordion__title h5 {
       border-bottom: 1px solid #f6f6f6;
       display: inline-block; }
@@ -2733,8 +2757,6 @@ ul.nacc li p {
       .accordion__title:hover h5, .accordion__title:focus h5 {
         border-bottom-color: #b70033;
         display: inline-block; }
-    .is-expanded .accordion__title:before {
-      content: "\f056"; }
   .accordion__content-inner {
     padding: 0 40px 10px 40px; }
   .accordion__content {
@@ -2745,6 +2767,13 @@ ul.nacc li p {
 
 .accordion__title:before {
   top: 16px; }
+
+.iconOpacity .plus {
+  opacity: 0;
+  transition: .3s ease; }
+.iconOpacity .minus {
+  opacity: 1;
+  transition: .3s ease; }
 
 /*--------------------------------------------------------------
 21.0 Fleet Page
@@ -3147,6 +3176,12 @@ table {
 @media (min-width: 992px) {
   #related2 {
     margin-left: 5px; } }
+
+.tourmaster-tour-grid {
+  margin-bottom: 0 !important; }
+
+.tourmaster-tour-rating {
+  display: none; }
 
 .tourmaster-tour-content-wrap a:after {
   width: 0; }
@@ -3555,8 +3590,10 @@ body.single-tour.tourmaster-bottom-booking-bar .tourmaster-tour-booking-bar-cont
 /*--------------------------------------------------------------
 30.0 404 Error Page
 --------------------------------------------------------------*/
-.error-404 ul {
-  margin-left: 15px; }
+.error-404 {
+  padding: 50px 0; }
+  .error-404 ul {
+    margin-left: 15px; }
 
 /*--------------------------------------------------------------
 31.0 Request a quote

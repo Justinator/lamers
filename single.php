@@ -9,7 +9,7 @@
 
 get_header();
 ?>
-<?php get_template_part('/inc/breadcrumbs'); ?>
+<?php get_template_part('/inc/components/breadcrumbs'); ?>
 	<div class="pageWidth paddedSection">
 		<div id="primary" class="content-area">
 			<main id="main" class="site-main">
@@ -29,7 +29,7 @@ get_header();
 					<div class="col30">
 						<div class="paddedSection">
 							<?php get_sidebar(); ?>
-							<?php get_template_part('/inc/blog-sidebar'); ?>
+							<?php get_template_part('/inc/components/blog-sidebar'); ?>
 						</div>
 					</div>
 				</div>

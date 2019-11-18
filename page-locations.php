@@ -8,7 +8,7 @@ get_header();
 
 <div id="primary" class="content-area">
 	<main id="main" class="site-main">
-		<?php get_template_part('/inc/breadcrumbs'); ?>
+		<?php get_template_part('/inc/components/breadcrumbs'); ?>
 		<section id="pageContent" class="serviceWrapper">
 			<div class="pageWidth">
 				<?php the_content(); ?>
@@ -49,7 +49,7 @@ get_header();
 					</div>
 				</div>
 			</div>
-			<?php get_template_part('/inc/contact'); ?>
+			<?php get_template_part('/inc/components/contact'); ?>
 		</section>
 	</main>
 </div>
