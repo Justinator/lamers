@@ -586,50 +586,40 @@
 				//////////////////////////////////////////////////////////////
 				// Addition of the assistance CTA to all single tour pages
 				/////////////////////////////////////////////////////////////
-				echo '<div>';
-				echo '<div class="assistanceCTA">';
-				echo '<h3><span class="underline">Need Assistance?</span></h3>';
-				echo '<p>Don’t hesitate to contact us with any questions and concerns.</p>';
-				echo '<a href="tel:1-800-236-8687">1-800-236-8687</a>';
-				echo '</div>';
-				echo '</div>';
+				?>
+				<div>
+					<div class="assistanceCTA">
+						<h3><span class="underline">Need Assistance?</span></h3>
+						<p>Don’t hesitate to contact us with any questions and concerns.</p>
+						<a href="tel:1-800-236-8687">1-800-236-8687</a>
+					</div>
+				</div>
+				<?php
 				//////////////////////////////////////////////////////////////
 				// End of the Assistance CTA addition
 				//////////////////////////////////////////////////////////////
 				//////////////////////////////////////////////////////////////
 				// Addition of our custom related tours
 				/////////////////////////////////////////////////////////////
-				if(get_field('tour_1_title')):
-					echo '<div class="paddedSection">';
-					echo '<h4>Related Tours</h4>';
-					echo '<div class="flex-container">';
-					echo '<div id="related1" class="col50 related tourmaster-tour-thumbnail gdlr-core-item-list">';
-					echo '<a href="' . get_field('tour_1_url') . '">';
-					$image = get_field('tour_1_cover_image');
-					$imageID = $image['ID'];
-					echo wp_get_attachment_image( $imageID, 'full', false, array( 'class' => 'image', 'data-sizes' => 'auto' ) );
-					echo '<h4>' . get_field('tour_1_title') . '</h4>';
-					echo '</a>';
-					if (get_field('tour_1_price')):
-						echo 'Starting At <strong><span class="redText">$' . get_field('tour_1_price') . '</span></strong>';
-					endif;
-					echo '</div>';
-					if(get_field('tour_2_title')):
-						echo '<div id="related2" class="col50 related tourmaster-tour-thumbnail gdlr-core-item-list">';
-						echo '<a href="' . get_field('tour_2_url') . '">';
-						$image = get_field('tour_2_cover_image');
-						$imageID = $image['ID'];
-						echo wp_get_attachment_image( $imageID, 'full', false, array( 'class' => 'image', 'data-sizes' => 'auto' ) );
-						echo '<h4>' . get_field('tour_2_title') . '</h4>';
-						echo '</a>';
-						if (get_field('tour_2_price')):
-							echo 'Starting At <strong><span class="redText">$' . get_field('tour_2_price') . '</span></strong>';
-						endif;
-						echo '</div>';
-						echo '</div>';
-					endif;
-					echo '</div>';
-				endif;
+				?>
+				<div class="relatedposts">
+					<?php
+					$post_objects = get_field('related_post');
+			    if( $post_objects ): ?>
+					<h3>Related Tours</h3>
+				  <section class="multiple-items slider">
+						<?php foreach( $post_objects as $post_object): ?>
+							<div class="relatedPostWrap">
+								<a href="<?php echo get_permalink($post_object->ID); ?>">
+									<?php echo get_the_post_thumbnail( $post_object->ID, 'thumbnail' ); ?><br />
+									<?php echo get_the_title($post_object->ID); ?>
+								</a>
+							</div>
+						<?php endforeach; ?>
+				  </section>
+					<?php endif; ?>
+				</div>
+				<?php
 				//////////////////////////////////////////////////////////////
 				// End of our custom related tours
 				/////////////////////////////////////////////////////////////
@@ -656,7 +646,7 @@
 	echo '</div>'; // tourmaster-single-tour-content-wrap
 
 	////////////////////////////////////////////////////////////////////
-	// related tour section
+	// default garbage related tour section
 	////////////////////////////////////////////////////////////////////
 	$related_tour = tourmaster_get_option('general', 'enable-single-related-tour', 'enable');
 

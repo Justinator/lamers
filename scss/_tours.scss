@@ -403,3 +403,30 @@ body.single-tour.tourmaster-bottom-booking-bar .tourmaster-tour-booking-bar-cont
 .single-tour .tourmaster-tour-info-outer .tourmaster-tour-info {
   width: 100%;
 }
+.relatedposts {
+  @include breakpoint (largeMobileScreen) {
+    margin-top: 25px;
+  }
+}
+.related {
+  li {
+    width: 90%;
+    list-style-type: none;
+    margin-bottom: 25px;
+    @include breakpoint (largeMobileScreen) {
+      width: 45%;
+      margin: 5px;
+    }
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+}
+.relatedPostWrap {
+  width: 95% !important;
+  img {
+    width: 100%;
+    height: auto;
+  }
+}

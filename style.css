@@ -3517,6 +3517,28 @@ body.single-tour.tourmaster-bottom-booking-bar .tourmaster-tour-booking-bar-cont
 .single-tour .tourmaster-tour-info-outer .tourmaster-tour-info {
   width: 100%; }
 
+@media (min-width: 600px) {
+  .relatedposts {
+    margin-top: 25px; } }
+
+.related li {
+  width: 90%;
+  list-style-type: none;
+  margin-bottom: 25px; }
+  @media (min-width: 600px) {
+    .related li {
+      width: 45%;
+      margin: 5px; } }
+  .related li img {
+    width: 100%;
+    height: auto; }
+
+.relatedPostWrap {
+  width: 95% !important; }
+  .relatedPostWrap img {
+    width: 100%;
+    height: auto; }
+
 /*--------------------------------------------------------------
 28.0 Breadcrumbs Navigation
 --------------------------------------------------------------*/

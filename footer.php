@@ -3,9 +3,8 @@
  * @package InsightCustom
  **/
 ?>
-
 </div><!-- #content -->
-	<footer id="colophon" class="site-footer">
+	<footer id="colophon" class="site-footer" role="contentinfo">
 		<div class="footerContent navWidth">
 			<div id="copyright">
 				<?php get_template_part("/inc/svg-icons/copyright"); ?>

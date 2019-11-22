@@ -1,0 +1,25 @@
+#wpfooter {
+  background-color: #d31b45 !important;
+  color: #ffffff !important;
+}
+#wpfooter a {
+  color: #f6f6f6 !important;
+}
+#wpfooter a:hover {
+  color: #bbbbbb !important;
+}
+#menu-comments, #menu-tools, #wp-admin-bar-updates, #wp-admin-bar-comments, #wp-admin-bar-new-content,
+#menu-posts-slide, #menu-posts, #menu-posts-avada_faq, #menu-posts-themefusion_elastic, #menu-posts-tour_coupon,
+#menu-posts-tour_service, #menu-posts-awsm_job_openings li:nth-child(7), #menu-posts-awsm_job_openings li:nth-child(6),
+#menu-posts-awsm_job_openings li:nth-child(4), #menu-appearance li:nth-child(6),
+#toplevel_page_tourmaster_order, #toplevel_page_wp-structuring-markup-wp-structuring-markup, #menu-settings li:nth-child(1), #menu-settings li:nth-child(2),
+#menu-settings li:nth-child(3), #menu-settings li:nth-child(4), #menu-settings li:nth-child(5), #menu-settings li:nth-child(6), #menu-settings li:nth-child(7),
+#menu-settings li:nth-child(8),#menu-settings li:nth-child(9), .update-plugins,
+#menu-appearance li:last-of-type, #menu-plugins li:last-of-type, #menu-dashboard li:last-of-type,
+#wp-admin-bar-updates, #wp-admin-bar-customize  {
+  display: none !important;
+}
+.wrap p {
+  max-width: 800px;
+  font-size: 18px;
+}
