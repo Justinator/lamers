@@ -16,7 +16,9 @@
 #menu-settings li:nth-child(3), #menu-settings li:nth-child(4), #menu-settings li:nth-child(5), #menu-settings li:nth-child(6), #menu-settings li:nth-child(7),
 #menu-settings li:nth-child(8),#menu-settings li:nth-child(9), .update-plugins,
 #menu-appearance li:last-of-type, #menu-plugins li:last-of-type, #menu-dashboard li:last-of-type,
-#wp-admin-bar-updates, #wp-admin-bar-customize  {
+#wp-admin-bar-updates, #wp-admin-bar-customize, .tourmaster-html-option-item:nth-child(4), .tourmaster-html-option-item:nth-child(5),
+.tourmaster-html-option-item:nth-child(6), .tourmaster-html-option-colorpicker-item, .tourmaster-page-option-tab-head-item:nth-child(4),
+.tourmaster-page-option-tab-head-item:nth-child(5) {
   display: none !important;
 }
 .wrap p {

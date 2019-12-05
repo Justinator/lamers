@@ -17,7 +17,7 @@ $(function() {
         $(".hamburger").toggleClass("is-active");
     });
 });
-// Toggle search icon
+// Toggle accordion icon
 $(function() {
     $(".accordion").click(function(e){
         $(".iconToggle").toggleClass("iconOpacity");

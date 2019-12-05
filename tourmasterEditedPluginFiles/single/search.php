@@ -1,11 +1,15 @@
 <?php
 get_header();
 get_template_part('/inc/breadcrumbs');
-echo '<div class="pageWidth flex-container">';
+echo '<div class="pageWidth flex-container paddedSection">';
 echo '<div class="col20">';
-echo do_shortcode('[tourmaster_tour_search fields="keywords, tour_category, departure-location, min-price, max-price" style="column" with-frame="disable"]');
+echo do_shortcode('[tourmaster_tour_search fields="keywords, tour_category, date, destination, departure-location, min-price, max-price" style="column" with-frame="disable"]');
 echo '</div>';
 echo '<div class="col80">';
+echo '<div class="backToWrap">';
+echo get_template_part("/inc/svg-icons/double-arrow-left");
+echo '<a href="/tour-vacations/">Back to all tours</a>';
+echo '</div>';
 	$shadow_size = tourmaster_get_option('general', 'tour-search-item-frame-shadow-size', '');
 	$settings = array(
 		'pagination' => 'page',
@@ -218,8 +222,12 @@ echo '<div class="col80">';
 		echo '<div class="tourmaster-tour-search-content-wrap" >';
 		if( $search_style == 'style-2' ){
 			global $tourmaster_found_posts;
+			echo '<h2><span class="borderBottom">Search Results:</span></h2>';
 			echo '<h3 class="tourmaster-tour-search-content-head tourmaster-item-mglr" >';
-			echo sprintf(esc_html__('%d Results Found', 'tourmaster'), $tourmaster_found_posts);
+			echo '<span>';
+			echo sprintf(esc_html__('%d', 'tourmaster'), $tourmaster_found_posts);
+			echo '</span>';
+			echo ' Results Found';
 			echo '</h3>';
 		}
 		echo tourmaster_pb_element_tour::get_content($settings);

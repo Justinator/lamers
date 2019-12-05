@@ -594,6 +594,10 @@
 						<a href="tel:1-800-236-8687">1-800-236-8687</a>
 					</div>
 				</div>
+				<div class="backToWrap">
+					<?php get_template_part("/inc/svg-icons/double-arrow-left") ?>
+					<a href="/tour-vacations/">Back to all tours</a>
+				</div>
 				<?php
 				//////////////////////////////////////////////////////////////
 				// End of the Assistance CTA addition
