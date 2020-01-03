@@ -920,12 +920,12 @@ Font Variables
     .menu-item-37 {
       margin-right: 20px; } }
 
-.current-menu-item {
+.current-menu-item, .current-page-ancestor {
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)"; }
-  .current-menu-item a {
+  .current-menu-item a, .current-page-ancestor a {
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
     position: relative; }
-    .current-menu-item a:after {
+    .current-menu-item a:after, .current-page-ancestor a:after {
       position: absolute;
       content: "";
       background: #eeb000;
@@ -3554,6 +3554,7 @@ body.single-tour.tourmaster-bottom-booking-bar .tourmaster-tour-booking-bar-cont
 28.0 Breadcrumbs Navigation
 --------------------------------------------------------------*/
 .breadcrumbs {
+  position: relative;
   background-color: #b70033;
   color: #FFFFFF;
   font-size: 14px;
