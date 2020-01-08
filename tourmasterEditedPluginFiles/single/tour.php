@@ -19,7 +19,7 @@
 	}
 
 	get_header();
-	get_template_part('/inc/breadcrumbs');
+	get_template_part('/inc/components/breadcrumbs');
 
 	global $current_user;
 	$tour_style = new tourmaster_tour_style();
