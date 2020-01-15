@@ -33,6 +33,9 @@
 	</script>
 	<script async src='https://www.google-analytics.com/analytics.js'></script>
 	<!-- End Google Analytics -->
+	<!-- WM360 Tracking Pixel -->
+	<script async src='https://tag.simpli.fi/sifitag/0d626630-1633-0135-d876-0cc47a63c1a4'></script>
+	<!-- End WM360 Tracking Pixel -->
 	<?php wp_head(); ?>
 </head>
 <body <?php body_class(); ?>>
