@@ -2,74 +2,73 @@
 20.0 Accordion
 --------------------------------------------------------------*/
 #accordion {
-  padding-bottom: 1px;
+	padding-bottom: 1px;
 }
 .accordion {
-  background-color: $lightGrey;
-  max-width: 1050px;
-  margin: 50px auto;
-  border-top: 6px solid $brandColor;
-  line-height: 1.6;
-  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
-  &__item {
-    border-bottom: 1px solid $brandColor;
-  }
-  .iconToggle {
-    position: relative;
-  }
-  .plus {
-    opacity: 1;
-    transition: .3s ease;
-    position: absolute;
-    top: 20px;
-    left: 8px;
-  }
-  .minus {
-    opacity: 0;
-    transition: .3s ease;
-    position: absolute;
-    top: 20px;
-    left: 8px;
-  }
-  &__title {
-    padding: 15px 15px 15px 40px;
-    display: block;
-    position: relative;
-    font-weight: 400;
-    h5 {
-      border-bottom: 1px solid $lightGrey;
-      display:inline-block;
-    }
-    &:hover,
-    &:focus {
-      cursor: pointer;
-      outline: none;
-      h5 {
-        border-bottom-color: $brandColor;
-        display:inline-block;
-      }
-    }
-  }
-    &__content-inner {
-        padding: 0 40px 10px 40px;
-    }
-  &__content {
-    -webkit-transition: height 0.3s ease-out;
-    transition: height 0.3s ease-out;
-    height: 0;
-    overflow: hidden;
-  }
+	background-color: $lightGrey;
+	max-width: 1050px;
+	margin: 50px auto;
+	border-top: 6px solid $brandColor;
+	line-height: 1.6;
+	box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
+	&__item {
+		border-bottom: 1px solid $brandColor;
+	}
+	.iconToggle {
+		position: relative;
+	}
+	.plus {
+		opacity: 1;
+		transition: 0.3s ease;
+		position: absolute;
+		top: 20px;
+		left: 8px;
+	}
+	.minus {
+		opacity: 0;
+		transition: 0.3s ease;
+		position: absolute;
+		top: 20px;
+		left: 8px;
+	}
+	&__title {
+		padding: 15px 15px 15px 40px;
+		display: block;
+		position: relative;
+		font-weight: 400;
+		h5 {
+			border-bottom: 1px solid $lightGrey;
+			display: inline-block;
+		}
+		&:hover,
+		&:focus {
+			cursor: pointer;
+			outline: none;
+			h5 {
+				border-bottom-color: $brandColor;
+				display: inline-block;
+			}
+		}
+	}
+	&__content-inner {
+		padding: 0 40px 10px 40px;
+	}
+	&__content {
+		transition: height 0.3s ease-out;
+		height: 0;
+		overflow: hidden;
+	}
 }
 .accordion__title:before {
-  top: 16px;
+	top: 16px;
 }
 .iconOpacity {
-  .plus {
-    opacity: 0;
-    transition: .3s ease;
-  }
-  .minus {
-    opacity: 1;
-    transition: .3s ease;
-  }
+	.plus {
+		opacity: 0;
+		transition: 0.3s ease;
+	}
+	.minus {
+		opacity: 1;
+		transition: 0.3s ease;
+	}
 }

@@ -14,7 +14,9 @@
 			<div>
 				<div class="textWrap">
 					<div class="thumbnailWrapper">
-						<?php insightCustom_post_thumbnail(); ?>
+						<a href="<?php the_permalink(); ?>">
+							<?php the_post_thumbnail('blog-image'); ?>
+						</a>
 					</div>
 					<header class="entry-header">
 						<?php
@@ -27,9 +29,7 @@
 							?>
 							<div class="entry-meta">
 								<p>
-									Written
-									<?php insightCustom_posted_by(); ?>
-									|
+									Posted In |
 									<?php
 									$categories = get_the_category();
 									$separator = ' & ';

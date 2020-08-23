@@ -4,21 +4,19 @@
 .breadcrumbs {
 	position: relative;
 	background-color: $brandColor;
-  color: $white;
-  font-size: 14px;
+	color: $white;
+	font-size: 14px;
 	text-transform: uppercase;
 	font-family: $prometoMedium;
 	a {
 		color: $white;
 		font-family: $prometoMedium;
 		text-transform: uppercase;
-    -webkit-transition: .3s ease-out all;
-    transition: .3s ease-out all;
-    &:hover {
-      color: $primaryYellow;
-      -webkit-transition: .3s ease-out all;
-      transition: .3s ease-out all;
-    }
+		transition: 0.3s ease-out all;
+		&:hover {
+			color: $primaryYellow;
+			transition: 0.3s ease-out all;
+		}
 	}
 }
 #breadcrumbs {

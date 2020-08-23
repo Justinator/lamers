@@ -5,45 +5,43 @@
 	width: 30%;
 	margin-right: 20px;
 	display: none;
-	@include breakpoint (laptopScreen) {
+	@include breakpoint(laptopScreen) {
 		display: block;
 	}
-	@include breakpoint (extraLargeScreen) {
+	@include breakpoint(extraLargeScreen) {
 		width: 20%;
 	}
 }
 .stickyMenuContainer {
 	position: -webkit-sticky;
-  position: sticky;
-  top: 160px;
-  z-index: 9998;
+	position: sticky;
+	top: 160px;
+	z-index: 9998;
 }
 .stickyMenu {
 	display: none;
 	background-color: $brandColor;
 	border-radius: 15px;
 	height: auto;
-	box-shadow: 5px 5px 10px rgba(0,0,0,.5);
+	box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
 	padding: 20px;
-	@include breakpoint (laptopScreen) {
+	@include breakpoint(laptopScreen) {
 		display: block;
 	}
 	.serviceWrapper {
-	  img {
-	    margin-top: 25px;
-	    @include breakpoint (laptopScreen) {
-	      margin-top: 0;
-	    }
-	  }
+		img {
+			margin-top: 25px;
+			@include breakpoint(laptopScreen) {
+				margin-top: 0;
+			}
+		}
 	}
-	#ServiceMenu, #FleetMenu, #ConnectMenu, #ExpressMenu {
-		display: -webkit-box;
-		display: -ms-flexbox;
+	#ServiceMenu,
+	#FleetMenu,
+	#ConnectMenu,
+	#ExpressMenu {
 		display: flex;
-		-webkit-box-orient: vertical;
-		-webkit-box-direction: normal;
-		    -ms-flex-direction: column;
-		        flex-direction: column;
+		flex-direction: column;
 		li {
 			list-style-type: none;
 			padding: 0 5px;
@@ -56,53 +54,46 @@
 				font-size: 16px;
 				font-family: $prometoMedium;
 				text-transform: uppercase;
-				-webkit-transition: .2s ease;
-				transition: .2s ease;
+				transition: 0.2s ease;
 				&:after {
 					width: 0;
 				}
-				@include breakpoint (extraLargeScreen) {
+				@include breakpoint(extraLargeScreen) {
 					font-size: 14px;
 				}
 				&:hover {
 					color: $primaryYellow;
-					-webkit-transition: .2s ease;
-					transition: .2s ease;
+					transition: 0.2s ease;
 				}
 			}
 		}
 	}
 }
 .stickyMenuWrapper {
-	display: -webkit-box;
-	display: -ms-flexbox;
 	display: flex;
-	-webkit-box-orient: vertical;
-	-webkit-box-direction: normal;
-	    -ms-flex-direction: column;
-	        flex-direction: column;
+	flex-direction: column;
 }
 .stickyTitle {
 	margin-bottom: 15px;
 }
 .contentWrapper {
 	width: 100%;
-	@include breakpoint (laptopScreen) {
+	@include breakpoint(laptopScreen) {
 		width: 70%;
 	}
-	@include breakpoint (extraLargeScreen) {
+	@include breakpoint(extraLargeScreen) {
 		width: 80%;
 	}
 	img {
 		margin-top: 25px;
-		@include breakpoint (laptopScreen) {
+		@include breakpoint(laptopScreen) {
 			margin-top: 0;
 		}
 	}
 }
 .serviceBody {
 	margin-top: 20px !important;
-	@include breakpoint (laptopScreen) {
+	@include breakpoint(laptopScreen) {
 		margin-top: -10px !important;
 	}
 	.current-menu-item {

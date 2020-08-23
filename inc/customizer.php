@@ -25,9 +25,44 @@ function insightcustom_customize_register( $wp_customize ) {
 			'render_callback' => 'insightcustom_customize_partial_blogdescription',
 		) );
 	}
+	// Add site info options to the customizer
+	require get_template_directory() . ( '/inc/customizer/site-info.php' );
+	// Add header options to the customizer
+	require get_template_directory() . ( '/inc/customizer/header.php' );
+	// Add Footer Section
+	require get_template_directory() . ( '/inc/customizer/footer.php' );
+	// Add Social Media Customization Controls Section
+	require get_template_directory() . ( '/inc/customizer/social-media.php' );
+	// Easily Insert Header and Footer Code
+	require get_template_directory() . ( '/inc/customizer/scripts.php' );
+	// Notification bar editor
+	require get_template_directory() . ( '/inc/customizer/notification-bar.php' );
 }
 add_action( 'customize_register', 'insightcustom_customize_register' );
-
+// Add our css styles
+add_action( 'wp_head', 'insight_customizer_css');
+function insight_customizer_css()
+	{
+	  ?>
+	  <style type="text/css">
+			 <?php if (get_theme_mod('notification_bar_color')): ?>
+				 .notification-bar { background: <?php echo get_theme_mod('notification_bar_color'); ?>; }
+			 <?php
+		 		endif;
+			 ?>
+			 <?php if (get_theme_mod('notification_text_color')): ?>
+				 .notification-bar, .notification-bar-button, .notification-close svg { color: <?php echo get_theme_mod('notification_text_color'); ?>; fill: <?php echo get_theme_mod('notification_text_color'); ?>; }
+			 <?php
+		 		endif;
+			 ?>
+			 <?php if (get_theme_mod('notification_button_color')): ?>
+				 .notification-bar-button { background: <?php echo get_theme_mod('notification_button_color'); ?>; }
+			 <?php
+		 		endif;
+			 ?>
+		</style>
+	  <?php
+	}
 /**
  * Render the site title for the selective refresh partial.
  *

@@ -38,11 +38,11 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 
 	<script src ="https://form.jotform.com/static/feedback2.js" type="text/javascript"></script><script type="text/javascript">
-			var JFL_92314410382145 = new JotformFeedback({
-				formId: '92314410382145',
+			var JFL_200493979459068 = new JotformFeedback({
+				formId: '200493979459068',
 				base: 'https://form.jotform.com/',
-				windowTitle: 'Application of Employment',
-				background: '#b70033',
+				windowTitle: 'Lamers Bus Lines Short Application',
+				background: '#FFA500',
 				fontColor: '#FFFFFF',
 				type: 'false',
 				height: 500,
@@ -50,9 +50,10 @@ if ( ! defined( 'ABSPATH' ) ) {
 				openOnLoad: false
 			});
 	</script>
-		<a class="redButton btn lightbox-92314410382145" style="margin-top: 16px">
-			Apply Now
-		</a>
+	<a class="redButton lightbox-200493979459068" style="margin-top: 16px">
+    Apply Now
+  </a>
+
 
 	<div class="awsm-application-message" style="display: none;"></div>
 

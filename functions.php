@@ -136,98 +136,47 @@ function custom_excerpt_length( $length ) {
 }
 add_filter( 'excerpt_length', 'custom_excerpt_length', 999 );
 
-function insightcustom_fonts_url() {
- $fonts_url = '';
-
- /**
-	* Translators: If there are characters in your language that are not
-	* supported by Roboto, translate this to 'off'. Do not translate
-	* into your own language.
-	*/
- $Roboto = _x( 'on', 'Roboto font: on or off', 'insightcustom' );
-
- $font_families = array();
-
- if ( 'off' !== $Roboto ) {
-	 $font_families[] = 'Roboto:400,500,700,900';
- }
-
- if ( in_array( 'on', array($Roboto) ) ) {
-
-	 $query_args = array(
-		 'family' => urlencode( implode( '|', $font_families ) ),
-		 'subset' => urlencode( 'latin,latin-ext' ),
-	 );
-
-	 $fonts_url = add_query_arg( $query_args, 'https://fonts.googleapis.com/css' );
- }
-
- return esc_url_raw( $fonts_url );
-}
-
-/**
- * Add preconnect for Google Fonts.
- *
- * @since Twenty Seventeen 1.0
- *
- * @param array  $urls           URLs to print for resource hints.
- * @param string $relation_type  The relation type the URLs are printed.
- * @return array $urls           URLs to print for resource hints.
- */
-function insightcustom_resource_hints( $urls, $relation_type ) {
- if ( wp_style_is( 'insightcustom-fonts', 'queue' ) && 'preconnect' === $relation_type ) {
-	 $urls[] = array(
-		 'href' => 'https://fonts.gstatic.com',
-		 'crossorigin',
-	 );
- }
-
- return $urls;
-}
-add_filter( 'wp_resource_hints', 'insightcustom_resource_hints', 10, 2 );
-
 // Advanced Custom Fields Customizations
-// Add ACF options page for global settings
-if( function_exists('acf_add_options_page') ) {
-	acf_add_options_page();
-}
-// Set fields to collapsed for a condensed view for new users
-function my_acf_admin_head() {
-    ?>
-    <script type="text/javascript">
-        (function($){
-            $(document).ready(function(){
-                $('.layout').addClass('-collapsed');
-                $('.acf-postbox').addClass('closed');
-            });
-        })(jQuery);
-    </script>
-    <?php
-}
-add_action('acf/input/admin_head', 'my_acf_admin_head');
-
+require_once( 'inc/acf.php' );
+// Remove WordPress Emojis
+require_once( 'inc/remove-emoji.php' );
+// Create custom image sizes
+add_image_size('blog-image', 1000, 500, true);
+add_image_size('hero-image', 1200, 850, true);
+// Turn off the default WordPress smart redirects
 remove_action('template_redirect','redirect_canonical');
-
 /**
- * Enqueue scripts and styles.
+ * Enqueue styles.
  */
-function insightcustom_scripts() {
+function insightcustom_styles() {
 	wp_enqueue_style( 'insightcustom-style', get_stylesheet_uri() );
-	wp_enqueue_script('custom', get_template_directory_uri() . '/resources/js/custom.min.js');
+	wp_enqueue_style( 'insightcustom-style-min', get_stylesheet_directory_uri() . '/resources/css/style.min.css' );
+	wp_enqueue_style( 'roboto', 'https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap', false );
+	wp_enqueue_style( 'typekit-font', 'https://use.typekit.net/mkv6ofm.css', false );
 	wp_enqueue_style('slick-css', get_stylesheet_directory_uri() . '/css/slick.css');
 	wp_enqueue_style('slick-theme', get_stylesheet_directory_uri() . '/css/slick-theme.css');
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
 	}
 }
+add_action( 'wp_enqueue_scripts', 'insightcustom_styles' );
+/**
+ * Enqueue scripts
+ */
+function insightcustom_scripts() {
+	wp_enqueue_script('custom', get_template_directory_uri() . '/resources/js/custom.min.js', ['jquery'], '1.0.0', false);
+	wp_enqueue_script('slick-init', get_template_directory_uri() . '/resources/js/slick-init.js', ['jquery'], '1.0.0', true);
+	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
+		wp_enqueue_script( 'comment-reply' );
+	}
+}
 add_action( 'wp_enqueue_scripts', 'insightcustom_scripts' );
-
 /**
  * Custom template tags for this theme.
  */
 require get_template_directory() . '/inc/template-tags.php';
-
 /**
  * Functions which enhance the theme by hooking into WordPress.
  */
 require get_template_directory() . '/inc/template-functions.php';
+require get_template_directory() . '/inc/customizer.php';

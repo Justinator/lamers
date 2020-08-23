@@ -1,0 +1,25 @@
+/*--------------------------------------------------------------
+31.0 Request a quote
+--------------------------------------------------------------*/
+.innerFlexWrap {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	@include breakpoint(laptopScreen) {
+		flex-direction: row;
+	}
+}
+.caldera-grid .breadcrumb {
+	display: flex;
+	flex-direction: column;
+	@include breakpoint(laptopScreen) {
+		flex-direction: row;
+	}
+}
+.caldera-grid .breadcrumb > li + li:before {
+	content: "" !important;
+	@include breakpoint(laptopScreen) {
+		content: "/\00a0" !important;
+	}
+}

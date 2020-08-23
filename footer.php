@@ -20,10 +20,37 @@
 			</div>
 			<?php get_template_part("/inc/components/socialNav"); ?>
 	 </div>
-	 <script type="text/javascript" src="/wp-content/themes/insightCustom/resources/js/slick-init.js"></script>
-	 <script src="/wp-content/themes/insightCustom/resources/js/accordion.js"></script>
+	 <?php 
+		if( get_theme_mod( 'footer_scripts' ) ):
+			$footerScripts = get_theme_mod( 'footer_scripts' );
+			echo $footerScripts;
+		endif;
+	?>
 	</footer><!-- #colophon -->
+	<script src="/wp-content/themes/insightCustom/resources/js/accordion.js"></script>
 </div><!-- #page -->
 <?php wp_footer(); ?>
 </body>
+<?php
+	if( get_theme_mod( 'disable_notification_bar' ) == false ):
+		?>
+		<div class="notification-bar-spacer">
+			<div class="notification-bar">
+				<div class="notification-bar-inner">
+					<p><?php echo get_theme_mod( 'notification_bar_content' ); ?> </p>
+					<?php if( get_theme_mod( 'disable_button' ) == false ):
+					$notificationURL = get_theme_mod( 'notification_bar_button_url' ); ?>
+					<a href="<?php echo $notificationURL; ?>" class="notification-bar-button">
+						<?php echo get_theme_mod( 'notification_bar_button_text' ); ?>
+					</a>
+					<?php endif; ?>
+				</div>
+				<div class="notification-close">
+					<?php get_template_part( '/inc/svg-icons/close' ); ?>
+				</div>
+			</div>
+		</div>
+		<?php
+	endif;
+?>
 </html>

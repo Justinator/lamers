@@ -12,23 +12,23 @@
 	<link rel="profile" href="http://gmpg.org/xfn/11">
 	<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="  crossorigin="anonymous"></script>
 	<script src="/wp-content/themes/insightCustom/resources/js/slick.js"></script>
-	<link rel="stylesheet" href="https://use.typekit.net/mkv6ofm.css">
-	<!-- Preconnect to Google Analytics -->
+	<!-- Preconnect to Google Services -->
+	<link rel="dns-prefetch" href="https://google-analytics.com">
 	<link rel="dns-prefetch" href="https://www.google-analytics.com">
 	<link rel="dns-prefetch" href="https://www.googletagmanager.com">
+	<link rel="dns-prefetch" href="https://fonts.gstatic.com">
+	<link rel="dns-prefetch" href="https://use.typekit.net/mkv6ofm.css">
 	<link href="https://www.google-analytics.com" rel="preconnect" crossorigin>
+	<link href="https://google-analytics.com" rel="preconnect" crossorigin>
 	<link href="https://www.googletagmanager.com" rel="preconnect" crossorigin>
-	<!-- Google Analytics -->
-	<script>
-	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
-	ga('create', 'UA-46036619-1', 'auto');
-	ga('send', 'pageview');
-	</script>
-	<script async src='https://www.google-analytics.com/analytics.js'></script>
-	<!-- End Google Analytics -->
-	<!-- WM360 Tracking Pixel -->
-	<script async src='https://tag.simpli.fi/sifitag/0d626630-1633-0135-d876-0cc47a63c1a4'></script>
-	<!-- End WM360 Tracking Pixel -->
+	<link href="https://www.fonts.gstatic.com" rel="preconnect" crossorigin>
+	
+	<?php 
+		if(get_theme_mod( 'header_scripts' )):
+			$headerScripts = get_theme_mod( 'header_scripts' );
+			echo $headerScripts;
+		endif;
+	?>
 	<?php wp_head(); ?>
 </head>
 <body <?php body_class(); ?>>

@@ -10,12 +10,17 @@ textarea {
 	color: $bodyCopyBlue;
 	font-family: $roboto;
 	font-size: 18px;
-	line-height: 1.6em;
-	@include breakpoint (largeMobileScreen) {
+	line-height: 1.5em;
+	@include breakpoint(largeMobileScreen) {
 		font-size: 20px;
 	}
 }
-h1,h2,h3,h4,h5,h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
 	font-family: $prometoMedium;
 	text-transform: uppercase;
 	font-size: 1.5em;
@@ -23,7 +28,7 @@ h1,h2,h3,h4,h5,h6 {
 	line-height: 1.4em;
 	margin-top: 0;
 	margin-bottom: 0;
-	@include breakpoint (laptopScreen) {
+	@include breakpoint(laptopScreen) {
 		font-size: 1.7em;
 	}
 }
@@ -43,7 +48,7 @@ p {
 .redText {
 	color: $brandColor;
 }
-.centerText{
+.centerText {
 	text-align: center;
 }
 .largeHeading {
@@ -55,15 +60,18 @@ p {
 	font-weight: 700;
 }
 .smallHeading {
-	font-size: .8em;
+	font-size: 0.8em;
 	margin-bottom: 0;
 }
 .underline {
-  background-image: -webkit-linear-gradient(left, $primaryYellow 100%, transparent 0);
-  background-image: linear-gradient(to right, $primaryYellow 100%, transparent 0);
-  background-position: 0 1.06em;
-  background-repeat: repeat-x;
-  background-size: 8px 5px;
+	background-image: linear-gradient(
+		to right,
+		$primaryYellow 100%,
+		transparent 0
+	);
+	background-position: 0 1.06em;
+	background-repeat: repeat-x;
+	background-size: 8px 5px;
 }
 .fontLight {
 	font-weight: 400;

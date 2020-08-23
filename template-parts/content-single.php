@@ -22,9 +22,7 @@
 			<?php endif; ?>
 			<div class="centerText">
 				<p>
-					Written
-					<?php insightCustom_posted_by(); ?>
-					|
+					Posted In |
 						<?php
 						$categories = get_the_category();
 						$separator = ' & ';
@@ -39,7 +37,7 @@
 				</p>
 			</div>
 		</header><!-- .entry-header -->
-		<?php insightCustom_post_thumbnail(); ?>
+		<?php the_post_thumbnail('blog-image'); ?>
 		<div class="entry-content">
 			<?php the_content(); ?>
 		</div><!-- .entry-content -->

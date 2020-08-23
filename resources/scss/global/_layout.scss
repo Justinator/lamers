@@ -1,104 +1,97 @@
 /*--------------------------------------------------------------
 3.0 Our page layouts
 --------------------------------------------------------------*/
-.col20{
+.col20 {
 	width: 100%;
-    @include breakpoint(laptopScreen){
-      width: 20%;
-    }
-}
-.col25{
-	width: 100%;
-    @include breakpoint(laptopScreen){
-      width: 25%;
-    }
-}
-.col30{
-	width: 100%;
-    @include breakpoint(laptopScreen){
-      width: 33.3333%;
-    }
-}
-.col30SplitTablet{
-	width: 100%;
-    @include breakpoint(largeMobileScreen){
-      width: 50%;
-    }
-    @include breakpoint(largeScreen){
-      width: 33.3333%;
-    }
-}
-.col40{
-	width: 100%;
-    @include breakpoint(laptopScreen){
-      width: 40%;
-    }
-}
-.col50{
-	width: 100%;
-    @include breakpoint(laptopScreen){
-      width: 50%;
-    }
-}
-.col60{
-	width: 100%;
-    @include breakpoint(laptopScreen){
-      width: 60%;
-    }
-}
-.col70{
-	width: 100%;
-    @include breakpoint(laptopScreen){
-      width: 70%;
-    }
-}
-.col80{
-  width: 100%;
-    @include breakpoint(laptopScreen){
-      width: 80%;
-    }
-}
-.pageWidth{
-	width: 95%;
-	height: 100%;
-	margin: 0 auto;
-	  @include breakpoint(laptopScreen){
-	    width: 90%;
-	  }
-		@include breakpoint(largeScreen){
-	    width: 70%;
-	  }
+	@include breakpoint(laptopScreen) {
+		width: 20%;
 	}
-.fullWidth{
-  width: 100%;
 }
-.navWidth{
+.col25 {
+	width: 100%;
+	@include breakpoint(laptopScreen) {
+		width: 25%;
+	}
+}
+.col30 {
+	width: 100%;
+	@include breakpoint(laptopScreen) {
+		width: 33.3333%;
+	}
+}
+.col30SplitTablet {
+	width: 100%;
+	@include breakpoint(largeMobileScreen) {
+		width: 50%;
+	}
+	@include breakpoint(largeScreen) {
+		width: 33.3333%;
+	}
+}
+.col40 {
+	width: 100%;
+	@include breakpoint(laptopScreen) {
+		width: 40%;
+	}
+}
+.col50 {
+	width: 100%;
+	@include breakpoint(laptopScreen) {
+		width: 50%;
+	}
+}
+.col60 {
+	width: 100%;
+	@include breakpoint(laptopScreen) {
+		width: 60%;
+	}
+}
+.col70 {
+	width: 100%;
+	@include breakpoint(laptopScreen) {
+		width: 70%;
+	}
+}
+.col80 {
+	width: 100%;
+	@include breakpoint(laptopScreen) {
+		width: 80%;
+	}
+}
+.pageWidth {
+	width: 95%;
+	height: 100%;
+	margin: 0 auto;
+	@include breakpoint(laptopScreen) {
+		width: 90%;
+	}
+	@include breakpoint(largeScreen) {
+		width: 70%;
+	}
+}
+.fullWidth {
+	width: 100%;
+}
+.navWidth {
 	height: 100%;
 	margin: 0 auto;
 	width: 95%;
-	@include breakpoint(largeScreen){
+	@include breakpoint(largeScreen) {
 		width: 90%;
 	}
 }
-.blockText{
-	display: -webkit-box;
-	display: -ms-flexbox;
+.blockText {
 	display: flex;
-	-webkit-box-orient: vertical;
-	-webkit-box-direction: normal;
-	    -ms-flex-direction: column;
-	        flex-direction: column;
-	-webkit-box-pack: center;
-	    -ms-flex-pack: center;
-	        justify-content: center;
+	flex-direction: column;
+	justify-content: center;
 	max-width: 800px;
-  margin: 0 auto;
+	margin: 0 auto;
 	padding: 0;
-    @include breakpoint(laptopScreen){
-      padding: 10px;
-    }
+	@include breakpoint(laptopScreen) {
+		padding: 10px;
+	}
 }
-.hero{
+.hero {
 	position: relative;
 	z-index: 1;
 	width: 100%;
@@ -106,16 +99,16 @@
 	background-repeat: no-repeat;
 	height: 60vh;
 	background-position: center;
-		@include breakpoint(tabletScreen){
-      height: 90vh;
-			background-position: left;
-    }
-    @include breakpoint(laptopScreen){
-      height: 90vh;
-			background-position: left;
-    }
+	@include breakpoint(tabletScreen) {
+		height: 90vh;
+		background-position: left;
 	}
-.mediumHero{
+	@include breakpoint(laptopScreen) {
+		height: 90vh;
+		background-position: left;
+	}
+}
+.mediumHero {
 	position: relative;
 	z-index: 1;
 	width: 100%;
@@ -124,189 +117,140 @@
 	background-position: center;
 	height: 80vh;
 }
-.flex-container{
-	display: -webkit-box;
-	display: -ms-flexbox;
+.flex-container {
 	display: flex;
-	-webkit-box-orient: vertical;
-	-webkit-box-direction: normal;
-	    -ms-flex-direction: column;
-	        flex-direction: column;
-    @include breakpoint(laptopScreen){
-      -webkit-box-orient: horizontal;
-      -webkit-box-direction: normal;
-          -ms-flex-direction: row;
-              flex-direction: row;
-    }
+	flex-direction: column;
+	@include breakpoint(laptopScreen) {
+		flex-direction: row;
+	}
 }
-.flex-container-reverse{
-	display: -webkit-box;
-	display: -ms-flexbox;
+.flex-container-reverse {
 	display: flex;
-	-webkit-box-orient: vertical;
-	-webkit-box-direction: reverse;
-	    -ms-flex-direction: column-reverse;
-	        flex-direction: column-reverse;
-	-ms-flex-pack: distribute;
-	    justify-content: space-around;
-    @include breakpoint(laptopScreen){
-      -webkit-box-orient: horizontal;
-      -webkit-box-direction: normal;
-          -ms-flex-direction: row;
-              flex-direction: row;
-    }
+	flex-direction: column-reverse;
+	justify-content: space-around;
+	@include breakpoint(laptopScreen) {
+		flex-direction: row;
+	}
 }
 .flexWrap {
-	display: -webkit-box;
-	display: -ms-flexbox;
 	display: flex;
-	-webkit-box-orient: vertical;
-	-webkit-box-direction: normal;
-	    -ms-flex-direction: column;
-	        flex-direction: column;
-	-webkit-box-align: baseline;
-	    -ms-flex-align: baseline;
-	        align-items: baseline;
-	@include breakpoint (tabletScreen) {
-		-webkit-box-orient: horizontal;
-		-webkit-box-direction: normal;
-		    -ms-flex-direction: row;
-		        flex-direction: row;
+	flex-direction: column;
+	align-items: baseline;
+	@include breakpoint(tabletScreen) {
+		flex-direction: row;
 	}
 }
 .flex-center {
-	-webkit-box-pack: center;
-	    -ms-flex-pack: center;
-	        justify-content: center;
+	justify-content: center;
 }
-.wrappedFlexContainer{
-	display: -webkit-box;
-	display: -ms-flexbox;
+.wrappedFlexContainer {
 	display: flex;
-	-webkit-box-orient: horizontal;
-	-webkit-box-direction: normal;
-	    -ms-flex-direction: row;
-	        flex-direction: row;
-	-ms-flex-wrap: wrap;
-	    flex-wrap: wrap;
-	-webkit-box-pack: center;
-	    -ms-flex-pack: center;
-	        justify-content: center;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
 }
-.centerAlignedContainer{
-	display: -webkit-box;
-	display: -ms-flexbox;
+.centerAlignedContainer {
 	display: flex;
-	-webkit-box-align: center;
-	    -ms-flex-align: center;
-	        align-items: center;
+	align-items: center;
 }
-.textWrap{
+.textWrap {
 	padding: 0 10px;
 	@include breakpoint(tabletScreen) {
 		padding: 0 20px;
 	}
 }
-.image{
+.image {
 	width: 100%;
 	height: auto;
 }
-.textBlock{
+.textBlock {
 	max-width: 1000px;
-	display: -webkit-box;
-	display: -ms-flexbox;
 	display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-	@include breakpoint (laptopScreen) {
+	flex-direction: column;
+	@include breakpoint(laptopScreen) {
 		max-width: 700px;
 	}
 }
 .centerTextBlock {
-	display: -webkit-box;
-	display: -ms-flexbox;
 	display: flex;
-	-webkit-box-orient: vertical;
-	-webkit-box-direction: normal;
-	    -ms-flex-direction: column;
-	        flex-direction: column;
-	-webkit-box-align: center;
-	    -ms-flex-align: center;
-	        align-items: center;
-	-webkit-box-pack: center;
-	    -ms-flex-pack: center;
-	        justify-content: center;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
 }
-.greyBlock{
+.greyBlock {
 	background: $lightGrey;
 }
 .darkRedBlock {
 	background: $brandColorDark;
+	a {
+		color: $white;
+		&:hover {
+			color: $white;
+		}
+	}
 }
-.page-content{
+.page-content {
 	position: relative;
 	z-index: 2;
 	margin-top: 50px;
 	background: $white;
 }
-.paddedSection{
+.paddedSection {
 	padding: 50px 0;
 }
-.smallPaddedSection{
+.smallPaddedSection {
 	padding: 25px 0 25px 0;
-	@include breakpoint(laptopScreen){
+	@include breakpoint(laptopScreen) {
 		padding: 50px 0 50px 0;
 	}
 }
-.tinyPaddedSection{
+.tinyPaddedSection {
 	padding: 5px 0;
 }
-.paddedContainer{
+.paddedContainer {
 	padding: 2em 0;
 }
-.limitWidth{
-  max-width: 1050px;
-  margin: 0 auto;
+.limitWidth {
+	max-width: 1050px;
+	margin: 0 auto;
 	padding: 0;
-	@include breakpoint(laptopScreen){
+	@include breakpoint(laptopScreen) {
 		padding: 20px;
 	}
 }
-.limitPortfolioWidth{
+.limitPortfolioWidth {
 	max-width: 1350px;
-  margin: 0 auto;
+	margin: 0 auto;
 	padding: 50px 20px 0 20px;
-	@include breakpoint(laptopScreen){
+	@include breakpoint(laptopScreen) {
 		padding: 20px;
 	}
 }
-.defaultPadding{
+.defaultPadding {
 	padding: 50px 0;
-	@include breakpoint(laptopScreen){
+	@include breakpoint(laptopScreen) {
 		padding: 150px 0;
 	}
 }
-.removeBottomPadding{
+.removeBottomPadding {
 	padding-bottom: 0;
 }
-.site-content{
+.site-content {
 	margin-top: 70px;
-	@include breakpoint (largeMobileScreen) {
+	@include breakpoint(largeMobileScreen) {
 		margin-top: 100px;
 	}
-	@include breakpoint(laptopScreen){
+	@include breakpoint(laptopScreen) {
 		margin-top: 140px;
 	}
 }
-.marginTop{
+.marginTop {
 	margin-top: 10px;
 }
 .removeBottomMargin {
 	margin-bottom: -10px;
 }
-.marginRight{
+.marginRight {
 	margin-right: 30px;
 }
 .heroIntro {
@@ -317,7 +261,7 @@
 }
 .paddingBottom {
 	padding-bottom: 50px;
-	@include breakpoint (laptopScreen) {
+	@include breakpoint(laptopScreen) {
 		padding-bottom: 0;
 	}
 }
@@ -327,14 +271,17 @@
 #simplePageContent {
 	margin-top: -25px;
 }
-.page-id-546, .page-id-2565, .page-id-2531, .page-id-2882 {
+.page-id-546,
+.page-id-2565,
+.page-id-2531,
+.page-id-2882 {
 	#simplePageContent {
 		margin-top: -10px;
 	}
 }
-.noMargin{
+.noMargin {
 	margin: 0 !important;
 }
-.smallMargin{
+.smallMargin {
 	margin-bottom: 15px;
 }

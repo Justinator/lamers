@@ -4,19 +4,19 @@
     <div class="pageWidth flex-container">
       <div class="col30">
         <div class="blockText">
-          <h3 class="redText smallMargin mediumHeading"><?php the_field('reason_1', 'options'); ?></h3>
+          <h3 class="redText smallMargin mediumHeading noMargin"><?php the_field('reason_1', 'options'); ?></h3>
           <p><?php the_field('reason_1_description', 'options'); ?></p>
         </div>
       </div>
       <div class="col30">
         <div class="blockText">
-          <h3 class="redText smallMargin mediumHeading"><?php the_field('reason_2', 'options'); ?></h3>
+          <h3 class="redText smallMargin mediumHeading noMargin"><?php the_field('reason_2', 'options'); ?></h3>
           <p><?php the_field('reason_2_description', 'options'); ?></p>
         </div>
       </div>
       <div class="col30">
         <div class="blockText">
-          <h3 class="redText smallMargin mediumHeading"><?php the_field('reason_3', 'options'); ?></h3>
+          <h3 class="redText smallMargin mediumHeading noMargin"><?php the_field('reason_3', 'options'); ?></h3>
           <p><?php the_field('reason_3_description', 'options'); ?></p>
         </div>
       </div>

@@ -1,0 +1,27 @@
+/*--------------------------------------------------------------
+14.0 About Page
+--------------------------------------------------------------*/
+#missionWrapper {
+	height: 400px;
+	position: relative;
+}
+#missionBody {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	padding: 0;
+	z-index: 2;
+}
+#list2 {
+	margin-bottom: 15px;
+	@include breakpoint(laptopScreen) {
+		padding-left: 20px;
+	}
+}
+#safety {
+	ul {
+		margin-left: 15px;
+	}
+}

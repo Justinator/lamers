@@ -1,0 +1,183 @@
+/*--------------------------------------------------------------
+11.0 Homepage
+--------------------------------------------------------------*/
+.heroHeadingContainer {
+	display: flex;
+	position: relative;
+	height: 100%;
+	align-items: flex-end;
+	background-image: -webkit-linear-gradient(
+		left,
+		rgba(0, 0, 0, 0.7) 20%,
+		rgba(0, 0, 0, 0.5) 50%,
+		rgba(0, 0, 0, 0) 100%
+	);
+	background-image: linear-gradient(
+		90deg,
+		rgba(0, 0, 0, 0.7) 20%,
+		rgba(0, 0, 0, 0.5) 50%,
+		rgba(0, 0, 0, 0) 100%
+	);
+	@include breakpoint(laptopScreen) {
+		align-items: center;
+		background-image: linear-gradient(
+			90deg,
+			rgba(0, 0, 0, 0) 40%,
+			rgba(0, 0, 0, 0.4) 60%,
+			rgba(0, 0, 0, 0.7) 80%
+		);
+	}
+}
+.heroHeadingWrapper {
+	display: flex;
+	width: 100%;
+}
+.heroHeading {
+	padding: 25px;
+	border-radius: 3px;
+	@include breakpoint(smallScreen) {
+		padding: 20px;
+	}
+	@include breakpoint(largeMobileScreen) {
+		padding: 50px;
+	}
+}
+#connectBack {
+	height: 500px;
+}
+
+#toursBack {
+	height: 500px;
+}
+.innerFlexWrap {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	@include breakpoint(laptopScreen) {
+		flex-direction: row;
+	}
+}
+.logo {
+	max-width: 450px;
+}
+.rightGradientOverlay {
+	display: flex;
+	height: 100%;
+	background-image: linear-gradient(
+		90deg,
+		rgba(0, 0, 0, 0.7) 30%,
+		rgba(0, 0, 0, 0) 100%
+	);
+	@include breakpoint(laptopScreen) {
+		align-items: center;
+		background-image: linear-gradient(
+			90deg,
+			rgba(0, 0, 0, 0) 0%,
+			rgba(0, 0, 0, 0.7) 70%
+		);
+	}
+}
+.leftGradientOverlay {
+	position: relative;
+	height: 100%;
+	background-image: linear-gradient(
+		90deg,
+		rgba(0, 0, 0, 0.7) 30%,
+		rgba(0, 0, 0, 0) 100%
+	);
+	@include breakpoint(laptopScreen) {
+		align-items: center;
+		background-image: linear-gradient(
+			90deg,
+			rgba(0, 0, 0, 0.7) 30%,
+			rgba(0, 0, 0, 0) 100%
+		);
+	}
+}
+#affiliateWrapper {
+	a {
+		width: 30%;
+		height: 100%;
+		padding: 10px;
+		@include breakpoint(largeMobileScreen) {
+			width: 25%;
+		}
+		@include breakpoint(tabletScreen) {
+			width: 12%;
+		}
+		@include breakpoint(extraLargeScreen) {
+			width: 8%;
+		}
+		img {
+			width: 80%;
+		}
+		&:after {
+			width: 0;
+		}
+	}
+}
+.affiliateLogo {
+	width: 30%;
+	height: 100%;
+	padding: 10px;
+	@include breakpoint(largeMobileScreen) {
+		width: 25%;
+	}
+	@include breakpoint(tabletScreen) {
+		width: 12%;
+	}
+	@include breakpoint(extraLargeScreen) {
+		width: 8%;
+	}
+}
+#affiliateTitleWrap {
+	@media (min-width: 1800px) {
+		width: 50%;
+	}
+}
+#affiliationsTitle {
+	position: relative;
+	&:after {
+		position: absolute;
+		top: 40%;
+		right: 0;
+		content: "";
+		width: 0.5em;
+		height: 7px;
+		background-color: $primaryYellow;
+		@include breakpoint(largeMobileScreen) {
+			width: 1.5em;
+		}
+		@include breakpoint(tabletScreen) {
+			width: 5em;
+		}
+		@include breakpoint(laptopScreen) {
+			width: 7em;
+		}
+	}
+	&:before {
+		position: absolute;
+		top: 40%;
+		left: 0;
+		content: "";
+		width: 0.5em;
+		height: 7px;
+		background-color: $primaryYellow;
+		@include breakpoint(largeMobileScreen) {
+			width: 1.5em;
+		}
+		@include breakpoint(tabletScreen) {
+			width: 5em;
+		}
+		@include breakpoint(laptopScreen) {
+			width: 7em;
+		}
+	}
+}
+#affiliateWrapper {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+}
