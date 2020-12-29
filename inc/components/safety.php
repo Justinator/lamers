@@ -11,6 +11,9 @@
     </div>
   </div>
   <div class="smallPaddedSection pageWidth centerButton">
-    <a class="redButton" href="<?php the_field('safety_button_link', 'option'); ?>"><?php the_field('safety_button', 'option'); ?></a>
+  <?php 
+    $safetyButton = get_field( 'safety_button', 'option');
+  ?>
+    <a class="redButton" href="<?php echo $safetyButton['url'] ?>" target="<?php echo $safetyButton['target'] ?>"><?php echo $safetyButton['title'] ?></a>
   </div>
 </section>

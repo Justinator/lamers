@@ -22,7 +22,10 @@
       </div>
     </div>
     <div class="pageWidth centerButton">
-      <a class="redButton" href="/about"><?php the_field('why_lamers_button_text', 'options'); ?></a>
+      <?php 
+        $lamersButton = get_field( 'why_lamers_button', 'options' );
+      ?>
+      <a class="redButton" href="<?php echo $lamersButton['url']?>"><?php echo $lamersButton['title'] ?></a>
     </div>
   </div>
 </section>

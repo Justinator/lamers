@@ -3,9 +3,26 @@
 --------------------------------------------------------------*/
 #asl-storelocator {
 	height: auto !important;
+	margin-bottom: 2em !important;
 }
 #asl-storelocator.container.no-pad.storelocator-main.asl-p-cont.asl-bg-0 {
 	max-width: 100% !important;
+}
+#asl-storelocator.asl-p-cont #asl-list.storelocator-panel .sl-item {
+	padding: 20px 10px 20px 10px;
+}
+.sl-item .p-title,
+#asl-storelocator.asl-p-cont.asl-bg-0 .search_filter > p:first-child,
+#asl-storelocator.asl-p-cont.asl-bg-0 .store-locator h4 {
+	color: #b70033 !important;
+}
+.sl-item .btn-asl,
+#asl-btn-locate {
+	background-color: #b70033 !important;
+}
+#asl-storelocator.asl-p-cont.asl-bg-0 .btn.btn-default.btn-submit {
+	background-color: #b70033 !important;
+	border-color: #b70033 !important;
 }
 #asl-storelocator.asl-p-cont.asl-bg-0
 	.col-xs-12.search_filter
@@ -64,6 +81,12 @@
 	margin: 0 0 20px 0;
 	@include breakpoint(laptopScreen) {
 		margin: 0 20px 20px 0;
+	}
+	.textWrap {
+		padding: 10px 20px;
+	}
+	.redButton {
+		font-size: 14px !important;
 	}
 }
 .backToWrap {

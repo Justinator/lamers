@@ -267,7 +267,7 @@
 			$header_price .= '<div class="tourmaster-header-price-overlay" ></div>';
 			$header_price .= '<span class="tourmaster-header-enquiry" >';
 			if( $tour_option['form-settings'] == 'enquiry' ){
-				$header_price .= esc_html__('Send Us An Enquiry', 'tourmaster');
+				$header_price .= esc_html__('Reserve Your Place On This Tour', 'tourmaster');
 			}else{
 				$header_price .= tourmaster_text_filter($tour_option['form-custom-title']);
 			}

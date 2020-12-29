@@ -1841,18 +1841,10 @@
 			$our_term = is_numeric($our_term)? get_permalink($our_term): $our_term;
 			$privacy = tourmaster_get_option('general', 'register-privacy-statement-page', '#');
 			$privacy = is_numeric($privacy)? get_permalink($privacy): $privacy;
-			$ret .= '<div class="tourmaster-enquiry-term" >';
-			$ret .= '<input type="checkbox" name="tourmaster-require-acceptance" />';
-			$ret .= sprintf(wp_kses(
-				__('* Lamers Tour & Travel recommends purchasing travel insurance with RoamRight® Travel Insurance. A RoamRight brochure will be included with your travel confirmation with instructions how to purchase. Continuing means you acknowledge you have read the Lamers Tour & Travel recommendation and you\'re okay with our <a href="%s" target="_blank">Privacy Policy</a>.', 'tourmaster'),
-				array('a' => array( 'href'=>array(), 'target'=>array() ))
-			), $our_term, $privacy);
-			$ret .= '<div class="tourmaster-enquiry-term-message tourmaster-enquiry-form-message tourmaster-failed" >' . esc_html__('Please agree to all the terms and conditions before proceeding to the next step', 'tourmaster') . '</div>';
-			$ret .= '</div>';
 
 			$ret .= '<div class="tourmaster-enquiry-form-message" ></div>';
 			$ret .= '<input type="hidden" name="tour-id" value="' . get_the_ID() . '" />';
-			$ret .= '<input type="submit" class="tourmaster-button" value="' . esc_html__('Send Inquiry', 'tourmaster') . '" />';
+			$ret .= '<input type="submit" class="tourmaster-button" value="' . esc_html__('Send Request', 'tourmaster') . '" />';
 			$ret .= '</form>';
 
 			return $ret;

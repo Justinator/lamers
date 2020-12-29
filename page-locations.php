@@ -10,7 +10,7 @@ get_header();
 	<main id="main" class="site-main">
 		<?php get_template_part('/inc/components/breadcrumbs'); ?>
 		<section id="pageContent" class="serviceWrapper">
-			<div class="pageWidth">
+			<div class="pageWidth paddedSection">
 				<?php the_content(); ?>
 			</div>
 			<div class="paddedSection fullWidth greyBlock">

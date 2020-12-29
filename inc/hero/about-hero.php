@@ -11,8 +11,12 @@
       <div class="textWrap textBlock">
         <?php the_field('intro_headline', 'option'); ?>
         <div class="btnContainer">
-          <a class="redButton" href="<?php the_field('intro_button_1_link', 'option'); ?>"><?php the_field('intro_button_1', 'option'); ?></a>
-          <a class="redButton btn2" href="<?php the_field('intro_button_2_link', 'option'); ?>"><?php the_field('intro_button_2', 'option'); ?></a>
+        <?php 
+          $button1 = get_field( 'intro_button_1', 'option');
+          $button2 = get_field( 'intro_button_2', 'option' );
+        ?>
+          <a class="redButton" href="<?php echo $button1['url'] ?>" target="<?php echo $button1['target'] ?>"><?php echo $button1['title'] ?></a>
+          <a class="redButton btn2" href="<?php echo $button2['url'] ?>" target="<?php echo $button2['target'] ?>"><?php echo $button2['title'] ?></a>
         </div>
       </div>
     </div>
